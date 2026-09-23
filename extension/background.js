@@ -1233,6 +1233,10 @@ var extension_message_handler = (message, sender, respond) => {
 	} else if (message.type === "redirect") {
 		var tabid = message.data.tabId || sender.tab.id;
 		redirects[tabid] = message.data.obj;
+		// IMU-FIXED: content always passes a response callback here; without
+		// a response every redirect logs "message port closed".
+		try { respond({}); } catch (e) {}
+		return true;
 	} else if (message.type === "newtab") {
 		var tab_options = {
 			url: message.data.imu.url,
@@ -1272,7 +1276,12 @@ var extension_message_handler = (message, sender, respond) => {
 					destroy_contextmenu();
 				}
 			}
+			// IMU-FIXED: content set_value() always passes a response callback
+			// (updating_options-- + chaining). Without a response every settings
+			// write logs "message port closed" in the sender's console.
+			try { respond({}); } catch (e) {}
 		});
+		return true;
 	} else if (message.type === "popupaction") {
 		if (message.data.action) {
 			chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
