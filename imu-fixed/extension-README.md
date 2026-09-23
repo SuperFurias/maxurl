@@ -62,6 +62,14 @@ Built at the fork root (manifest 2026.6.0 → **2026.6.6**). Load `imu-fixed-ext
 | `Could not establish connection. Receiving end does not exist` | No content script in that tab (blocklisted host, `chrome://`, unloaded tab). | Swallowed to `debug()` |
 | `exceeds MAX_WRITE_OPERATIONS_PER_MINUTE quota` | Write storm on fresh install: every injected tab upgrades/persists settings at once against `chrome.storage.sync` (~120 writes/min limit). Settles after first run; failed writes only delay that tab's settings sync. | Checked callback + single warn; storm itself is upstream behavior |
 
+## YouTube / heavy sites: use Rules > Disabled websites
+
+Recommended: add `https://www.youtube.com/` under Rules > Disabled websites in the options page (comma-separated; matches the domain and its subdomains).
+
+Why this happens: this is upstream behavior, not a fork regression. The extension injects its content script on `<all_urls>` in every frame and keeps blocking `webRequest` listeners on all traffic. On most pages that cost is invisible, but YouTube (especially Shorts) hydrates icons and the player late via XHR + images while the main thread is contended, so it shows up as laggy or broken UI. Per-site disable unloads the content script and removes the request listeners for those hosts while the extension keeps working everywhere else.
+
+That list exists precisely for the few sites that don't behave with the extension loaded — if another heavy SPA or media site misbehaves, add its domain the same way instead of toggling the whole extension off.
+
 ## Rebuild
 
 ```powershell

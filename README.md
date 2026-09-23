@@ -42,6 +42,7 @@ It is currently released as:
 - Browser extension (Chromium-based browsers, e.g. Opera GX): [ImageMaxURL_crx3.crx](https://github.com/SuperFurias/maxurl/blob/master/build/ImageMaxURL_crx3.crx) (fork-signed; carries its own extension ID, see [Sideloading](#sideloading-the-extension))
   - Unpacked loads from this git repository also work.
   - Since extensions have more privileges than userscripts, it has a bit of extra functionality over the userscript.
+  - If YouTube (or another heavy site) misbehaves with the extension loaded, add its domain under Rules > Disabled websites in the options — that is upstream behavior (full-page injection), not a fork bug; the per-site list exists for exactly these sites.
   - Source code is in [manifest.json](https://github.com/SuperFurias/maxurl/blob/master/manifest.json) and the [extension](https://github.com/SuperFurias/maxurl/tree/master/extension) folder.
 - [Website](https://qsniyg.github.io/maxurl/)
   - Due to browser security constraints, some URLs (requiring cross-origin requests) can't be supported by the website.
