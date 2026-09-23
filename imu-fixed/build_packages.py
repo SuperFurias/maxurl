@@ -14,13 +14,13 @@ One-time packer setup (inside this folder, untracked):
 Run from fork root (order matters):
     python imu-fixed/build_extension.py   # refresh imu-fixed-extension/
     python imu-fixed/build_packages.py    # -> build/ImageMaxURL_crx3.crx
-Requires: maxurl-opera.pem (gitignored browser-generated packing key;
+Requires: maxurl-chromium.pem (gitignored browser-generated packing key;
 never committed). NOTE: packing runs headed (headless silently skips it);
 a Chrome window flashes briefly during the build.
 
 Output (committed):
-  build/ImageMaxURL_crx3.crx - Chromium/Opera, CRX3. The manifest inside
-    carries no "key" (upstream Opera practice); the extension ID is pinned
+  build/ImageMaxURL_crx3.crx - Chromium, CRX3. The manifest inside
+    carries no "key" (upstream keyless-build practice); the extension ID is pinned
     by the packing key, see extension/updates.xml.
 """
 import glob
@@ -49,10 +49,10 @@ def main():
         shutil.rmtree(TMP)
     shutil.copytree(UNPACKED, TMP)
     man = json.loads((TMP / "manifest.json").read_text(encoding="utf-8"))
-    man.pop("key", None)  # upstream Opera practice: no key in manifest
+    man.pop("key", None)  # upstream keyless-build practice: no key in manifest
     (TMP / "manifest.json").write_bytes((json.dumps(man, indent=2) + "\n").encode("utf-8"))
-    key = ROOT / "maxurl-opera.pem"
-    assert key.exists(), "browser packing key missing (maxurl-opera.pem, gitignored)"
+    key = ROOT / "maxurl-chromium.pem"
+    assert key.exists(), "browser packing key missing (maxurl-chromium.pem, gitignored)"
     out_crx = TMP.with_suffix(".crx")  # chrome writes <dir>.crx next to dir
     if out_crx.exists():
         out_crx.unlink()

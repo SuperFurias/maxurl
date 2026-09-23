@@ -280,7 +280,6 @@ if [ -f ./maxurl.pem ]; then
     name=maxurl
     crx="build/ImageMaxURL_crx2.crx"
     crx3="build/ImageMaxURL_crx3.crx"
-    operacrx="build/ImageMaxURL_opera.crx"
     pub="$name.pub"
     sig="$name.sig"
     zip="$name.zip"
@@ -296,14 +295,6 @@ if [ -f ./maxurl.pem ]; then
     makecrx3 "$zip" "$key" "$crx3"
 
     rm "$zip"
-
-    # Opera build requires key to be removed: https://github.com/qsniyg/maxurl/issues/825
-    zip_tempcreate
-    sed -i '/"key": *".*",/d' tempzip/manifest.json
-    zipcmd "$zip"
-    rm -rf tempzip
-
-    makecrx3 "$zip" "$key" "$operacrx"
 
     sed -i "s/version=\"[0-9.]*\"/version=\"$USERVERSION\"/g" extension/updates.xml
 else
