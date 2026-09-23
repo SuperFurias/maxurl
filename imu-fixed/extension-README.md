@@ -1,6 +1,6 @@
 # IMU Fixed Extension — unpacked build (no Shorts slowdown)
 
-Built from `../maxurl` (manifest 2026.6.0 → **2026.6.6**). Load it unpacked; keep `../maxurl` untouched.
+Built at the fork root (manifest 2026.6.0 → **2026.6.6**). Load `imu-fixed-extension/` unpacked; the root checkout stays pristine apart from the committed patches.
 
 ## What changed and why
 
@@ -68,11 +68,14 @@ Built from `../maxurl` (manifest 2026.6.0 → **2026.6.6**). Load it unpacked; k
 ## Rebuild
 
 ```powershell
-python "C:\AITools\.Visual Studio Code\Image Max URL\imu-fixed\build_extension.py"
-node --check "C:\AITools\.Visual Studio Code\Image Max URL\imu-fixed-extension\extension\background.js"
+# from the fork root:
+python imu-fixed/build_extension.py
+node --check imu-fixed-extension/extension/background.js
 ```
 
-Re-run after pulling `../maxurl`. (`README.md` here is copied from `../imu-fixed/extension-README.md` on each build, so edit that file.)
+Re-run after pulling upstream (then re-apply `imu-fixed/apply_source_patches.py`
+if the patches were reset). (`imu-fixed-extension/README.md` is copied from
+`imu-fixed/extension-README.md` on each build, so edit that file.)
 
 ## Honest limitations
 

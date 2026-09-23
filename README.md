@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/qsniyg/maxurl/master/resources/imu_opera_banner_transparent.png" alt="Image Max URL" title="Image Max URL" />
+  <img src="https://raw.githubusercontent.com/SuperFurias/maxurl/master/resources/imu_opera_banner_transparent.png" alt="Image Max URL" title="Image Max URL" />
 </p>
 
 ---
@@ -9,7 +9,9 @@
 > centered popups by default, a global reset button, corrected modified-row flags,
 > brute-force rules off by default, and de-noised background logging.
 > Full change log and build notes: [`imu-fixed/extension-README.md`](imu-fixed/extension-README.md).
-> Upstream docs continue below. License: Apache-2.0 (see [LICENSE](LICENSE)).
+> Fork issues: [SuperFurias/maxurl/issues](https://github.com/SuperFurias/maxurl/issues).
+> License: Apache-2.0 (see [LICENSE](LICENSE)).
+> Original work © 2018–2024 qsniyg; fork modifications © 2026 SuperFurias.
 
 **Use it unpacked:** `python imu-fixed/build_extension.py`, then
 `chrome://extensions` → Developer mode → Load unpacked → `imu-fixed-extension/`.
@@ -32,18 +34,18 @@ but it also supports a number of generic engines (such as Wordpress and MediaWik
 It is currently released as:
 
 - Userscript: (most browsers)
-  - Stable: [userscript_smaller.user.js](https://github.com/qsniyg/maxurl/blob/master/userscript_smaller.user.js?raw=true) or [OpenUserJS](https://openuserjs.org/scripts/qsniyg/Image_Max_URL)
-  - Development: [userscript.user.js](https://github.com/qsniyg/maxurl/blob/master/userscript.user.js?raw=true) (recommended)
+  - Stable: [userscript_smaller.user.js](https://github.com/SuperFurias/maxurl/blob/master/userscript_smaller.user.js?raw=true) or [OpenUserJS](https://openuserjs.org/scripts/qsniyg/Image_Max_URL)
+  - Development: [userscript.user.js](https://github.com/SuperFurias/maxurl/blob/master/userscript.user.js?raw=true) (recommended)
   - It serves as the base for everything listed below. It also serves as a node module (used by the reddit bot), and can be embedded in a website.
 - Browser extension: [Firefox](https://addons.mozilla.org/firefox/addon/image-max-url/)
   - Other browsers supporting WebExtensions can sideload the extension through this git repository.
   - Since addons have more privileges than userscripts, it has a bit of extra functionality over the userscript.
-  - Source code is in [manifest.json](https://github.com/qsniyg/maxurl/blob/master/manifest.json) and the [extension](https://github.com/qsniyg/maxurl/tree/master/extension) folder.
+  - Source code is in [manifest.json](https://github.com/SuperFurias/maxurl/blob/master/manifest.json) and the [extension](https://github.com/SuperFurias/maxurl/tree/master/extension) folder.
 - [Website](https://qsniyg.github.io/maxurl/)
   - Due to browser security constraints, some URLs (requiring cross-origin requests) can't be supported by the website.
   - Source code is in the [gh-pages](https://github.com/qsniyg/maxurl/tree/gh-pages) branch.
 - Reddit bot ([/u/MaxImageBot](https://www.reddit.com/user/MaxImageBot/))
-  - Source code is in [reddit-bot/comment-bot.js](https://github.com/qsniyg/maxurl/blob/master/reddit-bot/comment-bot.js) and [reddit-bot/dourl.js](https://github.com/qsniyg/maxurl/blob/master/reddit-bot/dourl.js)
+  - Source code is in [reddit-bot/comment-bot.js](https://github.com/SuperFurias/maxurl/blob/master/reddit-bot/comment-bot.js) and [reddit-bot/dourl.js](https://github.com/SuperFurias/maxurl/blob/master/reddit-bot/dourl.js)
 
 Community:
 

@@ -8,7 +8,7 @@ Folder created for you so the original `maxurl/` checkout stays untouched.
 |---|---|---|
 | `imu-fixed.user.js` | Full clone of upstream `userscript_smaller.user.js` (3.77 MB) + patches below. Install **this** instead of upstream if you want full 10k-site power + right-click. | ~3.79 MB |
 | `imu-contextmenu-lite.user.js` | Standalone lightweight helper (~7 KB). No bundled rules, generic un-thumbnailing only (YT `maxresdefault`, `=s1024` avatars, `-200x200` stripping, `?w=` cleanup). Runs everywhere incl. YouTube with negligible cost. | ~7 KB |
-| `build_patched.py` | Reproducible patch script: `python build_patched.py` rebuilds `imu-fixed.user.js` from `../maxurl/userscript_smaller.user.js`. | — |
+| `build_patched.py` | Reproducible patch script: `python imu-fixed/build_patched.py` rebuilds `imu-fixed/imu-fixed.user.js` from the root `userscript_smaller.user.js`. | — |
 
 Both pass `node --check`.
 
@@ -49,11 +49,12 @@ To re-allow YouTube in the full build: delete the four `// @exclude` lines in `i
 ## Rebuild
 
 ```powershell
-python "C:\AITools\.Visual Studio Code\Image Max URL\imu-fixed\build_patched.py"
-node --check "C:\AITools\.Visual Studio Code\Image Max URL\imu-fixed\imu-fixed.user.js"
+# from the fork root:
+python imu-fixed/build_patched.py
+node --check imu-fixed/imu-fixed.user.js
 ```
 
-Re-run after `git -C ../maxurl pull`.
+Re-run after pulling upstream and rebuilding (`npm run build`).
 
 ## Limitations (honest)
 
