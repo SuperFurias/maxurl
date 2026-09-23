@@ -8,8 +8,8 @@ Built at the fork root (manifest 2026.6.0 → **2026.6.6**). Load `imu-fixed-ext
 - No `exclude_matches`: static excludes can't change without a reinstall (MV2 has no dynamic content-script registration), so per-site control is a **runtime host blocklist** instead (section 5). YouTube works out of the box; excluding it again is one line in options, no rebuild.
 - `all_frames`: `true` → `false` — upstream injected into every ad/chat/embed iframe on every page. Main frames (where you actually browse) are unaffected.
 - `run_at`: added `"document_idle"` (was default-idle implicit; now explicit so a future upstream `document_start` can't regress first paint).
-- `background.scripts[1]` / `content_scripts[0].js`: `userscript.user.js` → byte-identical `userscript-bg.js` / `userscript-content.js`. Chrome rejects non-`.js` background scripts (`Invalid background script mime type`); content script renamed for the same reason.
-- `extension/options.html`: its `<script src="../userscript.user.js">` (the whole options UI is rendered by the engine itself via `do_options()`) now points at `../userscript-content.js`. Missing file = the infinite-"loading" options page.
+- `background.scripts[1]` / `content_scripts[0].js`: `userscript.user.js` → byte-identical `userscript-bg.js` / `userscript.user.js`. Chrome rejects non-`.js` background scripts (`Invalid background script mime type`); content script renamed for the same reason.
+- `extension/options.html`: its `<script src="../userscript.user.js">` (the whole options UI is rendered by the engine itself via `do_options()`) now points at `../userscript.user.js` plus the `imu-fixed-options.js` companion. Missing file = the infinite-"loading" options page.
 - `name` kept as **`Image Max URL`** on purpose: `src/userscript.ts:check_if_extension()` gates extension behavior on that exact string. Renaming would silently demote the build to userscript-mode.
 - Native right-click entry (`Try to find larger image (IMU)`, `extension/background.js:create_contextmenu`) is untouched — extensions keep the real context menu, unlike userscripts.
 
@@ -40,25 +40,21 @@ Built at the fork root (manifest 2026.6.0 → **2026.6.6**). Load `imu-fixed-ext
 - Rule toggles ("Possibly upscaled images", "Rules using brute-force", and siblings): same defect class, different mechanism. The baked literal says `false`, but the `option_to_problems` loop (`src/userscript.ts:20386`) flips them to `true` at load unless excluded — *after* the `orig_settings` snapshot. So every fresh/reset profile showed them ON + flagged, and no reset could turn them "off" because the loop re-enables them on every load **by design** (these rule families ship enabled). The mirror fix makes fresh == ON + unflagged; reverting now means "back to on". To actually keep them off, toggle them off — that state flags correctly and persists.
 - Deliberate deviation: **Rules using brute-force ships OFF** in this build. Upstream enables it despite its own "rate limiting or IP bans" warning; binary-searching a stranger's server without explicit opt-in is not a sane default. The warning text is untouched, the row still works, and a stored ON still wins (your choice is respected). Consequence: Deezer-style originals that need brute-forcing won't resolve until you opt in. "Possibly upscaled images" carries no such warning and stays at the upstream default (on).
 
-## Install (Chrome)
+## Install (Opera GX / Chromium)
 
 1. Disable/remove upstream Image Max URL (don't run both — double content scripts + double webRequest handlers).
-2. `chrome://extensions` → Developer mode → **Load unpacked** → select `imu-fixed-extension/`.
+2. Drag&drop `build/ImageMaxURL_crx3.crx` onto `opera://extensions` (Developer mode on) and click **Install**. Alternative: Developer mode → **Load unpacked** → select `imu-fixed-extension/`.
 3. Right-click images elsewhere → `Try to find larger image (IMU)` still works. Open `youtube.com/shorts` → icons instant.
 4. Toggle test: IMU popup → disable → Shorts stays fast AND other sites stop paying request overhead (verified: listeners removed; icon shows `(disabled)`).
 5. After loading, reload open tabs once so the new content scripts take effect.
-
-## Install (Firefox)
-
-`about:debugging#/runtime/this-firefox` → Load Temporary Add-on → pick `imu-fixed-extension/manifest.json`.
 
 ## Your pasted errors, one by one
 
 | Error | Verdict | Status in 2026.6.6 |
 |---|---|---|
-| `Manifest version 2 is deprecated…` | Warning, not error. Upstream is MV2; Chrome still loads unpacked MV2 (with this banner) but Store support is gone. A real MV3 migration (`webRequestBlocking` → `declarativeNetRequest`, persistent background → service worker) is a separate project — the header-rewriting core can't be ported 1:1. Firefox is unaffected. | Documented, not patchable here |
+| `Manifest version 2 is deprecated…` | Warning, not error. Upstream is MV2; Opera GX still installs the MV2 CRX (stock Chrome no longer accepts MV2 installs). A real MV3 migration (`webRequestBlocking` → `declarativeNetRequest`, persistent background → service worker) is a separate project — the header-rewriting core can't be ported 1:1. | Documented, not patchable here |
 | `Invalid background script mime type for 'background.scripts[1]'` | **Fatal, fixed.** Chrome won't load `.user.js` as a background script. | Fixed: `userscript-bg.js` / `userscript-content.js` |
-| Options page stuck on "loading" forever | Our rename broke `extension/options.html:7` (`<script src="../userscript.user.js">`) — the options UI is rendered by the engine itself, so a missing file means `do_options()` never runs. | Fixed: points at `../userscript-content.js` |
+| Options page stuck on "loading" forever | The options UI is rendered by the engine itself, so if the engine file is missing `do_options()` never runs. | Fixed: points at `../userscript.user.js` plus the companion script |
 | `Notifications not allowed` | Benign upstream noise (optional permission absent). | Silenced |
 | `cannot be scripted due to ExtensionsSettings policy` / `extensions gallery cannot be scripted` / `tab was closed` | Proven by stack trace (`handle_error` ← `hotload`'s `executeScript` callback): on install, `hotload()` injects the engine into every open tab; webstore/gallery/policy-blocked/closed tabs fail by design. | Fixed in v4 (unscriptable URLs skipped, rest demoted to `debug()`); the v3 fan-out guards cover the remaining senders |
 | `message port closed before a response was received` ×40 | Mostly install-transient (ports die while the background restarts) plus no-receiver tabs. Clears after reload. | Reduced (guarded fan-outs); remainder is transient |

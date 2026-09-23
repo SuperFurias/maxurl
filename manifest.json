@@ -11,11 +11,6 @@
     ],
     "persistent": true
   },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "maxurl@qsniyg"
-    }
-  },
   "content_scripts": [
     {
       "all_frames": false,
@@ -48,7 +43,7 @@
   },
   "options_page": "extension/options.html",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAusnVEc5iRg69kjV0KlRE/7jbCmRox98vmSariQhO68nMVJtFaZ+1W7cgXjgjVp/lYsD0ZilO+92x/nAhtETPVvpgLCZ7+Z0anuz4kBjyYo+S55f8IVu8BAoO0WzPfibFEkk/VjmIQgmuVR26LLeEuC/czVS/Rpxrr7SN+qtaU1tfDuyonidBHfWyqF9XSV0lUowF4g1MzX7TIzklpJk/eq+wCv1IxOviiaBx15ueojLIW3V/RicahGbEclrjbx6Ii4WQpIhdbK8Gx/p4qSENSUOaPmEV076/0xY5E0PlOrI7KAekXYorgh/NYyfBG5OKURxLthbVz44SGoH75YphEwIDAQAB",
-  "update_url": "https://raw.githubusercontent.com/qsniyg/maxurl/master/extension/updates.xml",
+  "update_url": "https://raw.githubusercontent.com/SuperFurias/maxurl/master/extension/updates.xml",
   "permissions": [
     "storage",
     "cookies",

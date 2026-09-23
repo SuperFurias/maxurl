@@ -21,7 +21,7 @@ Disponível como:
   - Desenvolvimento: [userscript.user.js](https://github.com/qsniyg/maxurl/blob/master/userscript.user.js?raw=true) (recomendado)
   - Serve como base para todas as opções listadas abaixo. Também funciona como um módulo node (usado pelo bot do Reddit) e pode ser incorporado em um site.
 
-- **Extensão de navegador**: [Firefox](https://addons.mozilla.org/firefox/addon/image-max-url/) (outros navegadores compatíveis com WebExtensions podem carregar a extensão via repositório git)
+- **Extensão de navegador** (navegadores baseados em Chromium): carregue a extensão manualmente via repositório git (ver abaixo)
   - Extensões possuem mais privilégios que userscripts, oferecendo funcionalidades extras.
   - Código fonte: [manifest.json](https://github.com/qsniyg/maxurl/blob/master/manifest.json) e pasta [extension](https://github.com/qsniyg/maxurl/tree/master/extension)
 
@@ -45,17 +45,10 @@ A extensão não está disponível em outras lojas (como Chrome e Microsoft Edge
   - Baixe o repositório (recomendado clonar via git para facilitar atualizações)
   - **Chromium**:
     - Vá para `chrome://extensions` ou `edge://extensions`, ative o "Modo de desenvolvedor", clique em "Carregar sem pacote" e navegue até a pasta clonada do maxurl.
-  - **Firefox**:
-    - Vá para `about:debugging -> Este Firefox`, selecione "Carregar complemento temporário..." e navegue até `manifest.json` na pasta clonada do maxurl.
-    - A extensão será excluída ao fechar o Firefox.
 
 - **CRX (navegadores baseados em Chromium)**:
   - Baixe o arquivo CRX em [ImageMaxURL_crx3.crx](https://github.com/qsniyg/maxurl/blob/master/build/ImageMaxURL_crx3.crx)
   - Vá para `chrome://extensions`, ative o "Modo do desenvolvedor", arraste e solte o arquivo CRX na página.
-
-- **XPI (navegadores baseados em Firefox)**:
-  - Baixe o arquivo XPI em [ImageMaxURL_signed.xpi](https://github.com/qsniyg/maxurl/blob/master/build/ImageMaxURL_signed.xpi)
-  - Vá para `about:addons`, clique no ícone de engrenagem, selecione "Instalar complemento de arquivo..." e navegue até o arquivo XPI baixado.
 
 ## Contribuindo
 

@@ -1,115 +1,72 @@
 #!/usr/bin/env python3
-"""Build fork-signed distributables from the fork tree.
+"""Build the shippable Chromium CRX from the fork tree.
 
-Port of the firefox/chrome branches of tools/package_extension.sh, plus the
-fork additions (userscript-bg.js, imu-fixed-options.js). Run from fork root:
-    python imu-fixed/build_packages.py
-Requires: npm run build first (fresh userscript_smaller.user.js).
+Chromium-only: Firefox/XPI distribution was removed from this fork.
+Provenance: CRX3 files assembled by third-party signers (python zip +
+npx crx3) do not raise the install prompt, while a byte-equivalent tree
+packed by Chromium's own packer installs. This script therefore packs
+with an in-folder Chrome for Testing binary and signs with the
+browser-generated key, exactly mirroring the working artifact.
 
-Outputs (committed, like upstream):
-  build/ImageMaxURL_unsigned.xpi  - Firefox (unsigned; smaller engine, AMO
-                                    lines stripped, no key/update_url)
-  build/ImageMaxURL_crx3.crx      - Chromium, CRX3 signed with the fork key
-                                    (maxurl.pem, gitignored, never committed).
-                                    Needs its manifest "key" to match, which
-                                    it does since the fork key went in.
-Not reproducible here (removed from the fork):
-  build/ImageMaxURL_signed.xpi    - needs Mozilla signing with upstream creds
-  build/ImageMaxURL_crx2.crx / _opera.crx - legacy/edge cases, see upstream
+One-time packer setup (inside this folder, untracked):
+    npx --yes @puppeteer/browsers install chrome@stable --path Temp/cft
+
+Run from fork root (order matters):
+    python imu-fixed/build_extension.py   # refresh imu-fixed-extension/
+    python imu-fixed/build_packages.py    # -> build/ImageMaxURL_crx3.crx
+Requires: maxurl-opera.pem (gitignored browser-generated packing key;
+never committed). NOTE: packing runs headed (headless silently skips it);
+a Chrome window flashes briefly during the build.
+
+Output (committed):
+  build/ImageMaxURL_crx3.crx - Chromium/Opera, CRX3. The manifest inside
+    carries no "key" (upstream Opera practice); the extension ID is pinned
+    by the packing key, see extension/updates.xml.
 """
+import glob
 import json
 import pathlib
-import re
 import shutil
 import subprocess
-import zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+UNPACKED = ROOT / "imu-fixed-extension"
 TMP = ROOT / "imu-fixed" / "tmp_pkg"
 BUILD = ROOT / "build"
 
-BASEFILES = [
-    "LICENSE.txt", "manifest.json", "userscript.user.js",
-    "resources/logo_40.png", "resources/logo_48.png", "resources/logo_96.png",
-    "resources/disabled_40.png", "resources/disabled_48.png", "resources/disabled_96.png",
-    "extension/background.js", "extension/options.css", "extension/options.html",
-    "extension/popup.js", "extension/popup.html",
-    "extension/welcome.html", "extension/welcome.js",
-]
-NONFFFILES = ["lib/ffmpeg.js", "lib/stream_parser.js"]
-NONAMOFILES = ["lib/testcookie_slowaes.js", "lib/cryptojs_aes.js", "lib/jszip.js",
-               "lib/shaka.debug.js", "lib/acorn_interpreter.js", "lib/BigInteger.js"]
-# Fork additions (referenced by our manifest/options page):
-FORKFILES = ["userscript-bg.js", "extension/imu-fixed-options.js"]
 
-AMO_RE = re.compile(r"/\* *AMO_REMOVE *\*/")
-
-
-def read(p):
-    return (ROOT / p).read_bytes().decode("utf-8", errors="replace")
-
-
-def stage(engine_content, firefox):
-    """Mirror the repo-relative layout into TMP with per-target transforms."""
-    if TMP.exists():
-        shutil.rmtree(TMP)
-    files = {}
-    for p in BASEFILES + NONFFFILES + NONAMOFILES + FORKFILES:
-        if p == "userscript.user.js" or p == "userscript-bg.js":
-            files[p] = engine_content
-        else:
-            files[p] = read(p)
-    if firefox:
-        for p in ("userscript.user.js", "userscript-bg.js", "extension/background.js"):
-            files[p] = "\n".join(l for l in files[p].split("\n") if not AMO_RE.search(l))
-        files["userscript.user.js"] = files["userscript.user.js"].replace(
-            "has_ffmpeg_lib = true", "has_ffmpeg_lib = false")
-        files["userscript-bg.js"] = files["userscript-bg.js"].replace(
-            "has_ffmpeg_lib = true", "has_ffmpeg_lib = false")
-        man = json.loads(files["manifest.json"])
-        for k in ("options_page", "key", "update_url"):
-            man.pop(k, None)
-        files["manifest.json"] = json.dumps(man, indent=2) + "\n"
-        json.loads(files["manifest.json"])  # validate
-    for p, content in files.items():
-        dest = TMP / p
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        dest.write_bytes(content.encode("utf-8"))
-    return files
-
-
-def zip_out(zip_path, files):
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
-        for p in sorted(files):
-            z.write(TMP / p, p)
-    print("wrote", zip_path, f"{zip_path.stat().st_size // 1024} KiB")
+def find_chrome():
+    hits = sorted(glob.glob(str(ROOT / "Temp" / "cft" / "chrome" / "*" / "chrome-win64" / "chrome.exe")))
+    assert hits, ("Chrome packer missing: run "
+                  "npx --yes @puppeteer/browsers install chrome@stable --path Temp/cft")
+    return hits[-1]
 
 
 def main():
-    smaller = read("userscript_smaller.user.js")
-    assert "imuFixedDoConfigOrig" in smaller, "engine was not built from patched sources"
-    full = read("userscript.user.js")
-
-    # Firefox unsigned XPI (smaller engine, like upstream)
-    files = stage(smaller, firefox=True)
-    zip_out(BUILD / "ImageMaxURL_unsigned.xpi", files)
-
-    # Chromium zip + CRX3 (full engine, like unpacked; no AMO/manifest transforms)
-    files = stage(full, firefox=False)
-    chrome_zip = BUILD / "ImageMaxURL_chrome.zip"
-    zip_out(chrome_zip, files)
-    key = ROOT / "maxurl.pem"
-    assert key.exists(), "fork signing key missing (see imu-fixed/fork_key.py)"
-    import os
-    # crx3 reads the zip from stdin (upstream: cat "$zip" | npx crx3 ...)
-    cmd = ["npx", "crx3", "-p", str(key), "-o",
-           str(BUILD / "ImageMaxURL_crx3.crx")]
-    if os.name == "nt":
-        cmd = ["cmd", "/c"] + cmd
-    subprocess.run(cmd, input=chrome_zip.read_bytes(), check=True, cwd=ROOT)
-    chrome_zip.unlink()
+    assert "imu_fixed_disabled_hosts" in (UNPACKED / "userscript.user.js").read_text(
+        encoding="utf-8", errors="replace"), "unpacked tree is stale, run build_extension.py first"
+    if TMP.exists():
+        shutil.rmtree(TMP)
+    shutil.copytree(UNPACKED, TMP)
+    man = json.loads((TMP / "manifest.json").read_text(encoding="utf-8"))
+    man.pop("key", None)  # upstream Opera practice: no key in manifest
+    (TMP / "manifest.json").write_bytes((json.dumps(man, indent=2) + "\n").encode("utf-8"))
+    key = ROOT / "maxurl-opera.pem"
+    assert key.exists(), "browser packing key missing (maxurl-opera.pem, gitignored)"
+    out_crx = TMP.with_suffix(".crx")  # chrome writes <dir>.crx next to dir
+    if out_crx.exists():
+        out_crx.unlink()
+    profile = TMP.parent / "tmp_profile"
+    cmd = [find_chrome(), "--disable-gpu", "--no-first-run",
+           f"--user-data-dir={profile}", f"--pack-extension={TMP}",
+           f"--pack-extension-key={key}"]
+    subprocess.run(cmd, check=False, cwd=ROOT)
+    assert out_crx.exists(), "packer produced no CRX"
+    target = BUILD / "ImageMaxURL_crx3.crx"
+    shutil.move(str(out_crx), str(target))
     shutil.rmtree(TMP, ignore_errors=True)
-    print("signed", BUILD / "ImageMaxURL_crx3.crx")
+    shutil.rmtree(profile, ignore_errors=True)
+    print("packed", target, f"{target.stat().st_size // 1024} KiB")
 
 
 if __name__ == "__main__":

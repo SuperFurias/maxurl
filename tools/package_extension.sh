@@ -111,77 +111,12 @@ if [ ! -z $RELEASE ]; then
 fi
 
 
-# Build extension README for Mozilla Addons (AMO)
-
-echo
-echo Creating extension readme file
-
-cat << EOF > EXTENSION_README.txt
-To build the extension, run:
-
-$ npm install
-$ npm run build-libs
-$ npm run package
-
-The built extension can be found in build/ImageMaxURL_unsigned.xpi.
-
-Please refer to lib/libs.txt for the source URLs of the libraries stored in lib/orig.
- You can also fetch the libraries automatically by using ./tools/fetch_libs.sh.
-
-The libraries are patched in order to be compatible with the script in a number of ways.
- Please refer to lib/patch_libs.js for details on how the libraries are patched.
-
-The userscript has the following changes applied:
-  * All comments within bigimage() have been removed (comments are nearly always test cases, and currently comprise ~2MB of the userscript's size)
-  * It removes useless rules, such as: if (false && ...
-  * It removes pieces of code only used for development, marked by imu:begin_exclude and imu:end_exclude
-  * Debug calls (nir_debug) are modified to only run when debugging is enabled (which requires editing the source code). This is for performance.
-  * common_functions.multidomain__* functions are inlined for performance
-  * Unneeded strings within the strings object have been removed
-
-This version is identical to userscript_smaller.user.js in the Github repository.
-
-Below are the versions of the programs used to generate this extension:
-
----
-
-EOF
-
-separator() {
-    echo >> "$1"
-    echo "---" >> "$1"
-    echo >> "$1"
-}
-
-unzip -v >> EXTENSION_README.txt
-separator EXTENSION_README.txt
-zip -v >> EXTENSION_README.txt
-separator EXTENSION_README.txt
-# no longer needed as the relevant patching code is now written in JS
-#dos2unix --version >> EXTENSION_README.txt
-#separator EXTENSION_README.txt
-#unix2dos --version >> EXTENSION_README.txt
-#separator EXTENSION_README.txt
-wget --version >> EXTENSION_README.txt
-separator EXTENSION_README.txt
-# same
-#patch --version >> EXTENSION_README.txt
-#separator EXTENSION_README.txt
-sed --version >> EXTENSION_README.txt
-separator EXTENSION_README.txt
-echo -n "Node.js " >> EXTENSION_README.txt
-node --version >> EXTENSION_README.txt
-separator EXTENSION_README.txt
-
-
-echo
-echo Building Firefox extension
 
 BASEFILES="LICENSE.txt manifest.json userscript.user.js resources/logo_40.png resources/logo_48.png resources/logo_96.png resources/disabled_40.png resources/disabled_48.png resources/disabled_96.png extension/background.js extension/options.css extension/options.html extension/popup.js extension/popup.html extension/welcome.html extension/welcome.js"
 NONFFFILES="lib/ffmpeg.js lib/stream_parser.js"
 NONAMOFILES="lib/testcookie_slowaes.js lib/cryptojs_aes.js lib/jszip.js lib/shaka.debug.js lib/acorn_interpreter.js lib/BigInteger.js"
 AMOFILES="lib/orig/slowaes.js lib/orig/cryptojs_aes.js lib/orig/jszip.js lib/orig/mux.js lib/orig/shaka-player.compiled.debug.js lib/orig/acorn_interpreter.js lib/orig/BigInteger.min.js"
-SOURCEFILES="tools/fetch_libs.sh tools/build_libs.sh lib/libs.txt EXTENSION_README.txt tools/package_extension.sh tools/remcomments.js tools/util.js tools/patch_libs.js tools/watch_tsc.sh src/userscript.ts src/module.d.ts package.json tsconfig.json"
+SOURCEFILES="tools/fetch_libs.sh tools/build_libs.sh lib/libs.txt tools/package_extension.sh tools/remcomments.js tools/util.js tools/patch_libs.js tools/watch_tsc.sh src/userscript.ts src/module.d.ts package.json tsconfig.json"
 SOURCEFILES_REMOVE="userscript.user.js"
 DIRS="extension lib lib/orig resources tools src"
 
@@ -202,26 +137,6 @@ zip_tempcreate() {
     done
 }
 
-remove_amoremove() {
-    # Remove all lines with AMO_REMOVE to comply with Mozilla policies
-    sed -i '/\/\* *AMO_REMOVE *\*\//d' "$1"
-}
-
-zip_tempcreate
-
-# Disabling ffmpeg for the firefox build because a 20MB .wasm file cannot be reasonably included in the extension
-sed -i 's/has_ffmpeg_lib = true/has_ffmpeg_lib = false/' tempzip/userscript.user.js
-
-# Remove chrome/opera-specific properties for firefox build
-sed -i \
-    -e '/"options_page": /d' \
-    -e '/"key": /d' \
-    -e '/"update_url": /d' tempzip/manifest.json
-
-# Remove all lines with AMO_REMOVE to comply with Mozilla policies
-remove_amoremove tempzip/extension/background.js
-remove_amoremove tempzip/userscript.user.js
-
 zipcmd() {
     echo
     echo "Building extension package: $1"
@@ -237,8 +152,6 @@ zipcmd() {
         rm extension/background.js
         mv temp extension/background.js
         cd ..
-    elif [ "$2" = "firefox" ]; then
-        FILES2="$NONAMOFILES"
     fi
 
     cd tempzip
@@ -257,10 +170,6 @@ zipsourcecmd() {
 }
 
 mkdir -p build
-outxpi=build/ImageMaxURL_unsigned.xpi
-
-rm -f "$outxpi"
-zipcmd "$outxpi" firefox
 
 getzipfiles() {
     unzip -l "$1" | awk '{print $4}' | awk 'BEGIN{x=0;y=0} /^----$/{x=1} {if (x==1) {x=2} else if (x==2) {print}}' | sed '/^ *$/d' | sort
@@ -286,15 +195,6 @@ assemble_file_list() {
 diffzipfiles() {
     cat $1 $2 | sort | uniq -u
 }
-
-assemble_file_list files1.txt $BASEFILES $NONAMOFILES
-
-DIFF="$(diffzipfiles files.txt files1.txt)"
-if [ ! -z "$DIFF" ]; then
-    echo
-    echo 'Wrong files for firefox extension'
-    exit 1
-fi
 
 rm -rf tempzip
 zip_tempcreate
@@ -421,14 +321,11 @@ if [ ! -z $RELEASE ]; then
     echo '  * node tools/update_from_po.js'
     echo ' * Ensure CHANGELOG.txt is updated'
     echo '  * Sites added: ./tools/get_old_userscript.sh && node site/about.js olduserscript'
-    echo ' * Update xx00+ count (oujs, reddit post, firefox, website)'
-    echo ' * git add src/userscript.ts userscript.user.js userscript_smaller.user.js userscript.meta.js CHANGELOG.txt build/userscript_extr.user.js build/userscript_extr_min.user.js build/ImageMaxURL_crx3.crx build/ImageMaxURL_unsigned.xpi extension/updates.xml manifest.json package.json sites.txt'
+    echo ' * Update xx00+ count (oujs, reddit post, website)'
+    echo ' * git add src/userscript.ts userscript.user.js userscript_smaller.user.js userscript.meta.js CHANGELOG.txt build/userscript_extr.user.js build/userscript_extr_min.user.js build/ImageMaxURL_crx3.crx extension/updates.xml manifest.json package.json sites.txt'
     echo ' * git commit ('$USERVERSION')'
-    echo ' * Update firefox addon'
     echo ' * Update site userscript'
     echo ' * Update Discord changelog'
-    echo ' * Update build/ImageMaxURL_signed.xpi'
-    echo '  * ./tools/update_signed_xpi.sh'
     echo ' * git tag v'$USERVERSION' && git push origin v'$USERVERSION
 else
     echo
