@@ -4,6 +4,20 @@
 
 ---
 
+> **IMU Fixed — fork of [qsniyg/maxurl](https://github.com/qsniyg/maxurl) by SuperFurias.**
+> Same 10,000-site engine, plus performance fixes, a runtime per-site blocklist,
+> centered popups by default, a global reset button, corrected modified-row flags,
+> brute-force rules off by default, and de-noised background logging.
+> Full change log and build notes: [`imu-fixed/extension-README.md`](imu-fixed/extension-README.md).
+> Upstream docs continue below. License: Apache-2.0 (see [LICENSE](LICENSE)).
+
+**Use it unpacked:** `python imu-fixed/build_extension.py`, then
+`chrome://extensions` → Developer mode → Load unpacked → `imu-fixed-extension/`.
+**Rebuild the engine after pulling upstream:** `python imu-fixed/apply_source_patches.py`
+(if any assert names a drifted anchor, update it), then `npm install && npm run build`.
+
+---
+
 <p align="center">
   <b>English</b> | <a href="docs/pt/README.pt-BR.md">Português (Brasil)</a>
 </p>
