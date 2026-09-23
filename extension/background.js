@@ -20,6 +20,31 @@ var override_headers = {};
 var override_download = {};
 var reqid_to_redid = {};
 var notifications = {};
+
+/* ==== IMU-FIXED: webRequest gating (no-slowdown when disabled) ====
+ * Upstream registers blocking webRequest listeners on <all_urls> at load and
+ * never removes them, so every image/media/XHR (e.g. YouTube Shorts icons,
+ * avatars, youtubei API) pays a sync extension round-trip even with
+ * imu_enabled=false. We cache the flag and add/remove the listeners.
+ */
+var imuFixedEnabled = true;
+var imuFixedWebRequestOn = false;
+// Pages Chrome never lets us script: messaging them only produces
+// "Receiving end does not exist" / "cannot be scripted" console noise.
+var imuFixedUnscriptableUrl = function(url) {
+  return /^(chrome|chrome-extension|edge|about|moz-extension):/.test(url) ||
+    /^https?:\/\/(chrome\.google\.com|chromewebstore\.google\.com|microsoftedge\.microsoft\.com|addons\.mozilla\.org)\//.test(url);
+};
+var imuFixedQuotaWarned = false;
+var imuFixedNoteWriteError = function(where) {
+  if (chrome.runtime.lastError) {
+    if (!imuFixedQuotaWarned || chrome.runtime.lastError.message.indexOf("quota") < 0) {
+      console.warn(where + ": " + chrome.runtime.lastError.message);
+      if (chrome.runtime.lastError.message.indexOf("quota") >= 0) imuFixedQuotaWarned = true;
+    }
+  }
+};
+
 var menucommands = {};
 
 var ready_functions = [];
@@ -411,6 +436,8 @@ if (false) {
 
 // Modify request headers if needed
 var onBeforeSendHeaders_listener = function(details) {
+	if (!imuFixedEnabled) return {};
+	if (imuFixedHostBlockedBg(imuFixedGetHost(details.url))) return {};
 	debug("onBeforeSendHeaders", details);
 
 	var headers = details.requestHeaders;
@@ -559,16 +586,21 @@ var onBeforeSendHeaders_filter = {
 	types: ['xmlhttprequest', 'main_frame', 'sub_frame', 'image', 'media']
 };
 
-try {
-	chrome.webRequest.onBeforeSendHeaders.addListener(
-		onBeforeSendHeaders_listener, onBeforeSendHeaders_filter,
-		['blocking', 'requestHeaders', 'extraHeaders']
-	);
-} catch (e) {
-	chrome.webRequest.onBeforeSendHeaders.addListener(
-		onBeforeSendHeaders_listener, onBeforeSendHeaders_filter,
-		['blocking', 'requestHeaders']
-	);
+function imuFixedAddBeforeSendHeaders() {
+	try {
+		chrome.webRequest.onBeforeSendHeaders.addListener(
+			onBeforeSendHeaders_listener, onBeforeSendHeaders_filter,
+			['blocking', 'requestHeaders', 'extraHeaders']
+		);
+	} catch (e) {
+		chrome.webRequest.onBeforeSendHeaders.addListener(
+			onBeforeSendHeaders_listener, onBeforeSendHeaders_filter,
+			['blocking', 'requestHeaders']
+		);
+	}
+}
+function imuFixedRemoveBeforeSendHeaders() {
+	try { chrome.webRequest.onBeforeSendHeaders.removeListener(onBeforeSendHeaders_listener); } catch (e) {}
 }
 
 function parse_contentdisposition(cdp) {
@@ -728,6 +760,8 @@ function get_nonces(parsed_csp) {
 
 // Intercept response headers if needed
 var onHeadersReceived = function(details) {
+	if (!imuFixedEnabled) return;
+	if (imuFixedHostBlockedBg(imuFixedGetHost(details.url))) return;
 	debug("onHeadersReceived", details);
 
 	if (details.requestId in reqid_to_redid) {
@@ -902,21 +936,26 @@ var onHeadersReceived = function(details) {
 };
 
 var received_types = ['xmlhttprequest', 'main_frame', 'sub_frame', 'image', 'media'];
-try {
-	chrome.webRequest.onHeadersReceived.addListener(onHeadersReceived, {
-		urls: ['<all_urls>'],
-		types: received_types
-	}, ['blocking', 'responseHeaders', 'extraHeaders']);
-} catch (e) {
-	chrome.webRequest.onHeadersReceived.addListener(onHeadersReceived, {
-		urls: ['<all_urls>'],
-		types: received_types
-	}, ['blocking', 'responseHeaders']);
+function imuFixedAddHeadersReceived() {
+	try {
+		chrome.webRequest.onHeadersReceived.addListener(onHeadersReceived, {
+			urls: ['<all_urls>'],
+			types: received_types
+		}, ['blocking', 'responseHeaders', 'extraHeaders']);
+	} catch (e) {
+		chrome.webRequest.onHeadersReceived.addListener(onHeadersReceived, {
+			urls: ['<all_urls>'],
+			types: received_types
+		}, ['blocking', 'responseHeaders']);
+	}
+}
+function imuFixedRemoveHeadersReceived() {
+	try { chrome.webRequest.onHeadersReceived.removeListener(onHeadersReceived); } catch (e) {}
 }
 
 
 // Remove loading_urls once headers have finished loading
-chrome.webRequest.onResponseStarted.addListener(function(details) {
+var onResponseStarted_listener = function(details) {
 	debug("onResponseStarted", details, loading_urls);
 
 	if (details.tabId in loading_urls) {
@@ -950,10 +989,69 @@ chrome.webRequest.onResponseStarted.addListener(function(details) {
 	if (details.requestId in reqid_to_redid) {
 		delete reqid_to_redid[details.requestId];
 	}
-}, {
+};
+var imuFixedResponseStartedFilter = {
 	urls: ['<all_urls>'],
 	types: ['xmlhttprequest', 'main_frame', 'sub_frame']
-}, ['responseHeaders']);
+};
+function imuFixedAddResponseStarted() {
+	try { chrome.webRequest.onResponseStarted.addListener(onResponseStarted_listener, imuFixedResponseStartedFilter, ['responseHeaders']); } catch (e) {}
+}
+function imuFixedRemoveResponseStarted() {
+	try { chrome.webRequest.onResponseStarted.removeListener(onResponseStarted_listener); } catch (e) {}
+}
+var imuFixedBlockedHosts = [];
+function imuFixedParseHostsBg(text) {
+	var out = [];
+	try {
+		String(text || "").split(/[\n,;]+/).forEach(function(line) {
+			var h = String(line || "").trim().toLowerCase();
+			h = h.replace(/^\*\./, "").replace(/^https?:\/\//, "").split(/[\/\s]/)[0];
+			if (h) out.push(h);
+		});
+	} catch (e) {}
+	return out;
+}
+function imuFixedGetHost(url) {
+	try {
+		var m = String(url || "").match(/^[a-z]+:\/\/([^\/:?#]+)/i);
+		return m ? m[1].toLowerCase() : "";
+	} catch (e2) { return ""; }
+}
+function imuFixedHostBlockedBg(host) {
+	try {
+		host = String(host || "").toLowerCase();
+		if (!host || !imuFixedBlockedHosts.length) return false;
+		for (var i = 0; i < imuFixedBlockedHosts.length; i++) {
+			var e = imuFixedBlockedHosts[i];
+			if (host === e || host.slice(-e.length - 1) === "." + e) return true;
+		}
+	} catch (e3) {}
+	return false;
+}
+function imuFixedRefreshBlockedHosts() {
+	try {
+		get_option("imu_fixed_disabled_hosts", function(v) {
+			try { imuFixedBlockedHosts = imuFixedParseHostsBg(typeof v === "string" ? v : ""); } catch (e4) {}
+		}, "");
+	} catch (e5) {}
+}
+function imuFixedSetWebRequest(on) {
+	if (on && !imuFixedWebRequestOn) {
+		imuFixedAddBeforeSendHeaders();
+		imuFixedAddHeadersReceived();
+		imuFixedAddResponseStarted();
+		imuFixedWebRequestOn = true;
+	} else if (!on && imuFixedWebRequestOn) {
+		imuFixedRemoveBeforeSendHeaders();
+		imuFixedRemoveHeadersReceived();
+		imuFixedRemoveResponseStarted();
+		imuFixedWebRequestOn = false;
+	}
+}
+// default-on (matches upstream); corrected async once storage loads.
+imuFixedSetWebRequest(true);
+
 
 function get_cookies(url, cb, options) {
 	if (!options) options = {};
@@ -1024,7 +1122,9 @@ var xhr_final_handler = function(_data, obj) {
 	};
 
 	if (obj.tabid !== background_userscript_tabid) {
-		chrome.tabs.sendMessage(obj.tabid, message_data);
+		chrome.tabs.sendMessage(obj.tabid, message_data, function() {
+			if (chrome.runtime.lastError) { debug('download progress: no receiver in tab', obj.tabid); }
+		});
 	} else {
 		imu_userscript_message_sender(message_data);
 	}
@@ -1164,6 +1264,7 @@ var extension_message_handler = (message, sender, respond) => {
 		return true;
 	} else if (message.type === "setvalue") {
 		storage.set(message.data, function() {
+			imuFixedNoteWriteError('setvalue');
 			if ("extension_contextmenu" in message.data) {
 				if (JSON.parse(message.data.extension_contextmenu)) {
 					create_contextmenu();
@@ -1176,7 +1277,11 @@ var extension_message_handler = (message, sender, respond) => {
 		if (message.data.action) {
 			chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
 				var currentTab = tabs[0];
-				chrome.tabs.sendMessage(currentTab.id, message);
+				if (!currentTab) return;
+				if (currentTab.url && imuFixedUnscriptableUrl(currentTab.url)) return;
+				chrome.tabs.sendMessage(currentTab.id, message, function() {
+					if (chrome.runtime.lastError) { debug('popupaction: no receiver in tab', currentTab.id); }
+				});
 			});
 		}
 	} else if (message.type === "getcookies") {
@@ -1461,7 +1566,11 @@ var get_localstorage_for_origin = function(keys, url, options, cb) {
 		tabs.forEach((tab) => {
 			// we can't access tab.url without the "tabs" permission, so move the origin logic to the content script
 			chrome.tabs.sendMessage(tab.id, JSON.parse(JSON.stringify(message)), {}, (response) => {
-				handle_error();
+				if (chrome.runtime.lastError && /Receiving end|Could not establish|cannot be scripted|tab was closed|message port closed|ExtensionsSettings|extensions gallery/i.test(chrome.runtime.lastError.message || '')) {
+					debug('query tabs: no receiver in tab', tab.id);
+				} else {
+					handle_error();
+				}
 
 				tabs_handled++;
 				if (replied)
@@ -1507,7 +1616,7 @@ var create_notification_handlers = function() {
 			notification_handler(notif_id, "closed", byuser);
 		});
 	} catch (e) {
-		console.warn("Notifications not allowed");
+		return; // IMU-FIXED: notifications is an optional permission; silent when absent
 	}
 };
 create_notification_handlers();
@@ -1528,8 +1637,11 @@ var imu_userscript_message_sender = null;
 
 function contextmenu_imu(data, tab) {
 	debug("contextMenu", data);
+	if (tab && tab.url && imuFixedUnscriptableUrl(tab.url)) return;
 	chrome.tabs.sendMessage(tab.id, {
 		"type": "context_imu"
+	}, function() {
+		if (chrome.runtime.lastError) { debug('context_imu: no receiver in tab', tab && tab.id); }
 	});
 }
 
@@ -1563,7 +1675,9 @@ function get_option(name, cb, _default) {
 }
 
 function set_option(name, value) {
-	storage.set({[name]: JSON.stringify(value)});
+	storage.set({[name]: JSON.stringify(value)}, function() {
+		imuFixedNoteWriteError('set_option(' + name + ')');
+	});
 }
 
 on_ready(function() {
@@ -1603,7 +1717,12 @@ function update_browseraction_enabled(enabled) {
 }
 
 on_ready(function() {
-	get_option("imu_enabled", update_browseraction_enabled, true);
+	get_option("imu_enabled", function(enabled) {
+		imuFixedEnabled = !!enabled;
+		imuFixedSetWebRequest(imuFixedEnabled);
+		update_browseraction_enabled(enabled);
+		imuFixedRefreshBlockedHosts();
+	}, true);
 });
 
 chrome.storage.onChanged.addListener(function(changes, namespace) {
@@ -1615,7 +1734,14 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
 
 	for (var key in changes) {
 		if (key === "imu_enabled") {
-			update_browseraction_enabled(JSON.parse(changes[key].newValue));
+			var imuFixedEnabledVal = true;
+			try { if (changes[key].newValue !== undefined) imuFixedEnabledVal = JSON.parse(changes[key].newValue); } catch (e6) { imuFixedEnabledVal = true; }
+			imuFixedEnabled = !!imuFixedEnabledVal;
+			imuFixedSetWebRequest(imuFixedEnabled);
+			update_browseraction_enabled(imuFixedEnabledVal);
+		}
+		if (key === "imu_fixed_disabled_hosts") {
+			imuFixedRefreshBlockedHosts();
 		}
 	}
 
@@ -1629,9 +1755,12 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
 	chrome.tabs.query({}, function (tabs) {
 		tabs.forEach((tab) => {
 			try {
+				if (tab.url && imuFixedUnscriptableUrl(tab.url)) return;
 				debug("Sending storage changes to tab", tab.id);
 
-				chrome.tabs.sendMessage(tab.id, JSON.parse(JSON.stringify(message)));
+				chrome.tabs.sendMessage(tab.id, JSON.parse(JSON.stringify(message)), function() {
+					if (chrome.runtime.lastError) { debug('settings_update: no receiver in tab', tab.id); }
+				});
 			} catch (e) {
 				console.error(e);
 			}
@@ -1763,7 +1892,12 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
 var broadcast_message = function(message) {
 	chrome.tabs.query({}, function(tabs) {
 		for (var i = 0; i < tabs.length; i++) {
-			chrome.tabs.sendMessage(tabs[i].id, message);
+			(function(tab) {
+				if (tab.url && imuFixedUnscriptableUrl(tab.url)) return;
+				chrome.tabs.sendMessage(tab.id, message, function() {
+					if (chrome.runtime.lastError) { debug('broadcast: no receiver in tab', tab.id); }
+				});
+			})(tabs[i]);
 		}
 	});
 };
@@ -1787,6 +1921,7 @@ var hotload = function() {
 			try {
 				if (!tab || tab.discarded || !tab.url) continue;
 				if (!/^(https?|file):\/\//.test(tab.url)) continue;
+				if (imuFixedUnscriptableUrl(tab.url)) continue;
 			} catch (e) {
 				console.error(e);
 				continue;
@@ -1797,7 +1932,13 @@ var hotload = function() {
 				setTimeout(function() {
 					chrome.tabs.executeScript(tab.id, {
 						file: userscript_file
-					}, function(){handle_error();});
+					}, function() {
+						if (chrome.runtime.lastError && /cannot be scripted|ExtensionsSettings|extensions gallery|tab was closed|Receiving end|Could not establish/i.test(chrome.runtime.lastError.message || '')) {
+							debug('hotload: cannot script tab', tab.id);
+						} else {
+							handle_error();
+						}
+					});
 				}, 1);
 			})(tab);
 		}

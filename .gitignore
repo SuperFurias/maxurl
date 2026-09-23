@@ -12,3 +12,4 @@ maxurl.zip
 *.sig
 build/tsout.js
 standalone_config.json
+imu-fixed-extension/

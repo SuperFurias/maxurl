@@ -15877,7 +15877,8 @@ var $$IMU_EXPORT$$;
 		// thanks to Runakanta on discord for the idea: https://github.com/qsniyg/maxurl/issues/471
 		scroll_past_gallery_end_to_close: false,
 		// thanks to 07416 on github for the idea: https://github.com/qsniyg/maxurl/issues/20#issuecomment-439599984
-		mouseover_position: "cursor",
+		mouseover_position: "center",
+		imu_fixed_disabled_hosts: "",
 		// thanks to decembre on github for the idea: https://github.com/qsniyg/maxurl/issues/14#issuecomment-531549043
 		mouseover_prevent_cursor_overlap: true,
 		mouseover_overflow_position_center: false,
@@ -18115,6 +18116,12 @@ var $$IMU_EXPORT$$;
 			],
 			category: "popup",
 			subcategory: "close_behavior"
+		},
+		imu_fixed_disabled_hosts: {
+			name: "Disabled websites",
+			description: "Websites where the extension never loads its engine (one host per line, subdomains match automatically, empty runs everywhere). Request handling stops immediately; full effect after reload.",
+			type: "textarea",
+			category: "rules"
 		},
 		mouseover_position: {
 			name: "Popup position",
@@ -20386,6 +20393,8 @@ var $$IMU_EXPORT$$;
 	for (var option in option_to_problems) {
 		var problem = option_to_problems[option];
 		settings[option] = array_indexof(default_options.exclude_problems, problem) < 0;
+		try { if (option === "allow_bruteforce") { settings[option] = false; } } catch (e) {}
+		try { orig_settings[option] = settings[option]; } catch (e) {}
 	}
 
 	var settings_history = {};
@@ -142837,6 +142846,7 @@ var $$IMU_EXPORT$$;
 
 		if (prefers_dark_mode()) {
 			set_default_value("dark_mode", true);
+			try { orig_settings["dark_mode"] = true; } catch (e) {}
 		}
 
 		if (settings.dark_mode) {
@@ -145148,7 +145158,53 @@ var $$IMU_EXPORT$$;
 		return false;
 	}
 
+	/* ==== IMU-FIXED: runtime host blocklist fast-path (single IPC) ==== */
+	function imuFixedParseHosts(text) {
+		var out = [];
+		try {
+			String(text || "").split(/[\n,;]+/).forEach(function(line) {
+				var h = String(line || "").trim().toLowerCase();
+				h = h.replace(/^\*\./, "").replace(/^https?:\/\//, "").split(/[\/\s]/)[0];
+				if (h) out.push(h);
+			});
+		} catch (e) {}
+		return out;
+	}
+	function imuFixedHostBlocked(host, listText) {
+		try {
+			host = String(host || "").toLowerCase();
+			if (!host) return false;
+			var list = imuFixedParseHosts(listText);
+			for (var i = 0; i < list.length; i++) {
+				var e = list[i];
+				if (host === e || host.slice(-e.length - 1) === "." + e) return true;
+			}
+		} catch (e2) {}
+		return false;
+	}
 	function do_config() {
+		try {
+			get_values(["imu_enabled", "imu_fixed_disabled_hosts"], function(fast) {
+				try {
+					var imuFixedOff = false;
+					try { imuFixedOff = !fast || fast.imu_enabled === false || fast.imu_enabled === "false"; } catch (e3) {}
+					var imuFixedBlocked = false;
+					try {
+						var imuFixedHn = "";
+						try { imuFixedHn = (window.location && window.location.hostname) || ""; } catch (e4) {}
+						imuFixedBlocked = imuFixedHostBlocked(imuFixedHn, (fast && fast.imu_fixed_disabled_hosts) || "");
+					} catch (e5) {}
+					if (imuFixedBlocked || imuFixedOff) {
+						try { settings.imu_enabled = false; } catch (e6) {}
+						try { console.log("[IMU Fixed] host-disabled/off, skipping heavy init"); } catch (e7) {}
+						return;
+					}
+				} catch (e8) {}
+				imuFixedDoConfigOrig();
+			});
+		} catch (e9) { imuFixedDoConfigOrig(); }
+	}
+	function imuFixedDoConfigOrig() {
 		if (_nir_debug_) {
 			console_log("do_config");
 		}

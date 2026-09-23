@@ -13,6 +13,7 @@ var __assign = (this && this.__assign) || function() {
 };
 // ==UserScript==
 // @name              Image Max URL
+// @name:en           Image Max URL
 // @name:ar           Image Max URL
 // @name:cs           Image Max URL
 // @name:da           Image Max URL
@@ -43,37 +44,38 @@ var __assign = (this && this.__assign) || function() {
 // @name:zh-CN        Image Max URL
 // @name:zh-TW        Image Max URL
 // @name:zh-HK        Image Max URL
-// @description       Finds larger or original versions of images and videos for 10,000+ websites, including a powerful media popup and download feature
-// @description:ar    البحث عن نسخ أكبر أو أصلية من الصور لأكثر من 10,000 موقع ويب
-// @description:cs    Vyhledá větší nebo původní verze obrázků a videí pro více než 10,000 webů
-// @description:da    Finder større eller originale versioner af billeder og videoer til mere end 10,000 websteder
-// @description:de    Sucht nach größeren oder originalen Versionen von Bildern und Videos für mehr als 10,000 Websites
-// @description:el    Βρίσκει μεγαλύτερες ή πρωτότυπες εκδόσεις εικόνων και βίντεο για περισσότερους από 10,000 ιστότοπους
-// @description:eo    Trovas pli grandajn aŭ originalajn versiojn de bildoj kaj filmetoj por pli ol 10,000 retejoj
-// @description:es    Encuentra imágenes más grandes y originales para más de 10,000 sitios
-// @description:fi    Etsii suurempia tai alkuperäisiä versioita kuvista ja videoista yli 10,000 verkkosivustolle
-// @description:fr    Trouve des versions plus grandes ou originales d'images et de vidéos pour plus de 10 000 sites web, y compris une puissante fonction de popup média
-// @description:fr-CA Trouve des versions plus grandes ou originales d'images et de vidéos pour plus de 10 000 sites web, y compris une puissante fonction de popup média
-// @description:he    מוצא גרסאות גדולות יותר או מקוריות של תמונות וסרטונים עבור יותר מ-10,000 אתרים
-// @description:hi    10,000 से अधिक वेबसाइटों के लिए फ़ोटो और वीडियो के बड़े या मूल संस्करण ढूँढता है
-// @description:hu    Több mint 10,000 webhely képének és videóinak nagyobb vagy eredeti változatát találja
-// @description:id    Menemukan versi gambar dan video yang lebih besar atau orisinal untuk lebih dari 10,000 situs web
-// @description:it    Trova versioni più grandi o originali di immagini e video per oltre 10,000 siti web
-// @description:ja    10,000以上のウェブサイトで高画質や原本画像を見つけ出します
-// @description:ko    10,000개 이상의 사이트에 대해 고화질이나 원본 이미지를 찾아드립니다
-// @description:nb    Finner større eller originale versjoner av bilder og videoer for mer enn 10,000 nettsteder
-// @description:nl    Vindt grotere of originele versies van foto's en video's voor meer dan 10,000 websites
-// @description:pl    Wyszukuje większe lub oryginalne wersje obrazów i filmów dla ponad 10,000 stron internetowych
-// @description:pt-BR Encontra versões maiores ou originais de imagens e vídeos para mais de 10,000 sites
-// @description:ru    Находит увеличенные или оригинальные версии изображений и видео для 10,000+ сайтов. Имеет мощную функцию всплывающего окна и скачивание медиафайлов.
-// @description:bg    Намира увеличени или оригинални версии на изображения за повече от 10,000 уеб сайтове
-// @description:uk    Знаходить збільшені або оригінальні версії зображень для більш ніж 10,000 веб-сайтів
-// @description:th    หาที่ใหญ่กว่าหรือเวอร์ชั่นดั้งเดิมของภาพทั้งหมดและวีดีโอสำหรับมากกว่า 10,000 งเว็บไซต์
-// @description:tr    10,000'den fazla web sitesi için resim ve videoların daha büyük veya orijinal sürümlerini bulur
-// @description:vi    Tìm phiên bản lớn hơn hoặc phiên bản gốc của hình ảnh và video cho hơn 10,000 trang web
+// @description       Finds larger or original versions of images and videos for 11,000+ websites, including a powerful media popup and download feature
+// @description:en    Finds larger or original versions of images and videos for 11,000+ websites, including a powerful media popup and download feature
+// @description:ar    البحث عن نسخ أكبر أو أصلية من الصور لأكثر من 11,000 موقع ويب
+// @description:cs    Vyhledá větší nebo původní verze obrázků a videí pro více než 11,000 webů
+// @description:da    Finder større eller originale versioner af billeder og videoer til mere end 11,000 websteder
+// @description:de    Sucht nach größeren oder originalen Versionen von Bildern und Videos für mehr als 11,000 Websites
+// @description:el    Βρίσκει μεγαλύτερες ή πρωτότυπες εκδόσεις εικόνων και βίντεο για περισσότερους από 11,000 ιστότοπους
+// @description:eo    Trovas pli grandajn aŭ originalajn versiojn de bildoj kaj filmetoj por pli ol 11,000 retejoj
+// @description:es    Encuentra imágenes más grandes y originales para más de 11,000 sitios
+// @description:fi    Etsii suurempia tai alkuperäisiä versioita kuvista ja videoista yli 11,000 verkkosivustolle
+// @description:fr    Trouve des versions plus grandes ou originales d'images et de vidéos pour plus de 11 000 sites web, y compris une puissante fonction de popup média
+// @description:fr-CA Trouve des versions plus grandes ou originales d'images et de vidéos pour plus de 11 000 sites web, y compris une puissante fonction de popup média
+// @description:he    מוצא גרסאות גדולות יותר או מקוריות של תמונות וסרטונים עבור יותר מ-11,000 אתרים
+// @description:hi    11,000 से अधिक वेबसाइटों के लिए फ़ोटो और वीडियो के बड़े या मूल संस्करण ढूँढता है
+// @description:hu    Több mint 11,000 webhely képének és videóinak nagyobb vagy eredeti változatát találja
+// @description:id    Menemukan versi gambar dan video yang lebih besar atau orisinal untuk lebih dari 11,000 situs web
+// @description:it    Trova versioni più grandi o originali di immagini e video per oltre 11,000 siti web
+// @description:ja    11,000以上のウェブサイトで高画質や原本画像を見つけ出します
+// @description:ko    11,000개 이상의 사이트에 대해 고화질이나 원본 이미지를 찾아드립니다
+// @description:nb    Finner større eller originale versjoner av bilder og videoer for mer enn 11,000 nettsteder
+// @description:nl    Vindt grotere of originele versies van foto's en video's voor meer dan 11,000 websites
+// @description:pl    Wyszukuje większe lub oryginalne wersje obrazów i filmów dla ponad 11,000 stron internetowych
+// @description:pt-BR Encontra versões maiores ou originais de imagens e vídeos para mais de 11,000 sites
+// @description:ru    Находит увеличенные или оригинальные версии изображений и видео для 11,000+ сайтов. Имеет мощную функцию всплывающего окна и скачивание медиафайлов.
+// @description:bg    Намира увеличени или оригинални версии на изображения за повече от 11,000 уеб сайтове
+// @description:uk    Знаходить збільшені або оригінальні версії зображень для більш ніж 11,000 веб-сайтів
+// @description:th    หาที่ใหญ่กว่าหรือเวอร์ชั่นดั้งเดิมของภาพทั้งหมดและวีดีโอสำหรับมากกว่า 11,000 งเว็บไซต์
+// @description:tr    11,000'den fazla web sitesi için resim ve videoların daha büyük veya orijinal sürümlerini bulur
+// @description:vi    Tìm phiên bản lớn hơn hoặc phiên bản gốc của hình ảnh và video cho hơn 11,000 trang web
 // @description:zh-CN 在近万个网站上查找尺寸更大或原版的图像/视频，提供媒体文件小弹窗和下载功能
-// @description:zh-TW 為10,000多個網站查找更大或原始圖像
-// @description:zh-HK 為10,000多個網站查找更大或原始圖像
+// @description:zh-TW 為11,000多個網站查找更大或原始圖像
+// @description:zh-HK 為11,000多個網站查找更大或原始圖像
 // @namespace         http://tampermonkey.net/
 // @version           2026.6.0
 // @author            qsniyg
@@ -107,13 +109,7 @@ var __assign = (this && this.__assign) || function() {
 // non-greasyfork/oujs versions need updateURL and downloadURL to auto-update for certain userscript managers
 // @updateURL         https://raw.githubusercontent.com/qsniyg/maxurl/master/userscript.meta.js
 // @downloadURL       https://raw.githubusercontent.com/qsniyg/maxurl/master/userscript_smaller.user.js
-//
-//  Greasyfork and OpenUserJS have 2MB and 1MB limits for userscripts (respectively).
-//  Because of this, the rules (~2.1MB) have been split into a separate file, linked below.
-//  Note that jsdelivr.net might not always be reliable, but (AFAIK) this is the only reasonable option from what greasyfork allows.
-//  I'd recommend using the Github version of the script if you encounter any issues (linked in the 'Project links' section below).
-//
-// @require https://cdn.jsdelivr.net/gh/qsniyg/maxurl@cfc76aef6a904090e33d13b7bce01275cbeb7ed1/build/rules.js
+// imu:require_rules  (this is replaced by the build system for userscript versions that require external rules)
 // ==/UserScript==
 // If you see "A userscript wants to access a cross-origin resource.", it's used for:
 //   * Detecting whether or not the destination URL exists before redirecting
@@ -141,6 +137,8 @@ var __assign = (this && this.__assign) || function() {
 //   * Firefox addon:   https://addons.mozilla.org/firefox/addon/image-max-url/
 //   * Opera extension: https://addons.opera.com/en/extensions/details/image-max-url/
 
+/// All comments within bigimage() have been removed to ensure the file remains within Greasyfork and AMO limits
+/// You can view the original source code here: https://github.com/qsniyg/maxurl/blob/master/userscript.user.js
 var $$IMU_EXPORT$$;
 // Disable linting because otherwise editing is incredibly slow
 // jshint ignore: start
@@ -532,7 +530,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	var base64_decode, base64_encode, is_array, array_indexof, string_indexof, 
 	// https://www.bing.com/ overrides Blob
 	// https://www.dpreview.com/ overrides URL
-	native_blob, native_URL, new_blob, our_EventTarget, our_addEventListener, our_removeEventListener, string_fromcharcode, string_charat, array_reduce, array_reduce_prototype, set_timeout, clear_timeout, document_createElement;
+	native_blob, native_URL, new_blob, our_EventTarget, our_addEventListener, our_removeEventListener, string_fromcharcode, string_charat, array_reduce, array_reduce_prototype, set_timeout, clear_timeout, set_interval, clear_interval, document_createElement;
 	if (is_node) {
 		base64_decode = function(a) {
 			return Buffer.from(a, 'base64').toString('binary');
@@ -949,27 +947,97 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		};
 		get_compat_blob();
 		var get_compat_settimeout = function() {
-			// ublock on txxx.com blocks settimeout
-			// TODO: support setInterval blocked and requestAnimationFrame fallback
 			var good = {
-				timeout: false
+				timeout: false,
+				interval: false
 			};
-			try {
-				setTimeout(function() { }, 1);
-				good.timeout = true;
-			} catch (e) {
-			}
+			// ublock on txxx.com blocks settimeout
+			(function() {
+				try {
+					setTimeout(function() { }, 1);
+					good.timeout = true;
+				} catch (e) {
+				}
+			})();
+			// ublock on temu.com blocks setInterval
+			(function() {
+				var interval = null;
+				try {
+					interval = setInterval(function() { }, 10);
+					good.interval = true;
+				} catch (e) {
+				}
+				if (interval) {
+					try {
+						clearInterval(interval);
+					} catch (e) { }
+				}
+			})();
 			if (good.timeout) {
 				set_timeout = setTimeout;
 				clear_timeout = clearTimeout;
 			} else {
-				set_timeout = function(func, timeout) {
-					var interval = setInterval(function() {
-						clearInterval(interval);
-						func();
-					}, timeout);
+				if (good.interval) {
+					set_timeout = function(func, timeout) {
+						var interval = setInterval(function() {
+							clearInterval(interval);
+							func();
+						}, timeout);
+					};
+					clear_timeout = clearInterval;
+				} else {
+					var timeouts_1 = {};
+					var lasttimeout_1 = 1;
+					set_timeout = function(func, timeout) {
+						var timeout_id = lasttimeout_1++;
+						var start_time = performance.now();
+						timeouts_1[timeout_id] = true;
+						requestAnimationFrame(function() {
+							if (!(timeout_id in timeouts_1))
+								return;
+							var current_time = performance.now();
+							if (current_time - start_time >= timeout) {
+								func();
+							}
+						});
+						return timeout_id;
+					};
+					clear_timeout = function(timeout_id) {
+						delete timeouts_1[timeout_id];
+					};
+				}
+			}
+			if (good.interval) {
+				set_interval = setInterval;
+				clear_interval = clearInterval;
+			} else {
+				// interval assumes we have a working set_timeout
+				var intervals_1 = {};
+				var lastinterval_1 = 1;
+				set_interval = function(func, timeout) {
+					var interval_id = lastinterval_1++;
+					var timer = null;
+					var timerfunc = function() {
+						try {
+							func();
+						} catch (e) {
+							console_error(e);
+						}
+						runtimer();
+					};
+					var runtimer = function() {
+						timer = set_timeout(timerfunc, timeout);
+						intervals_1[interval_id] = timer;
+					};
+					runtimer();
+					return interval_id;
 				};
-				clear_timeout = clearInterval;
+				clear_interval = function(interval_id) {
+					if (!(interval_id in intervals_1))
+						return;
+					clear_timeout(intervals_1[interval_id]);
+					delete intervals_1[interval_id];
+				};
 			}
 		};
 		get_compat_settimeout();
@@ -1308,6 +1376,8 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				newtext = newnum.toString(26);
 			} else if (num === "both") {
 				newtext = newnum.toString(36);
+			} else if (num === "hex") {
+				newtext = newnum.toString(16);
 			} else {
 				newtext = newnum.toString(10);
 			}
@@ -2216,6 +2286,17 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	} else if (is_interactive) {
 		console.warn("Unable to initialize do_request, most functions will likely fail");
 	}
+	// creates an element that can be verifiably be created by IMU
+	// note that this is only secure under the extension/firefox version, and the element cannot be added to the DOM.
+	var imu_el_nonce = get_random_text(20, "both");
+	var document_createElement_imu = function(tagName) {
+		var el = document_createElement(tagName);
+		el["__imu_nonce"] = imu_el_nonce;
+		return el;
+	};
+	var is_imu_el = function(el) {
+		return "__imu_nonce" in el && el["__imu_nonce"] === imu_el_nonce;
+	};
 	var fixup_filename = function(filename) {
 		var special_regex = /["<>/:?\\*|\^]/g;
 		if (settings.filename_replace_special_underscores)
@@ -2604,6 +2685,10 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				}
 			} else {
 				console_error("Bad status", resp.status, resp);
+				return options.onload(null, resp);
+			}
+			if (!resp.response) {
+				console_error("No response", resp);
 				return options.onload(null, resp);
 			}
 			data = new Uint8Array(Math_max(content_length, resp.response.byteLength));
@@ -7687,7 +7772,8 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		// thanks to Runakanta on discord for the idea: https://github.com/qsniyg/maxurl/issues/471
 		scroll_past_gallery_end_to_close: false,
 		// thanks to 07416 on github for the idea: https://github.com/qsniyg/maxurl/issues/20#issuecomment-439599984
-		mouseover_position: "cursor",
+		mouseover_position: "center",
+		imu_fixed_disabled_hosts: "",
 		// thanks to decembre on github for the idea: https://github.com/qsniyg/maxurl/issues/14#issuecomment-531549043
 		mouseover_prevent_cursor_overlap: true,
 		mouseover_overflow_position_center: false,
@@ -9887,6 +9973,12 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			category: "popup",
 			subcategory: "close_behavior"
 		},
+		imu_fixed_disabled_hosts: {
+			name: "Disabled websites",
+			description: "Websites where the extension never loads its engine (one host per line, subdomains match automatically, empty runs everywhere). Request handling stops immediately; full effect after reload.",
+			type: "textarea",
+			category: "rules"
+		},
 		mouseover_position: {
 			name: "Popup position",
 			description: "Where the popup will appear",
@@ -12003,6 +12095,14 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	for (var option in option_to_problems) {
 		var problem = option_to_problems[option];
 		settings[option] = array_indexof(default_options.exclude_problems, problem) < 0;
+		try {
+			if (option === "allow_bruteforce") {
+				settings[option] = false;
+			}
+		} catch (e) { }
+		try {
+			orig_settings[option] = settings[option];
+		} catch (e) { }
 	}
 	var settings_history = {};
 	var new_map = function() {
@@ -12723,7 +12823,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				url = currentobj.url;
 			}
 			url = url;
-			var regex = /(.*)\.([^/.]*?)([?#].*)?$/;
+			var regex = /([^?#]*)\.([^/.?#]*?)([?#].*)?$/;
 			if (!url.match(regex)) {
 				result.push(currentobj);
 				continue;
@@ -14068,10 +14168,10 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	var get_image_size = function(url, cb) {
 		var image = new Image();
 		var timeout = null;
-		var finalcb = function(e) {
+		var finalcb = function() {
 			image.onload = null;
 			image.onerror = null;
-			clear_timeout(timeout);
+			clear_interval(timeout);
 			var x, y;
 			if (!image.naturalHeight || !image.naturalWidth) {
 				x = null;
@@ -14083,7 +14183,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			cb(x, y);
 		};
 		image.onload = image.onerror = finalcb;
-		timeout = setInterval(function() {
+		timeout = set_interval(function() {
 			if (image.naturalHeight && image.naturalWidth) {
 				finalcb();
 			}
@@ -14169,7 +14269,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		return parsed;
 	};
 	var get_meta = function(text, property) {
-		var regex = new RegExp("<meta\\s+(?:(?:property|name|itemprop)=[\"']?" + property + "[\"']?\\s+(?:content|value|href)=[\"']([^'\"]+)[\"']|(?:content|value|href)=[\"']([^'\"]+)[\"']\\s+(?:property|name|itemprop)=[\"']?" + property + "[\"']?)\\s*\/?>", "i");
+		var regex = new RegExp("<meta\\s+(?:[^>]*\\s+)?(?:(?:property|name|itemprop)=[\"']?" + property + "[\"']?\\s+(?:content|value|href)=[\"']([^'\"]+)[\"']|(?:content|value|href)=[\"']([^'\"]+)[\"']\\s+(?:property|name|itemprop)=[\"']?" + property + "[\"']?)\\s*\/?>", "i");
 		var match = text.match(regex);
 		if (!match)
 			return null;
@@ -14378,8 +14478,9 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	var fixup_js_obj_proper = function(objtext) {
 		var parsed = parse_js_obj(objtext, js_obj_token_types);
 		//console.log(parsed);
-		if (!parsed)
-			throw "unable to parse";
+		if (!parsed) {
+			throw "fixup_js_obj_proper: unable to parse";
+		}
 		var token_types = {
 			whitespace: " ",
 			jvarname: function(x) { return '"' + x + '"'; },
@@ -15610,6 +15711,12 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				if (!websessionid) {
 					console_warn("Unable to find value for x-web-session-id");
 				}
+				var maxtouchpoints = 0;
+				try {
+					maxtouchpoints = navigator.maxTouchPoints || 0;
+				} catch (e) {
+					console_warn("Unable to find maxTouchPoints");
+				}
 				// https://www.instagram.com/static/bundles/es6/ConsumerLibCommons.js/...
 				var headers = {
 					"Accept": "*/*",
@@ -15619,8 +15726,10 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					// same as of jan 26 2025
 					// id as of sept 22 2025: 359341
 					// same as of apr 10 2026
+					// same as of aug 1 2026
 					// TODO: x-csrftoken (csrftoken cookie)
 					"X-IG-App-ID": "936619743392459", // instagramWebDesktopFBAppId
+					"X-IG-Max-Touch-Points": maxtouchpoints,
 					"X-Requested-With": "XMLHttpRequest",
 					"Origin": "https://www.instagram.com",
 					"Referer": "https://www.instagram.com/",
@@ -18492,11 +18601,29 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		});
 		return urls;
 	};
+	common_functions["get_ldjsons"] = function(resptext) {
+		var ldjsons = [];
+		var matches = match_all(resptext, /<script[^>]* type="application\/ld\+json"[^>]*>\s*([\s\S]*?)\s*<\/script>/i);
+		for (var _i = 0, matches_3 = matches; _i < matches_3.length; _i++) {
+			var match = matches_3[_i];
+			var json = null;
+			try {
+				json = JSON_parse(match[1]);
+			} catch (e) {
+				console_error(e);
+				continue;
+			}
+			ldjsons.push(json);
+		}
+		return ldjsons;
+	};
 	common_functions["fill_ldjson"] = function(urls, resp, options) {
 		if (!options)
 			options = {};
 		if (!("baseobj" in options))
 			options.baseobj = {};
+		if (!("video" in options))
+			options.video = true;
 		if (!("thumbnail" in options))
 			options.thumbnail = true;
 		if (!("overwrite_mode" in options))
@@ -18510,12 +18637,19 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			urls = [urls];
 		urls = urls;
 		var ldjson = {};
-		var ldjsonmatch = resp.responseText.match(/<script[^>]* type="application\/ld\+json"[^>]*>\s*([\s\S]*?)\s*<\/script>/i);
-		if (ldjsonmatch && options.ldjson) {
+		var ldjsontxt = null;
+		if (typeof options.ldjson === "string") {
+			ldjsontxt = options.ldjson;
+		} else {
+			var ldjsonmatch = resp.responseText.match(/<script[^>]* type="application\/ld\+json"[^>]*>\s*([\s\S]*?)\s*<\/script>/i);
+			if (ldjsonmatch)
+				ldjsontxt = ldjsonmatch[1];
+		}
+		if (ldjsontxt && options.ldjson) {
 			try {
-				ldjson = JSON_parse(ldjsonmatch[1]);
+				ldjson = JSON_parse(ldjsontxt);
 			} catch (e) {
-				console_warn("Unable to parse ld+json", { e: e, ldjsonmatch: ldjsonmatch });
+				console_warn("Unable to parse ld+json", { e: e, ldjsontxt: ldjsontxt });
 			}
 			if (typeof ldjson !== "object")
 				ldjson = {};
@@ -18600,6 +18734,15 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			page = resp.finalUrl;
 		if (page)
 			baseobj.extra.page = page;
+		if (options.video) {
+			var ogvideo = get_meta(resp.responseText, "og:video");
+			if (ogvideo) {
+				urls.push({
+					url: urljoin(resp.finalUrl, ogvideo, true),
+					video: true
+				});
+			}
+		}
 		if (options.thumbnail) {
 			var ogimage = get_meta(resp.responseText, "og:image");
 			if (!ogimage)
@@ -18780,7 +18923,13 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		if (jsontext) {
 			// remove comments
 			jsontext = jsontext.replace(/\n\s*\/\/.*/ig, "");
-			var proper_json = fixup_js_obj_proper(jsontext);
+			var proper_json = void 0;
+			try {
+				proper_json = fixup_js_obj_proper(jsontext);
+			} catch (e) {
+				console_error(e, { resp: resp, jsontext: jsontext, jwplayerstr: jwplayerstr });
+				return null;
+			}
 			try {
 				json = JSON_parse(proper_json);
 			} catch (e) {
@@ -20062,6 +20211,35 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		}
 		return result;
 	};
+	common_functions["sha256"] = function(message, cb) {
+		var _this_1 = this;
+		(function() { return __awaiter(_this_1, void 0, void 0, function() {
+			var hex, buffer, hashbuffer, hashuint8, e_1;
+			return __generator(this, function(_a) {
+				switch (_a.label) {
+					case 0:
+						hex = null;
+						_a.label = 1;
+					case 1:
+						_a.trys.push([1, 3, , 4]);
+						buffer = new TextEncoder().encode(message);
+						return [4 /*yield*/, crypto.subtle.digest('SHA-256', buffer)];
+					case 2:
+						hashbuffer = _a.sent();
+						hashuint8 = new Uint8Array(hashbuffer);
+						hex = numberarray_to_hex(hashuint8);
+						return [3 /*break*/, 4];
+					case 3:
+						e_1 = _a.sent();
+						console.error(e_1);
+						return [3 /*break*/, 4];
+					case 4:
+						cb(hex);
+						return [2 /*return*/];
+				}
+			});
+		}); })();
+	};
 	// -- end common_functions --
 	var get_domain_from_url = function(url) {
 		return url.replace(/^[a-z]+:\/\/([^/]*)(?:\/+.*)?$/, "$1");
@@ -20091,123 +20269,123 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	var bigimage = function(src, options) {
 	    if (options.null_if_no_change)
 	        return null;
-
+	
 	    return src;
 	};
-
+	
 	var _get_bigimage = function() {
-	    var shared_variables = {
-	    	'_nir_debug_': _nir_debug_,
-	    	'nir_debug': nir_debug,
-	    	'Math_floor': Math_floor,
-	    	'Math_round': Math_round,
-	    	'Math_random': Math_random,
-	    	'Math_max': Math_max,
-	    	'Math_min': Math_min,
-	    	'Math_abs': Math_abs,
-	    	'Math_pow': Math_pow,
-	    	'get_random_text': get_random_text,
-	    	'console_log': console_log,
-	    	'console_error': console_error,
-	    	'console_warn': console_warn,
-	    	'console_trace': console_trace,
-	    	'JSON_stringify': JSON_stringify,
-	    	'JSON_parse': JSON_parse,
-	    	'base64_decode': base64_decode,
-	    	'base64_decode_urlsafe': base64_decode_urlsafe,
-	    	'base64_encode': base64_encode,
-	    	'is_array': is_array,
-	    	'array_indexof': array_indexof,
-	    	'string_indexof': string_indexof,
-	    	'string_fromcharcode': string_fromcharcode,
-	    	'string_charat': string_charat,
-	    	'array_extend': array_extend,
-	    	'array_foreach': array_foreach,
-	    	'array_map': array_map,
-	    	'array_or_null': array_or_null,
-	    	'array_upush': array_upush,
-	    	'string_replaceall': string_replaceall,
-	    	'match_all': match_all,
-	    	'obj_foreach': obj_foreach,
-	    	'obj_extend': obj_extend,
-	    	'shallowcopy': shallowcopy,
-	    	'deepcopy': deepcopy,
-	    	'_': _,
-	    	'settings': settings,
-	    	'new_map': new_map,
-	    	'map_set': map_set,
-	    	'map_get': map_get,
-	    	'map_has': map_has,
-	    	'map_remove': map_remove,
-	    	'map_foreach': map_foreach,
-	    	'map_size': map_size,
-	    	'new_set': new_set,
-	    	'set_add': set_add,
-	    	'set_has': set_has,
-	    	'set_remove': set_remove,
-	    	'real_api_cache': real_api_cache,
-	    	'real_api_query': real_api_query,
-	    	'real_website_query': real_website_query,
-	    	'is_invalid_url': is_invalid_url,
-	    	'mod': mod,
-	    	'norm_url': norm_url,
-	    	'urljoin': urljoin,
-	    	'fillobj': fillobj,
-	    	'fillobj_urls': fillobj_urls,
-	    	'add_full_extensions': add_full_extensions,
-	    	'add_full_extensions2': add_full_extensions2,
-	    	'add_extensions': add_extensions,
-	    	'add_extensions_jpeg': add_extensions_jpeg,
-	    	'add_extensions_with_jpeg': add_extensions_with_jpeg,
-	    	'add_extensions_gif': add_extensions_gif,
-	    	'add_extensions_upper': add_extensions_upper,
-	    	'add_extensions_upper_jpeg': add_extensions_upper_jpeg,
-	    	'add_extensions_from_webp': add_extensions_from_webp,
-	    	'add_http': add_http,
-	    	'force_https': force_https,
-	    	'decodeuri_ifneeded': decodeuri_ifneeded,
-	    	'encodeuri_ifneeded': encodeuri_ifneeded,
-	    	'replace_sizes': replace_sizes,
-	    	'zpadnum': zpadnum,
-	    	'hex_to_ascii': hex_to_ascii,
-	    	'hex_to_numberarray': hex_to_numberarray,
-	    	'numberarray_to_hex': numberarray_to_hex,
-	    	'reverse_str': reverse_str,
-	    	'decode_entities': decode_entities,
-	    	'encode_entities': encode_entities,
-	    	'encode_regex': encode_regex,
-	    	'get_queries': get_queries,
-	    	'stringify_queries': stringify_queries,
-	    	'remove_queries': remove_queries,
-	    	'keep_queries': keep_queries,
-	    	'add_queries': add_queries,
-	    	'fuzzify_text': fuzzify_text,
-	    	'fuzzy_date_compare': fuzzy_date_compare,
-	    	'parse_headers': parse_headers,
-	    	'headers_list_to_dict': headers_list_to_dict,
-	    	'headers_dict_to_list': headers_dict_to_list,
-	    	'get_resp_finalurl': get_resp_finalurl,
-	    	'get_ext_from_contenttype': get_ext_from_contenttype,
-	    	'get_library': get_library,
-	    	'normalize_whitespace': normalize_whitespace,
-	    	'strip_whitespace': strip_whitespace,
-	    	'get_image_size': get_image_size,
-	    	'sort_by_key': sort_by_key,
-	    	'sort_by_array': sort_by_array,
-	    	'parse_tag_def': parse_tag_def,
-	    	'get_meta': get_meta,
-	    	'fixup_js_obj': fixup_js_obj,
-	    	'fixup_js_obj_proper': fixup_js_obj_proper,
-	    	'common_functions': common_functions,
-	    	'get_domain_from_url': get_domain_from_url,
-	    	'get_domain_nosub': get_domain_nosub,
-	    	'looks_like_valid_link': looks_like_valid_link,
-	    	'IMUCache': IMUCache,
-	    	'url_basename': url_basename,
-	    	'parse_int': parse_int,
-	    	'get_localstorage': get_localstorage
-	    };
-
+	    // imu:shared_variablesvar shared_variables = {
+	    // imu:shared_variables	'_nir_debug_': _nir_debug_,
+	    // imu:shared_variables	'nir_debug': nir_debug,
+	    // imu:shared_variables	'Math_floor': Math_floor,
+	    // imu:shared_variables	'Math_round': Math_round,
+	    // imu:shared_variables	'Math_random': Math_random,
+	    // imu:shared_variables	'Math_max': Math_max,
+	    // imu:shared_variables	'Math_min': Math_min,
+	    // imu:shared_variables	'Math_abs': Math_abs,
+	    // imu:shared_variables	'Math_pow': Math_pow,
+	    // imu:shared_variables	'get_random_text': get_random_text,
+	    // imu:shared_variables	'console_log': console_log,
+	    // imu:shared_variables	'console_error': console_error,
+	    // imu:shared_variables	'console_warn': console_warn,
+	    // imu:shared_variables	'console_trace': console_trace,
+	    // imu:shared_variables	'JSON_stringify': JSON_stringify,
+	    // imu:shared_variables	'JSON_parse': JSON_parse,
+	    // imu:shared_variables	'base64_decode': base64_decode,
+	    // imu:shared_variables	'base64_decode_urlsafe': base64_decode_urlsafe,
+	    // imu:shared_variables	'base64_encode': base64_encode,
+	    // imu:shared_variables	'is_array': is_array,
+	    // imu:shared_variables	'array_indexof': array_indexof,
+	    // imu:shared_variables	'string_indexof': string_indexof,
+	    // imu:shared_variables	'string_fromcharcode': string_fromcharcode,
+	    // imu:shared_variables	'string_charat': string_charat,
+	    // imu:shared_variables	'array_extend': array_extend,
+	    // imu:shared_variables	'array_foreach': array_foreach,
+	    // imu:shared_variables	'array_map': array_map,
+	    // imu:shared_variables	'array_or_null': array_or_null,
+	    // imu:shared_variables	'array_upush': array_upush,
+	    // imu:shared_variables	'string_replaceall': string_replaceall,
+	    // imu:shared_variables	'match_all': match_all,
+	    // imu:shared_variables	'obj_foreach': obj_foreach,
+	    // imu:shared_variables	'obj_extend': obj_extend,
+	    // imu:shared_variables	'shallowcopy': shallowcopy,
+	    // imu:shared_variables	'deepcopy': deepcopy,
+	    // imu:shared_variables	'_': _,
+	    // imu:shared_variables	'settings': settings,
+	    // imu:shared_variables	'new_map': new_map,
+	    // imu:shared_variables	'map_set': map_set,
+	    // imu:shared_variables	'map_get': map_get,
+	    // imu:shared_variables	'map_has': map_has,
+	    // imu:shared_variables	'map_remove': map_remove,
+	    // imu:shared_variables	'map_foreach': map_foreach,
+	    // imu:shared_variables	'map_size': map_size,
+	    // imu:shared_variables	'new_set': new_set,
+	    // imu:shared_variables	'set_add': set_add,
+	    // imu:shared_variables	'set_has': set_has,
+	    // imu:shared_variables	'set_remove': set_remove,
+	    // imu:shared_variables	'real_api_cache': real_api_cache,
+	    // imu:shared_variables	'real_api_query': real_api_query,
+	    // imu:shared_variables	'real_website_query': real_website_query,
+	    // imu:shared_variables	'is_invalid_url': is_invalid_url,
+	    // imu:shared_variables	'mod': mod,
+	    // imu:shared_variables	'norm_url': norm_url,
+	    // imu:shared_variables	'urljoin': urljoin,
+	    // imu:shared_variables	'fillobj': fillobj,
+	    // imu:shared_variables	'fillobj_urls': fillobj_urls,
+	    // imu:shared_variables	'add_full_extensions': add_full_extensions,
+	    // imu:shared_variables	'add_full_extensions2': add_full_extensions2,
+	    // imu:shared_variables	'add_extensions': add_extensions,
+	    // imu:shared_variables	'add_extensions_jpeg': add_extensions_jpeg,
+	    // imu:shared_variables	'add_extensions_with_jpeg': add_extensions_with_jpeg,
+	    // imu:shared_variables	'add_extensions_gif': add_extensions_gif,
+	    // imu:shared_variables	'add_extensions_upper': add_extensions_upper,
+	    // imu:shared_variables	'add_extensions_upper_jpeg': add_extensions_upper_jpeg,
+	    // imu:shared_variables	'add_extensions_from_webp': add_extensions_from_webp,
+	    // imu:shared_variables	'add_http': add_http,
+	    // imu:shared_variables	'force_https': force_https,
+	    // imu:shared_variables	'decodeuri_ifneeded': decodeuri_ifneeded,
+	    // imu:shared_variables	'encodeuri_ifneeded': encodeuri_ifneeded,
+	    // imu:shared_variables	'replace_sizes': replace_sizes,
+	    // imu:shared_variables	'zpadnum': zpadnum,
+	    // imu:shared_variables	'hex_to_ascii': hex_to_ascii,
+	    // imu:shared_variables	'hex_to_numberarray': hex_to_numberarray,
+	    // imu:shared_variables	'numberarray_to_hex': numberarray_to_hex,
+	    // imu:shared_variables	'reverse_str': reverse_str,
+	    // imu:shared_variables	'decode_entities': decode_entities,
+	    // imu:shared_variables	'encode_entities': encode_entities,
+	    // imu:shared_variables	'encode_regex': encode_regex,
+	    // imu:shared_variables	'get_queries': get_queries,
+	    // imu:shared_variables	'stringify_queries': stringify_queries,
+	    // imu:shared_variables	'remove_queries': remove_queries,
+	    // imu:shared_variables	'keep_queries': keep_queries,
+	    // imu:shared_variables	'add_queries': add_queries,
+	    // imu:shared_variables	'fuzzify_text': fuzzify_text,
+	    // imu:shared_variables	'fuzzy_date_compare': fuzzy_date_compare,
+	    // imu:shared_variables	'parse_headers': parse_headers,
+	    // imu:shared_variables	'headers_list_to_dict': headers_list_to_dict,
+	    // imu:shared_variables	'headers_dict_to_list': headers_dict_to_list,
+	    // imu:shared_variables	'get_resp_finalurl': get_resp_finalurl,
+	    // imu:shared_variables	'get_ext_from_contenttype': get_ext_from_contenttype,
+	    // imu:shared_variables	'get_library': get_library,
+	    // imu:shared_variables	'normalize_whitespace': normalize_whitespace,
+	    // imu:shared_variables	'strip_whitespace': strip_whitespace,
+	    // imu:shared_variables	'get_image_size': get_image_size,
+	    // imu:shared_variables	'sort_by_key': sort_by_key,
+	    // imu:shared_variables	'sort_by_array': sort_by_array,
+	    // imu:shared_variables	'parse_tag_def': parse_tag_def,
+	    // imu:shared_variables	'get_meta': get_meta,
+	    // imu:shared_variables	'fixup_js_obj': fixup_js_obj,
+	    // imu:shared_variables	'fixup_js_obj_proper': fixup_js_obj_proper,
+	    // imu:shared_variables	'common_functions': common_functions,
+	    // imu:shared_variables	'get_domain_from_url': get_domain_from_url,
+	    // imu:shared_variables	'get_domain_nosub': get_domain_nosub,
+	    // imu:shared_variables	'looks_like_valid_link': looks_like_valid_link,
+	    // imu:shared_variables	'IMUCache': IMUCache,
+	    // imu:shared_variables	'url_basename': url_basename,
+	    // imu:shared_variables	'parse_int': parse_int,
+	    // imu:shared_variables	'get_localstorage': get_localstorage
+	    // imu:shared_variables};
+	
 	    if (typeof $__imu_get_bigimage === "undefined") {
 	        require_rules_failed = {
 	            type: "undefined",
@@ -20218,25 +20396,25 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	    } else {
 	        try {
 	            var bigimage_obj = $__imu_get_bigimage(shared_variables);
-
+	
 	            if (!bigimage_obj || !bigimage_obj.bigimage) {
 	                require_rules_failed = {
 	                    type: "returned_falsey",
 	                    data: bigimage_obj,
 	                    message: "Unable to get bigimage function"
 	                };
-	            } else if (bigimage_obj.nonce !== "24kjp3d2fjodjp2j") {
+	            } else if (bigimage_obj.nonce !== "120ihha1hpiogfna") {
 	                // This could happen if for some reason the userscript manager updates the userscript,
 	                // but not the required libraries.
 	                require_rules_failed = {
 	                    type: "bad_nonce",
 	                    data: bigimage_obj.nonce,
-	                    message: "Bad nonce, expected: " + "24kjp3d2fjodjp2j"
+	                    message: "Bad nonce, expected: " + "120ihha1hpiogfna"
 	                };
 	            } else {
 	                bigimage = bigimage_obj.bigimage;
 	            }
-
+	
 	            if (require_rules_failed) {
 	                require_rules_failed.func = $__imu_get_bigimage;
 	            }
@@ -20248,12 +20426,12 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	                func: $__imu_get_bigimage
 	            };
 	        }
-
+	
 	        // in case the userscript is loaded in the window context
 	        //delete $__imu_get_bigimage; // not allowed in strict mode
 	        $__imu_get_bigimage = void 0;
 	    }
-
+	
 	    if (require_rules_failed) {
 	        console_error(require_rules_failed);
 	    }
@@ -21559,8 +21737,8 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					if (!/\/search\?(?:.*&)?async=/.test(req.url) || !/[?&]s=images/.test(req.url))
 						return;
 					var matches = match_all(resp.response, /\[[0-9]+,\\"([^"]+)\\",\[\\"https:\/\/[^/]+\.gstatic\.com\/images\?q[^"]+\\"[^\]]+\],\[\\"([^"]+)\\"/);
-					for (var _i = 0, matches_9 = matches; _i < matches_9.length; _i++) {
-						var match = matches_9[_i];
+					for (var _i = 0, matches_10 = matches; _i < matches_10.length; _i++) {
+						var match = matches_10[_i];
 						var tbnid_raw = match[1];
 						var tbnid = unjson_str_1(unjson_str_1(tbnid_raw));
 						var url_raw = match[2];
@@ -21645,6 +21823,23 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				}
 			};
 		}
+		if (host_domain_nosub === "fikfap.com") {
+			// thanks to anonymous for reporting:
+			return {
+				element_ok: function(el) {
+					if (!el.parentElement)
+						return;
+					var props = common_functions["get_react_props"](el.parentElement);
+					if (!props)
+						return;
+					if (props.children && is_array(props.children) && props.children[0] && props.children[0].props && props.children[0].props.src) {
+						var videoel = el.querySelector("video");
+						if (videoel)
+							return videoel;
+					}
+				}
+			};
+		}
 		return null;
 	};
 	var do_get_helpers = function(options) {
@@ -21713,9 +21908,14 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			return result;
 		if (typeof result === "string") {
 			var url = result;
-			result = document_createElement("img");
+			result = document_createElement_imu("img");
 			// don't set src, because otherwise the browser will try to load it
 			result.setAttribute("data-imu-fake-src", url);
+			if (popup_obj) {
+				if (!result.hasAttribute("imu-obj")) {
+					result.setAttribute("imu-obj", JSON_stringify(popup_obj));
+				}
+			}
 		}
 		if (!result.hasAttribute("imu-album-info")) {
 			// album_info can be modified by _get_album_info_gallery, so we must re-stringify it
@@ -22788,7 +22988,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		// IMG or IFRAME
 		// currentSrc is used if another image is used in the srcset
 		var src = el.currentSrc || el.src;
-		if (!src && el.tagName === "IMG") {
+		if (!src && el.tagName === "IMG" && is_imu_el(el)) {
 			// fake-src is used to avoid loading the image
 			var fake_src = el.getAttribute("data-imu-fake-src");
 			if (fake_src)
@@ -23583,6 +23783,9 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		}
 		if (prefers_dark_mode()) {
 			set_default_value("dark_mode", true);
+			try {
+				orig_settings["dark_mode"] = true;
+			} catch (e) { }
 		}
 		if (settings.dark_mode) {
 			document.documentElement.classList.add("dark");
@@ -25433,7 +25636,66 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		}
 		return false;
 	}
+	/* ==== IMU-FIXED: runtime host blocklist fast-path (single IPC) ==== */
+	function imuFixedParseHosts(text) {
+		var out = [];
+		try {
+			String(text || "").split(/[\n,;]+/).forEach(function(line) {
+				var h = String(line || "").trim().toLowerCase();
+				h = h.replace(/^\*\./, "").replace(/^https?:\/\//, "").split(/[\/\s]/)[0];
+				if (h)
+					out.push(h);
+			});
+		} catch (e) { }
+		return out;
+	}
+	function imuFixedHostBlocked(host, listText) {
+		try {
+			host = String(host || "").toLowerCase();
+			if (!host)
+				return false;
+			var list = imuFixedParseHosts(listText);
+			for (var i = 0; i < list.length; i++) {
+				var e = list[i];
+				if (host === e || host.slice(-e.length - 1) === "." + e)
+					return true;
+			}
+		} catch (e2) { }
+		return false;
+	}
 	function do_config() {
+		try {
+			get_values(["imu_enabled", "imu_fixed_disabled_hosts"], function(fast) {
+				try {
+					var imuFixedOff = false;
+					try {
+						imuFixedOff = !fast || fast.imu_enabled === false || fast.imu_enabled === "false";
+					} catch (e3) { }
+					var imuFixedBlocked = false;
+					try {
+						var imuFixedHn = "";
+						try {
+							imuFixedHn = (window.location && window.location.hostname) || "";
+						} catch (e4) { }
+						imuFixedBlocked = imuFixedHostBlocked(imuFixedHn, (fast && fast.imu_fixed_disabled_hosts) || "");
+					} catch (e5) { }
+					if (imuFixedBlocked || imuFixedOff) {
+						try {
+							settings.imu_enabled = false;
+						} catch (e6) { }
+						try {
+							console.log("[IMU Fixed] host-disabled/off, skipping heavy init");
+						} catch (e7) { }
+						return;
+					}
+				} catch (e8) { }
+				imuFixedDoConfigOrig();
+			});
+		} catch (e9) {
+			imuFixedDoConfigOrig();
+		}
+	}
+	function imuFixedDoConfigOrig() {
 		if (_nir_debug_) {
 			console_log("do_config");
 		}
@@ -25991,8 +26253,12 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	var create_image_el = function(obj, good_cb, err_cb) {
 		var img = document_createElement("img");
 		set_common_el_properties(img, obj);
+		var height_interval = null;
 		var end_cbs = function() {
-			clearInterval(height_interval);
+			if (height_interval !== null) {
+				clear_interval(height_interval);
+				height_interval = null;
+			}
 			img.onload = null;
 			img.onerror = null;
 		};
@@ -26012,7 +26278,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			end_cbs();
 			err_cb();
 		};
-		var height_interval = setInterval(function() {
+		height_interval = set_interval(function() {
 			if (img.naturalWidth !== 0 && img.naturalHeight !== 0) {
 				end_cbs();
 				good_cb(img);
@@ -27370,6 +27636,28 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				});
 			};
 		})();
+		// hotscope.tv doesn't support blob workers, but supports data: urls
+		var is_blob_worker_supported = function(cb) {
+			var blob = new native_blob(["self.postMessage({})"]);
+			var objurl = create_objecturl(blob);
+			var resolved = false;
+			var resolve = function(value) {
+				if (resolved)
+					return;
+				resolved = true;
+				revoke_objecturl(objurl);
+				cb(value);
+			};
+			var worker = new Worker(objurl, {
+				type: void 0
+			});
+			worker.addEventListener("error", function() {
+				cb(false);
+			});
+			worker.addEventListener("message", function() {
+				cb(true);
+			});
+		};
 		var ffmpeg_progress_cb = null;
 		var get_ffmpeg_inner = function(cb) {
 			get_library("ffmpeg", settings, do_request, function(ffmpeg_lib) {
@@ -27474,7 +27762,15 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				console_error("Unable to load FFmpeg library: disabled for this build");
 				return cb(null);
 			}
-			get_ffmpeg_inner(cb);
+			is_blob_worker_supported(function(supported) {
+				if (!supported) {
+					console_error("Unable to load FFmpeg library: site doesn't support blob workers");
+					return cb(null);
+				} else {
+					get_ffmpeg_inner(cb);
+				}
+			});
+			//get_ffmpeg_inner(cb);
 			/*check_sharedarraybuffer(function(success) {
 				// if we don't check for this, ffmpeg will hang under firefox
 				if (!success) {
@@ -27618,20 +27914,20 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			// files = array of {data: uint8array, mime: ...}, not filenames
 			var ffmpeg_concat = function(ffmpeg, files, cb) {
 				return __awaiter(this, void 0, void 0, function() {
-					var total_size, _i, files_2, file, out, current_size, _a, files_3, file, ourfilename, prefix, files_txt_filename, files_txt_files, filenames, i, file, filename, out_filename, cleanup;
+					var total_size, _i, files_3, file, out, current_size, _a, files_4, file, ourfilename, prefix, files_txt_filename, files_txt_files, filenames, i, file, filename, out_filename, cleanup;
 					return __generator(this, function(_b) {
 						switch (_b.label) {
 							case 0:
 								if (!true) return [3 /*break*/, 2];
 								total_size = 0;
-								for (_i = 0, files_2 = files; _i < files_2.length; _i++) {
-									file = files_2[_i];
+								for (_i = 0, files_3 = files; _i < files_3.length; _i++) {
+									file = files_3[_i];
 									total_size += file.data.byteLength;
 								}
 								out = new Uint8Array(total_size);
 								current_size = 0;
-								for (_a = 0, files_3 = files; _a < files_3.length; _a++) {
-									file = files_3[_a];
+								for (_a = 0, files_4 = files; _a < files_4.length; _a++) {
+									file = files_4[_a];
 									out.set(file.data, current_size);
 									current_size += file.data.byteLength;
 								}
@@ -27670,7 +27966,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 								out_filename = prefix + "out";
 								cleanup = function(delete_out) {
 									return __awaiter(this, void 0, void 0, function() {
-										var _i, filenames_1, filename_3, e_1;
+										var _i, filenames_1, filename_3, e_2;
 										return __generator(this, function(_a) {
 											switch (_a.label) {
 												case 0:
@@ -27700,7 +27996,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 													_a.sent();
 													return [3 /*break*/, 9];
 												case 8:
-													e_1 = _a.sent();
+													e_2 = _a.sent();
 													return [3 /*break*/, 9];
 												case 9: return [2 /*return*/];
 											}
@@ -27762,7 +28058,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			var ffmpeg_mux_single = function(ffmpeg, video_file, audio_file, out_filename, progress, success, fail) {
 				var failfunc = function(err) {
 					return __awaiter(this, void 0, void 0, function() {
-						var e_2;
+						var e_3;
 						return __generator(this, function(_a) {
 							switch (_a.label) {
 								case 0:
@@ -27772,7 +28068,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 									_a.sent();
 									return [3 /*break*/, 3];
 								case 2:
-									e_2 = _a.sent();
+									e_3 = _a.sent();
 									return [3 /*break*/, 3];
 								case 3:
 									fail(err);
@@ -27848,15 +28144,15 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				var prefix = get_ffmpeg_prefix("join");
 				var cleanup = function() {
 					return __awaiter(this, void 0, void 0, function() {
-						var _i, files_4, filename;
+						var _i, files_5, filename;
 						return __generator(this, function(_a) {
 							switch (_a.label) {
 								case 0:
-									_i = 0, files_4 = files;
+									_i = 0, files_5 = files;
 									_a.label = 1;
 								case 1:
-									if (!(_i < files_4.length)) return [3 /*break*/, 4];
-									filename = files_4[_i];
+									if (!(_i < files_5.length)) return [3 /*break*/, 4];
+									filename = files_5[_i];
 									//await ffmpeg.deleteFile(filename);
 									return [4 /*yield*/, ffmpeg_unmount_file(ffmpeg, filename)];
 								case 2:
@@ -27901,8 +28197,8 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 									streams[i] = null; // deref
 									next_stream = function() {
 										// deref current stream data
-										for (var i_27 = 0; i_27 < stream.length; i_27++) {
-											stream[i_27] = null;
+										for (var i_28 = 0; i_28 < stream.length; i_28++) {
+											stream[i_28] = null;
 										}
 										set_timeout(function() {
 											process_stream(i + 1);
@@ -28694,18 +28990,18 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 															console.error("Invalid regex stage:", { stage: stage, c: c, regexval: regexval_1 });
 														}
 													};
-													for (var i_28 = 0; i_28 < regexval_1.length; i_28++) {
-														var c = regexval_1[i_28];
+													for (var i_29 = 0; i_29 < regexval_1.length; i_29++) {
+														var c = regexval_1[i_29];
 														var nextc = null;
-														if (i_28 + 1 < regexval_1.length)
-															nextc = regexval_1[i_28 + 1];
+														if (i_29 + 1 < regexval_1.length)
+															nextc = regexval_1[i_29 + 1];
 														if (stage === 2) {
 															commit(c);
 															continue;
 														}
 														if (c === "\\" && nextc === "/") {
 															commit("/");
-															i_28++;
+															i_29++;
 															continue;
 														}
 														if (c === "/") {
@@ -33058,6 +33354,26 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						x = null;
 						y = null;
 					}
+					// for e.g. reddit albums, going to the next image will wipe out the extra field
+					if (source_imu && is_imu_el(source.el) && source.el.hasAttribute("imu-obj")) {
+						//console.log(source.el);
+						var imu_obj = null;
+						try {
+							imu_obj = JSON_parse(source.el.getAttribute("imu-obj"));
+						} catch (e) {
+							console_error(e);
+						}
+						if (imu_obj) {
+							var simplified_imu_obj = {
+								extra: imu_obj.extra
+							};
+							source_imu = fillobj_urls(source_imu, simplified_imu_obj, "null");
+							if (data.obj && typeof data.obj === "object" && !is_array(data.obj)) {
+								data.obj = fillobj_urls([data.obj], simplified_imu_obj, "null")[0];
+							}
+							//console.log(imu_obj, source_imu);
+						}
+					}
 					cb(source_imu, source, processing, {
 						data: data,
 						x: x,
@@ -33591,7 +33907,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			var bar = el.children[0];
 			if (typeof percent === "number") {
 				if (bar.getAttribute("data-timer")) {
-					clearInterval(parseInt(bar.getAttribute("data-timer")));
+					clear_interval(parseInt(bar.getAttribute("data-timer")));
 					bar.removeAttribute("data-timer");
 				}
 				if (percent >= 1 && remove_on_complete && el.parentElement) {
@@ -33604,7 +33920,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				if (!bar.getAttribute("data-timer")) {
 					bar.style.left = "0%";
 					bar.setAttribute("data-dir", "right");
-					var timer = setInterval(function() {
+					var timer = set_interval(function() {
 						var left = parseFloat(bar.style.left);
 						var delta = (15 / 1000) * 1;
 						var size = 90;
@@ -34120,8 +34436,8 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 							sources = [];
 							source_el_set = new_set();
 							_find_source = function(source_el) {
-								for (var _i = 0, sources_4 = sources; _i < sources_4.length; _i++) {
-									var src = sources_4[_i];
+								for (var _i = 0, sources_5 = sources; _i < sources_5.length; _i++) {
+									var src = sources_5[_i];
 									if (src.el === source_el)
 										return src;
 								}
@@ -34170,8 +34486,8 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 								return remove_source_el(source.el);
 							};
 							reposition_source_outlines = function() {
-								for (var _i = 0, sources_5 = sources; _i < sources_5.length; _i++) {
-									var source = sources_5[_i];
+								for (var _i = 0, sources_6 = sources; _i < sources_6.length; _i++) {
+									var source = sources_6[_i];
 									var rect = source._real_el.getBoundingClientRect();
 									var outline_el = source._outline_el;
 									if (!outline_el)
@@ -34200,8 +34516,8 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 								if (!sources.length)
 									return;
 								override_album = [];
-								for (var _i = 0, sources_6 = sources; _i < sources_6.length; _i++) {
-									var source = sources_6[_i];
+								for (var _i = 0, sources_7 = sources; _i < sources_7.length; _i++) {
+									var source = sources_7[_i];
 									override_album.push(source.el);
 								}
 								trigger_popup_with_source(sources[0], options);
@@ -36799,7 +37115,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		};
 		var real_xhr = unsafeWindow["XMLHttpRequest"];
 		var private_props = ["_actual", "method", "data", "url", "headers", "responseType", "response", "responseText"];
-		var passthrough_methods = ["addEventListener", "send", "open", "abort", "getAllResponseHeaders", "getResponseHeader", "overrideMimeType", "setRequestHeader"];
+		var passthrough_methods = ["send", "open", "abort", "getAllResponseHeaders", "getResponseHeader", "overrideMimeType", "setRequestHeader"];
 		// HEADERS_RECEIVED is needed by google
 		var copy_xhr_props = ["DONE", "HEADERS_RECEIVED", "LOADING", "OPENED", "UNSENT", "length"];
 		var copy_xhr_prototype_props = ["DONE", "HEADERS_RECEIVED", "LOADING", "OPENED", "UNSENT"];
@@ -36828,7 +37144,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				});
 			});
 			// add all proxy getters/setters
-			["ontimeout, timeout", "withCredentials", "onload", "onloadend", "onerror", "onprogress", "onreadystatechange", "responseType"].forEach(function(item) {
+			["ontimeout", "timeout", "withCredentials", "onload", "onloadend", "onerror", "onprogress", "onreadystatechange", "responseType"].forEach(function(item) {
 				Object.defineProperty(self, item, {
 					get: function() { return actual[item]; },
 					set: function(val) { actual[item] = val; }
@@ -36867,6 +37183,33 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			}
 			this[get_hotprefixed("headers")][header] = value;
 		};
+		var get_hotpatch_event_cb = function(xhr, real_cb) {
+			return function() {
+				if (helpers.xhr_override_resp && this.readyState >= 3) {
+					var newresp = null;
+					try {
+						newresp = helpers.xhr_override_resp(get_req_info(this), get_resp_info(this));
+					} catch (e) {
+						console_error(e);
+					}
+					if (newresp) {
+						if (newresp.response) {
+							this[get_hotprefixed("response")] = newresp.response;
+							try {
+								this[get_hotprefixed("responseText")] = newresp.response.toString();
+							} catch (e) {
+								console_error(e);
+							}
+						}
+					}
+				}
+				return real_cb.apply(this, arguments);
+			}.bind(xhr);
+		};
+		hotxhr.prototype.addEventListener = function(type, listener, options) {
+			var real_xhr = this[get_hotprefixed("_actual")];
+			return real_xhr.addEventListener.apply(real_xhr, [type, get_hotpatch_event_cb(this, listener), options]);
+		};
 		hotxhr.prototype.send = function(data) {
 			var actual = this[get_hotprefixed("_actual")];
 			this[get_hotprefixed("data")] = data;
@@ -36903,27 +37246,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				var real_cb = this[evt];
 				if (!real_cb)
 					return;
-				this[evt] = function() {
-					if (helpers.xhr_override_resp && this.readyState >= 3) {
-						var newresp = null;
-						try {
-							newresp = helpers.xhr_override_resp(get_req_info(this), get_resp_info(this));
-						} catch (e) {
-							console_error(e);
-						}
-						if (newresp) {
-							if (newresp.response) {
-								this[get_hotprefixed("response")] = newresp.response;
-								try {
-									this[get_hotprefixed("responseText")] = newresp.response.toString();
-								} catch (e) {
-									console_error(e);
-								}
-							}
-						}
-					}
-					return real_cb.apply(this, arguments);
-				}.bind(this);
+				this[evt] = get_hotpatch_event_cb(this, real_cb);
 			};
 			hotpatch_event.bind(this)("onload");
 			hotpatch_event.bind(this)("onloadend");
@@ -36979,8 +37302,18 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				};
 				xhr.onerror = reject;
 				xhr.withCredentials = options.credentials === "include";
-				for (var header in options.headers) {
-					xhr.setRequestHeader(header, options.headers[header]);
+				if (options.headers && typeof options.headers === "object") {
+					if (typeof options.headers.forEach === "function") {
+						// Headers object, used by reddit and google ai
+						// thanks to BlueBull010 on github for reporting: https://github.com/qsniyg/maxurl/issues/1637
+						options.headers.forEach(function(value, header) {
+							xhr.setRequestHeader(header, value);
+						});
+					} else {
+						for (var header in options.headers) {
+							xhr.setRequestHeader(header, options.headers[header]);
+						}
+					}
 				}
 				if (options.signal) {
 					options.signal.addEventListener("abort", function() {
