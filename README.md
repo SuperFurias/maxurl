@@ -6,7 +6,7 @@
 
 > **IMU Fixed — fork of [qsniyg/maxurl](https://github.com/qsniyg/maxurl) by SuperFurias.**
 > Same 10,000-site engine, plus performance fixes, a runtime per-site blocklist,
-> centered popups by default, a global reset button, corrected modified-row flags,
+> a global reset button, corrected modified-row flags,
 > brute-force rules off by default, and de-noised background logging.
 > Full change log and build notes: [`imu-fixed/extension-README.md`](imu-fixed/extension-README.md).
 > Fork issues: [SuperFurias/maxurl/issues](https://github.com/SuperFurias/maxurl/issues).
@@ -31,7 +31,6 @@ After years on the original extension: with it enabled, YouTube Shorts icons (co
 | YouTube Shorts icon lag | Full content script on every page/frame + always-on blocking `webRequest` listeners; Shorts icons crawl unless youtube.com is excluded (no per-site switch exists) | `document_idle` single-frame injection; two-key fast-bail skips heavy init on disabled/blocklisted hosts; background listeners attach/detach dynamically — zero request overhead where disabled |
 | Console spam | Unguarded `tabs.sendMessage` fan-outs, hotload `executeScript` errors, unanswered setvalue/redirect messages | Guarded sends, hotload guards, every message answered, checked storage writes with a single quota warning |
 | Per-site disable | Not available | Rules > Disabled websites (comma-separated, subdomains match); background enforces it per request too |
-| Popup position | Anchored at cursor | Centered by default |
 | Options reset | None | Global Reset button (companion script) |
 | "Modified" flags | Dark mode and rule toggles show phantom modified rows | Defaults mirrored so only real edits flag |
 | Brute-force rules | Default ON despite their own ban warning | Forced OFF by default |

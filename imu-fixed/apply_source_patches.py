@@ -9,7 +9,8 @@ imu_fixed_disabled_hosts key). After upstream pulls, re-run; any assert that
 fails names the drifted anchor to update.
 
 Patches (see fork README for rationale):
-  P1  defaults: mouseover_position "cursor" -> "center"
+  P1  retired (was: mouseover_position default "cursor" -> "center";
+      reverted per maintainer: upstream default kept, it is user-configurable)
   P2  defaults: + imu_fixed_disabled_hosts: ""
   P3  settings_meta: + Disabled websites row (category "rules", textarea)
   P4  update_dark_mode: mirror system default into orig_settings
@@ -30,16 +31,15 @@ def main():
     assert "imuFixedDoConfigOrig" not in text, "already patched (P6 present)"
     assert "imu_fixed_disabled_hosts" not in text, "already patched (P2/P3 present)"
 
-    # P1: center default (line-anchored so inline requires:{...} can't match)
+    # P1 retired: upstream "cursor" default kept (user-configurable in options).
+    # P2 anchor (line-anchored so inline requires:{...} can't match):
     m = re.findall(r'^([ \t]*)mouseover_position: "cursor",$', text, re.M)
-    assert len(m) == 1, f"P1 anchor: {len(m)}"
+    assert len(m) == 1, f"P2 anchor: {len(m)}"
     ind = m[0]
-    text = text.replace(f'\n{ind}mouseover_position: "cursor",',
-                        f'\n{ind}mouseover_position: "center",', 1)
 
     # P2: blocklist default right after it
-    text = text.replace(f'\n{ind}mouseover_position: "center",',
-                        f'\n{ind}mouseover_position: "center",\n{ind}imu_fixed_disabled_hosts: "",', 1)
+    text = text.replace(f'\n{ind}mouseover_position: "cursor",',
+                        f'\n{ind}mouseover_position: "cursor",\n{ind}imu_fixed_disabled_hosts: "",', 1)
 
     # P3: meta row before the mouseover_position meta block
     m2 = re.findall(r'\n([ \t]*)mouseover_position: \{\n', text)

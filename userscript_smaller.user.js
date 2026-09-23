@@ -6897,7 +6897,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		// thanks to Runakanta on discord for the idea: https://github.com/qsniyg/maxurl/issues/471
 		scroll_past_gallery_end_to_close: false,
 		// thanks to 07416 on github for the idea: https://github.com/qsniyg/maxurl/issues/20#issuecomment-439599984
-		mouseover_position: "center",
+		mouseover_position: "cursor",
 		imu_fixed_disabled_hosts: "",
 		// thanks to decembre on github for the idea: https://github.com/qsniyg/maxurl/issues/14#issuecomment-531549043
 		mouseover_prevent_cursor_overlap: true,

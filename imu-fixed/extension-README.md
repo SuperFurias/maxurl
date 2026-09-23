@@ -29,10 +29,8 @@ Built at the fork root (manifest 2026.6.0 → **2026.6.6**). Load `imu-fixed-ext
 - `imu_fixed_disabled_hosts` is registered in `settings_meta` (`category: "rules"`, `type: "textarea"`): **Rules tab → Disabled websites**, one host per line, subdomains match automatically, empty runs everywhere. It renders, validates, imports/exports, reverts, and tab-filters like every other row — no bolted-on panel.
 - Enforcement is two-layer: the content script fetches only `imu_enabled` + the list first (single IPC) and bails before the hundreds-setting storm, observers, and listeners; the background additionally skips blocklisted request hosts in both blocking `webRequest` listeners, live, even while globally enabled.
 - Honest residual: a blocklisted host still pays one V8 parse + one IPC per navigation (MV2 content scripts can't be un-injected at runtime), and already-open tabs apply the list on reload — request handling, however, stops immediately.
-**4. Popup spawns centered, natively configurable**
-- Upstream default `mouseover_position` is `"cursor"` (`src/userscript.ts:15880`), so the enlarged popup anchors at the mouse — left side when your cursor is left, exactly like your screenshot.
-- This build flips the default to `"center"` (`Popup position → Page middle`, same switch as `src/userscript.ts:18119`) in both shipped `.js` copies (the background copy never renders popups, so it's a no-op there).
-- One caveat: if your synced settings already stored `"cursor"` (options UI was once opened/saved with it), the stored value wins over the new default. Then flip it once manually: IMU options → **Popup** section → **Popup position** → **Page middle**. Fresh profiles get center automatically.
+**4. Popup position follows upstream**
+- Upstream default `mouseover_position` is `"cursor"`, so the enlarged popup anchors at the mouse. This build keeps that default; change it anytime in IMU options → **Popup** section → **Popup position**.
 
 **6. Reset to defaults + dark-mode revert fix**
 - **Reset to defaults** button sits right of Export (`extension/imu-fixed-options.js`). Tab switches re-render the options DOM and destroy foreign nodes, so a MutationObserver re-inserts it whenever it goes missing. It confirms, clears `chrome.storage.sync` + `local`, and reloads; the background's `onChanged` path is clear-safe (undefined `newValue` falls back to defaults instead of throwing in `JSON.parse`).
