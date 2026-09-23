@@ -47,7 +47,10 @@ def main():
     cs["run_at"] = "document_idle"
     cs["js"] = ["userscript.user.js"]
     data["background"]["scripts"] = ["extension/background.js", "userscript-bg.js"]
-    (OUT / "manifest.json").write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+    (OUT / "manifest.json").write_bytes((json.dumps(data, indent=2) + "\n").encode("utf-8"))
+
+    # Apache-2.0 s4(a): every distributed copy carries the license text.
+    shutil.copy2(ROOT / "LICENSE.txt", OUT / "LICENSE.txt")
 
     shutil.copy2(engine, OUT / "userscript.user.js")
     shutil.copy2(bg_src, OUT / "userscript-bg.js")

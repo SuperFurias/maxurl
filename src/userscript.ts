@@ -1,5 +1,7 @@
 // @license http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
 // ^ for LibreJS (this has to be the first comment in the file)
+// Fork changes (c) 2026 SuperFurias, Apache-2.0 (imuFixed markers, see
+// imu-fixed/apply_source_patches.py). Upstream (c) 2018-2024 qsniyg.
 
 // ==UserScript==
 // @name              Image Max URL

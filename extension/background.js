@@ -1,6 +1,9 @@
 // This is heavily based on ViolentMonkey's implementation:
 // https://github.com/violentmonkey/violentmonkey/blob/9e672d5590aea144840681b6f2ce0c267d57fc13/src/background/utils/requests.js
 // https://github.com/violentmonkey/violentmonkey/blob/9e672d5590aea144840681b6f2ce0c267d57fc13/src/common/index.js
+// Fork changes (c) 2026 SuperFurias, Apache-2.0: gated webRequest listeners,
+// unscriptable-URL guards, checked storage writes, hotload guards.
+// Upstream (c) 2018-2024 qsniyg; see LICENSE.txt.
 
 var background_tab = null;
 chrome.tabs.query({ currentWindow: true, active: true }, function(tabs) {

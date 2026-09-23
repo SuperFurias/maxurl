@@ -1,5 +1,7 @@
 // @license http://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
 // ^ for LibreJS (this has to be the first comment in the file)
+// Fork changes (c) 2026 SuperFurias, Apache-2.0 (imuFixed markers, see
+// imu-fixed/apply_source_patches.py). Upstream (c) 2018-2024 qsniyg.
 var __assign = (this && this.__assign) || function() {
 	__assign = Object.assign || function(t) {
 		for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -13,7 +15,6 @@ var __assign = (this && this.__assign) || function() {
 };
 // ==UserScript==
 // @name              Image Max URL
-// @name:en           Image Max URL
 // @name:ar           Image Max URL
 // @name:cs           Image Max URL
 // @name:da           Image Max URL
@@ -45,7 +46,6 @@ var __assign = (this && this.__assign) || function() {
 // @name:zh-TW        Image Max URL
 // @name:zh-HK        Image Max URL
 // @description       Finds larger or original versions of images and videos for 11,000+ websites, including a powerful media popup and download feature
-// @description:en    Finds larger or original versions of images and videos for 11,000+ websites, including a powerful media popup and download feature
 // @description:ar    البحث عن نسخ أكبر أو أصلية من الصور لأكثر من 11,000 موقع ويب
 // @description:cs    Vyhledá větší nebo původní verze obrázků a videí pro více než 11,000 webů
 // @description:da    Finder større eller originale versioner af billeder og videoer til mere end 11,000 websteder
@@ -109,7 +109,13 @@ var __assign = (this && this.__assign) || function() {
 // non-greasyfork/oujs versions need updateURL and downloadURL to auto-update for certain userscript managers
 // @updateURL         https://raw.githubusercontent.com/qsniyg/maxurl/master/userscript.meta.js
 // @downloadURL       https://raw.githubusercontent.com/qsniyg/maxurl/master/userscript_smaller.user.js
-// imu:require_rules  (this is replaced by the build system for userscript versions that require external rules)
+//
+//  Greasyfork and OpenUserJS have 2MB and 1MB limits for userscripts (respectively).
+//  Because of this, the rules (~3MB) have been split into a separate file, linked below.
+//  Note that jsdelivr.net might not always be reliable, but (AFAIK) this is the only reasonable option from what greasyfork allows.
+//  I'd recommend using the Github version of the script if you encounter any issues (linked in the 'Project links' section below).
+//
+// @require https://cdn.jsdelivr.net/gh/qsniyg/maxurl@21fd2161ac1b6672fdbc187fdffb9677f0d20f22/build/rules.js
 // ==/UserScript==
 // If you see "A userscript wants to access a cross-origin resource.", it's used for:
 //   * Detecting whether or not the destination URL exists before redirecting
@@ -137,8 +143,6 @@ var __assign = (this && this.__assign) || function() {
 //   * Firefox addon:   https://addons.mozilla.org/firefox/addon/image-max-url/
 //   * Opera extension: https://addons.opera.com/en/extensions/details/image-max-url/
 
-/// All comments within bigimage() have been removed to ensure the file remains within Greasyfork and AMO limits
-/// You can view the original source code here: https://github.com/qsniyg/maxurl/blob/master/userscript.user.js
 var $$IMU_EXPORT$$;
 // Disable linting because otherwise editing is incredibly slow
 // jshint ignore: start
