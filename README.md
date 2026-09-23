@@ -20,6 +20,10 @@
 **Rebuild the engine after pulling upstream:** `python imu-fixed/apply_source_patches.py`
 (if any assert names a drifted anchor, update it), then `npm install && npm run build`.
 
+## Why this fork exists
+
+After years on the original extension: with it enabled, YouTube Shorts icons (comments, title, likes, etc.) take a very long time to load while scrolling, unless `https://www.youtube.com/` is added under Rules > Disabled websites. Cause: the extension injects its full content script on every page and frame and holds blocking `webRequest` listeners on all traffic; on Shorts that contends with the late-hydrating UI. This fork exists to eliminate that cost (gated listeners, idle single-frame injection, per-site disable) while keeping the extension working everywhere else.
+
 ---
 
 <p align="center">
