@@ -13,3 +13,4 @@ maxurl.zip
 build/tsout.js
 standalone_config.json
 imu-fixed-extension/
+imu-fixed/tmp_pkg/

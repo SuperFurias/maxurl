@@ -12,6 +12,8 @@
 > Fork issues: [SuperFurias/maxurl/issues](https://github.com/SuperFurias/maxurl/issues).
 > License: Apache-2.0 (see [LICENSE](LICENSE)).
 > Original work © 2018–2024 qsniyg; fork modifications © 2026 SuperFurias.
+> Fork builds carry their own extension ID (new installs; migrate settings
+> via options Export/Import).
 
 **Use it unpacked:** `python imu-fixed/build_extension.py`, then
 `chrome://extensions` → Developer mode → Load unpacked → `imu-fixed-extension/`.
@@ -66,11 +68,11 @@ but you can sideload this repository if you wish to use the extension version in
     - Go to <about:debugging->\>This Firefox, select \"Load temporary Add-on\...\", and navigate to \"manifest.json\" within the maxurl repository
     - Note that the addon will be deleted once Firefox is closed. There\'s unfortunately nothing I can do about this.
 - CRX (Chromium-based browsers):
-  - Download the CRX build from <https://github.com/qsniyg/maxurl/blob/master/build/ImageMaxURL_crx3.crx>
-  - Go to <chrome://extensions>, make sure \"Developer mode\" is enabled, then drag&drop the downloaded CRX file onto the page.
+  - Download the CRX build from <https://github.com/SuperFurias/maxurl/blob/master/build/ImageMaxURL_crx3.crx> (fork-signed; carries a new extension ID, see below)
+  - Go to <chrome://extensions>, make sure \"Developer mode\" is enabled, then drag&drop the downloaded CRX file onto the page. Note: modern Chrome generally only allows store installs — if it refuses, use Load unpacked instead.
 - XPI (Firefox-based browsers):
-  - Download the XPI build from <https://github.com/qsniyg/maxurl/blob/master/build/ImageMaxURL_signed.xpi>
-  - Go to <about:addons>, click on the gear icon, then select \"Install Add-on from From File\...\", and navigate to the downloaded XPI file.
+  - Download the XPI build from <https://github.com/SuperFurias/maxurl/blob/master/build/ImageMaxURL_unsigned.xpi>
+  - Go to <about:addons>, click on the gear icon, then select \"Install Add-on from From File\...\", and navigate to the downloaded XPI file. (Unsigned builds work until Firefox closes; the Mozilla-signed listing remains upstream's.)
 
 ## Tor Browser/Mullvad Browser
 

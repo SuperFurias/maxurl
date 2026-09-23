@@ -23,7 +23,7 @@
         "<all_urls>"
       ],
       "js": [
-        "userscript-content.js"
+        "userscript.user.js"
       ],
       "run_at": "document_idle"
     }
@@ -47,7 +47,7 @@
     "open_in_tab": true
   },
   "options_page": "extension/options.html",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtWO5xT8unDmhWBJpTF1KN2loSBtp7RHE19cVT46zxBcvscy2QLlZAjBQ/0m5paqVXO4ln2KzgH5unyNNZowbT7P9+DukwymjeXoSnaE9+ooKBmxz5Wr6j+x43hWxPAf8PcgnIgY99DgPXV7ZlPzHOGIe9dRarrGNRsbQyoI+Bj4gpu5yIgvg0jYHKAUCpAAwIA9Vhg92+vD7rCUEMwEo+DQp7rOA4RkFQjp83xMdqZwOYzX8+0FDy2TpuGKlkW+N4DvqbcJIi8U/CZhdgSM/KcRKaEc6cGI7Zv6GcrXxPsLqYWj/4e7IpHydLshvtQxcfQ7BV2IWIx/41NtuAIBzNQIDAQAB",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAusnVEc5iRg69kjV0KlRE/7jbCmRox98vmSariQhO68nMVJtFaZ+1W7cgXjgjVp/lYsD0ZilO+92x/nAhtETPVvpgLCZ7+Z0anuz4kBjyYo+S55f8IVu8BAoO0WzPfibFEkk/VjmIQgmuVR26LLeEuC/czVS/Rpxrr7SN+qtaU1tfDuyonidBHfWyqF9XSV0lUowF4g1MzX7TIzklpJk/eq+wCv1IxOviiaBx15ueojLIW3V/RicahGbEclrjbx6Ii4WQpIhdbK8Gx/p4qSENSUOaPmEV076/0xY5E0PlOrI7KAekXYorgh/NYyfBG5OKURxLthbVz44SGoH75YphEwIDAQAB",
   "update_url": "https://raw.githubusercontent.com/qsniyg/maxurl/master/extension/updates.xml",
   "permissions": [
     "storage",
