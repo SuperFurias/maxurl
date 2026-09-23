@@ -17,3 +17,4 @@ imu-fixed/tmp_pkg/
 imu-fixed/tmp_pkg.crx
 imu-fixed/tmp_profile/
 Temp/
+__pycache__/

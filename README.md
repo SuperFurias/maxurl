@@ -40,12 +40,6 @@ After years on the original extension: with it enabled, YouTube Shorts icons (co
 
 ---
 
-<p align="center">
-  <b>English</b> | <a href="docs/pt/README.pt-BR.md">Português (Brasil)</a>
-</p>
-
----
-
 Image Max URL is a program that will try to find larger/original versions of images and videos, usually by replacing URL patterns.
 
 It currently contains support for \>10,000 hardcoded websites (full list in [sites.txt](https://github.com/qsniyg/maxurl/blob/master/sites.txt)),

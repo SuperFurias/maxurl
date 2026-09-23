@@ -15,6 +15,7 @@ Patches (see fork README for rationale):
   P4  update_dark_mode: mirror system default into orig_settings
   P5  problems loop: bruteforce forced off + mirror effective values to orig
   P6  do_config: two-key fast-bail wrapper (blocklist / global off)
+  P7  locale: strip pt-BR (fork is English-only; other locales untouched)
 """
 import pathlib
 import re
@@ -125,8 +126,82 @@ def main():
     )
     text = text.replace(f'\n{ind5}function do_config() {{', helpers, 1)
 
+    # P7: English-only fork: strip pt-BR (header rows, translation entries,
+    # supported_languages list entry, language-name block). pt-PT untouched.
+    text = strip_ptbr(text)
+
     TS.write_text(text, encoding="utf-8")
     print("P1-P6 applied to", TS)
+
+
+def strip_ptbr(text):
+    lines = text.split("\n")
+    out = []
+    skipped = {"header": 0, "dict": 0, "list": 0, "langblock": 0, "localeblock": 0}
+    i = 0
+
+    def drop_block(start):
+        depth = 0
+        while start < len(lines):
+            depth += lines[start].count("{") - lines[start].count("}")
+            start += 1
+            if depth <= 0:
+                break
+        return start
+
+    while i < len(lines):
+        l = lines[i]
+        if re.match(r"^\s*//\s*@[A-Za-z_]+:pt-BR\b", l):
+            skipped["header"] += 1
+            i += 1
+            continue
+        if re.match(r'^\s*"pt-BR":\{\s*$', l.replace(" ", "")):
+            i = drop_block(i)
+            skipped["localeblock"] += 1
+            continue
+        if re.match(r'^\s*"pt-BR":', l):
+            skipped["dict"] += 1
+            i += 1
+            continue
+        if re.match(r'^\s*"pt-BR",\s*$', l):
+            skipped["list"] += 1
+            i += 1
+            continue
+        if re.match(r'^\s*"Portugu(\\u00EA|ê)s \(Brasil\)": \{$', l):
+            i = drop_block(i)
+            skipped["langblock"] += 1
+            continue
+        out.append(l)
+        i += 1
+    assert skipped["header"] >= 1, "P7 anchor: no pt-BR header rows"
+    assert skipped["dict"] >= 1, "P7 anchor: no pt-BR dict entries"
+    assert skipped["list"] == 1, f"P7 anchor: list entries {skipped['list']}"
+    assert skipped["langblock"] == 1, f"P7 anchor: lang blocks {skipped['langblock']}"
+    assert skipped["localeblock"] == 1, f"P7 anchor: locale blocks {skipped['localeblock']}"
+    out = fix_dangling_commas(out)
+    result = "\n".join(out)
+    assert "pt-BR" not in result, "P7 incomplete: pt-BR remains"
+    assert "pt_BR" not in result, "P7 incomplete: pt_BR remains"
+    assert "Brasil" not in result, "P7 incomplete: Brasil remains"
+    print("P7 stripped", skipped)
+    return result
+
+
+def fix_dangling_commas(lines):
+    # tools/remcomments.js JSON.parses the strings table: a removed last
+    # entry must not leave a trailing comma (neutral in JS/TS objects).
+    fixed = 0
+    for i in range(len(lines)):
+        if not lines[i].rstrip().endswith(","):
+            continue
+        j = i + 1
+        while j < len(lines) and not lines[j].strip():
+            j += 1
+        if j < len(lines) and re.match(r"^\s*[}\]]", lines[j]):
+            lines[i] = lines[i].rstrip()[:-1]
+            fixed += 1
+    print("P7 dangling commas fixed:", fixed)
+    return lines
 
 
 if __name__ == "__main__":

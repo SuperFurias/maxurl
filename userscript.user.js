@@ -36,7 +36,6 @@ var __assign = (this && this.__assign) || function() {
 // @name:nb           Image Max URL
 // @name:nl           Image Max URL
 // @name:pl           Image Max URL
-// @name:pt-BR        Image Max URL
 // @name:ru           Image Max URL
 // @name:bg           Image Max URL
 // @name:uk           Image Max URL
@@ -68,7 +67,6 @@ var __assign = (this && this.__assign) || function() {
 // @description:nb    Finner større eller originale versjoner av bilder og videoer for mer enn 11,000 nettsteder
 // @description:nl    Vindt grotere of originele versies van foto's en video's voor meer dan 11,000 websites
 // @description:pl    Wyszukuje większe lub oryginalne wersje obrazów i filmów dla ponad 11,000 stron internetowych
-// @description:pt-BR Encontra versões maiores ou originais de imagens e vídeos para mais de 11,000 sites
 // @description:ru    Находит увеличенные или оригинальные версии изображений и видео для 11,000+ сайтов. Имеет мощную функцию всплывающего окна и скачивание медиафайлов.
 // @description:bg    Намира увеличени или оригинални версии на изображения за повече от 11,000 уеб сайтове
 // @description:uk    Знаходить збільшені або оригінальні версії зображень для більш ніж 11,000 веб-сайтів
@@ -1220,7 +1218,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			// 13: Negates the value at si[1] in si[0]
 			function(vm) {
 				vm.stack[0][vm.stack[1]] *= -1;
-			},
+			}
 		];
 		var _run_vm = function(ops, data) {
 			var vm = {
@@ -2477,7 +2475,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					});
 					var objurl = create_objecturl(blob);
 					do_browser_download({
-						url: objurl,
+						url: objurl
 					}, filename, cb);
 					set_timeout(function() {
 						revoke_objecturl(objurl);
@@ -2498,7 +2496,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 	var do_blob_download = function(blob, filename, cb) {
 		var objurl = create_objecturl(blob);
 		do_browser_download({
-			url: objurl,
+			url: objurl
 		}, filename);
 		set_timeout(function() {
 			revoke_objecturl(objurl);
@@ -3080,7 +3078,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			tiktok_thirdparty: null,
 			tumblr_api_key: null,
 			twitter_use_ext: false,
-			linked_image: false,
+			linked_image: false
 		},
 		do_request: do_request,
 		get_cookies: get_cookies,
@@ -3363,7 +3361,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		"fr",
 		"it",
 		"ko",
-		"pt-BR",
 		"ru",
 		"zh-CN"
 	];
@@ -3396,7 +3393,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Fran\u00E7ais",
 			"it": "Italiano",
 			"ko": "\uD55C\uAD6D\uC5B4",
-			"pt-BR": "Portugu\u00EAs (Brasil)",
 			"ru": "\u0420\u0443\u0441\u0441\u043A\u0438\u0439",
 			"zh-CN": "\u7B80\u4F53\u4E2D\u6587"
 		},
@@ -3423,7 +3419,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"nb": "Finner st\u00F8rre eller originale versjoner av bilder og videoer for mer enn 11,000 nettsteder",
 			"nl": "Vindt grotere of originele versies van foto's en video's voor meer dan 11,000 websites",
 			"pl": "Wyszukuje wi\u0119ksze lub oryginalne wersje obraz\u00F3w i film\u00F3w dla ponad 11,000 stron internetowych",
-			"pt-BR": "Encontra vers\u00F5es maiores ou originais de imagens e v\u00EDdeos para mais de 11,000 sites",
 			"ru": "\u041D\u0430\u0445\u043E\u0434\u0438\u0442 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u044B\u0435 \u0438\u043B\u0438 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u0432\u0435\u0440\u0441\u0438\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u0438 \u0432\u0438\u0434\u0435\u043E \u0434\u043B\u044F 11,000+ \u0441\u0430\u0439\u0442\u043E\u0432. \u0418\u043C\u0435\u0435\u0442 \u043C\u043E\u0449\u043D\u0443\u044E \u0444\u0443\u043D\u043A\u0446\u0438\u044E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 \u0438 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0435 \u043C\u0435\u0434\u0438\u0430\u0444\u0430\u0439\u043B\u043E\u0432.",
 			"th": "\u0E2B\u0E32\u0E17\u0E35\u0E48\u0E43\u0E2B\u0E0D\u0E48\u0E01\u0E27\u0E48\u0E32\u0E2B\u0E23\u0E37\u0E2D\u0E40\u0E27\u0E2D\u0E23\u0E4C\u0E0A\u0E31\u0E48\u0E19\u0E14\u0E31\u0E49\u0E07\u0E40\u0E14\u0E34\u0E21\u0E02\u0E2D\u0E07\u0E20\u0E32\u0E1E\u0E17\u0E31\u0E49\u0E07\u0E2B\u0E21\u0E14\u0E41\u0E25\u0E30\u0E27\u0E35\u0E14\u0E35\u0E42\u0E2D\u0E2A\u0E33\u0E2B\u0E23\u0E31\u0E1A\u0E21\u0E32\u0E01\u0E01\u0E27\u0E48\u0E32 11,000 \u0E07\u0E40\u0E27\u0E47\u0E1A\u0E44\u0E0B\u0E15\u0E4C",
 			"tr": "11,000'den fazla web sitesi i\u00E7in resim ve videolar\u0131n daha b\u00FCy\u00FCk veya orijinal s\u00FCr\u00FCmlerini bulur",
@@ -3438,7 +3433,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Opciones",
 			"it": "Opzioni",
 			"ko": "\uC635\uC158",
-			"pt-BR": "op\u00E7\u00F5es",
 			"ru": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B",
 			"zh-CN": "\u9009\u9879"
 		},
@@ -3448,7 +3442,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Oui",
 			"it": "S\u00EC",
 			"ko": "\uC608",
-			"pt-BR": "sim",
 			"ru": "\u0414\u0430",
 			"zh-CN": "\u662F"
 		},
@@ -3458,66 +3451,56 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Non",
 			"it": "No",
 			"ko": "\uC544\uB2C8\uC624",
-			"pt-BR": "n\u00E3o",
 			"ru": "\u041D\u0435\u0442",
 			"zh-CN": "\u5426"
 		},
 		"Import": {
 			"it": "Importa",
 			"ko": "\uAC00\uC838\uC624\uAE30",
-			"pt-BR": "Importar",
 			"ru": "\u0418\u043C\u043F\u043E\u0440\u0442",
 			"zh-CN": "\u5BFC\u5165"
 		},
 		"Export": {
 			"it": "Esporta",
 			"ko": "\uB0B4\uBCF4\uB0B4\uAE30",
-			"pt-BR": "Exportar",
 			"ru": "\u042D\u043A\u0441\u043F\u043E\u0440\u0442",
 			"zh-CN": "\u5BFC\u51FA"
 		},
 		"Requires:": {
 			"it": "Richiede",
 			"ko": "\uC694\uAD6C\uC0AC\uD56D:",
-			"pt-BR": "Requer:",
 			"ru": "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F:",
 			"zh-CN": "\u9700\u8981:"
 		},
 		"Or:": {
-			"pt-BR": "Ou:",
 			"ru": "\u0418\u043B\u0438:",
 			"zh-CN": "\u6216\u8005:"
 		},
 		"Redirection": {
 			"es": "Redirecci\u00F3n",
 			"ko": "\uB9AC\uB514\uB809\uC158",
-			"pt-BR": "Redirecionamento",
 			"ru": "\u041F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u91CD\u5B9A\u5411"
 		},
 		"subcategory_update": {
 			"en": "Updates",
-			"pt-BR": "atualiza\u00E7\u00E3o",
 			"ru": "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u66F4\u65B0"
 		},
 		"subcategory_libraries": {
 			"en": "3rd-party libraries",
-			"pt-BR": "bibliotecas",
 			"ru": "\u0421\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0435 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438",
 			"zh-CN": "\u7B2C\u4E09\u65B9\u5E93"
 		},
 		"subcategory_settings": {
 			"en": "Settings",
 			"es": "Ajustes",
-			"pt-BR": "configura\u00E7\u00F5es",
 			"ru": "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
 			"zh-CN": "\u8BBE\u7F6E"
 		},
 		"subcategory_ui": {
 			"en": "UI",
 			"es": "Interfaz",
-			"pt-BR": "interface do usu\u00E1rio",
 			"ru": "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441",
 			"zh-CN": "\u754C\u9762"
 		},
@@ -3526,13 +3509,11 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Acciones del popup",
 			"fr": "D\u00E9clencheur",
 			"ko": "\uD2B8\uB9AC\uAC70",
-			"pt-BR": "gatilho",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u89E6\u53D1\u5668"
 		},
 		"subcategory_popup_source": {
 			"en": "Source",
-			"pt-BR": "popup de origem",
 			"ru": "\u0418\u0441\u0442\u043E\u0447\u043D\u0438\u043A \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u6E90\u5934"
 		},
@@ -3540,7 +3521,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"en": "Open Behavior",
 			"es": "Comportamiento al Abrir",
 			"ko": "\uC5F4\uAE30 \uB3D9\uC791",
-			"pt-BR": "comportamento de abertura",
 			"ru": "\u041F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0435 \u043F\u0440\u0438 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0438",
 			"zh-CN": "\u6253\u5F00\u65B9\u5F0F"
 		},
@@ -3548,28 +3528,24 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"en": "Close Behavior",
 			"es": "Comportamiento al Cerrar",
 			"ko": "\uB2EB\uAE30 \uB3D9\uC791",
-			"pt-BR": "comportamento de fechamento",
 			"ru": "\u041F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0435 \u043F\u0440\u0438 \u0437\u0430\u043A\u0440\u044B\u0442\u0438\u0438",
 			"zh-CN": "\u5173\u95ED\u65B9\u5F0F"
 		},
 		"subcategory_behavior": {
 			"en": "Popup Behavior",
 			"es": "Comportamiento del Popup",
-			"pt-BR": "comportamento",
 			"ru": "\u041F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u884C\u4E3A"
 		},
 		"subcategory_video": {
 			"en": "Video/Audio",
 			"ko": "\uC601\uC0C1/\uC624\uB514\uC624",
-			"pt-BR": "v\u00EDdeo",
 			"ru": "\u0412\u0438\u0434\u0435\u043E/\u0410\u0443\u0434\u0438\u043E",
 			"zh-CN": "\u89C6\u9891/\u97F3\u9891"
 		},
 		"subcategory_gallery": {
 			"en": "Gallery",
 			"es": "Galeria",
-			"pt-BR": "galeria",
 			"ru": "\u0413\u0430\u043B\u0435\u0440\u0435\u044F",
 			"zh-CN": "\u56FE\u5E93"
 		},
@@ -3577,65 +3553,55 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"en": "Other",
 			"es": "Otro",
 			"fr": "Autre",
-			"pt-BR": "outros popups",
 			"ru": "\u041F\u0440\u043E\u0447\u0435\u0435",
 			"zh-CN": "\u5176\u4ED6"
 		},
 		"subcategory_cache": {
 			"en": "Cache",
-			"pt-BR": "cache",
 			"ru": "\u041A\u044D\u0448",
 			"zh-CN": "\u7F13\u5B58"
 		},
 		"Shortcuts": {
-			"pt-BR": "Atalhos",
 			"ru": "\u0413\u043E\u0440\u044F\u0447\u0438\u0435 \u043A\u043B\u0430\u0432\u0438\u0448\u0438",
 			"zh-CN": "\u5FEB\u6377\u952E"
 		},
 		"subcategory_keybinds_popup_actions": {
 			"en": "Popup actions",
-			"pt-BR": "a\u00E7\u00F5es do pop-up de atalhos",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u64CD\u4F5C\u5F39\u7A97"
 		},
 		"Mouse cursor": {
 			"it": "Sposta cursore",
 			"ko": "\uB9C8\uC6B0\uC2A4 \uCEE4\uC11C",
-			"pt-BR": "Cursor do mouse",
 			"ru": "\u041A\u0443\u0440\u0441\u043E\u0440 \u043C\u044B\u0448\u0438",
 			"zh-CN": "\u9F20\u6807\u5149\u6807"
 		},
 		"Rules": {
 			"fr": "R\u00E8gles",
 			"ko": "\uADDC\uCE59",
-			"pt-BR": "Regras",
 			"ru": "\u041F\u0440\u0430\u0432\u0438\u043B\u0430",
 			"zh-CN": "\u89C4\u5219"
 		},
 		"subcategory_rule_specific": {
 			"en": "Rule-specific",
-			"pt-BR": "espec\u00EDfico da regra",
 			"ru": "\u0421\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430 \u043F\u0440\u0430\u0432\u0438\u043B",
 			"zh-CN": "\u4E13\u7528\u89C4\u5219"
 		},
 		"Website": {
 			"fr": "Site",
 			"ko": "\uC6F9\uC0AC\uC774\uD2B8",
-			"pt-BR": "Site",
 			"ru": "\u0421\u0430\u0439\u0442",
 			"zh-CN": "\u7F51\u7AD9"
 		},
 		"Saved! Refresh the target page for changes to take effect": {
 			"fr": "Enregistr\u00E9! Actualiser la page que vous visitez pour que les changements prennent effet",
 			"ko": "\uC800\uC7A5\uB429\uB2C8\uB2E4. \uBC88\uACBD\uC0AC\uD56D \uC801\uC6A9\uD558\uB824\uBA74 \uB300\uC0C1 \uC6F9\uD398\uC774\uC9C0 \uB2E4\uC2DC \uB85C\uB4DC\uD558\uC2ED\uC2DC\uC624",
-			"pt-BR": "Salvo! Atualize a p\u00E1gina de destino para que as altera\u00E7\u00F5es tenham efeito",
 			"ru": "\u0421\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u043E! \u041E\u0431\u043D\u043E\u0432\u0438\u0442\u0435 \u0446\u0435\u043B\u0435\u0432\u0443\u044E \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443, \u0447\u0442\u043E\u0431\u044B \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u5DF2\u4FDD\u5B58\uFF0C\u5237\u65B0\u76EE\u6807\u9875\u9762\u4F7F\u66F4\u6539\u751F\u6548"
 		},
 		"Saved!": {
 			"fr": "Enregistr\u00E9!",
 			"ko": "\uC800\uC7A5\uB429\uB2C8\uB2E4",
-			"pt-BR": "Salvo!",
 			"ru": "\u0421\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u043E!",
 			"zh-CN": "\u5DF2\u4FDD\u5B58"
 		},
@@ -3643,7 +3609,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"en": "Save",
 			"fr": "Enregistrer",
 			"ko": "\uC800\uC7A5",
-			"pt-BR": "salvar",
 			"ru": "\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C",
 			"zh-CN": "\u4FDD\u5B58"
 		},
@@ -3653,14 +3618,12 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					"en": "Button name for recording key combinations"
 				}
 			},
-			"pt-BR": "Gravar",
 			"ru": "\u041F\u0435\u0440\u0435\u043D\u0430\u0437\u043D\u0430\u0447\u0438\u0442\u044C",
 			"zh-CN": "\u5F55\u5236"
 		},
 		"Cancel": {
 			"fr": "Annuler",
 			"ko": "\uCDE8\uC18C",
-			"pt-BR": "Cancelar",
 			"ru": "\u041E\u0442\u043C\u0435\u043D\u0430",
 			"zh-CN": "\u53D6\u6D88"
 		},
@@ -3668,20 +3631,17 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Popup (%%1) est n\u00E9cessaire pour trouver la version originale",
 			"it": "Il popup del mouse (%%1) serve a mostrare la versione originale",
 			"ko": "\uC6D0\uBCF8 \uC774\uBBF8\uC9C0 \uBCF4\uB824\uBA74 \uD31D\uC5C5 (%%1) \uD544\uC694\uD569\uB2C8\uB2E4",
-			"pt-BR": "O popup ao passar o mouse (%%1) \u00E9 necess\u00E1rio para exibir a vers\u00E3o original",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043C\u044B\u0448\u0438 (%%1) \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0434\u043B\u044F \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u043E\u0439 \u0432\u0435\u0440\u0441\u0438\u0438",
 			"zh-CN": "\u9700\u8981\u9F20\u6807\u60AC\u505C\u5F39\u7A97\uFF08%%1\uFF09\u6765\u663E\u793A\u539F\u59CB\u7248\u672C"
 		},
 		"custom headers": {
 			"fr": "en-t\u00EAtes sp\u00E9ciales",
 			"ko": "\uD2B9\uC815 \uD5E4\uB354",
-			"pt-BR": "cabe\u00E7alhos personalizados",
 			"ru": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0435 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0438",
 			"zh-CN": "\u81EA\u5B9A\u4E49\u6807\u9898"
 		},
 		"forces download": {
 			"en": "forces download",
-			"pt-BR": "for\u00E7ar download",
 			"ru": "\u0421\u043A\u0430\u0447\u0430\u0442\u044C \u043F\u0440\u0438\u043D\u0443\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E",
 			"zh-CN": "\u5F3A\u5236\u4E0B\u8F7D"
 		},
@@ -3689,7 +3649,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Fermer",
 			"it": "Chiudi",
 			"ko": "\uB2EB\uAE30",
-			"pt-BR": "Fechar",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0442\u044C",
 			"zh-CN": "\u5173\u95ED"
 		},
@@ -3697,7 +3656,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Image pr\u00E9c\u00E9dente",
 			"it": "Precedente",
 			"ko": "\uC774\uC804",
-			"pt-BR": "Anterior",
 			"ru": "\u041F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0435",
 			"zh-CN": "\u4E0A\u4E00\u4E2A"
 		},
@@ -3705,7 +3663,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Image suivante",
 			"it": "Prossimo",
 			"ko": "\uB2E4\uC74C",
-			"pt-BR": "Pr\u00F3ximo",
 			"ru": "\u0421\u043B\u0435\u0434\u0443\u0435\u0449\u0435\u0435",
 			"zh-CN": "\u4E0B\u4E00\u4E2A"
 		},
@@ -3713,7 +3670,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Fl\u00E8che gauche",
 			"it": "Freccia sinistra",
 			"ko": "\uC67C\uCABD \uD654\uC0B4\uD45C",
-			"pt-BR": "Seta para Esquerda",
 			"ru": "\u0421\u0442\u0440\u0435\u043B\u043A\u0430 \u0432\u043B\u0435\u0432\u043E",
 			"zh-CN": "\u5DE6\u7BAD\u5934"
 		},
@@ -3721,23 +3677,19 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"fr": "Fl\u00E8che droite",
 			"it": "Freccia destra",
 			"ko": "\uC624\uB978\uCABD \uD654\uC0B4\uD45C",
-			"pt-BR": "Seta para Direita",
 			"ru": "\u0421\u0442\u0440\u0435\u043B\u043A\u0430 \u0432\u043F\u0440\u0430\u0432\u043E",
 			"zh-CN": "\u53F3\u7BAD\u5934"
 		},
 		"subcategory_extension": {
 			"en": "Extension",
-			"pt-BR": "extens\u00E3o",
 			"ru": "\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u6269\u5C55"
 		},
 		"Rotate Left": {
-			"pt-BR": "Girar para Esquerda",
 			"ru": "\u041F\u043E\u0432\u0435\u0440\u043D\u0443\u0442\u044C \u0432\u043B\u0435\u0432\u043E",
 			"zh-CN": "\u5411\u5DE6\u65CB\u8F6C"
 		},
 		"Rotate Right": {
-			"pt-BR": "Girar para Direita",
 			"ru": "\u041F\u043E\u0432\u0435\u0440\u043D\u0443\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E",
 			"zh-CN": "\u5411\u53F3\u65CB\u8F6C"
 		},
@@ -3747,7 +3699,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					"en": "Settings category name for configuring extra functions, such as \"Replace Images\" and \"Highlight Images\""
 				}
 			},
-			"pt-BR": "Bot\u00F5es",
 			"ru": "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E",
 			"zh-CN": "\u5176\u4ED6"
 		},
@@ -3760,24 +3711,20 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 		},
 		"subcategory_replaceimages": {
 			"en": "Replace Images",
-			"pt-BR": "substituir imagens",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439",
 			"zh-CN": "\u66FF\u6362\u56FE\u50CF"
 		},
 		"subcategory_highlightimages": {
 			"en": "Highlight Images",
-			"pt-BR": "real\u00E7ar imagens",
 			"ru": "\u0412\u044B\u0434\u0435\u043B\u0435\u043D\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439",
 			"zh-CN": "\u9AD8\u4EAE\u56FE\u50CF"
 		},
 		"subcategory_customgallery": {
-			"en": "Custom Gallery",
-			"pt-BR": "galeria personalizada"
+			"en": "Custom Gallery"
 		},
 		"General": {
 			"es": "General",
 			"ko": "\uC77C\uBC18",
-			"pt-BR": "Geral",
 			"ru": "\u041E\u0431\u0449\u0438\u0435",
 			"zh-CN": "\u901A\u7528"
 		},
@@ -3791,7 +3738,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"it": "Abilita estensione",
-			"pt-BR": "Ativar extens\u00E3o",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u542F\u7528\u6269\u5C55"
 		},
@@ -3805,7 +3751,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"it": "Abilita o disabilita globalmente l'estensione",
-			"pt-BR": "Ativa ou desativa a extens\u00E3o globalmente",
 			"ru": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435 \u0433\u043B\u043E\u0431\u0430\u043B\u044C\u043D\u043E",
 			"zh-CN": "\u5168\u5C40\u542F\u7528\u6216\u7981\u7528\u6269\u5C55"
 		},
@@ -3821,7 +3766,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Lenguaje",
 			"it": "Lingua",
 			"ko": "\uC5B8\uC5B4",
-			"pt-BR": "Idioma",
 			"ru": "\u042F\u0437\u044B\u043A",
 			"zh-CN": "\u8BED\u8A00"
 		},
@@ -3835,7 +3779,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"it": "Lingua per questa estensione",
-			"pt-BR": "Idioma para esta extens\u00E3o",
 			"ru": "\u042F\u0437\u044B\u043A \u044D\u0442\u043E\u0433\u043E \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u6B64\u6269\u5C55\u7A0B\u5E8F\u7684\u8BED\u8A00"
 		},
@@ -3848,7 +3791,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ingl\u00EAs",
 			"ru": "\u0410\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439",
 			"zh-CN": "\u82F1\u8BED"
 		},
@@ -3861,7 +3803,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Espanhol",
 			"ru": "\u0418\u0441\u043F\u0430\u043D\u0441\u043A\u0438\u0439",
 			"zh-CN": "\u897F\u73ED\u7259\u8BED"
 		},
@@ -3874,7 +3815,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Franc\u00EAs",
 			"ru": "\u0424\u0440\u0430\u043D\u0446\u0443\u0437\u043A\u0438\u0439",
 			"zh-CN": "\u6CD5\u8BED"
 		},
@@ -3887,7 +3827,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Italiano",
 			"ru": "\u0418\u0442\u0430\u043B\u044C\u044F\u043D\u0441\u043A\u0438\u0439",
 			"zh-CN": "\u610F\u5927\u5229\u8BED"
 		},
@@ -3900,19 +3839,8 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Coreano",
 			"ru": "\u041A\u043E\u0440\u0435\u0439\u0441\u043A\u0438\u0439",
 			"zh-CN": "\u97E9\u8BED"
-		},
-		"Portugu\u00EAs (Brasil)": {
-			"_info": {
-				"instances": [
-					{
-						"setting": "language",
-						"field": "options.pt-BR.name"
-					}
-				]
-			}
 		},
 		"\u0420\u0443\u0441\u0441\u043A\u0438\u0439": {
 			"_info": {
@@ -3923,7 +3851,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Russo",
 			"ru": "\u0420\u0443\u0441\u0441\u043A\u0438\u0439",
 			"zh-CN": "\u4FC4\u8BED"
 		},
@@ -3935,8 +3862,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "options.zh-CN.name"
 					}
 				]
-			},
-			"pt-BR": "Chin\u00EAs simplificado"
+			}
 		},
 		"Dark mode": {
 			"_info": {
@@ -3949,7 +3875,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"it": "Modalit\u00E0 scura",
 			"ko": "\uB2E4\uD06C \uBAA8\uB4DC",
-			"pt-BR": "Modo escuro",
 			"ru": "\u0422\u0451\u043C\u043D\u044B\u0439 \u0440\u0435\u0436\u0438\u043C",
 			"zh-CN": "\u6DF1\u8272\u6A21\u5F0F"
 		},
@@ -3964,7 +3889,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"it": "Cambia i colori per avere testo chiaro su sfondo scuro",
 			"ko": "\uC5B4\uB450\uC6B4 \uBC30\uACBD, \uBC1D\uC740 \uD14D\uC2A4\uD2B8\uAC00 \uD45C\uC2DC\uB418\uB3C4\uB85D \uBCC0\uACBD\uD569\uB2C8\uB2E4.",
-			"pt-BR": "Altera as cores para ter texto claro em um fundo escuro",
 			"ru": "\u0418\u0437\u043C\u0435\u043D\u044F\u0435\u0442 \u0446\u0432\u0435\u0442\u0430, \u0434\u0435\u043B\u0430\u044F \u0442\u0435\u043A\u0441\u0442 \u043D\u0430 \u0442\u0451\u043C\u043D\u043E\u043C \u0444\u043E\u043D\u0435, \u0441\u0432\u0435\u0442\u043B\u044B\u043C.",
 			"zh-CN": "\u5C06\u989C\u8272\u66F4\u6539\u4E3A\u5728\u6DF1\u8272\u80CC\u666F\u4E0A\u663E\u793A\u6D45\u8272\u6587\u672C"
 		},
@@ -3979,7 +3903,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"it": "Descrizione sotto le opzioni",
 			"ko": "\uC635\uC158 \uC544\uB798\uC5D0 \uC124\uBA85 \uD45C\uC2DC",
-			"pt-BR": "Descri\u00E7\u00E3o abaixo das op\u00E7\u00F5es",
 			"ru": "\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u043F\u043E\u0434 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430\u043C\u0438",
 			"zh-CN": "\u9009\u9879\u4E0B\u65B9\u663E\u793A\u63CF\u8FF0"
 		},
@@ -3994,7 +3917,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"it": "Mostra la descrizione sotto le opzioni (alternativamente, la descrizione viene mostrata solo quando il mouse si trova sopra il nome dell'opzione)",
 			"ko": "\uC635\uC158 \uC544\uB798\uC5D0 \uC124\uBA85 \uD45C\uC2DC (\uBE44\uD65C\uC131\uD654 \uC2DC, \uC635\uC158 \uC774\uB984 \uC704\uC5D0 \uB9C8\uC6B0\uC2A4\uB97C \uC62C\uB824 \uB193\uC744 \uB54C\uB9CC \uC124\uBA85\uC774 \uD45C\uC2DC\uB428)",
-			"pt-BR": "Mostra a descri\u00E7\u00E3o abaixo das op\u00E7\u00F5es (caso contr\u00E1rio, a descri\u00E7\u00E3o s\u00F3 \u00E9 exibida ao passar o mouse sobre o nome da op\u00E7\u00E3o)",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u043F\u043E\u0434 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430\u043C\u0438 (\u0432 \u043F\u0440\u043E\u0442\u0438\u0432\u043D\u043E\u043C \u0441\u043B\u0443\u0447\u0430\u0435 \u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u0442\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043C\u044B\u0448\u0438 \u043D\u0430 \u0438\u043C\u044F \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430)",
 			"zh-CN": "\u9009\u9879\u4E0B\u65B9\u663E\u793A\u63CF\u8FF0\uFF08\u7981\u7528\u5219\u4EC5\u5F53\u9F20\u6807\u60AC\u505C\u5728\u9009\u9879\u7684\u540D\u79F0\u4E0A\u65F6\u663E\u793A\u8BF4\u660E\uFF09"
 		},
@@ -4009,7 +3931,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"it": "Mostra opzioni inattive",
 			"ko": "\uBE44\uD65C\uC131\uD654\uB41C \uC124\uC815 \uD45C\uC2DC",
-			"pt-BR": "Exibir op\u00E7\u00F5es desativadas",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u044B\u0435 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B",
 			"zh-CN": "\u663E\u793A\u505C\u7528\u7684\u9009\u9879"
 		},
@@ -4023,7 +3944,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"it": "Se inattivo, le opzioni che sono inattive a causa dei loro requisiti necessari non raggiunti non verranno mostrate",
-			"pt-BR": "Se desativado, as op\u00E7\u00F5es desativadas devido a seus requisitos n\u00E3o serem atendidos n\u00E3o ser\u00E3o exibidas",
 			"ru": "\u0415\u0441\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E, \u0442\u043E \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u044B \u0438\u0437-\u0437\u0430 \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u0439 \u0431\u0443\u0434\u0443\u0442 \u0441\u043A\u0440\u044B\u0442\u044B",
 			"zh-CN": "\u7981\u7528\u540E\u5C06\u4E0D\u663E\u793A\u56E0\u672A\u6EE1\u8DB3\u8981\u6C42\u800C\u88AB\u505C\u7528\u7684\u9009\u9879"
 		},
@@ -4036,7 +3956,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Exibir perfis de gatilho desativados",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u044B\u0435 \u0446\u0435\u043B\u0435\u0432\u044B\u0435 \u043F\u0440\u043E\u0444\u0438\u043B\u0438",
 			"zh-CN": "\u663E\u793A\u505C\u7528\u7684\u89E6\u53D1\u5668\u914D\u7F6E"
 		},
@@ -4049,7 +3968,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se desativado, as op\u00E7\u00F5es para perfis de gatilho alternativos (op\u00E7\u00F5es com `(#2)` ap\u00F3s elas) n\u00E3o ser\u00E3o exibidas se o gatilho relevante n\u00E3o estiver ativo",
 			"ru": "\u0415\u0441\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E, \u0442\u043E \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u043D\u044B\u0445 \u0446\u0435\u043B\u0435\u0432\u044B\u0445 \u043F\u0440\u043E\u0444\u0438\u043B\u0435\u0439 (\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B \u0441 `(#2)` \u043F\u043E\u0441\u043B\u0435 \u043D\u0438\u0445) \u0431\u0443\u0434\u0443\u0442 \u0441\u043A\u0440\u044B\u0442\u044B, \u0435\u0441\u043B\u0438 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0430\u044F \u0446\u0435\u043B\u044C \u043D\u0435 \u0430\u043A\u0442\u0438\u0432\u043D\u0430",
 			"zh-CN": "\u5982\u679C\u7981\u7528\uFF0C\u5C06\u4E0D\u663E\u793A\u76F8\u5173\u89E6\u53D1\u5668\u672A\u88AB\u6FC0\u6D3B\u7684\u5907\u7528\u89E6\u53D1\u5668\u7684\u914D\u7F6E\u9009\u9879\uFF08\u5E26\u6709 `(#2)` )"
 		},
@@ -4063,7 +3981,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBE44\uD65C\uC131\uD654\uB41C \uC635\uC158 \uC544\uB798\uC758 \uC694\uAD6C \uC0AC\uD56D",
-			"pt-BR": "Requisitos abaixo das op\u00E7\u00F5es desativadas",
 			"ru": "\u0422\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F \u043F\u043E\u0434 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u044B\u043C\u0438 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430\u043C\u0438",
 			"zh-CN": "\u505C\u7528\u9009\u9879\u4E0B\u65B9\u663E\u793A\u9700\u6C42"
 		},
@@ -4077,7 +3994,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC635\uC158\uC774 \uBE44\uD65C\uC131\uD654\uB418\uBA74 \uC635\uC158\uC744 \uD65C\uC131\uD654\uD558\uAE30 \uC704\uD55C \uC694\uAD6C \uC0AC\uD56D\uC774 \uC544\uB798\uC5D0 \uD45C\uC2DC\uB428",
-			"pt-BR": "Se uma op\u00E7\u00E3o estiver desativada, os requisitos para ativ\u00E1-la ser\u00E3o exibidos abaixo dela",
 			"ru": "\u0415\u0441\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E, \u0442\u043E \u043F\u043E\u0434 \u043D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u043C\u0438 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430\u043C\u0438 \u0431\u0443\u0434\u0443\u0442 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0442\u044C\u0441\u044F \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F \u0434\u043B\u044F \u0438\u0445 \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u5728\u5DF2\u505C\u7528\u9009\u9879\u7684\u4E0B\u65B9\u663E\u793A\u542F\u7528\u8981\u6C42"
 		},
@@ -4091,7 +4007,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC5C5\uB370\uC774\uD2B8 \uD655\uC778",
-			"pt-BR": "Verificar atualiza\u00E7\u00F5es",
 			"ru": "\u041F\u0440\u043E\u0432\u0435\u0440\u044F\u0442\u044C \u043D\u0430\u043B\u0438\u0447\u0438\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0439",
 			"zh-CN": "\u68C0\u67E5\u66F4\u65B0"
 		},
@@ -4104,7 +4019,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Verifica periodicamente se h\u00E1 atualiza\u00E7\u00F5es. Se uma nova atualiza\u00E7\u00E3o estiver dispon\u00EDvel, ela ser\u00E1 exibida na parte superior da p\u00E1gina de op\u00E7\u00F5es",
 			"ru": "\u041F\u0435\u0440\u0438\u043E\u0434\u0438\u0447\u0435\u0441\u043A\u0438 \u043F\u0440\u043E\u0432\u0435\u0440\u044F\u0435\u0442 \u043D\u0430\u043B\u0438\u0447\u0438\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0439. \u041D\u043E\u0432\u043E\u0435 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u0431\u0443\u0434\u0435\u0442 \u043F\u043E\u043A\u0430\u0437\u0430\u043D\u043E \u0432 \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0447\u0430\u0441\u0442\u0438 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432.",
 			"zh-CN": "\u5B9A\u671F\u68C0\u67E5\u66F4\u65B0\u3002\u6709\u53EF\u7528\u7684\u66F4\u65B0\u65F6\u5C06\u5728\u9009\u9879\u9875\u9762\u7684\u9876\u90E8\u663E\u793A"
 		},
@@ -4118,7 +4032,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC5C5\uB370\uC774\uD2B8 \uD655\uC778 \uAC04\uACA9",
-			"pt-BR": "Intervalo de verifica\u00E7\u00E3o de atualiza\u00E7\u00F5es",
 			"ru": "\u0418\u043D\u0442\u0435\u0440\u0432\u0430\u043B \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0438 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u66F4\u65B0\u68C0\u67E5\u95F4\u9694"
 		},
@@ -4132,7 +4045,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC5C5\uB370\uC774\uD2B8 \uD655\uC778 \uBE48\uB3C4",
-			"pt-BR": "Com que frequ\u00EAncia verificar se h\u00E1 atualiza\u00E7\u00F5es",
 			"ru": "\u041A\u0430\u043A \u0447\u0430\u0441\u0442\u043E \u0431\u0443\u0434\u0435\u0442 \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442\u044C \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u043D\u0430\u043B\u0438\u0447\u0438\u044F \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0439",
 			"zh-CN": "\u591A\u4E45\u68C0\u67E5\u4E00\u6B21\u66F4\u65B0"
 		},
@@ -4146,7 +4058,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC2DC\uAC04",
-			"pt-BR": "horas",
 			"ru": "\u0447.",
 			"zh-CN": "\u5C0F\u65F6"
 		},
@@ -4160,7 +4071,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC5C5\uB370\uC774\uD2B8\uAC00 \uC788\uC744 \uB54C \uC54C\uB9BC",
-			"pt-BR": "Notificar quando houver atualiza\u00E7\u00E3o",
 			"ru": "\u0423\u0432\u0435\u0434\u043E\u043C\u043B\u044F\u0442\u044C \u043E \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u0438 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u6709\u53EF\u7528\u66F4\u65B0\u65F6\u901A\u77E5"
 		},
@@ -4174,7 +4084,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC5C5\uB370\uC774\uD2B8\uAC00 \uC788\uC744 \uB54C \uBE0C\uB77C\uC6B0\uC800 \uC54C\uB9BC\uC744 \uBC1B\uC2B5\uB2C8\uB2E4.",
-			"pt-BR": "Cria uma notifica\u00E7\u00E3o do navegador quando uma atualiza\u00E7\u00E3o est\u00E1 dispon\u00EDvel",
 			"ru": "\u0421\u043E\u0437\u0434\u0430\u0451\u0442 \u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u0435 \u0432 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0435, \u043A\u043E\u0433\u0434\u0430 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E.",
 			"zh-CN": "\u6709\u53EF\u7528\u66F4\u65B0\u65F6\u5F39\u51FA\u6D4F\u89C8\u5668\u901A\u77E5"
 		},
@@ -4188,7 +4097,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uACE0\uAE09 \uC124\uC815 \uD45C\uC2DC",
-			"pt-BR": "Exibir configura\u00E7\u00F5es avan\u00E7adas",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u043D\u044B\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438",
 			"zh-CN": "\u663E\u793A\u9AD8\u7EA7\u8BBE\u7F6E"
 		},
@@ -4202,7 +4110,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBE44\uD65C\uC131\uD654 \uC2DC, \uC774\uD574\uD558\uAE30 \uC5B4\uB824\uC6B8 \uC218 \uC788\uB294 \uC124\uC815\uC774 \uC228\uACA8\uC9D0",
-			"pt-BR": "Se desativado, as configura\u00E7\u00F5es que podem ser mais dif\u00EDceis de entender ser\u00E3o ocultadas",
 			"ru": "\u0415\u0441\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E, \u0442\u043E \u0431\u043E\u043B\u0435\u0435 \u0441\u043B\u043E\u0436\u043D\u044B\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438, \u0431\u0443\u0434\u0443\u0442 \u0441\u043A\u0440\u044B\u0442\u044B",
 			"zh-CN": "\u7981\u7528\u540E\u5C06\u9690\u85CF\u6BD4\u8F83\u96BE\u4EE5\u7406\u89E3\u7684\u8BBE\u7F6E"
 		},
@@ -4216,7 +4123,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD0ED \uC0AC\uC6A9",
-			"pt-BR": "Usar abas",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0432\u043A\u043B\u0430\u0434\u043A\u0438",
 			"zh-CN": "\u6807\u7B7E\u5F0F\u8BBE\u7F6E"
 		},
@@ -4230,7 +4136,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBE44\uD65C\uC131\uD654 \uC2DC, \uBAA8\uB4E0 \uC124\uC815\uC774 \uD55C \uD398\uC774\uC9C0\uC5D0 \uD45C\uC2DC\uB429\uB2C8\uB2E4.",
-			"pt-BR": "Se desativado, todas as configura\u00E7\u00F5es ser\u00E3o mostradas em uma \u00FAnica p\u00E1gina",
 			"ru": "\u0415\u0441\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E, \u0442\u043E \u0432\u0441\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 \u0431\u0443\u0434\u0443\u0442 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0442\u044C\u0441\u044F \u043D\u0430 \u043E\u0434\u043D\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435",
 			"zh-CN": "\u5982\u679C\u7981\u7528\uFF0C\u5C06\u5728\u540C\u4E00\u9875\u4E0A\u663E\u793A\u5168\u90E8\u8BBE\u7F6E"
 		},
@@ -4243,7 +4148,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ordem alfab\u00E9tica",
 			"ru": "\u0412 \u0430\u043B\u0444\u0430\u0432\u0438\u0442\u043D\u043E\u043C \u043F\u043E\u0440\u044F\u0434\u043A\u0435",
 			"zh-CN": "\u6309\u5B57\u6BCD\u987A\u5E8F"
 		},
@@ -4256,7 +4160,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Lista as op\u00E7\u00F5es em ordem alfab\u00E9tica",
 			"ru": "\u0421\u043F\u0438\u0441\u043E\u043A \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432 \u0431\u0443\u0434\u0435\u0442 \u043E\u0442\u0441\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u043D \u0432 \u0430\u043B\u0444\u0430\u0432\u0438\u0442\u043D\u043E\u043C \u043F\u043E\u0440\u044F\u0434\u043A\u0435",
 			"zh-CN": "\u4EE5\u5B57\u6BCD\u987A\u5E8F\u6392\u5217\u9009\u9879"
 		},
@@ -4269,7 +4172,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permitir o uso do XHR do navegador",
 			"ru": "\u0420\u0430\u0437\u0440\u0435\u0448\u0438\u0442\u044C \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0443 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C XHR",
 			"zh-CN": "\u5141\u8BB8\u4F7F\u7528\u6D4F\u89C8\u5668 XHR"
 		},
@@ -4282,7 +4184,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Isso permite que as solicita\u00E7\u00F5es XHR sejam executadas no contexto do navegador se falharem na extens\u00E3o (por exemplo, quando a Prote\u00E7\u00E3o contra Rastreamento est\u00E1 definida como Alta)",
 			"ru": "\u042D\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0442\u044C \u0437\u0430\u043F\u0440\u043E\u0441\u044B XHR \u0432 \u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442\u0435 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430, \u0435\u0441\u043B\u0438 \u043E\u043D\u0438 \u043D\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0432 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0438 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u043A\u043E\u0433\u0434\u0430 \u0437\u0430\u0449\u0438\u0442\u0430 \u043E\u0442\u0441\u043B\u0435\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430 \u043D\u0430 \u0412\u044B\u0441\u043E\u043A\u0438\u0439 \u0443\u0440\u043E\u0432\u0435\u043D\u044C)",
 			"zh-CN": "\u5141\u8BB8\u6269\u5C55\u4E2D\u8FD0\u884C XHR \u8BF7\u6C42\u5931\u8D25\u65F6\u5728\u6D4F\u89C8\u5668\u4E0A\u4E0B\u6587\u4E2D\u8FD0\u884C XHR\u3002\u539F\u56E0\u4F8B\u5982\u201C\u8DDF\u8E2A\u4FDD\u62A4\u201D\u88AB\u8BBE\u5B9A\u4E3A\u9AD8\u3002"
 		},
@@ -4295,7 +4196,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Repetir solicita\u00E7\u00F5es com erros 503",
 			"ru": "\u041F\u043E\u0432\u0442\u043E\u0440\u044F\u0442\u044C \u0437\u0430\u043F\u0440\u043E\u0441 \u0441 \u043E\u0448\u0438\u0431\u043A\u043E\u0439 503",
 			"zh-CN": "\u91CD\u8BD5\u8FD4\u56DE 503 \u9519\u8BEF\u7684\u8BF7\u6C42"
 		},
@@ -4308,7 +4208,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "N\u00FAmero de vezes para repetir uma solicita\u00E7\u00E3o quando 503 (servi\u00E7o indispon\u00EDvel) \u00E9 retornado pelo servidor",
 			"ru": "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u044B\u0445 \u043F\u043E\u043F\u044B\u0442\u043E\u043A \u0437\u0430\u043F\u0440\u043E\u0441\u0430, \u043A\u043E\u0433\u0434\u0430 \u0441\u0435\u0440\u0432\u0435\u0440 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442 503 (\u0441\u043B\u0443\u0436\u0431\u0430 \u043D\u0435\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0430)",
 			"zh-CN": "\u670D\u52A1\u5668\u8FD4\u56DE 503 \u9519\u8BEF\uFF08\u670D\u52A1\u4E0D\u53EF\u7528\uFF09\u65F6\uFF0C\u91CD\u8BD5\u8BF7\u6C42\u6B21\u6570"
 		},
@@ -4321,7 +4220,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "vezes",
 			"ru": "\u0440\u0430\u0437(\u0430)",
 			"zh-CN": "\u6B21"
 		},
@@ -4334,7 +4232,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Atraso entre novas tentativas 503",
 			"ru": "\u0417\u0430\u0434\u0435\u0440\u0436\u043A\u0430 \u043C\u0435\u0436\u0434\u0443 \u043F\u043E\u0432\u0442\u043E\u0440\u0430\u043C\u0438 503",
 			"zh-CN": "503 \u91CD\u8BD5\u4E4B\u95F4\u5EF6\u8FDF"
 		},
@@ -4347,7 +4244,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tempo (em milissegundos) de atraso entre novas tentativas de solicita\u00E7\u00F5es que receberam 503",
 			"ru": "\u0412\u0440\u0435\u043C\u044F (\u0432 \u043C\u0438\u043B\u043B\u0438\u0441\u0435\u043A\u0443\u043D\u0434\u0430\u0445) \u0434\u043B\u044F \u0437\u0430\u0434\u0435\u0440\u0436\u043A\u0438 \u043C\u0435\u0436\u0434\u0443 \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E\u0439 \u043F\u043E\u043F\u044B\u0442\u043A\u043E\u0439 \u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432 \u043F\u0440\u0438 \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0438 503",
 			"zh-CN": "\u6536\u5230 503 \u9519\u8BEF\u540E\u91CD\u8BD5\u8BF7\u6C42\u4E4B\u95F4\u5EF6\u8FDF\u591A\u4E45\uFF08\u6BEB\u79D2\uFF09"
 		},
@@ -4360,7 +4256,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar `Blob` em vez de `ArrayBuffer`",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C `Blob` \u043F\u043E\u0432\u0435\u0440\u0445 `ArrayBuffer`",
 			"zh-CN": "\u4F7F\u7528 Blob \u4EE3\u66FF ArrayBuffer"
 		},
@@ -4373,7 +4268,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usa `Blob`s para XHRs em vez de `ArrayBuffer`s. Mantenha isso ativado, a menos que seu gerenciador de userscript n\u00E3o suporte solicita\u00E7\u00F5es blob",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 `Blob`\u044B \u0434\u043B\u044F XHR, \u0432\u043C\u0435\u0441\u0442\u043E `ArrayBuffer`\u043E\u0432. \u041D\u0435 \u043E\u0442\u043A\u043B\u044E\u0447\u0430\u0439\u0442\u0435, \u0435\u0441\u043B\u0438 \u0432\u0430\u0448 \u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0445 \u0441\u043A\u0440\u0438\u043F\u0442\u043E\u0432 \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 \u0437\u0430\u043F\u0440\u043E\u0441\u044B blob.",
 			"zh-CN": "XHR \u4E2D\u4F7F\u7528 Blob \u4EE3\u66FF ArrayBuffer\u3002\u9664\u975E\u60A8\u7684\u7528\u6237\u811A\u672C\u7BA1\u7406\u5668\u4E0D\u652F\u6301 Blob \u8BF7\u6C42\uFF0C\u5426\u5219\u4FDD\u6301\u542F\u7528"
 		},
@@ -4386,7 +4280,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Recarregamento de configura\u00E7\u00F5es ao vivo",
 			"ru": "\u041F\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A \u0432 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C \u0432\u0440\u0435\u043C\u0435\u043D\u0438",
 			"zh-CN": "\u8BBE\u7F6E\u5B9E\u65F6\u751F\u6548"
 		},
@@ -4399,7 +4292,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ativa/desativa o recarregamento de configura\u00E7\u00F5es ao vivo. N\u00E3o deve haver motivo para desativar isso, a menos que voc\u00EA esteja tendo problemas com esse recurso",
 			"ru": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432 \u0432 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u043C \u0432\u0440\u0435\u043C\u0435\u043D\u0438. \u041D\u0435 \u0434\u043E\u043B\u0436\u043D\u043E \u0431\u044B\u0442\u044C \u043F\u0440\u0438\u0447\u0438\u043D \u0434\u043B\u044F \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u044D\u0442\u043E\u0439 \u0444\u0443\u043D\u043A\u0446\u0438\u0438. \u041E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u0435\u0441\u043B\u0438 \u0443 \u0432\u0430\u0441 \u0435\u0441\u0442\u044C \u0441 \u043D\u0435\u0439 \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u044B.",
 			"zh-CN": "\u542F\u7528/\u7981\u7528\u8BBE\u7F6E\u5B9E\u65F6\u91CD\u65B0\u52A0\u8F7D\u3002\u9664\u975E\u9047\u5230\u6B64\u529F\u80FD\u76F8\u5173\u7684\u95EE\u9898\uFF0C\u5426\u5219\u5E94\u4FDD\u6301\u6B64\u529F\u80FD\u542F\u7528"
 		},
@@ -4412,7 +4304,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Desativar atalhos de teclado ao editar texto",
 			"ru": "\u041E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0433\u043E\u0440\u044F\u0447\u0438\u0435 \u043A\u043B\u0430\u0432\u0438\u0448\u0438 \u043F\u0440\u0438 \u0440\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0438 \u0442\u0435\u043A\u0441\u0442\u0430",
 			"zh-CN": "\u7F16\u8F91\u6587\u672C\u6846\u65F6\u7981\u7528\u5FEB\u6377\u952E"
 		},
@@ -4425,7 +4316,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Desativa os atalhos quando eventos de teclas s\u00E3o enviados para uma \u00E1rea de entrada na p\u00E1gina",
 			"ru": "\u041E\u0442\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0433\u043E\u0440\u044F\u0447\u0438\u0435 \u043A\u043B\u0430\u0432\u0438\u0448\u0438 \u043F\u0440\u0438 \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u0435 \u0441\u043E\u0431\u044B\u0442\u0438\u0439 \u043A\u043B\u0430\u0432\u0438\u0448 \u0432 \u043E\u0431\u043B\u0430\u0441\u0442\u044C \u0432\u0432\u043E\u0434\u0430 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435",
 			"zh-CN": "\u5C06\u952E\u76D8\u4E8B\u4EF6\u53D1\u9001\u5230\u9875\u9762\u4E0A\u7684\u8F93\u5165\u533A\u57DF\u65F6\uFF0C\u505C\u7528\u5DF2\u8BBE\u7F6E\u7684\u5FEB\u6377\u952E"
 		},
@@ -4438,7 +4328,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar `GM_download` se dispon\u00EDvel",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C `GM_download`, \u0435\u0441\u043B\u0438 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E",
 			"zh-CN": "\u53EF\u7528\u65F6\u4F7F\u7528 GM_download"
 		},
@@ -4451,7 +4340,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Prefere usar `GM_download` em vez de downloads simples baseados em navegador, se a fun\u00E7\u00E3o estiver dispon\u00EDvel. Alguns gerenciadores de userscript baixam o arquivo inteiro antes de exibir uma caixa de di\u00E1logo de salvamento, o que pode ser indesej\u00E1vel para arquivos de v\u00EDdeo grandes",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0442\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 `GM_download` \u0432\u043C\u0435\u0441\u0442\u043E \u043F\u0440\u043E\u0441\u0442\u044B\u0445 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0439 \u0432 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0435, \u0435\u0441\u043B\u0438 \u044D\u0442\u0430 \u0444\u0443\u043D\u043A\u0446\u0438\u044F \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0430. \u041D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440\u044B \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0445 \u0441\u043A\u0440\u0438\u043F\u0442\u043E\u0432 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u0435\u0442 \u0432\u0435\u0441\u044C \u0444\u0430\u0439\u043B \u043F\u0435\u0440\u0435\u0434 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435\u043C \u0434\u0438\u0430\u043B\u043E\u0433\u0430 \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F, \u0447\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043D\u0435\u0436\u0435\u043B\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u0434\u043B\u044F \u0431\u043E\u043B\u044C\u0448\u0438\u0445 \u0432\u0438\u0434\u0435\u043E\u0444\u0430\u0439\u043B\u043E\u0432.",
 			"zh-CN": "\u4F18\u5148\u4F7F\u7528 GM_download \u4EE3\u66FF\u6D4F\u89C8\u5668\u7684\u4E0B\u8F7D\u529F\u80FD\u3002\u90E8\u5206\u7528\u6237\u811A\u672C\u7BA1\u7406\u5668\u4F1A\u5728\u663E\u793A\u201C\u4FDD\u5B58\u201D\u5BF9\u8BDD\u6846\u524D\u4E0B\u8F7D\u6574\u4E2A\u6587\u4EF6\uFF0C\u8FD9\u4E0D\u5229\u4E8E\u4E0B\u8F7D\u5927\u4F53\u91CF\u7684\u89C6\u9891\u6587\u4EF6"
 		},
@@ -4464,7 +4352,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tamanho m\u00E1ximo para `GM_download`",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 \u0434\u043B\u044F `GM_download`",
 			"zh-CN": "GM_download \u5927\u5C0F\u4E0A\u9650"
 		},
@@ -4477,7 +4364,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se um arquivo for maior que este tamanho, use um download simples baseado em navegador. Defina como `0` para ilimitado.",
 			"ru": "\u0415\u0441\u043B\u0438 \u0444\u0430\u0439\u043B \u0431\u043E\u043B\u044C\u0448\u0435 \u044D\u0442\u043E\u0433\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0430, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043F\u0440\u043E\u0441\u0442\u043E\u0435 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0435 \u0447\u0435\u0440\u0435\u0437 \u0431\u0440\u0430\u0443\u0437\u0435\u0440. `0` - \u043D\u0435\u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043D\u043E.",
 			"zh-CN": "\u6587\u4EF6\u5927\u4E8E\u6B64\u5927\u5C0F\u65F6\u6539\u7528\u57FA\u4E8E\u6D4F\u89C8\u5668\u7684\u4E0B\u8F7D\u529F\u80FD\u3002\u8BBE\u4E3A 0 \u8868\u793A\u65E0\u9650\u5236\u3002"
 		},
@@ -4490,7 +4376,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "MB",
 			"ru": "\u041C\u0411",
 			"zh-CN": "MB"
 		},
@@ -4523,7 +4408,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "For\u00E7ar caixa de di\u00E1logo de salvamento ao baixar",
 			"ru": "\u041F\u0440\u0438\u043D\u0443\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0435 \u0434\u0438\u0430\u043B\u043E\u0433\u043E\u0432\u043E\u0435 \u043E\u043A\u043D\u043E \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F \u043F\u0440\u0438 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0438",
 			"zh-CN": "\u4E0B\u8F7D\u65F6\u5F3A\u5236\u6253\u5F00\u201C\u4FDD\u5B58\u201D\u5BF9\u8BDD\u6846"
 		},
@@ -4536,7 +4420,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tenta garantir que a caixa de di\u00E1logo 'salvar como' seja exibida ao baixar. Isso requer a permiss\u00E3o de 'downloads' para funcionar e, \u00E0s vezes, n\u00E3o funcionar\u00E1 quando cabe\u00E7alhos personalizados forem necess\u00E1rios.",
 			"ru": "\u041F\u043E\u0441\u0442\u043E\u0440\u0430\u0435\u0442\u0441\u044F \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0442\u044C \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0434\u0438\u0430\u043B\u043E\u0433\u043E\u0432\u043E\u0433\u043E \u043E\u043A\u043D\u0430 '\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u043A\u0430\u043A' \u043F\u0440\u0438 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0438. \u0414\u043B\u044F \u044D\u0442\u043E\u0433\u043E \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 '\u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0435', \u0438 \u0438\u043D\u043E\u0433\u0434\u0430 \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C, \u043A\u043E\u0433\u0434\u0430 \u0442\u0440\u0435\u0431\u0443\u044E\u0442\u0441\u044F \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0435 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0438.",
 			"zh-CN": "\u5C1D\u8BD5\u786E\u4FDD\u4E0B\u8F7D\u65F6\u6253\u5F00\u201C\u53E6\u5B58\u4E3A\u201D\u5BF9\u8BDD\u6846\u3002\u6B64\u529F\u80FD\u9700\u8981\u201C\u4E0B\u8F7D\u201D\u6743\u9650\uFF0C\u5E76\u4E14\u642D\u914D\u201C\u81EA\u5B9A\u4E49\u5934\u201D\u65F6\u53EF\u80FD\u65E0\u6548\u3002"
 		},
@@ -4549,7 +4432,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ativar registro no console",
 			"ru": "\u0417\u0430\u043F\u0438\u0441\u044C \u0436\u0443\u0440\u043D\u0430\u043B\u0430 \u0432 \u043A\u043E\u043D\u0441\u043E\u043B\u0438",
 			"zh-CN": "\u542F\u7528\u63A7\u5236\u53F0\u65E5\u5FD7"
 		},
@@ -4562,7 +4444,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite que o script registre mensagens no console do navegador.",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0441\u043A\u0440\u0438\u043F\u0442\u0443 \u0437\u0430\u043F\u0438\u0441\u044B\u0432\u0430\u0442\u044C \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F \u0432 \u043A\u043E\u043D\u0441\u043E\u043B\u044C \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430.",
 			"zh-CN": "\u5141\u8BB8\u8BB0\u5F55\u65E5\u5FD7\u6D88\u606F\u5230\u6D4F\u89C8\u5668\u7684\u63A7\u5236\u53F0\u3002"
 		},
@@ -4575,7 +4456,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ativar escrita na \u00E1rea de transfer\u00EAncia",
 			"ru": "\u0417\u0430\u043F\u0438\u0441\u044C \u0432 \u0431\u0443\u0444\u0435\u0440 \u043E\u0431\u043C\u0435\u043D\u0430",
 			"zh-CN": "\u542F\u7528\u5199\u5165\u526A\u8D34\u677F"
 		},
@@ -4588,7 +4468,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Esta op\u00E7\u00E3o n\u00E3o faz nada por si s\u00F3, mas ativ\u00E1-la permite que outras funcionalidades que exigem escrita na \u00E1rea de transfer\u00EAncia funcionem",
 			"ru": "\u041F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0441\u0430\u043C \u043F\u043E \u0441\u0435\u0431\u0435 \u043D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0434\u0435\u043B\u0430\u0435\u0442, \u043D\u043E \u0435\u0433\u043E \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u0434\u0440\u0443\u0433\u0438\u043C \u0444\u0443\u043D\u043A\u0446\u0438\u044F\u043C, \u0442\u0440\u0435\u0431\u0443\u044E\u0449\u0438\u043C \u0437\u0430\u043F\u0438\u0441\u0438 \u0432 \u0431\u0443\u0444\u0435\u0440 \u043E\u0431\u043C\u0435\u043D\u0430.",
 			"zh-CN": "\u6B64\u9009\u9879\u672C\u8EAB\u65E0\u529F\u80FD\uFF0C\u4F46\u542F\u7528\u5B83\u624D\u80FD\u4F7F\u5176\u4ED6\u9700\u8981\u5199\u5165\u526A\u8D34\u677F\u7684\u529F\u80FD\u8FD0\u4F5C"
 		},
@@ -4604,7 +4483,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Habilitar redirecci\u00F3n",
 			"fr": "Activer la redirection",
 			"ko": "\uB9AC\uB514\uB809\uC158 \uC0AC\uC6A9",
-			"pt-BR": "Ativar redirecionamento",
 			"ru": "\u041F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u542F\u7528\u91CD\u5B9A\u5411"
 		},
@@ -4617,7 +4495,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Redirecionar automaticamente m\u00EDdias abertas em sua pr\u00F3pria aba para suas vers\u00F5es maiores/originais",
 			"ru": "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u043F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442 \u043E\u0442\u043A\u0440\u044B\u0442\u043E\u0435 \u043C\u0435\u0434\u0438\u0430 \u043D\u0430 \u043D\u043E\u0432\u0443\u044E \u0432\u043A\u043B\u0430\u0434\u043A\u0443 \u043A \u0438\u0445 \u0431\u043E\u043B\u0435\u0435 \u043A\u0440\u0443\u043F\u043D\u043E\u0439/\u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u043E\u0439 \u0432\u0435\u0440\u0441\u0438\u0438",
 			"zh-CN": "\u5728\u6253\u5F00\u7684\u5A92\u4F53\u6587\u4EF6\u6807\u7B7E\u9875\u4E2D\u81EA\u52A8\u91CD\u5B9A\u5411\u5230\u5176\u66F4\u6E05\u6670\u7684\u7248\u672C"
 		},
@@ -4630,7 +4507,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permitir v\u00EDdeo",
 			"ru": "\u0420\u0430\u0437\u0440\u0435\u0448\u0438\u0442\u044C \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u5141\u8BB8\u89C6\u9891"
 		},
@@ -4643,7 +4519,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite redirecionar de/para v\u00EDdeo",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C \u0441/\u043D\u0430 \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u5141\u8BB8\u89C6\u9891\u88AB\u91CD\u5B9A\u5411"
 		},
@@ -4656,7 +4531,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permitir \u00E1udio",
 			"ru": "\u0420\u0430\u0437\u0440\u0435\u0448\u0438\u0442\u044C \u0430\u0443\u0434\u0438\u043E",
 			"zh-CN": "\u5141\u8BB8\u97F3\u9891"
 		},
@@ -4669,7 +4543,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite redirecionar de/para \u00E1udio",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C \u0441/\u043D\u0430 \u0430\u0443\u0434\u0438\u043E",
 			"zh-CN": "\u5141\u8BB8\u97F3\u9891\u88AB\u91CD\u5B9A\u5411"
 		},
@@ -4685,7 +4558,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Agregar al historial",
 			"fr": "Ajouter \u00E0 l'historique",
 			"ko": "\uBE0C\uB77C\uC6B0\uC800 \uAE30\uB85D\uC5D0 \uCD94\uAC00",
-			"pt-BR": "Adicionar ao hist\u00F3rico",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0442\u044C \u0432 \u0438\u0441\u0442\u043E\u0440\u0438\u044E",
 			"zh-CN": "\u6DFB\u52A0\u5230\u5386\u53F2\u8BB0\u5F55"
 		},
@@ -4699,7 +4571,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB9AC\uB514\uB809\uC158 \uC2DC, \uBE0C\uB77C\uC6B0\uC800\uC758 \uAE30\uB85D\uC5D0 \uC0C8 \uD56D\uBAA9\uC774 \uCD94\uAC00\uB428",
-			"pt-BR": "O redirecionamento adicionar\u00E1 uma nova entrada ao hist\u00F3rico do navegador",
 			"ru": "\u041F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0431\u0443\u0434\u0435\u0442 \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u0442\u044C \u043D\u043E\u0432\u0443\u044E \u0437\u0430\u043F\u0438\u0441\u044C \u0432 \u0438\u0441\u0442\u043E\u0440\u0438\u044E \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
 			"zh-CN": "\u91CD\u5B9A\u5411\u53D1\u751F\u65F6\u5728\u6D4F\u89C8\u5668\u7684\u5386\u53F2\u8BB0\u5F55\u4E2D\u52A0\u5165\u4E00\u6761\u8BB0\u5F55"
 		},
@@ -4712,7 +4583,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fazer redirecionamento na extens\u00E3o",
 			"ru": "\u0412\u044B\u043F\u043E\u043B\u043D\u044F\u0442\u044C \u043F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0438",
 			"zh-CN": "\u5728\u6269\u5C55\u4E2D\u6267\u884C\u91CD\u5B9A\u5411"
 		},
@@ -4725,7 +4595,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Realiza o redirecionamento na extens\u00E3o em vez de no script de conte\u00FAdo. Isso \u00E9 significativamente mais r\u00E1pido e n\u00E3o deve causar problemas em teoria, mas esta op\u00E7\u00E3o \u00E9 mantida em caso de regress\u00F5es",
 			"ru": "\u0412\u044B\u043F\u043E\u043B\u043D\u044F\u0435\u0442 \u043F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0432 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0438 \u0432\u043C\u0435\u0441\u0442\u043E \u0441\u043A\u0440\u0438\u043F\u0442\u0430. \u0422\u0435\u043E\u0440\u0438\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u044D\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0431\u044B\u0441\u0442\u0440\u0435\u0435 \u0438 \u043D\u0435 \u0434\u043E\u043B\u0436\u043D\u043E \u0432\u044B\u0437\u044B\u0432\u0430\u0442\u044C \u043F\u0440\u043E\u0431\u043B\u0435\u043C, \u043D\u043E \u044D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0441\u043E\u0445\u0440\u0430\u043D\u044F\u0435\u0442\u0441\u044F \u0432 \u0441\u043B\u0443\u0447\u0430\u0435 \u0440\u0435\u0433\u0440\u0435\u0441\u0441\u0438\u0439.",
 			"zh-CN": "\u5728\u6269\u5C55\u5185\u800C\u975E\u5185\u5BB9\u811A\u672C\u4E2D\u6267\u884C\u91CD\u5B9A\u5411\u3002\u8FD9\u6837\u5FEB\u5F97\u591A\u5E76\u4E14\u7406\u8BBA\u4E0A\u4E0D\u5E94\u8BE5\u5F15\u8D77\u95EE\u9898\uFF0C\u4F46\u8BE5\u9009\u9879\u88AB\u4FDD\u7559\u4EE5\u9632\u7279\u6B8A\u95EE\u9898"
 		},
@@ -4741,7 +4610,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Utilizar GET si HEAD no es soportado",
 			"fr": "Utiliser GET si HEAD n'est pas support\u00E9",
 			"ko": "HEAD \uC9C0\uC6D0\uB418\uC9C0 \uC54A\uC73C\uBA74 GET \uC0AC\uC6A9",
-			"pt-BR": "Usar GET se HEAD n\u00E3o for suportado",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C GET, \u0435\u0441\u043B\u0438 HEAD \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F",
 			"zh-CN": "\u4E0D\u652F\u6301 HEAD \u65F6\u6539\u7528 GET"
 		},
@@ -4754,7 +4622,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar uma solicita\u00E7\u00E3o GET para verificar a disponibilidade de uma imagem, se o servidor n\u00E3o suportar solicita\u00E7\u00F5es HEAD",
 			"ru": "\u0411\u0443\u0434\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F GET-\u0437\u0430\u043F\u0440\u043E\u0441 \u0434\u043B\u044F \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0438 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u043E\u0441\u0442\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u0435\u0441\u043B\u0438 \u0441\u0435\u0440\u0432\u0435\u0440 \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442 \u0437\u0430\u043F\u0440\u043E\u0441\u044B HEAD.",
 			"zh-CN": "\u670D\u52A1\u5668\u4E0D\u652F\u6301 HEAD \u8BF7\u6C42\u65F6\u6539\u7528\u4E00\u6761 GET \u8BF7\u6C42\u6765\u68C0\u67E5\u4E00\u4E2A\u56FE\u50CF\u7684\u53EF\u7528\u6027"
 		},
@@ -4767,7 +4634,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tentar encontrar informa\u00E7\u00F5es extras",
 			"ru": "\u041F\u044B\u0442\u0430\u0442\u044C\u0441\u044F \u043D\u0430\u0439\u0442\u0438 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u043D\u0443\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E",
 			"zh-CN": "\u5C1D\u8BD5\u67E5\u627E\u989D\u5916\u4FE1\u606F"
 		},
@@ -4780,7 +4646,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ativa m\u00E9todos que usam chamadas de API para encontrar informa\u00E7\u00F5es extras, como a p\u00E1gina original, legenda ou informa\u00E7\u00F5es do \u00E1lbum. Observe que esta op\u00E7\u00E3o n\u00E3o afeta a localiza\u00E7\u00E3o da m\u00EDdia original.",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043C\u0435\u0442\u043E\u0434\u044B, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0449\u0438\u0435 \u0432\u044B\u0437\u043E\u0432\u044B API \u0434\u043B\u044F \u043F\u043E\u0438\u0441\u043A\u0430 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u043D\u043E\u0439 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438, \u0442\u0430\u043A\u043E\u0439 \u043A\u0430\u043A \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430, \u043F\u043E\u0434\u043F\u0438\u0441\u044C \u0438\u043B\u0438 \u0441\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u043E\u0431 \u0430\u043B\u044C\u0431\u043E\u043C\u0435. \u041E\u0431\u0440\u0430\u0442\u0438\u0442\u0435 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435, \u0447\u0442\u043E \u044D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u043D\u0435 \u0432\u043B\u0438\u044F\u0435\u0442 \u043D\u0430 \u043F\u043E\u0438\u0441\u043A \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u0434\u0438\u0430.",
 			"zh-CN": "\u542F\u7528\u901A\u8FC7 API \u8C03\u7528\u67E5\u627E\u989D\u5916\u4FE1\u606F\u7684\u65B9\u6CD5\uFF0C\u67E5\u627E\u5982\u539F\u59CB\u9875\u9762\u3001\u6807\u9898\u6216\u76F8\u518C\u4FE1\u606F\u3002\u6B64\u9009\u9879\u4E0D\u5F71\u54CD\u67E5\u627E\u539F\u59CB\u7248\u672C\u7684\u5A92\u4F53\u6587\u4EF6\u3002"
 		},
@@ -4793,7 +4658,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "SmugMug",
 			"ru": "SmugMug",
 			"zh-CN": "SmugMug"
 		},
@@ -4806,7 +4670,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ativar dica de ferramenta",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0430\u044F \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0430",
 			"zh-CN": "\u542F\u7528\u5DE5\u5177\u63D0\u793A"
 		},
@@ -4819,7 +4682,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ativa a dica de ferramenta '\u00C9 necess\u00E1rio passar o mouse sobre o popup para exibir a vers\u00E3o original'",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0443 \u00AB\u0414\u043B\u044F \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0438\u0441\u0445\u043E\u0434\u043D\u043E\u0439 \u0432\u0435\u0440\u0441\u0438\u0438 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043C\u044B\u0448\u0438\u00BB.",
 			"zh-CN": "\u542F\u7528\u201C\u9700\u8981\u9F20\u6807\u60AC\u505C\u5F39\u7A97\u6765\u663E\u793A\u539F\u59CB\u7248\u672C\u201D\u7684\u5DE5\u5177\u63D0\u793A"
 		},
@@ -4833,7 +4695,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD234\uD301\uC5D0 \uC774\uBBF8\uC9C0 URL \uD45C\uC2DC",
-			"pt-BR": "Mostrar URL da imagem na dica de ferramenta",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C URL \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0439 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0435",
 			"zh-CN": "\u5728\u5DE5\u5177\u63D0\u793A\u4E2D\u663E\u793A\u56FE\u50CF URL"
 		},
@@ -4847,7 +4708,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB354 \uD070 \uBC84\uC804\uC758 \uC774\uBBF8\uC9C0\uB97C \uD45C\uC2DC\uD558\uAE30 \uC704\uD574 \uD31D\uC5C5\uC774 \uD544\uC694\uD55C \uACBD\uC6B0 \uC774\uBBF8\uC9C0 \uB9C1\uD06C\uB97C \uD234\uD301\uC5D0 \uD45C\uC2DC\uD568",
-			"pt-BR": "Se o popup for necess\u00E1rio para exibir a vers\u00E3o maior de uma imagem, exiba o link da imagem na dica de ferramenta",
 			"ru": "\u0415\u0441\u043B\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0434\u043B\u044F \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u043E\u0439 \u0432\u0435\u0440\u0441\u0438\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u043E\u0442\u043E\u0431\u0440\u0430\u0437\u0438\u0442\u0435 url \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0439 \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0435.",
 			"zh-CN": "\u5982\u679C\u9700\u8981\u5F39\u7A97\u6765\u663E\u793A\u56FE\u50CF\u7684\u8F83\u5927\u7248\u672C\uFF0C\u5728\u5DE5\u5177\u63D0\u793A\u4E2D\u663E\u793A\u56FE\u50CF\u94FE\u63A5"
 		},
@@ -4861,7 +4721,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD234\uD301 \uC228\uAE30\uAE30",
-			"pt-BR": "Ocultar dica de ferramenta ap\u00F3s",
 			"ru": "\u0421\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0443\u044E \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0443 \u0447\u0435\u0440\u0435\u0437",
 			"zh-CN": "\u9690\u85CF\u5DE5\u5177\u63D0\u793A\u7684\u65F6\u95F4"
 		},
@@ -4875,7 +4734,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC9C0\uC815\uB41C \uC2DC\uAC04(\uCD08) \uD6C4\uC5D0(\uB610\uB294 \uB9C8\uC6B0\uC2A4\uAC00 \uD234\uD301\uC744 \uD074\uB9AD\uD560 \uB54C) \uD234\uD301\uC744 \uC228\uAE34\uB2E4. \uC790\uB3D9\uC73C\uB85C \uC228\uAE30\uC9C0 \uC54A\uC73C\uB824\uBA74 0\uC73C\uB85C \uC124\uC815",
-			"pt-BR": "Oculta a dica de ferramenta ap\u00F3s o n\u00FAmero especificado de segundos (ou quando o mouse clica nela). Defina como 0 para nunca ocultar automaticamente",
 			"ru": "\u0421\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0443\u044E \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0443 \u043F\u043E\u0441\u043B\u0435 \u0443\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0441\u0435\u043A\u0443\u043D\u0434 (\u0438\u043B\u0438 \u043A\u043E\u0433\u0434\u0430 \u043C\u044B\u0448\u044C \u0449\u0451\u043B\u043A\u0430\u0435\u0442 \u043F\u043E \u043D\u0435\u0439). 0 - \u043D\u0435 \u0441\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438.",
 			"zh-CN": "\u5728\u6307\u5B9A\u79D2\u6570\u540E\u9690\u85CF\u5DE5\u5177\u63D0\u793A\u3002\u9F20\u6807\u5355\u51FB\u540E\u4E5F\u4F1A\u9690\u85CF\u3002\u8BBE\u4E3A 0 \u5219\u7981\u7528\u81EA\u52A8\u9690\u85CF"
 		},
@@ -4888,7 +4746,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Registrar objeto de informa\u00E7\u00F5es no console",
 			"ru": "\u0412\u044B\u0432\u043E\u0434\u0438\u0442\u044C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043E\u0431 \u043E\u0431\u044A\u0435\u043A\u0442\u0435 \u0432 \u043A\u043E\u043D\u0441\u043E\u043B\u044C",
 			"zh-CN": "\u8BB0\u5F55\u4FE1\u606F\u5BF9\u8C61\u5230\u63A7\u5236\u53F0"
 		},
@@ -4901,7 +4758,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Imprime o objeto de informa\u00E7\u00F5es completo no console sempre que um popup/redirecionamento for encontrado",
 			"ru": "\u0412\u044B\u0432\u043E\u0434\u0438\u0442 \u043F\u043E\u043B\u043D\u0443\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043E\u0431\u044A\u0435\u043A\u0442\u0430 \u0432 \u043A\u043E\u043D\u0441\u043E\u043B\u044C \u0432\u0441\u044F\u043A\u0438\u0439 \u0440\u0430\u0437, \u043A\u043E\u0433\u0434\u0430 \u043E\u0431\u043D\u0430\u0440\u0443\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E/\u043F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u6BCF\u5F53\u53D1\u73B0\u5F39\u51FA/\u91CD\u5B9A\u5411\u65F6\uFF0C\u8BB0\u5F55\u5B8C\u6574\u7684\u4FE1\u606F\u5BF9\u8C61\u5230\u63A7\u5236\u53F0"
 		},
@@ -4914,7 +4770,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Desativar quando os cabe\u00E7alhos de resposta precisarem ser modificados",
 			"ru": "\u041E\u0442\u043A\u043B\u044E\u0447\u0430\u0442\u044C, \u043A\u043E\u0433\u0434\u0430 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0438 \u043E\u0442\u0432\u0435\u0442\u043E\u0432 \u043D\u0443\u0436\u0434\u0430\u044E\u0442\u0441\u044F \u0432 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0438",
 			"zh-CN": "\u9700\u8981\u4FEE\u6539\u54CD\u5E94\u5934\u65F6\u7981\u7528"
 		},
@@ -4927,7 +4782,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Esta op\u00E7\u00E3o contorna a migra\u00E7\u00E3o do Chrome para o manifesto v3, redirecionando algumas imagens para serem baixadas \u00E0 for\u00E7a",
 			"ru": "\u042D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432\u043E\u043A\u0440\u0443\u0433 \u043C\u0438\u0433\u0440\u0430\u0446\u0438\u0438 Chrome \u0432 manifest v3, \u043F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u043D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043A \u043F\u0440\u0438\u043D\u0443\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u043C\u0443 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044E",
 			"zh-CN": "\u6B64\u9009\u9879\u662F\u4E3A\u914D\u5408 Chrome \u7684\u8FC1\u79FB\u5230 manifest v3\uFF0C\u91CD\u5B9A\u5411\u4E00\u4E9B\u56FE\u50CF\u6765\u5F3A\u5236\u4E0B\u8F7D"
 		},
@@ -4941,7 +4795,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBB38\uC81C\uC5C6\uC774 \uCD5C\uB300\uB85C \uB9AC\uB514\uB809\uC158",
-			"pt-BR": "Redirecionar para a maior sem problemas",
 			"ru": "\u0411\u0435\u0437 \u043F\u0440\u043E\u0431\u043B\u0435\u043C \u043F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C \u043D\u0430 \u0441\u0430\u043C\u043E\u0435 \u0431\u043E\u043B\u044C\u0448\u043E\u0435",
 			"zh-CN": "\u65E0\u9700\u6C42\u4E5F\u91CD\u5B9A\u5411\u5230\u6700\u5927\u7248\u672C"
 		},
@@ -4955,7 +4808,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC0AC\uC6A9\uC790 \uC9C0\uC815 \uD5E4\uB354\uB098 \uAC15\uC81C \uB2E4\uC6B4\uB85C\uB4DC\uAC00 \uD544\uC694 \uC5C6\uB294 \uAC00\uC7A5 \uD070 \uC774\uBBF8\uC9C0\uB85C \uB9AC\uB514\uB809\uC158",
-			"pt-BR": "Redireciona para a maior imagem encontrada que n\u00E3o requer cabe\u00E7alhos personalizados ou for\u00E7a o download",
 			"ru": "\u041F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442 \u043D\u0430 \u0441\u0430\u043C\u043E\u0435 \u0431\u043E\u043B\u044C\u0448\u043E\u0435 \u043D\u0430\u0439\u0434\u0435\u043D\u043D\u043E\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435, \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u043D\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0445 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u043E\u0432 \u0438\u043B\u0438 \u043F\u0440\u0438\u043D\u0443\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F.",
 			"zh-CN": "\u91CD\u5B9A\u5411\u5230\u627E\u5230\u7684\u6700\u5927\u56FE\u50CF\u7248\u672C\uFF0C\u54EA\u6015\u4E0D\u9700\u8981\u81EA\u5B9A\u4E49\u5934\u6216\u5F3A\u5236\u4E0B\u8F7D"
 		},
@@ -4968,7 +4820,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Redirecionar p\u00E1ginas HTML tamb\u00E9m",
 			"ru": "\u041F\u0435\u0440\u0435\u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C \u0434\u043B\u044F HTML-\u0441\u0442\u0440\u0430\u043D\u0438\u0446 \u0442\u043E\u0436\u0435",
 			"zh-CN": "\u540C\u65F6\u91CD\u5B9A\u5411 HTML \u9875\u9762"
 		},
@@ -4980,8 +4831,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Tenta redirecionar mesmo se a p\u00E1gina de origem for HTML. Esta op\u00E7\u00E3o pode ser \u00FAtil para links inativos. No entanto, isso tamb\u00E9m far\u00E1 com que muitas p\u00E1ginas normais sejam redirecionadas para imagens/v\u00EDdeo, portanto, use com cautela."
+			}
 		},
 		"This will result in many pages being redirected to images/videos.\nI'd recommend only either enabling this for the media you need it for then disabling it after, or using the black/whitelist feature below to only allow it to run for specified websites.": {
 			"_info": {
@@ -4991,8 +4841,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "warning.true"
 					}
 				]
-			},
-			"pt-BR": "Isso resultar\u00E1 no redirecionamento de v\u00E1rias p\u00E1ginas para imagens/v\u00EDdeos.\nRecomendo habilitar esta op\u00E7\u00E3o apenas para a m\u00EDdia que voc\u00EA precisa e desabilit\u00E1-la em seguida, ou usar o recurso de lista negra/branca abaixo para permitir que ela seja executada apenas em sites espec\u00EDficos."
+			}
 		},
 		"Enable mouseover popup": {
 			"_info": {
@@ -5007,7 +4856,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Activar popup de la imagen",
 			"fr": "Activer le popup",
 			"ko": "\uC774\uBBF8\uC9C0 \uD31D\uC5C5 \uC0AC\uC6A9",
-			"pt-BR": "Ativar pop-up ao passar o mouse",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043C\u044B\u0448\u0438",
 			"zh-CN": "\u542F\u7528\u9F20\u6807\u60AC\u505C\u5F39\u7A97"
 		},
@@ -5021,7 +4869,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD2B8\uB9AC\uAC70 \uD0A4\uB97C \uB204\uB978 \uC0C1\uD0DC\uB85C \uC601\uC0C1\uC744 \uB9C8\uC6B0\uC2A4\uB85C \uAC00\uB9AC\uD0AC \uB54C \uB354 \uD070 \uC774\uBBF8\uC9C0\uB85C \uD31D\uC5C5 \uD45C\uC2DC (\uAC00\uB2A5\uD55C \uACBD\uC6B0)",
-			"pt-BR": "Exibir um pop-up com a imagem ampliada ao passar o mouse sobre uma imagem com a tecla de gatilho pressionada (se aplic\u00E1vel)",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0441 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u044B\u043C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435\u043C \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043C\u044B\u0448\u0438 \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0441 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u043C\u043E\u0439 \u0446\u0435\u043B\u0435\u0432\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0435\u0439 (\u0435\u0441\u043B\u0438 \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u043C\u043E).",
 			"zh-CN": "\u5F53\u9F20\u6807\u60AC\u505C\u5728\u4E00\u4E2A\u56FE\u50CF\u4E0A\u65F6\uFF0C\u7528\u89E6\u53D1\u952E\uFF08\u5982\u679C\u9002\u7528\uFF09\u663E\u793A\u4E00\u4E2A\u5F39\u7A97"
 		},
@@ -5038,7 +4885,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Acci\u00F3n del popup al mover el rat\u00F3n encima",
 			"fr": "D\u00E9clencheur du popup",
 			"ko": "\uD31D\uC5C5 \uD2B8\uB9AC\uAC70",
-			"pt-BR": "Gatilho do pop-up ao passar o mouse",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043C\u044B\u0448\u0438",
 			"zh-CN": "\u9F20\u6807\u60AC\u505C\u5F39\u7A97\u89E6\u53D1\u5668"
 		},
@@ -5052,7 +4898,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5 \uC791\uB3D9 \uBC29\uBC95",
-			"pt-BR": "Como o pop-up ser\u00E1 acionado",
 			"ru": "\u041A\u0430\u043A \u0431\u0443\u0434\u0435\u0442 \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E",
 			"zh-CN": "\u5F39\u7A97\u89E6\u53D1\u65B9\u5F0F"
 		},
@@ -5067,7 +4912,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Mover rat\u00F3n encima",
 			"ko": "\uB9C8\uC6B0\uC2A4",
-			"pt-BR": "Ao passar o mouse",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0435 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043C\u044B\u0448\u0438",
 			"zh-CN": "\u9F20\u6807\u60AC\u505C"
 		},
@@ -5080,7 +4924,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Aciona quando o mouse est\u00E1 sobre a imagem",
 			"ru": "\u0421\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0435\u0442 \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0438",
 			"zh-CN": "\u9F20\u6807\u5728\u56FE\u50CF\u4E0A\u60AC\u505C\u65F6\u89E6\u53D1"
 		},
@@ -5095,7 +4938,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Tecla de acci\u00F3n",
 			"ko": "\uD0A4 \uBC14\uC778\uB529",
-			"pt-BR": "Tecla de gatilho",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u043A\u043B\u0430\u0432\u0438\u0448\u0438",
 			"zh-CN": "\u6309\u952E\u89E6\u53D1"
 		},
@@ -5108,7 +4950,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Aciona ao pressionar uma sequ\u00EAncia de teclas quando o mouse est\u00E1 sobre uma imagem",
 			"ru": "\u0421\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u0435\u0442 \u043F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u043A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u0438 \u043A\u043B\u0430\u0432\u0438\u0448, \u043A\u043E\u0433\u0434\u0430 \u043A\u0443\u0440\u0441\u043E\u0440 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0438.",
 			"zh-CN": "\u5F53\u9F20\u6807\u5728\u56FE\u50CF\u4E0A\u60AC\u505C\u65F6\u6309\u6307\u5B9A\u952E\u89E6\u53D1"
 		},
@@ -5121,7 +4962,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Desativa o acionamento do pop-up (\u00FAtil se voc\u00EA deseja usar apenas o item do menu de contexto)",
 			"ru": "\u041E\u0442\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u043D\u0438\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 (\u043F\u043E\u043B\u0435\u0437\u043D\u043E, \u0435\u0441\u043B\u0438 \u0432\u044B \u0445\u043E\u0442\u0438\u0442\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0443\u043D\u043A\u0442 \u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442\u043D\u043E\u0433\u043E \u043C\u0435\u043D\u044E)",
 			"zh-CN": "\u7981\u6B62\u89E6\u53D1\u5F39\u7A97\uFF08\u5982\u679C\u60A8\u53EA\u60F3\u4F7F\u7528\u53F3\u952E\u83DC\u5355\u9879\uFF0C\u5219\u6B64\u9009\u9879\u5F88\u5B9E\u7528\uFF09"
 		},
@@ -5136,7 +4976,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Tecla de acci\u00F3n del popup",
 			"ko": "\uD31D\uC5C5 \uD0A4 \uBC14\uC778\uB529",
-			"pt-BR": "Tecla de gatilho do pop-up",
 			"ru": "\u041A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u044F \u043A\u043B\u0430\u0432\u0438\u0448 \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u89E6\u53D1\u952E"
 		},
@@ -5150,7 +4989,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC774 \uC791\uB3D9\uD558\uB294 \uD0A4",
-			"pt-BR": "Sequ\u00EAncia de teclas para acionar o pop-up",
 			"ru": "\u041A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u044F \u043A\u043B\u0430\u0432\u0438\u0448 \u043F\u0440\u0438 \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E",
 			"zh-CN": "\u89E6\u53D1\u5F39\u7A97\u7684\u6309\u952E\u5E8F\u5217"
 		},
@@ -5163,7 +5001,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de gatilho do pop-up (#2)",
 			"ru": "\u041A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u044F \u043A\u043B\u0430\u0432\u0438\u0448 \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 (#2)",
 			"zh-CN": "\u5F39\u7A97\u89E6\u53D1\u952E (#2)"
 		},
@@ -5176,7 +5013,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Sequ\u00EAncia de teclas para acionar o pop-up com op\u00E7\u00F5es alternativas. Procure por `(#2)` para encontrar as op\u00E7\u00F5es relevantes",
 			"ru": "\u041A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u044F \u043A\u043B\u0430\u0432\u0438\u0448 \u043F\u0440\u0438 \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0441 \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u043D\u044B\u043C\u0438 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430\u043C\u0438. \u0418\u0449\u0438\u0442\u0435 `(#2)`, \u0447\u0442\u043E\u0431\u044B \u043D\u0430\u0439\u0442\u0438 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0435 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B.",
 			"zh-CN": "\u89E6\u53D1\u5F39\u7A97\u7684\u6309\u952E\u5E8F\u5217\uFF0C\u642D\u914D\u5907\u7528\u9009\u9879\u3002\u641C\u7D22\u201C(#2)\u201D\u627E\u5230\u76F8\u5173\u7684\u9009\u9879"
 		},
@@ -5189,7 +5025,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de gatilho do pop-up (#3)",
 			"ru": "\u041A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u044F \u043A\u043B\u0430\u0432\u0438\u0448 \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 (#3)",
 			"zh-CN": "\u5F39\u7A97\u89E6\u53D1\u952E (#3)"
 		},
@@ -5202,7 +5037,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Sequ\u00EAncia de teclas para acionar o pop-up com op\u00E7\u00F5es alternativas. Procure por `(#3)` para encontrar as op\u00E7\u00F5es relevantes",
 			"ru": "\u041A\u043E\u043C\u0431\u0438\u043D\u0430\u0446\u0438\u044F \u043A\u043B\u0430\u0432\u0438\u0448 \u043F\u0440\u0438 \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0435\u0442\u0441\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0441 \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u043D\u044B\u043C\u0438 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430\u043C\u0438. \u0418\u0449\u0438\u0442\u0435 `(#3)`, \u0447\u0442\u043E\u0431\u044B \u043D\u0430\u0439\u0442\u0438 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0435 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u044B.",
 			"zh-CN": "\u89E6\u53D1\u5F39\u7A97\u7684\u6309\u952E\u5E8F\u5217\uFF0C\u642D\u914D\u5907\u7528\u9009\u9879\u3002\u641C\u7D22\u201C(#3)\u201D\u627E\u5230\u76F8\u5173\u7684\u9009\u9879"
 		},
@@ -5217,7 +5051,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Retraso de acci\u00F3n del popup",
 			"ko": "\uD31D\uC5C5 \uC791\uC5C5 \uC9C0\uC5F0 \uC2DC\uAC04",
-			"pt-BR": "Atraso no acionamento do pop-up",
 			"ru": "\u0417\u0430\u0434\u0435\u0440\u0436\u043A\u0430 \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u043D\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u89E6\u53D1\u952E\u5EF6\u8FDF"
 		},
@@ -5231,7 +5064,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC774 \uD45C\uC2DC\uB420 \uB54C\uAE4C\uC9C0 \uC9C0\uC5F0 (\uCD08)",
-			"pt-BR": "Atraso (em segundos) antes da exibi\u00E7\u00E3o do pop-up",
 			"ru": "\u0417\u0430\u0434\u0435\u0440\u0436\u043A\u0430 (\u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0430\u0445) \u0434\u043E \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u663E\u793A\u524D\u5EF6\u8FDF\uFF08\u79D2\uFF09"
 		},
@@ -5244,7 +5076,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar evento mouseover",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0441\u043E\u0431\u044B\u0442\u0438\u0435 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043C\u044B\u0448\u0438",
 			"zh-CN": "\u4F7F\u7528 mouseover \u4E8B\u4EF6"
 		},
@@ -5257,7 +5088,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usa o evento 'mouseover' em vez de 'mousemove' para determinar onde acionar o pop-up. Isso se assemelha mais ao funcionamento de outros complementos de pop-up de imagem, em detrimento da configurabilidade",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u043E\u0431\u044B\u0442\u0438\u0435 '\u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043C\u044B\u0448\u0438' \u0432\u043C\u0435\u0441\u0442\u043E '\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043C\u044B\u0448\u0438', \u0447\u0442\u043E\u0431\u044B \u0432\u044B\u044F\u0441\u043D\u0438\u0442\u044C, \u0433\u0434\u0435 \u0432\u044B\u0437\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E. \u042D\u0442\u043E \u0431\u043E\u043B\u0435\u0435 \u0442\u043E\u0447\u043D\u043E \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u0442\u043E\u043C\u0443, \u043A\u0430\u043A \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0434\u0440\u0443\u0433\u0438\u0435 \u0434\u043E\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u043A \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u043C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\u043C, \u0437\u0430 \u0441\u0447\u0451\u0442 \u043A\u043E\u043D\u0444\u0438\u0433\u0443\u0440\u0438\u0440\u0443\u0435\u043C\u043E\u0441\u0442\u0438/",
 			"zh-CN": "\u4F7F\u7528 mouseover \u4E8B\u4EF6\u800C\u4E0D\u662F mousemove \u6765\u786E\u5B9A\u5728\u54EA\u91CC\u89E6\u53D1\u5F39\u7A97\u3002\u8FD9\u66F4\u63A5\u8FD1\u4E8E\u5176\u4ED6\u56FE\u50CF\u5F39\u7A97\u6269\u5C55\u7684\u8FD0\u4F5C\u65B9\u5F0F\uFF0C\u4EE3\u4EF7\u662F\u53EF\u914D\u7F6E\u6027"
 		},
@@ -5270,7 +5100,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Altern\u00E2ncia de ativar/desativar",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C/\u0412\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C",
 			"zh-CN": "\u542F\u7528/\u7981\u7528\u5207\u6362\u5F00\u5173"
 		},
@@ -5283,7 +5112,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Controla se a 'Tecla de ativar/desativar pop-up' ir\u00E1 ativar ou desativar a abertura do pop-up",
 			"ru": "\u0423\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442 \u0442\u0435\u043C, \u0431\u0443\u0434\u0435\u0442 \u043B\u0438 '\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430' \u0432\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0438\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u63A7\u5236\u201C\u5F39\u7A97\u542F\u7528/\u7981\u7528\u952E\u201D\u662F\u5426\u63A7\u5236\u5F39\u7A97\u7684\u6253\u5F00"
 		},
@@ -5296,7 +5124,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ativar",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C",
 			"zh-CN": "\u542F\u7528"
 		},
@@ -5309,7 +5136,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Desativar",
 			"ru": "\u041E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C",
 			"zh-CN": "\u7981\u7528"
 		},
@@ -5322,7 +5148,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de ativar/desativar pop-up",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F/\u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u542F\u7528/\u7981\u7528\u952E"
 		},
@@ -5335,7 +5160,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Manter esta tecla pressionada ativar\u00E1 ou desativar\u00E1 a abertura do pop-up, dependendo da configura\u00E7\u00E3o 'Altern\u00E2ncia de ativar/desativar'",
 			"ru": "\u0423\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u0435 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438 \u0432\u043A\u043B\u044E\u0447\u0438\u0442 \u0438\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E, \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438 '\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C/\u0412\u044B\u043A\u043B\u044E\u0447\u0438\u0442\u044C'.",
 			"zh-CN": "\u6309\u4F4F\u8FD9\u4E2A\u952E\u5C06\u542F\u7528/\u7981\u7528\u5F39\u7A97\u6253\u5F00\uFF0C\u5177\u4F53\u53D6\u51B3\u4E8E\u201C\u542F\u7528/\u7981\u7528\u5207\u6362\u5F00\u5173\u201D\u8BBE\u7F6E"
 		},
@@ -5369,7 +5193,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBD80\uBD84\uC801\uC73C\uB85C \uB85C\uB4DC\uB41C \uC0C1\uD0DC\uB85C \uD45C\uC2DC \uD5C8\uC6A9",
-			"pt-BR": "Permitir exibi\u00E7\u00E3o de carregamento parcial",
 			"ru": "\u0420\u0430\u0437\u0440\u0435\u0448\u0438\u0442\u044C \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0435",
 			"zh-CN": "\u5141\u8BB8\u663E\u793A\u90E8\u5206\u52A0\u8F7D\u7684\u5185\u5BB9"
 		},
@@ -5382,7 +5205,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Isso permitir\u00E1 que o popup seja aberto para m\u00EDdia parcialmente carregada.\nM\u00EDdia parcialmente carregada conter\u00E1 a URL de origem diretamente (quando poss\u00EDvel), enquanto m\u00EDdia totalmente carregada usar\u00E1 um blob ou data URL.",
 			"ru": "\u042D\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0445 \u043C\u0435\u0434\u0438\u0430.\n\u0427\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0435 \u043C\u0435\u0434\u0438\u0430 \u0431\u0443\u0434\u0443\u0442 \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u0442\u044C \u0438\u0441\u0445\u043E\u0434\u043D\u044B\u0439 URL \u043D\u0430\u043F\u0440\u044F\u043C\u0443\u044E (\u0433\u0434\u0435 \u044D\u0442\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E), \u0442\u043E\u0433\u0434\u0430 \u043A\u0430\u043A \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0435 \u043C\u0435\u0434\u0438\u0430 \u0431\u0443\u0434\u0443\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C BLOB \u0438\u043B\u0438 URL-\u0430\u0434\u0440\u0435\u0441 \u0434\u0430\u043D\u043D\u044B\u0445.",
 			"zh-CN": "\u8FD9\u5C06\u5141\u8BB8\u4E3A\u90E8\u5206\u52A0\u8F7D\u7684\u5A92\u4F53\u6253\u5F00\u5F39\u7A97\u3002\n\u90E8\u5206\u52A0\u8F7D\u7684\u5A92\u4F53\u5C06\u76F4\u63A5\u5305\u542B\u6E90 URL\uFF08\u5982\u679C\u53EF\u80FD\uFF09\uFF0C\u800C\u5B8C\u5168\u52A0\u8F7D\u7684\u5A92\u4F53\u4F7F\u7528 blob \u6216\u6570\u636E URL\u3002"
 		},
@@ -5395,7 +5217,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Isso permitir\u00E1 que o popup seja aberto para m\u00EDdia parcialmente carregada, mas pode quebrar imagens que exigem cabe\u00E7alhos personalizados para serem exibidas corretamente.\nM\u00EDdia parcialmente carregada conter\u00E1 a URL de origem diretamente (quando poss\u00EDvel), enquanto m\u00EDdia totalmente carregada usar\u00E1 um blob ou data URL.",
 			"ru": "\u042D\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0445 \u043C\u0435\u0434\u0438\u0430, \u043D\u043E \u044D\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043B\u043E\u043C\u0430\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u0434\u043B\u044F \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0433\u043E \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0442\u0440\u0435\u0431\u0443\u044E\u0442\u0441\u044F \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0435 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0438.\n\u0427\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0435 \u043C\u0435\u0434\u0438\u0430 \u0431\u0443\u0434\u0443\u0442 \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u0442\u044C \u0438\u0441\u0445\u043E\u0434\u043D\u044B\u0439 URL-\u0430\u0434\u0440\u0435\u0441 \u043D\u0430\u043F\u0440\u044F\u043C\u0443\u044E (\u0433\u0434\u0435 \u044D\u0442\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E), \u0442\u043E\u0433\u0434\u0430 \u043A\u0430\u043A \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0435 \u043C\u0435\u0434\u0438\u0430 \u0431\u0443\u0434\u0443\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C BLOB \u0438\u043B\u0438 URL-\u0430\u0434\u0440\u0435\u0441 \u0434\u0430\u043D\u043D\u044B\u0445.",
 			"zh-CN": "\u8FD9\u5C06\u5141\u8BB8\u4E3A\u90E8\u5206\u52A0\u8F7D\u7684\u5A92\u4F53\u6253\u5F00\u5F39\u7A97\uFF0C\u4F46\u8FD9\u53EF\u80FD\u5BFC\u81F4\u9700\u8981\u81EA\u5B9A\u4E49\u6807\u5934\u624D\u80FD\u6B63\u786E\u663E\u793A\u7684\u56FE\u50CF\u51FA\u9519\u3002\n\u90E8\u5206\u52A0\u8F7D\u7684\u5A92\u4F53\u5C06\u76F4\u63A5\u5305\u542B\u6E90 URL\uFF08\u5982\u679C\u53EF\u80FD\uFF09\uFF0C\u800C\u5B8C\u5168\u52A0\u8F7D\u7684\u5A92\u4F53\u4F7F\u7528 blob \u6216\u6570\u636E URL\u3002"
 		},
@@ -5408,7 +5229,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Transmiss\u00F5es",
 			"ru": "\u041F\u043E\u0442\u043E\u043A\u0438",
 			"zh-CN": "\u6570\u636E\u6D41"
 		},
@@ -5421,7 +5241,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "\u00C1udio e v\u00EDdeo",
 			"ru": "\u0410\u0443\u0434\u0438\u043E \u0438 \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u97F3\u9891\u548C\u89C6\u9891"
 		},
@@ -5436,7 +5255,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Medios",
 			"ko": "\uBBF8\uB514\uC5B4",
-			"pt-BR": "M\u00EDdia",
 			"ru": "\u041C\u0435\u0434\u0438\u0430",
 			"zh-CN": "\u591A\u5A92\u4F53"
 		},
@@ -5449,7 +5267,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Imagens, \u00E1udio e v\u00EDdeo",
 			"ru": "\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u0430\u0443\u0434\u0438\u043E \u0438 \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u56FE\u50CF\u3001\u97F3\u9891\u548C\u89C6\u9891"
 		},
@@ -5462,7 +5279,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Evitar requisi\u00E7\u00E3o HEAD para m\u00EDdia parcialmente carregada",
 			"ru": "\u0418\u0437\u0431\u0435\u0433\u0430\u0442\u044C \u0437\u0430\u043F\u0440\u043E\u0441\u044B HEAD \u0434\u043B\u044F \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0445 \u043C\u0435\u0434\u0438\u0430",
 			"zh-CN": "\u907F\u514D\u5BF9\u5DF2\u90E8\u5206\u52A0\u8F7D\u7684\u5A92\u4F53\u53D1\u51FA HEAD \u8BF7\u6C42"
 		},
@@ -5475,7 +5291,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Evita uma requisi\u00E7\u00E3o HEAD possivelmente desnecess\u00E1ria antes de exibir imagens parcialmente carregadas, o que diminui ainda mais o atraso antes de abrir o pop-up. Isso pode causar problemas se o servidor retornar um erro, mas ainda assim retornar uma imagem",
 			"ru": "\u0418\u0437\u0431\u0435\u0433\u0430\u0435\u0442 \u043D\u0435\u043D\u0443\u0436\u043D\u043E\u0433\u043E \u0437\u0430\u043F\u0440\u043E\u0441\u0430 HEAD \u043F\u0435\u0440\u0435\u0434 \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435\u043C \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0445 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439, \u0447\u0442\u043E \u0435\u0449\u0435 \u0431\u043E\u043B\u044C\u0448\u0435 \u0443\u043C\u0435\u043D\u044C\u0448\u0430\u0435\u0442 \u0437\u0430\u0434\u0435\u0440\u0436\u043A\u0443 \u043F\u0435\u0440\u0435\u0434 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0435\u043C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430. \u042D\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u0432\u044B\u0437\u0432\u0430\u0442\u044C \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u044B, \u0435\u0441\u043B\u0438 \u0441\u0435\u0440\u0432\u0435\u0440 \u0432\u0435\u0440\u043D\u0451\u0442 \u043E\u0448\u0438\u0431\u043A\u0443, \u043D\u043E \u0432\u0441\u0435 \u0440\u0430\u0432\u043D\u043E \u0432\u0435\u0440\u043D\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435.",
 			"zh-CN": "\u663E\u793A\u5DF2\u90E8\u5206\u52A0\u8F7D\u7684\u5A92\u4F53\u65F6\u907F\u514D\u53EF\u80FD\u4E0D\u5FC5\u8981\u7684 HEAD \u8BF7\u6C42\uFF0C\u8FD9\u80FD\u8FDB\u4E00\u6B65\u51CF\u5C11\u6253\u5F00\u5F39\u7A97\u7684\u5EF6\u8FDF\u3002\u4F46\u5982\u679C\u670D\u52A1\u5668\u8FD4\u56DE\u4E00\u4E2A\u9519\u8BEF\u7684\u540C\u65F6\u4E5F\u8FD4\u56DE\u4E86\u4E00\u4E2A\u56FE\u50CF\uFF0C\u8FD9\u53EF\u80FD\u4F1A\u5BFC\u81F4\u95EE\u9898"
 		},
@@ -5488,7 +5303,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Use `blob:` em vez de URLs `data:`",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C `blob:` \u043F\u043E\u0432\u0435\u0440\u0445 `data:` URL",
 			"zh-CN": "\u4F7F\u7528 blob: \u4EE3\u66FF data: URL"
 		},
@@ -5501,7 +5315,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "URLs Blob s\u00E3o mais eficientes, mas n\u00E3o s\u00E3o suportadas por navegadores mais antigos. Alguns sites tamb\u00E9m bloqueiam URLs `blob:`",
 			"ru": "Blob URL \u0431\u043E\u043B\u0435\u0435 \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u044B, \u043D\u043E \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u0441\u0442\u0430\u0440\u044B\u043C\u0438 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430\u043C\u0438. \u041D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0441\u0430\u0439\u0442\u044B \u0442\u0430\u043A\u0436\u0435 \u0431\u043B\u043E\u043A\u0438\u0440\u0443\u044E\u0442 `blob:` URL.",
 			"zh-CN": "Blob URL \u6548\u7387\u66F4\u4F73\uFF0C\u4F46\u65E9\u671F\u7248\u672C\u7684\u6D4F\u89C8\u5668\u4E0D\u652F\u6301\u3002\u4E00\u4E9B\u7F51\u7AD9\u4E5F\u5C4F\u853D\u4E86 Blob: URL"
 		},
@@ -5514,7 +5327,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Carregar m\u00EDdia anonimamente",
 			"ru": "\u0417\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044C \u043C\u0435\u0434\u0438\u0430 \u0430\u043D\u043E\u043D\u0438\u043C\u043D\u043E",
 			"zh-CN": "\u533F\u540D\u52A0\u8F7D\u5A92\u4F53"
 		},
@@ -5527,7 +5339,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Carrega a m\u00EDdia sem enviar cookies ou outras formas de credenciais. Isso \u00E9 necess\u00E1rio para capturar v\u00EDdeos de outras fontes",
 			"ru": "\u0417\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442 \u043C\u0435\u0434\u0438\u0430 \u0431\u0435\u0437 \u043E\u0442\u043F\u0440\u0430\u0432\u043A\u0438 \u043A\u0443\u043A\u0438-\u0444\u0430\u0439\u043B\u043E\u0432 \u0438\u043B\u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u0444\u043E\u0440\u043C \u0443\u0447\u0451\u0442\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445. \u042D\u0442\u043E \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0434\u043B\u044F \u0441\u043A\u0440\u0438\u043D\u0448\u043E\u0442\u043E\u0432 \u0432\u0438\u0434\u0435\u043E \u0438\u0437 \u0434\u0440\u0443\u0433\u0438\u0445 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u043E\u0432.",
 			"zh-CN": "\u52A0\u8F7D\u5A92\u4F53\u800C\u4E0D\u53D1\u9001\u4EFB\u4F55 Cookie \u6216\u5176\u4ED6\u5F62\u5F0F\u7684\u51ED\u636E\u3002\u8FD9\u9700\u8981\u6709\u5176\u4ED6\u6765\u6E90\u7684\u89C6\u9891\u622A\u56FE"
 		},
@@ -5541,7 +5352,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC9C0\uC6D0\uB418\uC9C0 \uC54A\uC744 \uB54C \uD5C8\uC6A9\uB418\uC9C0 \uC54A\uB294 \uCEE4\uC11C\uB97C \uC0AC\uC6A9",
-			"pt-BR": "Usar cursor `not-allowed` quando n\u00E3o for suportado",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043A\u0443\u0440\u0441\u043E\u0440 `\u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D\u043E`, \u0435\u0441\u043B\u0438 \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F",
 			"zh-CN": "\u4E0D\u652F\u6301\u65F6\u7ED9\u51FA\u9F20\u6807\u6307\u9488\u201C\u7981\u6B62\u201D"
 		},
@@ -5555,7 +5365,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774\uBBF8\uC9C0\uAC00 \uC9C0\uC6D0\uB418\uC9C0 \uC54A\uC73C\uBA74 \uB9C8\uC6B0\uC2A4 \uCEE4\uC11C\uAC00 \uC7A0\uC2DC \uB3D9\uC548 \uD5C8\uC6A9\uB418\uC9C0 \uC54A\uB294 \uCEE4\uC11C\uB85C \uBCC0\uACBD\uB428",
-			"pt-BR": "Se a imagem n\u00E3o for suportada, o cursor do mouse mudar\u00E1 para um cursor `not-allowed` por um breve per\u00EDodo",
 			"ru": "\u0415\u0441\u043B\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F, \u043A\u0443\u0440\u0441\u043E\u0440 \u043C\u044B\u0448\u0438 \u043D\u0430 \u043A\u043E\u0440\u043E\u0442\u043A\u043E\u0435 \u0432\u0440\u0435\u043C\u044F \u0438\u0437\u043C\u0435\u043D\u0438\u0442\u0441\u044F \u043D\u0430 `\u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D\u043E`.",
 			"zh-CN": "\u5982\u679C\u9047\u5230\u4E0D\u652F\u6301\u7684\u56FE\u50CF\uFF0C\u9F20\u6807\u6307\u9488\u5C06\u6682\u65F6\u53D8\u4E3A\u201C\u7981\u6B62\u201D\u56FE\u6848"
 		},
@@ -5568,7 +5377,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar cursor `not-allowed` quando n\u00E3o for poss\u00EDvel carregar",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043A\u0443\u0440\u0441\u043E\u0440 `\u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D\u043E`, \u0435\u0441\u043B\u0438 \u043D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044C",
 			"zh-CN": "\u65E0\u6CD5\u52A0\u8F7D\u65F6\u7ED9\u51FA\u9F20\u6807\u6307\u9488\u201C\u7981\u6B62\u201D"
 		},
@@ -5582,7 +5390,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774\uBBF8\uC9C0\uB97C \uBD88\uB7EC\uC62C \uC218 \uC5C6\uC73C\uBA74 \uB9C8\uC6B0\uC2A4 \uCEE4\uC11C\uAC00 \uC7A0\uC2DC \uB3D9\uC548 \uD5C8\uC6A9\uB418\uC9C0 \uC54A\uB294 \uCEE4\uC11C\uB85C \uBCC0\uACBD\uB428",
-			"pt-BR": "Se a imagem n\u00E3o carregar, o cursor do mouse mudar\u00E1 para um cursor `not-allowed` por um breve per\u00EDodo",
 			"ru": "\u0415\u0441\u043B\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043D\u0435 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442\u0441\u044F, \u043A\u0443\u0440\u0441\u043E\u0440 \u043C\u044B\u0448\u0438 \u043D\u0430 \u043A\u043E\u0440\u043E\u0442\u043A\u043E\u0435 \u0432\u0440\u0435\u043C\u044F \u0438\u0437\u043C\u0435\u043D\u0438\u0442\u0441\u044F \u043D\u0430 `\u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D\u043E`.",
 			"zh-CN": "\u5982\u679C\u56FE\u50CF\u4E0B\u8F7D\u5931\u8D25\uFF0C\u9F20\u6807\u6307\u9488\u5C06\u6682\u65F6\u53D8\u4E3A\u201C\u7981\u6B62\u201D\u56FE\u6848"
 		},
@@ -5595,7 +5402,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Dura\u00E7\u00E3o do cursor `not-allowed`",
 			"ru": "\u0414\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043A\u0443\u0440\u0441\u043E\u0440\u0430 `\u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D\u043E`",
 			"zh-CN": "\u201C\u7981\u6B62\u201D\u6307\u9488\u6301\u7EED\u65F6\u95F4"
 		},
@@ -5608,7 +5414,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tempo de dura\u00E7\u00E3o do cursor `not-allowed`",
 			"ru": "\u041A\u0430\u043A \u0434\u043E\u043B\u0433\u043E \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u0442\u0441\u044F \u043A\u0443\u0440\u0441\u043E\u0440 `\u0437\u0430\u043F\u0440\u0435\u0449\u0435\u043D\u043E`",
 			"zh-CN": "\u201C\u7981\u6B62\u201D\u6307\u9488\u7684\u663E\u793A\u6301\u7EED\u591A\u4E45"
 		},
@@ -5622,7 +5427,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774\uBBF8\uC9C0 \uD0ED \uC81C\uC678",
-			"pt-BR": "Excluir abas de imagens",
 			"ru": "\u0418\u0441\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0432\u043A\u043B\u0430\u0434\u043A\u0438 \u0441 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\u043C\u0438",
 			"zh-CN": "\u6392\u9664\u56FE\u50CF\u6807\u7B7E\u9875"
 		},
@@ -5636,7 +5440,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC790\uC2E0\uC758 \uD0ED\uC5D0\uC11C \uC5F4\uB9B0 \uC774\uBBF8\uC9C0 \uC81C\uC678",
-			"pt-BR": "Exclui imagens que s\u00E3o abertas em suas pr\u00F3prias abas",
 			"ru": "\u0418\u0441\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0435 \u0432 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0445 \u0432\u043A\u043B\u0430\u0434\u043A\u0430\u0445.",
 			"zh-CN": "\u6392\u9664\u5728\u5355\u72EC\u7684\u6807\u7B7E\u9875\u4E2D\u6253\u5F00\u7684\u56FE\u50CF"
 		},
@@ -5649,7 +5452,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Excluir se a URL da m\u00EDdia n\u00E3o for alterada",
 			"ru": "\u0418\u0441\u043A\u043B\u044E\u0447\u0430\u0442\u044C, \u0435\u0441\u043B\u0438 \u0441\u0441\u044B\u043B\u043A\u0430 \u043C\u0435\u0434\u0438\u0430 \u043D\u0435 \u0438\u0437\u043C\u0435\u043D\u0438\u043B\u0430\u0441\u044C",
 			"zh-CN": "\u6392\u9664\u65E0\u53D8\u5316\u7684\u5A92\u4F53 URL"
 		},
@@ -5662,7 +5464,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "N\u00E3o exibir pop-up se a nova URL for igual \u00E0 fonte",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0435 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F, \u0435\u0441\u043B\u0438 \u0441\u0441\u044B\u043B\u043A\u0430 \u043A\u0430\u043A \u0443 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0430.",
 			"zh-CN": "\u5982\u679C\u65B0 URL \u4E0E\u6E90 URL \u76F8\u540C\u5219\u4E0D\u5F39\u51FA"
 		},
@@ -5675,7 +5476,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Pop-up apenas para m\u00EDdia com link",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F \u043C\u0435\u0434\u0438\u0430 \u0441 \u0441\u0441\u044B\u043B\u043A\u043E\u0439",
 			"zh-CN": "\u4EC5\u5F39\u51FA\u94FE\u63A5\u5F62\u5F0F\u7684\u5A92\u4F53"
 		},
@@ -5688,7 +5488,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "N\u00E3o exibir pop-up se a m\u00EDdia n\u00E3o tiver um hiperlink",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0435 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F, \u0435\u0441\u043B\u0438 \u043C\u0435\u0434\u0438\u0430 \u043D\u0435 \u0438\u043C\u0435\u0435\u0442 \u0433\u0438\u043F\u0435\u0440\u0441\u0441\u044B\u043B\u043A\u0438",
 			"zh-CN": "\u4E0D\u5F39\u51FA\u975E\u8D85\u94FE\u63A5\u5F62\u5F0F\u7684\u5A92\u4F53"
 		},
@@ -5701,7 +5500,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Link em pop-up para m\u00EDdia com link",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0441\u0441\u044B\u043B\u043A\u0438 \u0434\u043B\u044F \u043C\u0435\u0434\u0438\u0430 \u0441 \u0441\u0441\u044B\u043B\u043A\u0430\u043C\u0438",
 			"zh-CN": "\u94FE\u63A5\u7684\u5A92\u4F53\u5F39\u7A97\u94FE\u63A5"
 		},
@@ -5714,7 +5512,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se a m\u00EDdia com link n\u00E3o puder ser ampliada, exibir o link em um pop-up em vez da m\u00EDdia",
 			"ru": "\u0415\u0441\u043B\u0438 \u043C\u0435\u0434\u0438\u0430 \u0441 \u0441\u0441\u044B\u043B\u043A\u043E\u0439 \u043D\u0435 \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043E, \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u0435\u0442 \u0441\u0441\u044B\u043B\u043A\u0430 \u0432\u043C\u0435\u0441\u0442\u043E \u043C\u0435\u0434\u0438\u0430.",
 			"zh-CN": "\u5982\u679C\u94FE\u63A5\u7684\u5A92\u4F53\u4E0D\u80FD\u53D8\u5927\uFF0C\u5F39\u51FA\u8BE5\u94FE\u63A5\u800C\u975E\u5A92\u4F53"
 		},
@@ -5728,7 +5525,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774\uBBF8\uC9C0 \uB9F5 \uC81C\uC678",
-			"pt-BR": "Excluir mapas de imagem",
 			"ru": "\u0418\u0441\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u044B \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439",
 			"zh-CN": "\u6392\u9664\u56FE\u50CF\u96C6"
 		},
@@ -5742,7 +5538,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774\uBBF8\uC9C0\uAC00 \uC774\uBBF8\uC9C0 \uB9F5(\uD074\uB9AD \uAC00\uB2A5\uD55C \uC601\uC5ED\uC774 \uC5EC\uB7EC \uAC1C\uB97C \uAC00\uC9C4 \uC774\uBBF8\uC9C0)\uC778 \uACBD\uC6B0 \uD31D\uC5C5 \uD45C\uC2DC \uC548 \uD568",
-			"pt-BR": "N\u00E3o exibir pop-up se a imagem for um mapa de imagem (imagem com v\u00E1rias \u00E1reas clic\u00E1veis)",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0435 \u043F\u043E\u044F\u0432\u0438\u0442\u0441\u044F, \u0435\u0441\u043B\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043E\u0431\u043E\u0439 \u043A\u0430\u0440\u0442\u0443 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F (\u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0441 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u043C\u0438 \u043A\u043B\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u043C\u0438 \u043E\u0431\u043B\u0430\u0441\u0442\u044F\u043C\u0438).",
 			"zh-CN": "\u4E0D\u5F39\u51FA\u6709\u591A\u4E2A\u53EF\u70B9\u51FB\u533A\u57DF\u7684\u56FE\u50CF\u96C6\uFF08image map\uFF09"
 		},
@@ -5755,7 +5550,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Reprodu\u00E7\u00E3o autom\u00E1tica",
 			"ru": "\u0410\u0432\u0442\u043E\u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u81EA\u52A8\u64AD\u653E"
 		},
@@ -5768,7 +5562,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Reproduzir automaticamente quando o pop-up for aberto",
 			"ru": "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0441\u044F \u043F\u043E\u0441\u043B\u0435 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u5F39\u7A97\u6253\u5F00\u540E\u81EA\u52A8\u64AD\u653E"
 		},
@@ -5811,7 +5604,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Exibir controles de v\u00EDdeo",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u663E\u793A\u89C6\u9891\u63A7\u4EF6"
 		},
@@ -5824,7 +5616,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Exibe os controles nativos de v\u00EDdeo. Observe que isso impede o arrastar no Firefox",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u0442\u0440\u043E\u0435\u043D\u043D\u044B\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u0438\u0434\u0435\u043E. \u041E\u0431\u0440\u0430\u0442\u0438\u0442\u0435 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435, \u0447\u0442\u043E \u044D\u0442\u043E \u043F\u0440\u0435\u0434\u043E\u0442\u0432\u0440\u0430\u0449\u0430\u0435\u0442 \u043F\u0435\u0440\u0435\u0442\u0430\u0441\u043A\u0438\u0432\u0430\u043D\u0438\u0435 \u043F\u043E\u0434 Firefox.",
 			"zh-CN": "\u663E\u793A\u539F\u751F\u89C6\u9891\u63A7\u4EF6\uFF08\u89C6\u9891\u63A7\u5236\u6309\u94AE\uFF09\u3002\u6CE8\u610F\uFF0C\u8FD9\u4F1A\u963B\u6B62\u5728 Firefox \u4E2D\u62D6\u62FD"
 		},
@@ -5837,7 +5628,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Alternar controles de v\u00EDdeo",
 			"ru": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0442\u0435\u043B\u044C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u5207\u6362\u89C6\u9891\u63A7\u4EF6"
 		},
@@ -5850,7 +5640,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para alternar a exibi\u00E7\u00E3o dos controles de v\u00EDdeo",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0434\u043B\u044F \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u5207\u6362\u662F\u5426\u663E\u793A\u89C6\u9891\u63A7\u4EF6\u7684\u6309\u952E"
 		},
@@ -5863,7 +5652,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Repetir",
 			"ru": "\u0417\u0430\u0446\u0438\u043A\u043B\u0438\u0442\u044C",
 			"zh-CN": "\u5FAA\u73AF"
 		},
@@ -5876,7 +5664,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite que a m\u00EDdia seja reiniciada automaticamente ap\u00F3s o t\u00E9rmino da reprodu\u00E7\u00E3o",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043C\u0435\u0434\u0438\u0430 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u043F\u0435\u0440\u0435\u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0442\u044C\u0441\u044F \u0432 \u043D\u0430\u0447\u0430\u043B\u043E \u043F\u043E\u0441\u043B\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u662F\u5426\u5141\u8BB8\u5A92\u4F53\u64AD\u653E\u5B8C\u6BD5\u540E\u81EA\u52A8\u91CD\u65B0\u5F00\u59CB\u64AD\u653E"
 		},
@@ -5889,7 +5676,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Dura\u00E7\u00E3o m\u00E1xima para repeti\u00E7\u00E3o",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u0434\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0437\u0430\u0446\u0438\u043A\u043B\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u5FAA\u73AF\u6700\u957F\u6301\u7EED\u65F6\u95F4"
 		},
@@ -5902,7 +5688,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "M\u00EDdias com dura\u00E7\u00E3o maior que a especificada n\u00E3o ser\u00E3o repetidas automaticamente. Definir como `0` sempre habilitar\u00E1 a repeti\u00E7\u00E3o, independentemente da dura\u00E7\u00E3o.",
 			"ru": "\u041C\u0435\u0434\u0438\u0430 \u0441 \u0434\u043E\u043B\u044C\u0448\u0435\u0439 \u0443\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u0439 \u0434\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C\u044E \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u0437\u0430\u0446\u0438\u043A\u043B\u0435\u043D\u044B. \u0423\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430 \u044D\u0442\u043E\u0433\u043E \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F \u043D\u0430 `0` \u0432\u0441\u0435\u0433\u0434\u0430 \u0431\u0443\u0434\u0435\u0442 \u0432\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0437\u0430\u0446\u0438\u043A\u043B\u0438\u0432\u0430\u043D\u0438\u0435, \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u043E\u0442 \u0434\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438.",
 			"zh-CN": "\u8D85\u8FC7\u6307\u5B9A\u65F6\u95F4\u540E\u5A92\u4F53\u4E0D\u518D\u81EA\u52A8\u5FAA\u73AF\u64AD\u653E\u3002\u8BBE\u4E3A 0 \u5219\u59CB\u7EC8\u5FAA\u73AF\uFF0C\u4E0D\u9650\u5236\u6301\u7EED\u65F6\u95F4\u3002"
 		},
@@ -5915,7 +5700,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de reproduzir/pausar",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F/\u043F\u0440\u0438\u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0438",
 			"zh-CN": "\u64AD\u653E/\u6682\u505C\u952E"
 		},
@@ -5928,7 +5712,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para alternar entre reproduzir e pausar a m\u00EDdia",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C \u0438\u043B\u0438 \u043F\u0440\u0438\u043E\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0442\u044C \u043C\u0435\u0434\u0438\u0430.",
 			"zh-CN": "\u5207\u6362\u5A92\u4F53\u7684\u64AD\u653E/\u6682\u505C\u7684\u6309\u952E"
 		},
@@ -5941,7 +5724,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Silenciar",
 			"ru": "\u041E\u0442\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0437\u0432\u0443\u043A",
 			"zh-CN": "\u9759\u97F3"
 		},
@@ -5954,7 +5736,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Silenciar a m\u00EDdia por padr\u00E3o",
 			"ru": "\u041E\u0442\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0437\u0432\u0443\u043A \u043C\u0435\u0434\u0438\u0430 \u043F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E.",
 			"zh-CN": "\u9ED8\u8BA4\u5C06\u5A92\u4F53\u9759\u97F3"
 		},
@@ -5967,7 +5748,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de alternar para mudo",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u0437\u0432\u0443\u043A\u0430",
 			"zh-CN": "\u5207\u6362\u9759\u97F3\u952E"
 		},
@@ -5980,7 +5760,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para alternar para mudo",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0437\u0432\u0443\u043A.",
 			"zh-CN": "\u5207\u6362\u9759\u97F3\u7684\u6309\u952E"
 		},
@@ -5993,7 +5772,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Volume padr\u00E3o",
 			"ru": "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u043F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E",
 			"zh-CN": "\u9ED8\u8BA4\u97F3\u91CF"
 		},
@@ -6006,7 +5784,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Volume padr\u00E3o para a m\u00EDdia",
 			"ru": "\u0413\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u0437\u0432\u0443\u043A\u0430 \u0434\u043B\u044F \u043C\u0435\u0434\u0438\u0430 \u043F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E.",
 			"zh-CN": "\u5A92\u4F53\u7684\u9ED8\u8BA4\u97F3\u91CF"
 		},
@@ -6019,7 +5796,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de aumentar o volume",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u044F \u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u97F3\u91CF\u8C03\u9AD8\u952E"
 		},
@@ -6032,7 +5808,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para aumentar o volume",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u0437\u0432\u0443\u043A\u0430.",
 			"zh-CN": "\u589E\u5927\u97F3\u91CF\u7684\u6309\u952E"
 		},
@@ -6045,7 +5820,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de diminuir o volume",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u044F \u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u97F3\u91CF\u8C03\u4F4E\u952E"
 		},
@@ -6058,7 +5832,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para diminuir o volume",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0443\u043C\u0435\u043D\u044C\u0448\u0430\u0442\u044C \u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u044C \u0437\u0432\u0443\u043A\u0430.",
 			"zh-CN": "\u51CF\u5C0F\u97F3\u91CF\u7684\u6309\u952E"
 		},
@@ -6071,7 +5844,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quantidade de altera\u00E7\u00E3o de volume",
 			"ru": "\u0412\u0435\u043B\u0438\u0447\u0438\u043D\u0430 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u97F3\u91CF\u53D8\u5316\u767E\u5206\u6BD4"
 		},
@@ -6084,7 +5856,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Percentual para aumentar/diminuir o volume ao usar as teclas de aumentar/diminuir volume",
 			"ru": "\u041F\u0440\u043E\u0446\u0435\u043D\u0442 \u0434\u043B\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u044F/\u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u044F \u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u0438 \u043F\u0440\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0438 \u043A\u043D\u043E\u043F\u043E\u043A \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u044F/\u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u044F \u0433\u0440\u043E\u043C\u043A\u043E\u0441\u0442\u0438.",
 			"zh-CN": "\u4F7F\u7528\u97F3\u91CF\u8C03\u9AD8/\u8C03\u4F4E\u952E\u65F6\uFF0C\u97F3\u91CF\u589E\u51CF\u7684\u767E\u5206\u6BD4"
 		},
@@ -6097,7 +5868,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Retomar reprodu\u00E7\u00E3o do v\u00EDdeo original",
 			"ru": "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0442\u044C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u0435 \u0438\u0437 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0430",
 			"zh-CN": "\u4ECE\u6E90\u5730\u5740\u7EE7\u7EED\u64AD\u653E"
 		},
@@ -6110,7 +5880,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se ativado, a reprodu\u00E7\u00E3o continuar\u00E1 de onde o v\u00EDdeo original parou",
 			"ru": "\u0415\u0441\u043B\u0438 \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u043E, \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u0435 \u0431\u0443\u0434\u0435\u0442 \u0432\u043E\u0437\u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u043E \u0441 \u0442\u043E\u0433\u043E \u043C\u0435\u0441\u0442\u0430, \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u043E\u043C \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u043B\u0441\u044F \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A.",
 			"zh-CN": "\u542F\u7528\u540E\uFF0C\u64AD\u653E\u5C06\u4ECE\u6E90\u5A92\u4F53\u4E2D\u505C\u6B62\u7684\u8FDB\u5EA6\u7EE7\u7EED"
 		},
@@ -6123,7 +5892,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Retomar se a dura\u00E7\u00E3o for diferente",
 			"ru": "\u0412\u043E\u0437\u043E\u0431\u043D\u043E\u0432\u043B\u044F\u0442\u044C, \u0435\u0441\u043B\u0438 \u0440\u0430\u0437\u043D\u0430\u044F \u0434\u043B\u0438\u043D\u0430",
 			"zh-CN": "\u957F\u5EA6\u4E0D\u540C\u4E5F\u7EE7\u7EED\u64AD\u653E"
 		},
@@ -6136,7 +5904,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se desativado, n\u00E3o retomar\u00E1 a reprodu\u00E7\u00E3o se o v\u00EDdeo original tiver uma dura\u00E7\u00E3o diferente da m\u00EDdia no pop-up (por exemplo, de um v\u00EDdeo de visualiza\u00E7\u00E3o para um v\u00EDdeo completo).",
 			"ru": "\u0415\u0441\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E, \u0442\u043E \u043D\u0435 \u0432\u043E\u0437\u043E\u0431\u043D\u043E\u0432\u043B\u044F\u0435\u0442, \u0435\u0441\u043B\u0438 \u0434\u043B\u0438\u043D\u0430 \u0438\u0437 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0430 \u043E\u0442\u043B\u0438\u0447\u0430\u0435\u0442\u0441\u044F \u043E\u0442 \u0434\u043B\u0438\u043D\u044B \u043C\u0435\u0434\u0438\u0430 \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0441 \u043F\u0440\u0435\u0434\u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430 \u0432\u0438\u0434\u0435\u043E \u0434\u043E \u043F\u043E\u043B\u043D\u043E\u0433\u043E)",
 			"zh-CN": "\u7981\u7528\u540E\uFF0C\u5982\u679C\u6E90\u5A92\u4F53\u4E0E\u5F39\u51FA\u7684\u5A92\u4F53\u7684\u65F6\u957F\u4E0D\u540C\uFF08\u4F8B\u5982\u9884\u89C8\u89C6\u9891\u4E0E\u5B8C\u6574\u89C6\u9891\u7684\u533A\u522B\uFF09\uFF0C\u5219\u4E0D\u7EE7\u7EED\u64AD\u653E"
 		},
@@ -6149,7 +5916,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Pausar v\u00EDdeo original",
 			"ru": "\u041F\u0440\u0438\u043E\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0442\u044C \u0438\u0437 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0430",
 			"zh-CN": "\u6682\u505C\u6E90\u5A92\u4F53"
 		},
@@ -6162,7 +5928,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Pausa o v\u00EDdeo original assim que o pop-up for aberto",
 			"ru": "\u041F\u0440\u0438\u043E\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A \u043F\u043E\u0441\u043B\u0435 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u6253\u5F00\u540E\u6682\u505C\u6E90\u5A92\u4F53"
 		},
@@ -6175,7 +5940,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quantidade de avan\u00E7o/retrocesso",
 			"ru": "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
 			"zh-CN": "\u8FDB\u9000\u8DDD\u79BB"
 		},
@@ -6188,7 +5952,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quantidade de tempo para avan\u00E7ar/retroceder ao usar as teclas de avan\u00E7o/retrocesso",
 			"ru": "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0434\u043B\u044F \u0437\u0430\u043F\u0440\u043E\u0441\u0430 \u0432\u043F\u0435\u0440\u0435\u0434/\u043D\u0430\u0437\u0430\u0434 \u043F\u0440\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0438 \u043A\u043D\u043E\u043F\u043E\u043A \u0437\u0430\u043F\u0440\u043E\u0441\u0430.",
 			"zh-CN": "\u4F7F\u7528\u5FEB\u8FDB/\u5FEB\u9000\u6309\u952E\u65F6\u524D\u8FDB/\u540E\u9000\u7684\u65F6\u95F4\u91CF"
 		},
@@ -6201,7 +5964,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de retrocesso",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0437\u0430\u043F\u0440\u043E\u0441\u0430 \u0432\u043B\u0435\u0432\u043E",
 			"zh-CN": "\u5FEB\u9000\u952E"
 		},
@@ -6214,7 +5976,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para retroceder a quantidade especificada",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0437\u0430\u043F\u0440\u043E\u0441 \u043D\u0430\u0437\u0430\u0434 \u043E\u0442 \u0437\u0430\u0434\u0430\u043D\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430.",
 			"zh-CN": "\u5411\u5DE6\u4FA7\uFF08\u4E4B\u524D\uFF09\u5FEB\u901F\u79FB\u52A8\u6307\u5B9A\u65F6\u957F\u7684\u6309\u952E"
 		},
@@ -6227,7 +5988,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de avan\u00E7o",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0437\u0430\u043F\u0440\u043E\u0441\u0430 \u0432\u043F\u0440\u0430\u0432\u043E",
 			"zh-CN": "\u5FEB\u8FDB\u952E"
 		},
@@ -6240,7 +6000,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para avan\u00E7ar a quantidade especificada",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0437\u0430\u043F\u0440\u043E\u0441 \u0432\u043F\u0435\u0440\u0451\u0434 \u043E\u0442 \u0437\u0430\u0434\u0430\u043D\u043E\u0433\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430.",
 			"zh-CN": "\u5411\u53F3\u4FA7\uFF08\u4E4B\u540E\uFF09\u5FEB\u901F\u79FB\u52A8\u6307\u5B9A\u65F6\u957F\u7684\u6309\u952E"
 		},
@@ -6253,7 +6012,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de voltar quadro",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0433\u043E \u043A\u0430\u0434\u0440\u0430",
 			"zh-CN": "\u4E0A\u4E00\u5E27\u6309\u952E"
 		},
@@ -6266,7 +6024,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Retrocede o v\u00EDdeo um \"quadro\" para tr\u00E1s. Devido \u00E0s limita\u00E7\u00F5es atuais, o tamanho do quadro \u00E9 est\u00E1tico (mas configur\u00E1vel) e pode n\u00E3o corresponder \u00E0 taxa de quadros do v\u00EDdeo",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u0435\u0440\u0435\u043C\u0430\u0442\u044B\u0432\u0430\u0442\u044C \u0432\u0438\u0434\u0435\u043E \u043D\u0430 \u043E\u0434\u0438\u043D \"\u043A\u0430\u0434\u0440\" \u043D\u0430\u0437\u0430\u0434. \u0412 \u0441\u0432\u044F\u0437\u0438 \u0441 \u0442\u0435\u043A\u0443\u0449\u0438\u043C\u0438 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F\u043C\u0438, \u0440\u0430\u0437\u043C\u0435\u0440 \u043A\u0430\u0434\u0440\u0430 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0441\u0442\u0430\u0442\u0438\u0447\u043D\u044B\u043C (\u043D\u043E \u043D\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u043C\u044B\u043C), \u0438 \u043C\u043E\u0436\u0435\u0442 \u043D\u0435 \u0441\u043E\u0432\u043F\u0430\u0434\u0430\u0442\u044C \u0441 \u0447\u0430\u0441\u0442\u043E\u0442\u043E\u0439 \u043A\u0430\u0434\u0440\u043E\u0432 \u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u5C06\u89C6\u9891\u5012\u56DE\u524D\u4E00\u5E27\u3002\u7531\u4E8E\u5F53\u524D\u7684\u9650\u5236\uFF0C\u5E27\u5927\u5C0F\u662F\u9759\u6001\u7684\uFF08\u4F46\u53EF\u914D\u7F6E\uFF09\uFF0C\u53EF\u80FD\u4E0E\u89C6\u9891\u7684\u5E27\u901F\u7387\u4E0D\u5339\u914D"
 		},
@@ -6279,7 +6036,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de avan\u00E7ar quadro",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E \u043A\u0430\u0434\u0440\u0430",
 			"zh-CN": "\u4E0B\u4E00\u5E27\u6309\u952E"
 		},
@@ -6292,7 +6048,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Avan\u00E7a o v\u00EDdeo um \"quadro\" para frente. Devido \u00E0s limita\u00E7\u00F5es atuais, o tamanho do quadro \u00E9 est\u00E1tico (mas configur\u00E1vel) e pode n\u00E3o corresponder \u00E0 taxa de quadros do v\u00EDdeo",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u0435\u0440\u0435\u043C\u0430\u0442\u044B\u0432\u0430\u0442\u044C \u0432\u0438\u0434\u0435\u043E \u043D\u0430 \u043E\u0434\u0438\u043D \"\u043A\u0430\u0434\u0440\" \u0432\u043F\u0435\u0440\u0451\u0434. \u0412 \u0441\u0432\u044F\u0437\u0438 \u0441 \u0442\u0435\u043A\u0443\u0449\u0438\u043C\u0438 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F\u043C\u0438, \u0440\u0430\u0437\u043C\u0435\u0440 \u043A\u0430\u0434\u0440\u0430 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0441\u0442\u0430\u0442\u0438\u0447\u043D\u044B\u043C (\u043D\u043E \u043D\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u043C\u044B\u043C), \u0438 \u043C\u043E\u0436\u0435\u0442 \u043D\u0435 \u0441\u043E\u0432\u043F\u0430\u0434\u0430\u0442\u044C \u0441 \u0447\u0430\u0441\u0442\u043E\u0442\u043E\u0439 \u043A\u0430\u0434\u0440\u043E\u0432 \u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u5C06\u89C6\u9891\u79FB\u5165\u4E0B\u4E00\u5E27\u3002\u7531\u4E8E\u5F53\u524D\u7684\u9650\u5236\uFF0C\u5E27\u5927\u5C0F\u662F\u9759\u6001\u7684\uFF08\u4F46\u53EF\u914D\u7F6E\uFF09\uFF0C\u53EF\u80FD\u4E0E\u89C6\u9891\u7684\u5E27\u901F\u7387\u4E0D\u5339\u914D"
 		},
@@ -6305,7 +6060,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Taxa de quadros",
 			"ru": "\u0427\u0430\u0441\u0442\u043E\u0442\u0430 \u043A\u0430\u0434\u0440\u043E\u0432",
 			"zh-CN": "\u5E27\u901F\u7387"
 		},
@@ -6318,7 +6072,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Taxa de quadros para v\u00EDdeos avan\u00E7arem/retrocederem com as teclas de pr\u00F3ximo/anterior quadro",
 			"ru": "\u0427\u0430\u0441\u0442\u043E\u0442\u0430 \u043A\u0430\u0434\u0440\u043E\u0432 \u0432\u0438\u0434\u0435\u043E \u0434\u043B\u044F \u0437\u0430\u043F\u0440\u043E\u0441\u0430 \u0432\u043F\u0435\u0440\u0451\u0434/\u043D\u0430\u0437\u0430\u0434 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043A\u043D\u043E\u043F\u043E\u043A \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439/\u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0438\u0439 \u043A\u0430\u0434\u0440",
 			"zh-CN": "\u5E27\u901F\u7387\u7528\u4E8E\u89C6\u9891\u7684\u5FEB\u8FDB/\u5FEB\u9000\u6309\u952E"
 		},
@@ -6331,7 +6084,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "FPS (Quadros por Segundo)",
 			"ru": "\u041A\u0430\u0434\u0440\u043E\u0432 \u0432 \u0441\u0435\u043A\u0443\u043D\u0434\u0443",
 			"zh-CN": "\u6BCF\u79D2\u5E27\u6570\uFF08FPS\uFF09"
 		},
@@ -6344,7 +6096,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para diminuir a velocidade",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u044F \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u51CF\u901F\u952E"
 		},
@@ -6357,7 +6108,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para diminuir a taxa de reprodu\u00E7\u00E3o em uma quantidade especificada",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u043D\u0430 \u0437\u0430\u0434\u0430\u043D\u043D\u0443\u044E \u0432\u0435\u043B\u0438\u0447\u0438\u043D\u0443.",
 			"zh-CN": "\u6B64\u952E\u53EF\u4EE5\u5C06\u64AD\u653E\u901F\u7387\u964D\u4F4E\u6307\u5B9A\u7684\u989D\u5EA6"
 		},
@@ -6370,7 +6120,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para aumentar a velocidade",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u044F \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u52A0\u901F\u952E"
 		},
@@ -6383,7 +6132,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para aumentar a taxa de reprodu\u00E7\u00E3o em uma quantidade especificada",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u043D\u0430 \u0437\u0430\u0434\u0430\u043D\u043D\u0443\u044E \u0432\u0435\u043B\u0438\u0447\u0438\u043D\u0443.",
 			"zh-CN": "\u6B64\u952E\u53EF\u4EE5\u5C06\u64AD\u653E\u901F\u7387\u63D0\u5347\u6307\u5B9A\u7684\u989D\u5EA6"
 		},
@@ -6396,7 +6144,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quantidade de aumento/diminui\u00E7\u00E3o de velocidade",
 			"ru": "\u0412\u0435\u043B\u0438\u0447\u0438\u043D\u0430 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u044F/\u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u044F \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u52A0\u901F/\u51CF\u901F\u91CF"
 		},
@@ -6409,7 +6156,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quanto aumentar/diminuir a taxa de reprodu\u00E7\u00E3o",
 			"ru": "\u041D\u0430\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C/\u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u589E\u52A0/\u51CF\u5C11\u7684\u64AD\u653E\u901F\u7387"
 		},
@@ -6422,7 +6168,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para redefinir a velocidade",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0441\u0431\u0440\u043E\u0441\u0430 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u91CD\u7F6E\u901F\u5EA6\u952E"
 		},
@@ -6435,7 +6180,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Redefine a taxa de reprodu\u00E7\u00E3o para a velocidade normal",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0441\u0431\u0440\u043E\u0441\u0438\u0442\u044C \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0434\u043E \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E\u0439 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u5C06\u64AD\u653E\u901F\u5EA6\u91CD\u7F6E\u4E3A\u6B63\u5E38\u901F\u5EA6"
 		},
@@ -6448,7 +6192,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para captura de tela",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0441\u043D\u0438\u043C\u043A\u0430 \u044D\u043A\u0440\u0430\u043D\u0430",
 			"zh-CN": "\u5C4F\u5E55\u622A\u56FE\u952E"
 		},
@@ -6461,7 +6204,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Captura o quadro atual do v\u00EDdeo",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u0441\u043D\u0438\u043C\u043E\u043A \u044D\u043A\u0440\u0430\u043D\u0430 \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E \u043A\u0430\u0434\u0440\u0430 \u043D\u0430 \u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u5BF9\u89C6\u9891\u4E2D\u7684\u5F53\u524D\u5E27\u622A\u56FE"
 		},
@@ -6474,7 +6216,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Formato da captura de tela",
 			"ru": "\u0424\u043E\u0440\u043C\u0430\u0442 \u0441\u043D\u0438\u043C\u043A\u0430 \u044D\u043A\u0440\u0430\u043D\u0430",
 			"zh-CN": "\u622A\u56FE\u683C\u5F0F"
 		},
@@ -6487,7 +6228,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Formato de arquivo para salvar a captura de tela",
 			"ru": "\u0424\u043E\u0440\u043C\u0430\u0442 \u0444\u0430\u0439\u043B\u0430 \u0434\u043B\u044F \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F \u0441\u043D\u0438\u043C\u043A\u0430 \u044D\u043A\u0440\u0430\u043D\u0430",
 			"zh-CN": "\u4FDD\u5B58\u622A\u56FE\u7684\u6587\u4EF6\u683C\u5F0F"
 		},
@@ -6500,7 +6240,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "PNG",
 			"ru": "PNG",
 			"zh-CN": "PNG"
 		},
@@ -6513,7 +6252,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "JPG",
 			"ru": "JPG",
 			"zh-CN": "JPG"
 		},
@@ -6525,8 +6263,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Ativar legendas"
+			}
 		},
 		"Enables subtitles to be overlayed on top of the video": {
 			"_info": {
@@ -6536,8 +6273,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Permite que as legendas sejam sobrepostas ao v\u00EDdeo"
+			}
 		},
 		"Popup UI": {
 			"_info": {
@@ -6550,7 +6286,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Interfaz del Popup",
 			"ko": "\uD31D\uC5C5 UI",
-			"pt-BR": "Interface de Pop-up",
 			"ru": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u754C\u9762"
 		},
@@ -6563,7 +6298,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita uma interface na parte superior do pop-up",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441 \u0432 \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0447\u0430\u0441\u0442\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u542F\u7528\u5F39\u7A97\u4E0A\u7684\u754C\u9762"
 		},
@@ -6576,7 +6310,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para alternar a interface",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430",
 			"zh-CN": "\u754C\u9762\u5207\u6362\u952E"
 		},
@@ -6589,7 +6322,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Alterna a exibi\u00E7\u00E3o da interface",
 			"ru": "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u044D\u0442\u043E\u0439 \u043A\u043D\u043E\u043F\u0438, \u0432\u044B \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430.",
 			"zh-CN": "\u5207\u6362\u754C\u9762\u7684\u663E\u793A\u65B9\u5F0F"
 		},
@@ -6605,7 +6337,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Opacidad",
 			"fr": "Opacit\u00E9",
 			"ko": "\uBD88\uD22C\uBA85",
-			"pt-BR": "Opacidade",
 			"ru": "\u041D\u0435\u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u043E\u0441\u0442\u044C",
 			"zh-CN": "\u4E0D\u900F\u660E\u5EA6"
 		},
@@ -6618,7 +6349,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Opacidade da interface sobre o pop-up",
 			"ru": "\u041D\u0435\u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u043E\u0441\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430 \u0432 \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0447\u0430\u0441\u0442\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u5F39\u7A97\u4E0A\u754C\u9762\u7684\u4E0D\u900F\u660E\u5EA6"
 		},
@@ -6631,7 +6361,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar glifos seguros",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u044B\u0435 \u0433\u043B\u0438\u0444\u044B",
 			"zh-CN": "\u4F7F\u7528\u5B89\u5168\u5B57\u5F62"
 		},
@@ -6644,7 +6373,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usa glifos que s\u00E3o mais propensos a estarem dispon\u00EDveis em todas as fontes. Habilite esta op\u00E7\u00E3o se os seguintes caracteres forem exibidos como caixas: \uD83E\uDC47 \uD83E\uDC50 \uD83E\uDC52. A fonte 'Noto Sans Symbols2' cont\u00E9m estes caracteres.",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u0433\u043B\u0438\u0444\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0441\u043A\u043E\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043E, \u0431\u0443\u0434\u0443\u0442 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B \u043D\u0430 \u0432\u0441\u0435\u0445 \u0448\u0440\u0438\u0444\u0442\u0430\u0445. \u0412\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u044D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440, \u0435\u0441\u043B\u0438 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 \u0441\u0438\u043C\u0432\u043E\u043B\u044B \u043E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u044E\u0442\u0441\u044F \u0432 \u0432\u0438\u0434\u0435 \u043A\u0432\u0430\u0434\u0440\u0430\u0442\u0438\u043A\u043E\u0432: \uD83E\uDC47 \uD83E\uDC50 \uD83E\uDC52. \u0428\u0440\u0438\u0444\u0442 'Noto Sans Symbols2' \u0441\u043E\u0434\u0435\u0440\u0436\u0438\u0442 \u044D\u0442\u0438 \u0441\u0438\u043C\u0432\u043E\u043B\u044B.",
 			"zh-CN": "\u4F7F\u7528\u66F4\u53EF\u80FD\u9002\u7528\u4E8E\u6240\u6709\u5B57\u4F53\u7684\u5B57\u5F62\u3002\u542F\u7528\u6B64\u9009\u9879\uFF0C\u5982\u679C\u4E0B\u5217\u5B57\u7B26\u5448\u73B0\u4E3A\u65B9\u6846\uFF1A\uD83E\uDC47 \uD83E\uDC50 \uD83E\uDC52\u3002\u201CNoto Sans symboss2\u201D\u5B57\u4F53\u5305\u542B\u8FD9\u4E9B\u5B57\u7B26\u3002"
 		},
@@ -6657,7 +6385,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Resolu\u00E7\u00E3o da m\u00EDdia",
 			"ru": "\u0420\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u043C\u0435\u0434\u0438\u0430",
 			"zh-CN": "\u5A92\u4F53\u5206\u8FA8\u7387"
 		},
@@ -6670,7 +6397,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Exibe as dimens\u00F5es originais da m\u00EDdia no topo da UI.\nID CSS: `#sizeinfo`",
 			"ru": "\u041E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u0442 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u0440\u0430\u0437\u043C\u0435\u0440\u044B \u043C\u0435\u0434\u0438\u0430 \u0432 \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0447\u0430\u0441\u0442\u0438 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430.\nCSS ID: `#sizeinfo`",
 			"zh-CN": "\u5728\u754C\u9762\u4E0A\u663E\u793A\u539F\u59CB\u5A92\u4F53\u5C3A\u5BF8\u3002\nCSS ID: `#sizeinfo`"
 		},
@@ -6683,7 +6409,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Percentual de zoom",
 			"ru": "\u041C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0432 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u0430\u0445",
 			"zh-CN": "\u7F29\u653E\u767E\u5206\u6BD4"
 		},
@@ -6696,7 +6421,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Exibe o n\u00EDvel de zoom atual no topo da UI.\nID CSS: `#sizeinfo`",
 			"ru": "\u041E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u0442 \u0442\u0435\u043A\u0443\u0449\u0438\u0439 \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0432 \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0447\u0430\u0441\u0442\u0438 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430.\nCSS ID: `#sizeinfo`",
 			"zh-CN": "\u5728\u754C\u9762\u4E0A\u663E\u793A\u5F53\u524D\u7684\u7F29\u653E\u7EA7\u522B\u3002\nCSS ID: `#sizeinfo`"
 		},
@@ -6709,7 +6433,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tamanho do arquivo",
 			"ru": "\u0420\u0430\u0437\u043C\u0435\u0440 \u0444\u0430\u0439\u043B\u0430",
 			"zh-CN": "\u6587\u4EF6\u5927\u5C0F"
 		},
@@ -6722,7 +6445,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Exibe o tamanho do arquivo de m\u00EDdia no topo da UI. No momento, isso n\u00E3o funcionar\u00E1 com m\u00EDdia carregada parcialmente se 'Evitar solicita\u00E7\u00E3o HEAD para m\u00EDdia carregada parcialmente' estiver habilitado.\nID CSS: `#sizeinfo`",
 			"ru": "\u041E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u0442 \u0440\u0430\u0437\u043C\u0435\u0440 \u0444\u0430\u0439\u043B\u0430 \u043C\u0435\u0434\u0438\u0430 \u0432 \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0447\u0430\u0441\u0442\u0438 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430. \u041D\u0430 \u0434\u0430\u043D\u043D\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442 \u044D\u0442\u043E \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u0441 \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u043C\u0438 \u043C\u0435\u0434\u0438\u0430, \u0435\u0441\u043B\u0438 \u0432\u043A\u043B\u044E\u0447\u0451\u043D \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 '\u0418\u0437\u0431\u0435\u0433\u0430\u0442\u044C \u0437\u0430\u043F\u0440\u043E\u0441\u0430 HEAD \u0434\u043B\u044F \u0447\u0430\u0441\u0442\u0438\u0447\u043D\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0445 \u043C\u0435\u0434\u0438\u0430'.\nCSS ID: `#sizeinfo`",
 			"zh-CN": "\u5728\u754C\u9762\u4E0A\u663E\u793A\u5A92\u4F53\u7684\u6587\u4EF6\u5927\u5C0F\u3002\u76EE\u524D\uFF0C\u5982\u679C\u542F\u7528\u4E86\u201C\u907F\u514D\u5BF9\u90E8\u5206\u52A0\u8F7D\u7684\u5A92\u4F53\u4F7F\u7528 HEAD \u8BF7\u6C42\u201D\uFF0C\u5219\u6B64\u9879\u65E0\u6548\u3002\nCSS ID: `#sizeinfo`"
 		},
@@ -6738,7 +6460,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "N\u00FAmero de im\u00E1genes a contar en la galer\u00EDa",
 			"fr": "Nombre d'images dans la galerie",
 			"ko": "\uAC24\uB7EC\uB9AC \uC774\uBBF8\uC9C0 \uC218",
-			"pt-BR": "Contador da galeria",
 			"ru": "\u0421\u0447\u0451\u0442\u0447\u0438\u043A \u0433\u0430\u043B\u0435\u0440\u0435\u0438",
 			"zh-CN": "\u56FE\u5E93\u8BA1\u6570\u5668"
 		},
@@ -6751,7 +6472,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita um contador da galeria no topo da UI.\nID CSS: `#gallerycounter`",
 			"ru": "\u041E\u0442\u043E\u0431\u0440\u0430\u0436\u0430\u0435\u0442 \u0441\u0447\u0451\u0442\u0447\u0438\u043A \u0433\u0430\u043B\u0435\u0440\u0435\u0438 \u0432 \u0432\u0435\u0440\u0445\u043D\u0435\u0439 \u0447\u0430\u0441\u0442\u0438 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430.\nCSS ID: `#gallerycounter`",
 			"zh-CN": "\u542F\u7528\u754C\u9762\u4E0A\u7684\u56FE\u5E93\u8BA1\u6570\u5668\u3002\nCSS ID: `#gallerycounter`"
 		},
@@ -6767,7 +6487,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "N\u00FAmero m\u00E1ximo de im\u00E1genes a contar para la galer\u00EDa",
 			"fr": "Nombre max d'images a compter pour la galerie",
 			"ko": "\uAC24\uB7EC\uB9AC \uC774\uBBF8\uC9C0 \uC218\uC758 \uCD5C\uB300\uAC12",
-			"pt-BR": "M\u00E1ximo do contador da galeria",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u0441\u0447\u0451\u0442\u0447\u0438\u043A \u0433\u0430\u043B\u0435\u0440\u0435\u0438",
 			"zh-CN": "\u56FE\u5E93\u8BA1\u6570\u5668\u4E0A\u9650"
 		},
@@ -6780,7 +6499,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quantidade m\u00E1xima de imagens a verificar no contador (isso pode exigir um pouco de CPU)",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u0434\u043B\u044F \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0438 \u0432 \u0441\u0447\u0451\u0442\u0447\u0438\u043A\u0435 (\u044D\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u0441\u043B\u0435\u0433\u043A\u0430 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0451\u043C\u043A\u0438\u043C \u0434\u043B\u044F \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440\u0430)",
 			"zh-CN": "\u8BE5\u8BA1\u6570\u5668\u663E\u793A\u56FE\u50CF\u6570\u91CF\u4E0A\u9650\uFF08\u53EF\u80FD\u6D88\u8017\u8F83\u591A CPU \u8D44\u6E90\uFF09"
 		},
@@ -6793,7 +6511,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Bot\u00F5es da galeria",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0438 \u0433\u0430\u043B\u0435\u0440\u0435\u0438",
 			"zh-CN": "\u56FE\u5E93\u6309\u94AE"
 		},
@@ -6806,7 +6523,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita bot\u00F5es para ir \u00E0 esquerda/direita na galeria.\nIDs CSS: `#galleryprevbtn`, `#gallerynextbtn`",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043A\u043D\u043E\u043F\u043A\u0438 \u0432\u043B\u0435\u0432\u043E/\u0432\u043F\u0440\u0430\u0432\u043E \u0432 \u0433\u0430\u043B\u0435\u0440\u0435\u0435.\nCSS ID: `#galleryprevbtn`, `#gallerynextbtn`",
 			"zh-CN": "\u542F\u7528\u5728\u56FE\u5E93\u4E2D\u5411\u5DE6/\u53F3\u79FB\u52A8\u7684\u6309\u94AE\u3002\nCSS IDs: `#galleryprevbtn`, `#gallerynextbtn`"
 		},
@@ -6819,7 +6535,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Bot\u00E3o Fechar",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F",
 			"zh-CN": "\u5173\u95ED\u6309\u94AE"
 		},
@@ -6832,7 +6547,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita um bot\u00E3o para fechar o popup.\nID CSS: `#closebtn`",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043A\u043D\u043E\u043F\u043A\u0443 \u0434\u043B\u044F \u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.\nCSS ID: `#closebtn`",
 			"zh-CN": "\u542F\u7528\u5173\u95ED\u5F53\u524D\u5F39\u7A97\u7684\u6309\u94AE\u3002\nCSS ID: `#closebtn`"
 		},
@@ -6847,7 +6561,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Bot\u00F3n de Opciones",
 			"ko": "\uC124\uC815 \uB9C1\uD06C",
-			"pt-BR": "Bot\u00E3o de Op\u00E7\u00F5es",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432",
 			"zh-CN": "\u9009\u9879\u6309\u94AE"
 		},
@@ -6860,7 +6573,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita um bot\u00E3o para ir para esta p\u00E1gina.\nID CSS: `#optionsbtn`",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043A\u043D\u043E\u043F\u043A\u0443 \u0434\u043B\u044F \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0430 \u043D\u0430 \u044D\u0442\u0443 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443.\nCSS ID: `#optionsbtn`",
 			"zh-CN": "\u542F\u7528\u8BBF\u95EE\u9009\u9879\u9875\u9762\uFF08\u672C\u9875\u9762\uFF09\u7684\u6309\u94AE\u3002\nCSS ID: `#optionsbtn`"
 		},
@@ -6873,7 +6585,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Bot\u00E3o de Download",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u4E0B\u8F7D\u6309\u94AE"
 		},
@@ -6886,7 +6597,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita um bot\u00E3o para baixar a imagem.\nID CSS: `#downloadbtn`",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043A\u043D\u043E\u043F\u043A\u0443 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F.\nCSS ID: `#downloadbtn`",
 			"zh-CN": "\u542F\u7528\u4E0B\u8F7D\u8BE5\u56FE\u50CF\u7684\u6309\u94AE\u3002\nCSS ID: `#downloadbtn`"
 		},
@@ -6919,7 +6629,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Bot\u00F5es de Rota\u00E7\u00E3o",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0438 \u0432\u0440\u0430\u0449\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u65CB\u8F6C\u6309\u94AE"
 		},
@@ -6932,7 +6641,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita bot\u00F5es na UI para girar a imagem em 90 graus.\nIDs CSS: `#rotleftbtn`, `#rotrightbtn`",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043A\u043D\u043E\u043F\u043A\u0438 \u043D\u0430 \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0435 \u0434\u043B\u044F \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043D\u0430 90 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432.\nCSS ID: `#rotleftbtn`, `#rotrightbtn`",
 			"zh-CN": "\u542F\u7528\u5728\u754C\u9762\u4E0A\u5C06\u56FE\u50CF\u65CB\u8F6C 90 \u5EA6\u7684\u6309\u94AE\u3002\nCSS IDs: `#rotleftbtn`, `#rotrightbtn`"
 		},
@@ -6945,7 +6653,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Legenda",
 			"ru": "\u041F\u043E\u0434\u043F\u0438\u0441\u044C",
 			"zh-CN": "\u6807\u9898"
 		},
@@ -6958,7 +6665,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Mostra a legenda da imagem (se dispon\u00EDvel) no topo.\nID CSS: `#caption`",
 			"ru": "\u041F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0435\u0442 \u0432\u0432\u0435\u0440\u0445\u0443 \u043F\u043E\u0434\u043F\u0438\u0441\u044C \u043A \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044E (\u0435\u0441\u043B\u0438 \u0435\u0441\u0442\u044C).\nCSS ID: `#caption`",
 			"zh-CN": "\u5728\u9876\u7AEF\u663E\u793A\u56FE\u50CF\u7684\u6807\u9898\uFF08\u5982\u679C\u53EF\u7528\uFF09\u3002\nCSS ID: `#caption`"
 		},
@@ -6971,7 +6677,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quebrar texto da legenda",
 			"ru": "\u041E\u0431\u0435\u0440\u043D\u0443\u0442\u044C \u0442\u0435\u043A\u0441\u0442 \u043F\u043E\u0434\u043F\u0438\u0441\u0438",
 			"zh-CN": "\u6807\u9898\u6587\u672C\u6362\u884C"
 		},
@@ -6984,7 +6689,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quebra a legenda se for muito longa",
 			"ru": "\u0421\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0447\u0430\u0441\u0442\u044C \u043F\u043E\u0434\u043F\u0438\u0441\u0438, \u0435\u0441\u043B\u0438 \u043E\u043D\u0430 \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0434\u043B\u0438\u043D\u043D\u0430\u044F.",
 			"zh-CN": "\u6807\u9898\u6587\u672C\u592A\u957F\u65F6\u81EA\u52A8\u6362\u884C"
 		},
@@ -6997,7 +6701,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Vincular p\u00E1gina original na legenda",
 			"ru": "\u0421\u0441\u044B\u043B\u043A\u0430 \u043D\u0430 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u0443\u044E \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443 \u0432 \u043F\u043E\u0434\u043F\u0438\u0441\u0438",
 			"zh-CN": "\u6807\u9898\u94FE\u63A5\u539F\u59CB\u9875\u9762"
 		},
@@ -7010,7 +6713,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Vincula a p\u00E1gina original (se existir) na legenda",
 			"ru": "\u0421\u0441\u044B\u043B\u043A\u0430 \u0432 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0435 \u043D\u0430 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u0443\u044E \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443 (\u0435\u0441\u043B\u0438 \u043E\u043D\u0430 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442).",
 			"zh-CN": "\u5C06\u6807\u9898\u94FE\u63A5\u5230\u539F\u59CB\u9875\u9762\uFF08\u5982\u6709\uFF09"
 		},
@@ -7023,7 +6725,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Sublinhar links",
 			"ru": "\u041F\u043E\u0434\u0447\u0451\u0440\u043A\u0438\u0432\u0430\u043D\u0438\u0435 \u0441\u0441\u044B\u043B\u043E\u043A",
 			"zh-CN": "\u94FE\u63A5\u4E0B\u5212\u7EBF"
 		},
@@ -7036,7 +6737,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Adiciona um sublinhado aos links (como o da p\u00E1gina original)",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u043F\u043E\u0434\u0447\u0435\u0440\u043A\u0438\u0432\u0430\u043D\u0438\u0435 \u043A \u0441\u0441\u044B\u043B\u043A\u0430\u043C (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430).",
 			"zh-CN": "\u5411\u94FE\u63A5\uFF08\u5982\u539F\u59CB\u9875\u9762\uFF09\u6DFB\u52A0\u4E0B\u5212\u7EBF"
 		},
@@ -7051,7 +6751,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Mantener popup abierto hasta que",
 			"ko": "\uD31D\uC5C5 \uB2EB\uC73C\uB824\uBA74",
-			"pt-BR": "Manter pop-up aberto at\u00E9",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043E\u0442\u043A\u0440\u044B\u0442\u043E \u0434\u043E \u0442\u0435\u0445 \u043F\u043E\u0440, \u043F\u043E\u043A\u0430",
 			"zh-CN": "\u4FDD\u6301\u5F39\u7A97\u5F00\u542F\u76F4\u5230"
 		},
@@ -7065,7 +6764,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC120\uD0DD\uD55C \uC870\uAC74\uC774 \uCDA9\uC871\uB418\uBA74 \uD31D\uC5C5 \uB2EB\uAE30",
-			"pt-BR": "Fecha o pop-up quando a condi\u00E7\u00E3o selecionada for atendida",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0438 \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u043E\u0433\u043E \u0443\u0441\u043B\u043E\u0432\u0438\u044F.",
 			"zh-CN": "\u6EE1\u8DB3\u9009\u5B9A\u6761\u4EF6\u65F6\u5173\u95ED\u5F39\u7A97"
 		},
@@ -7080,7 +6778,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "Cualquier acci\u00F3n se deja ir",
 			"ko": "\uC5B4\uB5A4 \uB3D9\uC791\uC5D0\uB3C4 \uB2EB\uD798",
-			"pt-BR": "Qualquer gatilho for liberado",
 			"ru": "\u041B\u044E\u0431\u0430\u044F \u043A\u043D\u043E\u043F\u043A\u0430 \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u043D\u0438\u044F \u043E\u0442\u043F\u0443\u0449\u0435\u043D\u0430",
 			"zh-CN": "\u677E\u5F00\u4EFB\u4F55\u89E6\u53D1\u5668"
 		},
@@ -7094,7 +6791,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBAA8\uB4E0 \uB3D9\uC791\uC5D0\uC11C \uB2EB\uD798",
-			"pt-BR": "Todos os gatilhos forem liberados",
 			"ru": "\u0412\u0441\u0435 \u043A\u043D\u043E\u043F\u043A\u0438 \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u043D\u0438\u044F \u043E\u0442\u043F\u0443\u0449\u0435\u043D\u044B",
 			"zh-CN": "\u677E\u5F00\u5168\u90E8\u89E6\u53D1\u5668"
 		},
@@ -7108,7 +6804,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "ESC/\uB2EB\uAE30 \uB204\uB974\uAE30",
-			"pt-BR": "ESC/Fechar for pressionado",
 			"ru": "\u041D\u0430\u0436\u0430\u0442\u043E ESC/\u0417\u0430\u043A\u0440\u044B\u0442\u044C",
 			"zh-CN": "\u6309\u4E0B ESC/Close"
 		},
@@ -7122,7 +6817,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB9C8\uC6B0\uC2A4\uAC00 \uB5A0\uB0A0 \uB54C\uAE4C\uC9C0 \uB2EB\uC9C0 \uB9C8\uC2ED\uC2DC\uC624.",
-			"pt-BR": "N\u00E3o fechar at\u00E9 o mouse sair",
 			"ru": "\u041D\u0435 \u0437\u0430\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u043F\u043E\u043A\u0430 \u043A\u0443\u0440\u0441\u043E\u0440 \u043C\u044B\u0448\u0438 \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u0443\u0431\u0440\u0430\u043D",
 			"zh-CN": "\u9F20\u6807\u79FB\u5F00\u524D\u4E0D\u5173\u95ED"
 		},
@@ -7136,7 +6830,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD65C\uC131\uD654 \uC2DC, \uB9C8\uC6B0\uC2A4\uAC00 \uC774\uBBF8\uC9C0 \uC704\uC5D0 \uC788\uB294 \uACBD\uC6B0 \uBAA8\uB4E0 \uB3D9\uC791\uC5D0\uC11C \uB2EB\uD798\uC744 \uC120\uD0DD\uD588\uB354\uB77C\uB3C4 \uD31D\uC5C5\uC774 \uACC4\uC18D \uC5F4\uB9B0 \uC0C1\uD0DC\uB85C \uC720\uC9C0\uB428",
-			"pt-BR": "Se verdadeiro, mant\u00E9m o pop-up aberto mesmo que todos os gatilhos sejam liberados se o mouse ainda estiver sobre a imagem",
 			"ru": "\u0415\u0441\u043B\u0438 true, \u0442\u043E\u0433\u0434\u0430 \u0435\u0441\u043B\u0438 \u043C\u044B\u0448\u044C \u0432\u0441\u0451 \u0435\u0449\u0435 \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0438, \u0442\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043E\u0441\u0442\u0430\u0451\u0442\u0441\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u043C, \u0434\u0430\u0436\u0435 \u0435\u0441\u043B\u0438 \u0432\u0441\u0435 \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u043D\u0438\u044F \u043E\u0442\u043F\u0443\u0449\u0435\u043D\u044B.",
 			"zh-CN": "\u5982\u679C\u542F\u7528\uFF0C\u677E\u5F00\u6240\u6709\u89E6\u53D1\u5668\u540E\uFF0C\u5047\u5982\u9F20\u6807\u4ECD\u60AC\u505C\u5728\u56FE\u50CF\u4E0A\uFF0C\u5F39\u7A97\u4FDD\u6301\u5F00\u542F"
 		},
@@ -7150,7 +6843,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774\uBBF8\uC9C0\uB97C \uB5A0\uB098\uAE30 \uC704\uD55C \uC784\uACC4\uAC12",
-			"pt-BR": "Limite para sair da imagem",
 			"ru": "\u041F\u043E\u0440\u043E\u0433 \u0434\u043B\u044F \u0432\u044B\u0445\u043E\u0434\u0430 \u0438\u0437 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u79FB\u5F00\u56FE\u50CF\u7684\u95E8\u9650\u503C"
 		},
@@ -7164,7 +6856,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCEE4\uC11C\uAC00 \uC774\uBBF8\uC9C0\uB97C \uB5A0\uB09C \uAC83\uC73C\uB85C \uD30C\uC545\uD560 \uC218 \uC788\uB294 \uC774\uBBF8\uC9C0 \uD53D\uC140 \uC218",
-			"pt-BR": "Quantos pixels fora da imagem antes que o cursor seja considerado como tendo deixado a imagem",
 			"ru": "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u043F\u0438\u043A\u0441\u0435\u043B\u0435\u0439 \u0437\u0430 \u043F\u0440\u0435\u0434\u0435\u043B\u0430\u043C\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043F\u0435\u0440\u0435\u0434 \u043A\u0443\u0440\u0441\u043E\u0440\u043E\u043C \u0441\u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044F \u043F\u043E\u043A\u0438\u043D\u0443\u0432\u0448\u0438\u043C\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435.",
 			"zh-CN": "\u9F20\u6807\u6307\u9488\u79BB\u5F00\u56FE\u50CF\u5916\u7F18\u591A\u5C11\u50CF\u7D20\u89C6\u4F5C\u79FB\u5F00\u56FE\u50CF"
 		},
@@ -7178,7 +6869,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBBF8\uB9AC\uBCF4\uAE30\uB97C \uB0A8\uAE30\uBA74 \uB85C\uB529\uC774 \uCDE8\uC18C\uB428",
-			"pt-BR": "Sair da miniatura cancela o carregamento",
 			"ru": "\u041E\u0442\u043C\u0435\u043D\u044F\u0442\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443, \u0435\u0441\u043B\u0438 \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440\u0430 \u043F\u043E\u043A\u0438\u043D\u0443\u0442\u0430",
 			"zh-CN": "\u79BB\u5F00\u7F29\u7565\u56FE\u5219\u53D6\u6D88\u52A0\u8F7D"
 		},
@@ -7192,7 +6882,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCEE4\uC11C\uAC00 \uCD95\uC18C \uC774\uBBF8\uC9C0\uC5D0\uC11C \uBC97\uC5B4\uB0A0 \uB54C \uD604\uC7AC \uD31D\uC5C5 \uB85C\uB529 \uCDE8\uC18C",
-			"pt-BR": "Cancela o carregamento do pop-up atual quando o cursor sai da imagem em miniatura",
 			"ru": "\u041E\u0442\u043C\u0435\u043D\u044F\u0435\u0442 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430, \u043A\u043E\u0433\u0434\u0430 \u043A\u0443\u0440\u0441\u043E\u0440 \u043F\u043E\u043A\u0438\u043D\u0443\u043B \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440\u0443 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u9F20\u6807\u6307\u9488\u79BB\u5F00\u7F29\u7565\u56FE\u65F6\u53D6\u6D88\u5F53\u524D\u5F39\u7A97\u7684\u52A0\u8F7D"
 		},
@@ -7206,7 +6895,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "ESC \uB85C\uB529 \uCDE8\uC18C",
-			"pt-BR": "ESC cancela carregamento",
 			"ru": "ESC \u043E\u0442\u043C\u0435\u043D\u044F\u0435\u0442 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443",
 			"zh-CN": "ESC \u952E\u53D6\u6D88\u52A0\u8F7D"
 		},
@@ -7220,7 +6908,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "ESC\uB97C \uB204\uB974\uBA74 \uD604\uC7AC \uD31D\uC5C5 \uB85C\uB529\uC774 \uCDE8\uC18C\uB428",
-			"pt-BR": "Cancela o carregamento do pop-up atual se ESC for pressionado",
 			"ru": "\u041E\u0442\u043C\u0435\u043D\u044F\u0435\u0442 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 \u043F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u043A\u043D\u043E\u043A\u0438 ESC.",
 			"zh-CN": "\u6309\u4E0B ESC \u952E\u65F6\u53D6\u6D88\u5F53\u524D\u5F39\u7A97\u7684\u52A0\u8F7D"
 		},
@@ -7234,7 +6921,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD2B8\uB9AC\uAC70\uB97C \uD574\uC81C\uD558\uBA74 \uB85C\uB529\uC774 \uCDE8\uC18C\uB428",
-			"pt-BR": "Liberar gatilhos cancela carregamento",
 			"ru": "\u041E\u0442\u043C\u0435\u043D\u044F\u0442\u044C \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443, \u0435\u0441\u043B\u0438 \u043A\u043D\u043E\u043F\u043A\u0438 \u0430\u043A\u0442\u0438\u0432\u0430\u0446\u0438\u0438 \u043E\u0442\u043F\u0443\u0449\u0435\u043D\u044B",
 			"zh-CN": "\u677E\u5F00\u89E6\u53D1\u5668\u53D6\u6D88\u52A0\u8F7D"
 		},
@@ -7248,7 +6934,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC5B4\uB5A4/\uBAA8\uB4E0 \uB3D9\uC791\uC5D0 \uB2EB\uD798\uC744 \uC120\uD0DD\uD55C \uACBD\uC6B0 \uD604\uC7AC \uD31D\uC5C5 \uB85C\uB529 \uCDE8\uC18C (\"\uD31D\uC5C5\uC744 \uB2EB\uC73C\uB824\uBA74\" \uC124\uC815\uC5D0 \uC758\uC874\uD568)",
-			"pt-BR": "Cancela o carregamento do popup atual se todos/quaisquer gatilhos forem liberados (conforme definido pela configura\u00E7\u00E3o \"Manter popup aberto at\u00E9\")",
 			"ru": "\u041E\u0442\u043C\u0435\u043D\u044F\u0435\u0442 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430, \u0435\u0441\u043B\u0438 \u0432\u0441\u0435/\u043B\u044E\u0431\u044B\u0435 \u043A\u043D\u043E\u043F\u043A\u0438 \u0441\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u043D\u0438\u044F \u043E\u0442\u043F\u0443\u0449\u0435\u043D\u044B (\u0432 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0438 \u0441 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0430\u043C\u0438 '\u041E\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u043C \u0434\u043E \u0442\u0435\u0445 \u043F\u043E\u0440, \u043F\u043E\u043A\u0430'",
 			"zh-CN": "\u5982\u679C\u677E\u5F00\u4E86\u6240\u6709/\u4EFB\u4F55\u89E6\u53D1\u5668\uFF0C\u5E76\u4E14\u8BBE\u7F6E\u4E86\u201C\u4FDD\u6301\u5F39\u7A97\u5F00\u542F\u76F4\u5230\u201D\uFF0C\u53D6\u6D88\u5F53\u524D\u7684\u5F39\u7A97\u52A0\u8F7D"
 		},
@@ -7262,7 +6947,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC2DC\uAC04 \uCD08\uACFC \uD6C4 \uC790\uB3D9\uC73C\uB85C \uB2EB\uAE30",
-			"pt-BR": "Fechar automaticamente ap\u00F3s tempo limite",
 			"ru": "\u0410\u0432\u0442\u043E\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u0435 \u043F\u043E\u0441\u043B\u0435 \u0438\u0441\u0442\u0435\u0447\u0435\u043D\u0438\u044F \u0432\u0440\u0435\u043C\u0435\u043D\u0438",
 			"zh-CN": "\u8D85\u65F6\u540E\u81EA\u52A8\u5173\u95ED"
 		},
@@ -7276,7 +6960,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC9C0\uC815\uB41C \uC2DC\uAC04\uC774 \uACBD\uACFC\uD55C \uD6C4 \uD31D\uC5C5 \uC790\uB3D9 \uB2EB\uAE30",
-			"pt-BR": "Fecha o pop-up automaticamente ap\u00F3s um per\u00EDodo de tempo especificado",
 			"ru": "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u0437\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u043E \u0438\u0441\u0442\u0435\u0447\u0435\u043D\u0438\u0438 \u0437\u0430\u0434\u0430\u043D\u043D\u043E\u0433\u043E \u043F\u0435\u0440\u0438\u043E\u0434\u0430 \u0432\u0440\u0435\u043C\u0435\u043D\u0438.",
 			"zh-CN": "\u6307\u5B9A\u65F6\u95F4\u540E\u81EA\u52A8\u5173\u95ED\u5F39\u7A97"
 		},
@@ -7290,7 +6973,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC744 \uB2EB\uAE30 \uC704\uD55C \uC2DC\uAC04 \uCD08\uACFC \uC2DC\uAC04(\uCD08)",
-			"pt-BR": "Tempo limite para fechar o pop-up",
 			"ru": "\u0412\u0440\u0435\u043C\u0435\u043D\u0438 \u0434\u043E \u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5173\u95ED\u5F39\u7A97\u7684\u8D85\u65F6"
 		},
@@ -7304,7 +6986,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC744 \uC790\uB3D9\uC73C\uB85C \uB2EB\uAE30 \uC804 \uACBD\uACFC \uC2DC\uAC04",
-			"pt-BR": "Tempo para fechar o pop-up automaticamente",
 			"ru": "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438, \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u0434\u043E\u043B\u0436\u043D\u043E \u043F\u0440\u043E\u0439\u0442\u0438 \u0434\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u591A\u4E45\u540E\u81EA\u52A8\u5173\u95ED\u5F39\u7A97"
 		},
@@ -7318,7 +6999,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uACE0\uC815 \uD0A4",
-			"pt-BR": "Tecla manter pressionado",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u4FDD\u6301\u952E"
 		},
@@ -7332,7 +7012,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uACE0\uC815 \uD0A4\uB97C \uB204\uB974\uBA74 \uD31D\uC5C5\uC774 \uC5F4\uB9B0 \uC0C1\uD0DC\uB85C \uC720\uC9C0\uB428",
-			"pt-BR": "Tecla que, quando pressionada, mant\u00E9m o pop-up aberto",
 			"ru": "\u041A\u043D\u043E\u043F\u043A\u0430 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u044F, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u043F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u0431\u0443\u0434\u0435\u0442 \u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u043C.",
 			"zh-CN": "\u6309\u4F4F\u6B64\u952E\u65F6\u5C06\u4FDD\u6301\u5F39\u7A97\u5F00\u542F"
 		},
@@ -7346,7 +7025,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC911\uC559 \uD31D\uC5C5 \uACE0\uC815",
-			"pt-BR": "Centralizar pop-up ao manter pressionado",
 			"ru": "\u0426\u0435\u043D\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u0438",
 			"zh-CN": "\u4FDD\u6301\u65F6\u5F39\u7A97\u5C45\u4E2D"
 		},
@@ -7360,7 +7038,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC774 \uC5F4\uB9B4 \uB54C \uD31D\uC5C5\uC744 \uD398\uC774\uC9C0 \uC911\uC559\uC5D0 \uBC30\uCE58",
-			"pt-BR": "Centraliza o pop-up no meio da p\u00E1gina quando ele for pressionado",
 			"ru": "\u0426\u0435\u043D\u0442\u0440\u0438\u0440\u0443\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0430 \u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B, \u043A\u043E\u0433\u0434\u0430 \u043E\u043D\u043E \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F.",
 			"zh-CN": "\u5F39\u7A97\u4FDD\u6301\u5448\u73B0\u4E8E\u9875\u9762\u6B63\u4E2D\u5FC3"
 		},
@@ -7373,7 +7050,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir zoom ao pressionar",
 			"ru": "\u041F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u044F\u0442\u044C \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043F\u0440\u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u0438",
 			"zh-CN": "\u4FDD\u6301\u65F6\u8986\u76D6\u7F29\u653E"
 		},
@@ -7386,7 +7062,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substitui o zoom quando o pop-up \u00E9 mantido pressionado",
 			"ru": "\u041F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u044F\u0435\u0442 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043F\u0440\u0438 \u0443\u0434\u0435\u0440\u0436\u0430\u043D\u0438\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u4FDD\u6301\u5F39\u7A97\u65F6\u8986\u76D6\u7F29\u653E\u7EA7\u522B"
 		},
@@ -7400,7 +7075,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uACE0\uC815 \uD574\uC81C \uC2DC, \uD31D\uC5C5 \uB2EB\uAE30",
-			"pt-BR": "Fechar pop-up ao liberar",
 			"ru": "\u0417\u044B\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u043E\u0441\u043B\u0435 \u043E\u0442\u043F\u0443\u0441\u043A\u0430\u043D\u0438\u044F \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u53D6\u6D88\u4FDD\u6301\u65F6\u5173\u95ED\u5F39\u7A97"
 		},
@@ -7414,7 +7088,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC744 \uACE0\uC815\uD55C \uD6C4 \uACE0\uC815 \uD0A4\uB97C \uB2E4\uC2DC \uB204\uB974\uBA74 \uD31D\uC5C5\uC774 \uB2EB\uD798",
-			"pt-BR": "Fecha o pop-up quando a tecla de manter pressionado \u00E9 usada novamente, ap\u00F3s ter precionado a tecla de pop-up anteriormente",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u043E\u043C \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u043A\u043B\u0430\u0432\u0438\u0448\u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u044F \u043F\u043E\u0441\u043B\u0435 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0433\u043E \u0443\u0434\u0435\u0440\u0436\u0430\u043D\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u66FE\u7ECF\u4FDD\u6301\u5F39\u7A97\u540E\uFF0C\u518D\u6B21\u6309\u4E0B\u4FDD\u6301\u952E\u65F6\u5173\u95ED\u5F39\u7A97"
 		},
@@ -7428,7 +7101,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD3EC\uC778\uD130 \uC774\uBCA4\uD2B8 \uACE0\uC815 \uC0AC\uC6A9",
-			"pt-BR": "Habilitar eventos do ponteiro ao sustentar",
 			"ru": "\u0421\u043E\u0431\u044B\u0442\u0438\u044F \u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044F \u043F\u0440\u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u0438",
 			"zh-CN": "\u4FDD\u6301\u671F\u95F4\u542F\u7528\u6307\u9488\u4E8B\u4EF6"
 		},
@@ -7442,7 +7114,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC774 \uACE0\uC815\uB420 \uB54C \uC774\uC804\uC5D0 \uBE44\uD65C\uC131\uD654\uB41C \uD3EC\uC778\uD130 \uC774\uBCA4\uD2B8 \uD65C\uC131\uD654",
-			"pt-BR": "Habilita eventos do ponteiro do mouse previamente desabilitados quando a tecla de pop-up \u00E9 pressionada",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0440\u0430\u043D\u0435\u0435 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043D\u044B\u0435 \u0441\u043E\u0431\u044B\u0442\u0438\u044F \u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044F \u043F\u0440\u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u5F39\u7A97\u4FDD\u6301\u671F\u95F4\u542F\u7528\u5148\u524D\u7981\u7528\u7684\u6307\u9488\u4E8B\u4EF6"
 		},
@@ -7456,7 +7127,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5 \uBC14\uAE65\uCABD\uC744 \uD074\uB9AD\uD558\uBA74 \uB2EB\uD798",
-			"pt-BR": "Clicar fora do pop-up fecha",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u043F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u0437\u0430 \u043F\u0440\u0435\u0434\u0435\u043B\u0430\u043C\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u70B9\u51FB\u5F39\u7A97\u5916\u5173\u95ED"
 		},
@@ -7470,7 +7140,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB9C8\uC6B0\uC2A4\uAC00 \uD31D\uC5C5 \uBC14\uAE65\uCABD\uC744 \uD074\uB9AD\uD560 \uB54C \uD31D\uC5C5 \uB2EB\uAE30",
-			"pt-BR": "Fecha o pop-up quando o mouse clica fora dele",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u043C\u044B\u0448\u0438 \u0437\u0430 \u0435\u0433\u043E \u043F\u0440\u0435\u0434\u0435\u043B\u0430\u043C\u0438.",
 			"zh-CN": "\u9F20\u6807\u5728\u5F39\u7A97\u5916\u5355\u51FB\u65F6\u5173\u95ED\u5F39\u7A97"
 		},
@@ -7484,7 +7153,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB5A0\uB0A0 \uB54C \uB2EB\uAE30",
-			"pt-BR": "Fechar ao sair",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u043F\u0440\u0438 \u043F\u043E\u043A\u0438\u0434\u0430\u043D\u0438\u0438",
 			"zh-CN": "\u79BB\u5F00\u65F6\u5173\u95ED"
 		},
@@ -7497,7 +7165,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fecha o pop-up quando o mouse sai do elemento da miniatura, do pop-up ou de ambos",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E, \u043A\u043E\u0433\u0434\u0430 \u043C\u044B\u0448\u044C \u043F\u043E\u043A\u0438\u0434\u0430\u0435\u0442 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440\u044B, \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0438\u043B\u0438 \u0438 \u0442\u043E, \u0438 \u0434\u0440\u0443\u0433\u043E\u0435.",
 			"zh-CN": "\u9F20\u6807\u79FB\u51FA\u7F29\u7565\u56FE\u5143\u7D20\u3001\u5F39\u7A97\u6216\u4E0A\u8FF0\u4E24\u8005\u65F6\u5173\u95ED\u5F39\u7A97"
 		},
@@ -7511,7 +7178,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBBF8\uB9AC\uBCF4\uAE30(\uC378\uB124\uC77C)",
-			"pt-BR": "Miniatura",
 			"ru": "\u041C\u0438\u043D\u0438\u0430\u0442\u044E\u0440\u044B",
 			"zh-CN": "\u7F29\u7565\u56FE"
 		},
@@ -7525,7 +7191,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB458 \uB2E4",
-			"pt-BR": "Ambos",
 			"ru": "\u041E\u0431\u043E\u0438\u0445",
 			"zh-CN": "\u4E0A\u8FF0\u4E24\u8005"
 		},
@@ -7538,7 +7203,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar elemento invis\u00EDvel ao aguardar",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043D\u0435\u0432\u0438\u0434\u0438\u043C\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u043F\u0440\u0438 \u043E\u0436\u0438\u0434\u0430\u043D\u0438\u0438",
 			"zh-CN": "\u7B49\u5F85\u65F6\u4F7F\u7528\u9690\u5F62\u5143\u7D20"
 		},
@@ -7551,7 +7215,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Cria um elemento invis\u00EDvel abaixo do cursor ao aguardar o pop-up em vez de um elemento de estilo (pode melhorar o desempenho em sites com muitos elementos, mas impede que o cursor clique em qualquer coisa durante o carregamento do pop-up)",
 			"ru": "\u0421\u043E\u0437\u0434\u0430\u0451\u0442 \u043D\u0435\u0432\u0438\u0434\u0438\u043C\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u043F\u043E\u0434 \u043A\u0443\u0440\u0441\u043E\u0440\u043E\u043C \u043F\u0440\u0438 \u043E\u0436\u0438\u0434\u0430\u043D\u0438\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 \u0432\u043C\u0435\u0441\u0442\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430 \u0441\u0442\u0438\u043B\u044F (\u043C\u043E\u0436\u0435\u0442 \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043D\u0430 \u0441\u0430\u0439\u0442\u0430\u0445 \u0441 \u0431\u043E\u043B\u044C\u0448\u0438\u043C \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u043C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432, \u043D\u043E \u043D\u0435 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043A\u0443\u0440\u0441\u043E\u0440\u0443 \u043D\u0430\u0436\u0438\u043C\u0430\u0442\u044C \u043D\u0430 \u0447\u0442\u043E-\u043B\u0438\u0431\u043E \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430).",
 			"zh-CN": "\u5728\u7B49\u5F85\u5F39\u7A97\u65F6\u5728\u9F20\u6807\u6307\u9488\u4E0B\u65B9\u521B\u5EFA\u4E00\u4E2A\u9690\u5F62\u5143\u7D20\uFF08\u800C\u975E\u6837\u5F0F\u5143\u7D20\uFF09\uFF08\u53EF\u4EE5\u6539\u5584\u6709\u5927\u91CF\u5143\u7D20\u7684\u7F51\u7AD9\u6027\u80FD\uFF0C\u4F46\u8FD9\u4F1A\u963B\u6B62\u52A0\u8F7D\u671F\u95F4\u9F20\u6807\u70B9\u51FB\u4EFB\u4F55\u4E1C\u897F\uFF09"
 		},
@@ -7564,7 +7227,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Adicionar link do pop-up ao hist\u00F3rico",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0443\u044E \u0441\u0441\u044B\u043B\u043A\u0443 \u0432 \u0438\u0441\u0442\u043E\u0440\u0438\u044E",
 			"zh-CN": "\u6DFB\u52A0\u5F39\u51FA\u7684\u94FE\u63A5\u5230\u5386\u53F2\u8BB0\u5F55"
 		},
@@ -7577,7 +7239,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Adiciona o link da imagem/v\u00EDdeo aberto atrav\u00E9s do pop-up ao hist\u00F3rico do navegador",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u0441\u044B\u043B\u043A\u0443 \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435/\u0432\u0438\u0434\u0435\u043E \u0432 \u0438\u0441\u0442\u043E\u0440\u0438\u044E \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430, \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0435 \u0447\u0435\u0440\u0435\u0437 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E.",
 			"zh-CN": "\u5C06\u901A\u8FC7\u5F39\u7A97\u6253\u5F00\u7684\u56FE\u50CF/\u89C6\u9891\u94FE\u63A5\u6DFB\u52A0\u5230\u6D4F\u89C8\u5668\u7684\u5386\u53F2\u8BB0\u5F55"
 		},
@@ -7589,8 +7250,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Adicionar link da miniatura ao hist\u00F3rico"
+			}
 		},
 		"Adds the original media link opened through the popup to the browser's history": {
 			"_info": {
@@ -7600,8 +7260,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Adiciona o link original da m\u00EDdia aberto atrav\u00E9s do pop-up ao hist\u00F3rico do navegador"
+			}
 		},
 		"Allow inter-frame communication": {
 			"_info": {
@@ -7613,7 +7272,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD504\uB808\uC784 \uAC04 \uD1B5\uC2E0 \uD5C8\uC6A9",
-			"pt-BR": "Permitir comunica\u00E7\u00E3o entre frames",
 			"ru": "\u0420\u0430\u0437\u0440\u0435\u0448\u0438\u0442\u044C \u043C\u0435\u0436\u0444\u0440\u0435\u0439\u043C\u043E\u0432\u0443\u044E \u0441\u0432\u044F\u0437\u044C",
 			"zh-CN": "\u5141\u8BB8\u6846\u67B6\u95F4\u901A\u4FE1"
 		},
@@ -7627,7 +7285,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCC3D\uC758 \uD504\uB808\uC784 \uAC04 \uD1B5\uC2E0\uC744 \uD5C8\uC6A9\uD558\uC5EC \uD0A4 \uBC14\uC778\uB529\uC5D0 \uB300\uD55C \uC9C0\uC6D0\uC744 \uAC1C\uC120\uD55C\uB2E4.",
-			"pt-BR": "Permite a comunica\u00E7\u00E3o entre frames em janelas, melhorando o suporte para atalhos de teclado",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0442\u044C \u0441\u0432\u044F\u0437\u044C \u043C\u0435\u0436\u0434\u0443 \u0444\u0440\u0435\u0439\u043C\u0430\u043C\u0438 \u0432 Windows, \u0443\u043B\u0443\u0447\u0448\u0430\u044F \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443 \u043F\u0440\u0438\u0432\u044F\u0437\u043A\u0438 \u043A\u043B\u0430\u0432\u0438\u0448.",
 			"zh-CN": "\u5141\u8BB8\u7A97\u53E3\u4E2D\u7684\u6846\u67B6\u95F4\u901A\u4FE1\uFF0C\u6539\u5584\u5BF9\u5FEB\u6377\u952E\u7ED1\u5B9A\u7684\u652F\u6301"
 		},
@@ -7641,7 +7298,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCC3D\uC758 \uD504\uB808\uC784 \uAC04 \uD1B5\uC2E0\uC744 \uD5C8\uC6A9\uD558\uC5EC \uD0A4 \uBC14\uC778\uB529\uC5D0 \uB300\uD55C \uC9C0\uC6D0\uC744 \uAC1C\uC120\uD569\uB2C8\uB2E4. \uC720\uC800\uC2A4\uD06C\uB9BD\uD2B8\uB97C \uD1B5\uD574 \uC0AC\uC6A9 \uC2DC, \uBCF4\uC548\uC5D0 \uC704\uD611\uC774 \uC788\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4",
-			"pt-BR": "Permite a comunica\u00E7\u00E3o entre frames em janelas, melhorando o suporte para atalhos de teclado. Pode representar um risco de fingerprinting quando usado atrav\u00E9s do userscript",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0442\u044C \u0441\u0432\u044F\u0437\u044C \u043C\u0435\u0436\u0434\u0443 \u0444\u0440\u0435\u0439\u043C\u0430\u043C\u0438 \u0432 Windows, \u0443\u043B\u0443\u0447\u0448\u0430\u044F \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443 \u043F\u0440\u0438\u0432\u044F\u0437\u043A\u0438 \u043A\u043B\u0430\u0432\u0438\u0448. \u041C\u043E\u0436\u0435\u0442 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C \u0440\u0438\u0441\u043A \u0441\u043D\u044F\u0442\u0438\u044F \u043E\u0442\u043F\u0435\u0447\u0430\u0442\u043A\u043E\u0432 \u043F\u0430\u043B\u044C\u0446\u0435\u0432 \u043F\u0440\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0438 \u0447\u0435\u0440\u0435\u0437 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u0441\u043A\u0440\u0438\u043F\u0442.",
 			"zh-CN": "\u5141\u8BB8\u7A97\u53E3\u4E2D\u7684\u6846\u67B6\u95F4\u901A\u4FE1\uFF0C\u6539\u5584\u5BF9\u5FEB\u6377\u952E\u7ED1\u5B9A\u7684\u652F\u6301\u3002\u901A\u8FC7\u7528\u6237\u811A\u672C\u4F7F\u7528\u65F6\uFF0C\u4E5F\u8BB8\u4F1A\u6784\u6210\u6307\u7EB9\u8BC6\u522B\u7684\u98CE\u9669"
 		},
@@ -7655,7 +7311,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD504\uB808\uC784\uC5D0\uC11C \uD31D\uC5C5",
-			"pt-BR": "Sair dos frames",
 			"ru": "\u0412\u044B\u0441\u043A\u0430\u043A\u0438\u0432\u0430\u0442\u044C \u0437\u0430 \u0440\u0430\u043C\u043A\u0438",
 			"zh-CN": "\u8DF3\u51FA\u6846\u67B6"
 		},
@@ -7668,7 +7323,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Abre o pop-up no frame superior em vez de dentro de iframes. Esta op\u00E7\u00E3o ainda \u00E9 experimental.",
 			"ru": "\u041E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u043E\u0432\u0435\u0440\u0445 \u0444\u0440\u0435\u0439\u043C\u0430, \u0430 \u043D\u0435 \u0432\u043D\u0443\u0442\u0440\u0438 iframes. \u042D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0432\u0441\u0451 \u0435\u0449\u0451 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u043C.",
 			"zh-CN": "\u5728\u6846\u67B6\u5916\u800C\u975E\u6846\u67B6\u5185\u6253\u5F00\u5F39\u7A97\u3002\u6B64\u9009\u9879\u4ECD\u5904\u4E8E\u8BD5\u9A8C\u9636\u6BB5\u3002"
 		},
@@ -7682,7 +7336,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD655\uB300/\uCD95\uC18C \uAE30\uBCF8\uAC12",
-			"pt-BR": "Zoom padr\u00E3o do pop-up",
 			"ru": "\u041C\u0430\u0441\u0448\u0442\u0430\u0431 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u9ED8\u8BA4\u7F29\u653E\u7EA7\u522B"
 		},
@@ -7696,7 +7349,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC758 \uCD08\uAE30 \uD06C\uAE30 \uC870\uC815 \uBC29\uBC95",
-			"pt-BR": "Como deve ser o dimensionamento inicial do pop-up",
 			"ru": "\u041A\u0430\u043A\u0438\u043C \u0431\u0443\u0434\u0435\u0442 \u0438\u0437\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u5F39\u7A97\u7684\u521D\u59CB\u5C3A\u5BF8"
 		},
@@ -7715,7 +7367,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"fr": "Adapter a l'ecran",
 			"ko": "\uD654\uBA74 \uD06C\uAE30\uC5D0 \uB9DE\uCDA4",
-			"pt-BR": "Ajustar \u00E0 tela",
 			"ru": "\u041F\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0443 \u044D\u043A\u0440\u0430\u043D\u0430",
 			"zh-CN": "\u9002\u5408\u5C4F\u5E55"
 		},
@@ -7733,7 +7384,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD654\uBA74 \uCC44\uC6B0\uAE30",
-			"pt-BR": "Preencher tela",
 			"ru": "\u0417\u0430\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u044D\u043A\u0440\u0430\u043D",
 			"zh-CN": "\u586B\u6EE1\u5C4F\u5E55"
 		},
@@ -7752,7 +7402,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"fr": "Taille r\u00E9elle",
 			"ko": "\uC804\uCCB4 \uD06C\uAE30",
-			"pt-BR": "Tamanho original",
 			"ru": "\u041F\u043E\u043B\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440",
 			"zh-CN": "\u5168\u5C3A\u5BF8"
 		},
@@ -7766,7 +7415,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB9DE\uCDA4 \uD06C\uAE30",
-			"pt-BR": "Tamanho personalizado",
 			"ru": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u0440\u0430\u0437\u043C\u0435\u0440",
 			"zh-CN": "\u81EA\u5B9A\u4E49\u5C3A\u5BF8"
 		},
@@ -7780,7 +7428,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC0AC\uC6A9\uC790 \uC9C0\uC815 \uD655\uB300/\uCD95\uC18C \uBE44\uC728",
-			"pt-BR": "Percentual de zoom personalizado",
 			"ru": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u81EA\u5B9A\u4E49\u7F29\u653E\u767E\u5206\u6BD4"
 		},
@@ -7794,7 +7441,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5 \uC124\uC815 \uC2DC, \uCD08\uAE30 \uC0AC\uC6A9\uC790 \uC9C0\uC815 \uD655\uB300/\uCD95\uC18C \uBE44\uC728",
-			"pt-BR": "Percentual personalizado para dimensionar o pop-up inicialmente",
 			"ru": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0446\u0435\u043D\u0442 \u0434\u043B\u044F \u043F\u0435\u0440\u0432\u043E\u043D\u0430\u0447\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u04306",
 			"zh-CN": "\u81EA\u5B9A\u4E49\u76F8\u5BF9\u4E8E\u521D\u59CB\u5F39\u7A97\u5927\u5C0F\u7684\u767E\u5206\u6BD4"
 		},
@@ -7819,7 +7465,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "%",
 			"ru": "%",
 			"zh-CN": "%"
 		},
@@ -7832,7 +7477,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar \u00FAltimo zoom",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0439 \u043C\u0430\u0441\u0448\u0442\u0430\u0431",
 			"zh-CN": "\u4F7F\u7528\u6700\u540E\u7684\u7F29\u653E\u8BBE\u7F6E"
 		},
@@ -7845,7 +7489,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar o zoom do \u00FAltimo pop-up. Observe que isso \u00E9 por p\u00E1gina.",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0433\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430. \u041E\u0431\u0440\u0430\u0442\u0438\u0442\u0435 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435, \u0447\u0442\u043E \u044D\u0442\u043E \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435.",
 			"zh-CN": "\u4F7F\u7528\u6700\u540E\u4E00\u4E2A\u5F39\u7A97\u7684\u7F29\u653E\u7EA7\u522B\u3002\u6CE8\u610F\uFF0C\u6B64\u7EA7\u522B\u4E0D\u8DE8\u9875\u5171\u4EAB\u3002"
 		},
@@ -7859,7 +7502,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCD5C\uB300 \uAC00\uB85C \uAE38\uC774",
-			"pt-BR": "Largura m\u00E1xima",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u0448\u0438\u0440\u0438\u043D\u0430",
 			"zh-CN": "\u6700\u5927\u5BBD\u5EA6"
 		},
@@ -7873,7 +7515,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCD08\uAE30 \uD31D\uC5C5 \uD06C\uAE30\uC758 \uCD5C\uB300 \uAC00\uB85C \uAE38\uC774. \uBB34\uC81C\uD55C\uC758 \uACBD\uC6B0 0\uC73C\uB85C \uC124\uC815\uD558\uC2ED\uC2DC\uC624.",
-			"pt-BR": "Largura m\u00E1xima para o tamanho inicial do pop-up. Defina como `0` para ilimitado.",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u0448\u0438\u0440\u0438\u043D\u0430 \u0434\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430. `0` - \u043D\u0435\u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043D\u0430\u044F \u0448\u0438\u0440\u0438\u043D\u0430.",
 			"zh-CN": "\u521D\u59CB\u5F39\u7A97\u5C3A\u5BF8\u7684\u6700\u5927\u5BBD\u5EA6\u3002\u8BBE\u4E3A 0 \u5219\u65E0\u9650\u5236\u3002"
 		},
@@ -7887,7 +7528,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCD5C\uB300 \uC138\uB85C \uAE38\uC774",
-			"pt-BR": "Altura m\u00E1xima",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u0432\u044B\u0441\u043E\u0442\u0430",
 			"zh-CN": "\u6700\u5927\u9AD8\u5EA6"
 		},
@@ -7901,7 +7541,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCD08\uAE30 \uD31D\uC5C5 \uD06C\uAE30\uC758 \uCD5C\uB300 \uC138\uB85C \uAE38\uC774. \uBB34\uC81C\uD55C\uC73C\uB85C '0'\uC73C\uB85C \uC124\uC815\uD55C\uB2E4.",
-			"pt-BR": "Altura m\u00E1xima para o tamanho inicial do pop-up. Defina como `0` para ilimitado.",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u0430\u044F \u0432\u044B\u0441\u043E\u0442\u0430 \u0434\u043B\u044F \u043D\u0430\u0447\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430. `0` - \u043D\u0435\u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043D\u0430\u044F \u0432\u044B\u0441\u043E\u0442\u0430.",
 			"zh-CN": "\u521D\u59CB\u5F39\u7A97\u5C3A\u5BF8\u7684\u6700\u5927\u9AD8\u5EA6\u3002\u8BBE\u4E3A 0 \u5219\u65E0\u9650\u5236\u3002"
 		},
@@ -7915,7 +7554,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774\uBBF8\uC9C0 \uC774\uB3D9\uD558\uB824\uBA74",
-			"pt-BR": "M\u00E9todo de panor\u00E2mica do pop-up",
 			"ru": "\u0421\u043F\u043E\u0441\u043E\u0431 \u043F\u0430\u043D\u043E\u0440\u0430\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u5E73\u79FB\u65B9\u6CD5"
 		},
@@ -7928,7 +7566,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como o pop-up deve ser deslocado quando maior que a tela",
 			"ru": "\u041A\u0430\u043A \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043E\u043B\u0436\u043D\u043E \u0431\u044B\u0442\u044C \u043F\u0430\u043D\u043E\u0440\u0430\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u043E, \u043A\u043E\u0433\u0434\u0430 \u043E\u043D\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u044D\u043A\u0440\u0430\u043D\u0430.",
 			"zh-CN": "\u5F39\u7A97\u6BD4\u5C4F\u5E55\u5927\u65F6\u5E94\u5982\u4F55\u5E73\u79FB"
 		},
@@ -7942,7 +7579,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB9C8\uC6B0\uC2A4 \uC6C0\uC9C1\uC785\uB2C8\uB2E4",
-			"pt-BR": "Movimento",
 			"ru": "\u041F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u79FB\u52A8"
 		},
@@ -7955,7 +7591,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "O pop-up se move conforme voc\u00EA move o mouse",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0430\u043D\u043E\u0440\u0430\u043C\u0438\u0440\u0443\u0435\u0442\u0441\u044F \u043A\u043E\u0433\u0434\u0430 \u0432\u044B \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0430\u0435\u0442\u0435 \u043C\u044B\u0448\u044C.",
 			"zh-CN": "\u79FB\u52A8\u9F20\u6807\u65F6\u5F39\u7A97\u5E73\u79FB"
 		},
@@ -7969,7 +7604,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB055\uB2C8\uB2E4",
-			"pt-BR": "Arrastar",
 			"ru": "\u041F\u0435\u0440\u0435\u0442\u0430\u0441\u043A\u0438\u0432\u0430\u043D\u0438\u0435",
 			"zh-CN": "\u62D6\u62FD"
 		},
@@ -7982,7 +7616,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "'Clicar e arrastar' move o pop-up",
 			"ru": "\u0412\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u043D\u0430\u0436\u0430\u0442\u044C \u0438 \u043F\u0435\u0440\u0435\u0442\u0430\u0441\u043A\u0438\u0432\u0430\u0442\u044C \u043F\u0430\u043D\u0435\u043B\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u5355\u51FB\u5E76\u62D6\u62FD\u79FB\u52A8\u5F39\u7A97"
 		},
@@ -7995,7 +7628,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Inverter movimento",
 			"ru": "\u0418\u043D\u0432\u0435\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u53CD\u8F6C\u79FB\u52A8"
 		},
@@ -8008,7 +7640,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Inverte o movimento do mouse. Por exemplo, se o mouse se mover para a esquerda, o pop-up se move para a direita. Se desabilitado, parece que o pop-up est\u00E1 sendo arrastado de forma invis\u00EDvel.",
 			"ru": "\u0418\u043D\u0432\u0435\u0440\u0442\u0438\u0440\u0443\u0435\u0442 \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435 \u043C\u044B\u0448\u044C\u044E. \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0435\u0441\u043B\u0438 \u043C\u044B\u0448\u044C \u0434\u0432\u0438\u0436\u0435\u0442\u0441\u044F \u0432\u043B\u0435\u0432\u043E, \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0430\u0435\u0442\u0441\u044F \u0432\u043F\u0440\u0430\u0432\u043E. \u0415\u0441\u043B\u0438 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u043E, \u0442\u043E \u0431\u043E\u043B\u044C\u0448\u0435 \u043F\u043E\u0445\u043E\u0436\u0435 \u043D\u0430 \u0442\u043E, \u0447\u0442\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0435\u0432\u0438\u0434\u0438\u043C\u043E \u043F\u0435\u0440\u0435\u0442\u0430\u0441\u043A\u0438\u0432\u0430\u0435\u0442\u0441\u044F.",
 			"zh-CN": "\u53CD\u8F6C\u9F20\u6807\u7684\u79FB\u52A8\u3002\u4F8B\u5982\uFF0C\u5982\u679C\u9F20\u6807\u5411\u5DE6\u79FB\u52A8\uFF0C\u5F39\u7A97\u5411\u53F3\u79FB\u52A8\u3002\u5982\u679C\u7981\u7528\uFF0C\u611F\u89C9\u66F4\u50CF\u662F\u5F39\u51FA\u7A97\u53E3\u5728\u65E0\u5F62\u4E2D\u88AB\u62D6\u52A8\u3002"
 		},
@@ -8021,7 +7652,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quantidade m\u00EDnima a ser arrastada",
 			"ru": "\u041C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0434\u043B\u044F \u043F\u0435\u0440\u0435\u0442\u0430\u0441\u043A\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u6700\u5C0F\u62D6\u62FD\u8D77\u59CB"
 		},
@@ -8034,7 +7664,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quantos pixels o mouse deve se mover para iniciar um arrasto",
 			"ru": "\u041D\u0430 \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043F\u0438\u043A\u0441\u0435\u043B\u0435\u0439 \u043C\u044B\u0448\u044C \u0434\u043E\u043B\u0436\u043D\u0430 \u043F\u0435\u0440\u0435\u043C\u0435\u0441\u0442\u0438\u0442\u044C\u0441\u044F, \u0447\u0442\u043E\u0431\u044B \u043D\u0430\u0447\u0430\u0442\u044C \u043F\u0435\u0440\u0435\u0442\u0430\u0441\u043A\u0438\u0432\u0430\u043D\u0438\u0435.",
 			"zh-CN": "\u9F20\u6807\u79FB\u52A8\u591A\u5C11\u50CF\u7D20\u624D\u5F00\u59CB\u62D6\u62FD"
 		},
@@ -8067,7 +7696,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A\u00E7\u00E3o de rolagem vertical",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438",
 			"zh-CN": "\u5782\u76F4\u6EDA\u52A8\u64CD\u4F5C"
 		},
@@ -8080,7 +7708,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como o pop-up reage a um evento de rolagem vertical/roda do mouse",
 			"ru": "\u041A\u0430\u043A \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0440\u0435\u0430\u0433\u0438\u0440\u0443\u0435\u0442 \u043D\u0430 \u0441\u043E\u0431\u044B\u0442\u0438\u0435 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438/\u043A\u043E\u043B\u0435\u0441\u0430 \u043C\u044B\u0448\u0438.",
 			"zh-CN": "\u5F39\u7A97\u5982\u4F55\u5BF9\u5782\u76F4\u6EDA\u52A8/\u9F20\u6807\u6EDA\u8F6E\u4E8B\u4EF6\u505A\u51FA\u53CD\u5E94"
 		},
@@ -8093,7 +7720,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A\u00E7\u00E3o de rolagem vertical (pressionado)",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u043F\u0440\u0438 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0435 (\u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u0435)",
 			"zh-CN": "\u5782\u76F4\u6EDA\u52A8\u52A8\u4F5C(\u4FDD\u6301)"
 		},
@@ -8106,7 +7732,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como o pop-up (quando pressionado) reage a um evento de rolagem vertical/roda do mouse",
 			"ru": "\u041A\u0430\u043A \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E (\u043A\u043E\u0433\u0434\u0430 \u043E\u043D\u043E \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F) \u0440\u0435\u0430\u0433\u0438\u0440\u0443\u0435\u0442 \u043D\u0430 \u0441\u043E\u0431\u044B\u0442\u0438\u0435 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438/\u043A\u043E\u043B\u0435\u0441\u0430 \u043C\u044B\u0448\u0438",
 			"zh-CN": "\u201C\u4FDD\u6301\u201D\u663E\u793A\u7684\u5F39\u7A97\u5982\u4F55\u5BF9\u5782\u76F4\u6EDA\u52A8/\u9F20\u6807\u6EDA\u8F6E\u4E8B\u4EF6\u505A\u51FA\u53CD\u5E94"
 		},
@@ -8124,7 +7749,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC90C",
-			"pt-BR": "Zoom",
 			"ru": "\u041C\u0430\u0441\u0448\u0442\u0430\u0431",
 			"zh-CN": "\u7F29\u653E"
 		},
@@ -8137,7 +7761,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A\u00E7\u00E3o de rolagem horizontal",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438",
 			"zh-CN": "\u6C34\u5E73\u6EDA\u52A8\u52A8\u4F5C"
 		},
@@ -8150,7 +7773,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como o pop-up reage a um evento de rolagem horizontal/roda do mouse",
 			"ru": "\u041A\u0430\u043A \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0440\u0435\u0430\u0433\u0438\u0440\u0443\u0435\u0442 \u043D\u0430 \u0441\u043E\u0431\u044B\u0442\u0438\u0435 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438/\u043A\u043E\u043B\u0435\u0441\u0430 \u043C\u044B\u0448\u0438.",
 			"zh-CN": "\u5F39\u7A97\u5982\u4F55\u5BF9\u6C34\u5E73\u6EDA\u52A8/\u9F20\u6807\u6EDA\u8F6E\u4E8B\u4EF6\u505A\u51FA\u53CD\u5E94"
 		},
@@ -8163,7 +7785,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A\u00E7\u00E3o de rolagem horizontal (pressionado)",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438 (\u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u0435)",
 			"zh-CN": "\u6C34\u5E73\u6EDA\u52A8\u52A8\u4F5C(\u4FDD\u6301)"
 		},
@@ -8176,7 +7797,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como o pop-up (quando pressionado) reage a um evento de rolagem horizontal/roda do mouse",
 			"ru": "\u041A\u0430\u043A \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E (\u043A\u043E\u0433\u0434\u0430 \u043E\u043D\u043E \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F) \u0440\u0435\u0430\u0433\u0438\u0440\u0443\u0435\u0442 \u043D\u0430 \u0441\u043E\u0431\u044B\u0442\u0438\u0435 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438/\u043A\u043E\u043B\u0435\u0441\u0430 \u043C\u044B\u0448\u0438",
 			"zh-CN": "\u201C\u4FDD\u6301\u201D\u663E\u793A\u7684\u5F39\u7A97\u5982\u4F55\u5BF9\u6C34\u5E73\u6EDA\u52A8/\u9F20\u6807\u6EDA\u8F6E\u4E8B\u4EF6\u505A\u51FA\u53CD\u5E94"
 		},
@@ -8202,7 +7822,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774\uB3D9",
-			"pt-BR": "Mover",
 			"ru": "\u041F\u0430\u043D\u0435\u043B\u044C",
 			"zh-CN": "\u5E73\u79FB"
 		},
@@ -8231,7 +7850,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Galeria",
 			"ru": "\u0413\u0430\u043B\u0435\u0440\u0435\u044F",
 			"zh-CN": "\u56FE\u5E93"
 		},
@@ -8244,7 +7862,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A\u00E7\u00E3o de rolagem vertical do v\u00EDdeo",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438 \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u5782\u76F4\u89C6\u9891\u6EDA\u52A8\u52A8\u4F5C"
 		},
@@ -8257,7 +7874,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substitui a a\u00E7\u00E3o de rolagem vertical para v\u00EDdeos. Defina como `Padr\u00E3o` para evitar substituir o comportamento.",
 			"ru": "\u041F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u044F\u0435\u0442 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438 \u0434\u043B\u044F \u0432\u0438\u0434\u0435\u043E. \u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 `\u041F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E`, \u0447\u0442\u043E\u0431\u044B \u0438\u0437\u0431\u0435\u0436\u0430\u0442\u044C \u043F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u0438\u044F \u043F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u8986\u76D6\u89C6\u9891\u7684\u5782\u76F4\u6EDA\u52A8\u52A8\u4F5C\u3002\u8BBE\u4E3A `\u9ED8\u8BA4` \u6765\u907F\u514D\u8986\u76D6\u8BE5\u884C\u4E3A\u3002"
 		},
@@ -8270,7 +7886,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Inverter busca de rolagem vertical",
 			"ru": "\u0418\u043D\u0432\u0435\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0441\u0442\u0440\u0435\u043C\u043B\u0435\u043D\u0438\u0435 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438",
 			"zh-CN": "\u53CD\u8F6C\u5782\u76F4\u6EDA\u52A8\u7684\u5FEB\u8FDB/\u5FEB\u9000"
 		},
@@ -8283,7 +7898,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Inverte a dire\u00E7\u00E3o da busca ao rolar verticalmente: Rolar para cima buscar\u00E1 para a direita, rolar para baixo buscar\u00E1 para a esquerda.",
 			"ru": "\u0418\u043D\u0432\u0435\u0440\u0442\u0438\u0440\u0443\u0435\u0442 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435 \u0441\u0442\u0440\u0435\u043C\u043B\u0435\u043D\u0438\u044F \u043F\u0440\u0438 \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0435: \u041F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0430 \u0432\u0432\u0435\u0440\u0445 \u0431\u0443\u0434\u0435\u0442 \u0441\u0442\u0440\u0435\u043C\u0438\u0442\u044C\u0441\u044F \u0432\u043F\u0440\u0430\u0432\u043E, \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0430 \u0432\u043D\u0438\u0437 \u0431\u0443\u0434\u0435\u0442 \u0441\u0442\u0440\u0435\u043C\u0438\u0442\u044C\u0441\u044F \u0432\u043B\u0435\u0432\u043E.",
 			"zh-CN": "\u5728\u5782\u76F4\u6EDA\u52A8\u65F6\u53CD\u8F6C\u79FB\u52A8\u65B9\u5411\uFF1A\u5411\u4E0A\u6EDA\u52A8\u5C06\u5411\u53F3\u79FB\u52A8\uFF0C\u5411\u4E0B\u6EDA\u52A8\u5C06\u5411\u5DE6\u79FB\u52A8\u3002"
 		},
@@ -8296,7 +7910,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A\u00E7\u00E3o de rolagem horizontal do v\u00EDdeo",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438 \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u6C34\u5E73\u89C6\u9891\u6EDA\u52A8\u52A8\u4F5C"
 		},
@@ -8309,7 +7922,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substitui a a\u00E7\u00E3o de rolagem horizontal para v\u00EDdeos. Defina como `Padr\u00E3o` para evitar substituir o comportamento.",
 			"ru": "\u041F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u044F\u0435\u0442 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438 \u0434\u043B\u044F \u0432\u0438\u0434\u0435\u043E. \u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 `\u041F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E`, \u0447\u0442\u043E\u0431\u044B \u0438\u0437\u0431\u0435\u0436\u0430\u0442\u044C \u043F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u0438\u044F \u043F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u8986\u76D6\u89C6\u9891\u7684\u6C34\u5E73\u6EDA\u52A8\u52A8\u4F5C\u3002\u8BBE\u4E3A `\u9ED8\u8BA4` \u6765\u907F\u514D\u8986\u76D6\u8BE5\u884C\u4E3A\u3002"
 		},
@@ -8334,7 +7946,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Padr\u00E3o",
 			"ru": "\u041F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E",
 			"zh-CN": "\u9ED8\u8BA4"
 		},
@@ -8351,7 +7962,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Buscar",
 			"ru": "\u0421\u0442\u0440\u0435\u043C\u043B\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u5FEB\u8FDB/\u5FEB\u9000"
 		},
@@ -8397,7 +8007,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC5C6\uB2E4",
-			"pt-BR": "Nenhum",
 			"ru": "\u041D\u0438\u0447\u0435\u0433\u043E",
 			"zh-CN": "\u65E0"
 		},
@@ -8410,7 +8019,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir rolagem fora do pop-up",
 			"ru": "\u041F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u0438\u0435 \u043F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0438 \u0432\u043D\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u8986\u76D6\u5F39\u7A97\u5916\u7684\u6EDA\u52A8"
 		},
@@ -8423,7 +8031,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A rolagem fora do pop-up tamb\u00E9m ser\u00E1 substitu\u00EDda pelo script",
 			"ru": "\u041F\u0440\u043E\u043A\u0440\u0443\u0442\u043A\u0430 \u0437\u0430 \u043F\u0440\u0435\u0434\u0435\u043B\u0430\u043C\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 \u0442\u0430\u043A\u0436\u0435 \u0431\u0443\u0434\u0435\u0442 \u043F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u0430 \u0441\u043A\u0440\u0438\u043F\u0442\u043E\u043C.",
 			"zh-CN": "\u540C\u65F6\u8986\u76D6\u5F39\u7A97\u5916\u7684\u6EDA\u52A8"
 		},
@@ -8436,7 +8043,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Origem do zoom",
 			"ru": "\u041D\u0430\u0447\u0430\u043B\u043E \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u7F29\u653E\u539F\u70B9"
 		},
@@ -8449,7 +8055,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "O ponto da imagem a partir do qual \u00E9 ampliado/reduzido",
 			"ru": "\u0422\u043E\u0447\u043A\u0430 \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0438, \u043E\u0442 \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u043E\u043D\u043E \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044F/\u0443\u043C\u0435\u043D\u044C\u0448\u0430\u0435\u0442\u0441\u044F.",
 			"zh-CN": "\u56FE\u50CF\u653E\u5927/\u7F29\u5C0F\u7684\u539F\u70B9"
 		},
@@ -8463,7 +8068,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCEE4\uC11C",
-			"pt-BR": "Cursor",
 			"ru": "\u041A\u0443\u0440\u0441\u043E\u0440",
 			"zh-CN": "\u9F20\u6807\u6307\u9488"
 		},
@@ -8476,7 +8080,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Centro",
 			"ru": "\u0426\u0435\u043D\u0442\u0440",
 			"zh-CN": "\u4E2D\u5FC3"
 		},
@@ -8489,7 +8092,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Reduzir o zoom em dire\u00E7\u00E3o ao meio da p\u00E1gina",
 			"ru": "\u0423\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0435 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0430 \u043A \u0441\u0435\u0440\u0435\u0434\u0438\u043D\u0435 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B",
 			"zh-CN": "\u7F29\u5C0F\u5230\u9875\u9762\u4E2D\u95F4"
 		},
@@ -8502,7 +8104,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Define a origem ao diminuir o zoom para o meio da p\u00E1gina, substituindo a op\u00E7\u00E3o \"Origem do Zoom\" acima.",
 			"ru": "\u0423\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442 \u043D\u0430\u0447\u0430\u043B\u043E \u043A\u043E\u043E\u0440\u0434\u0438\u043D\u0430\u0442 \u043F\u0440\u0438 \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0438 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0430 \u0434\u043E \u0441\u0435\u0440\u0435\u0434\u0438\u043D\u044B \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B, \u043F\u0435\u0440\u0435\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u044F\u044F \"\u041D\u0430\u0447\u0430\u043B\u043E \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F\" \u0432\u0430\u0440\u0438\u0430\u043D\u0442 \u0432\u044B\u0448\u0435.",
 			"zh-CN": "\u8BBE\u7F6E\u7F29\u653E\u5230\u9875\u9762\u4E2D\u95F4\u65F6\u7684\u539F\u70B9\uFF0C\u91CD\u5199\u4E0A\u653E\u7684\u201C\u7F29\u653E\u539F\u70B9\u201D\u9009\u9879\u3002"
 		},
@@ -8515,7 +8116,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Dentro da \u00E1rea de visualiza\u00E7\u00E3o",
 			"ru": "\u0412 \u043F\u0440\u0435\u0434\u0435\u043B\u0430\u0445 \u043E\u0431\u043B\u0430\u0441\u0442\u0438 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0430",
 			"zh-CN": "\u5728\u89C6\u91CE\u5185"
 		},
@@ -8529,7 +8129,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC90C \uB3D9\uC791",
-			"pt-BR": "Comportamento do zoom",
 			"ru": "\u041F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u0435 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u7F29\u653E\u884C\u4E3A"
 		},
@@ -8542,7 +8141,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como o zoom deve funcionar",
 			"ru": "\u041A\u0430\u043A \u0431\u0443\u0434\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435.",
 			"zh-CN": "\u7F29\u653E\u5E94\u5982\u4F55\u5DE5\u4F5C"
 		},
@@ -8556,7 +8154,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD654\uBA74\uB9DE\uCDA4/\uC804\uCCB4",
-			"pt-BR": "Ajustar/Original",
 			"ru": "\u041F\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0443/\u041F\u043E\u043B\u043D\u043E\u0435",
 			"zh-CN": "\u9002\u5E94/\u5168\u5C3A\u5BF8"
 		},
@@ -8569,7 +8166,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Alterna entre o tamanho original e ajustar \u00E0 tela",
 			"ru": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u043C\u0435\u0436\u0434\u0443 \u043F\u043E\u043B\u043D\u044B\u043C \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C \u0438 \u043F\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0443 \u044D\u043A\u0440\u0430\u043D\u0443.",
 			"zh-CN": "\u5728\u5168\u5C3A\u5BF8\u548C\u9002\u5408\u5C4F\u5E55\u4E4B\u95F4\u5207\u6362"
 		},
@@ -8584,7 +8180,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"fr": "Incr\u00E9mentale",
 			"ko": "\uC99D\uBD84",
-			"pt-BR": "Incremental",
 			"ru": "\u041F\u043E\u0448\u0430\u0433\u043E\u0432\u043E\u0435",
 			"zh-CN": "\u589E\u91CF"
 		},
@@ -8597,7 +8192,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Multiplicador de zoom incremental",
 			"ru": "\u041C\u043D\u043E\u0436\u0438\u0442\u0435\u043B\u044C \u043F\u043E\u0448\u0430\u0433\u043E\u0432\u043E\u0433\u043E \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u589E\u91CF\u7F29\u653E\u7CFB\u6570"
 		},
@@ -8610,7 +8204,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Quanto aumentar/diminuir o zoom (para zoom incremental)",
 			"ru": "\u041D\u0430 \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C/\u0443\u043C\u0435\u043D\u044C\u0448\u0438\u0442\u044C \u043C\u0430\u0441\u0448\u0442\u0430\u0431 (\u0434\u043B\u044F \u043F\u043E\u0448\u0430\u0433\u043E\u0432\u043E\u0433\u043E \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F).",
 			"zh-CN": "\u589E\u91CF\u7F29\u653E\u65F6\u6BCF\u6B21\u653E\u5927/\u7F29\u5C0F\u591A\u5C11"
 		},
@@ -8627,7 +8220,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "x",
 			"ru": "x",
 			"zh-CN": "\u500D"
 		},
@@ -8640,7 +8232,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Mover com o cursor",
 			"ru": "\u041F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435 \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043A\u0443\u0440\u0441\u043E\u0440\u0430",
 			"zh-CN": "\u968F\u9F20\u6807\u6307\u9488\u79FB\u52A8"
 		},
@@ -8653,7 +8244,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Move o pop-up conforme o movimento do cursor",
 			"ru": "\u041F\u0435\u0440\u0435\u043C\u0435\u0449\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u043E \u043C\u0435\u0440\u0435 \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F \u043A\u0443\u0440\u0441\u043E\u0440\u0430.",
 			"zh-CN": "\u9F20\u6807\u79FB\u52A8\u65F6\u79FB\u52A8\u5F39\u7A97"
 		},
@@ -8666,7 +8256,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Mover dentro da p\u00E1gina",
 			"ru": "\u041F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435 \u0432\u043D\u0443\u0442\u0440\u0438 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B",
 			"zh-CN": "\u5728\u9875\u9762\u5185\u79FB\u52A8"
 		},
@@ -8679,7 +8268,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Garante que o pop-up n\u00E3o saia da p\u00E1gina",
 			"ru": "\u0413\u0430\u0440\u0430\u043D\u0442\u0438\u0440\u0443\u0435\u0442, \u0447\u0442\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0435 \u043F\u043E\u043A\u0438\u043D\u0435\u0442 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443.",
 			"zh-CN": "\u786E\u4FDD\u5F39\u7A97\u4E0D\u4F1A\u79BB\u5F00\u9875\u9762"
 		},
@@ -8693,7 +8281,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB2EB\uAE30 \uC704\uD574 \uC644\uC804\uD788 \uCD95\uC18C",
-			"pt-BR": "Reduzir totalmente o zoom para fechar",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u043F\u0440\u0438 \u043F\u043E\u043B\u043D\u043E\u043C \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0438 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0430",
 			"zh-CN": "\u5B8C\u5168\u7F29\u5C0F\u81F3\u5173\u95ED"
 		},
@@ -8707,7 +8294,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCD5C\uC18C \uD06C\uAE30\uB85C \uCD95\uC18C\uD560 \uACBD\uC6B0 \uD31D\uC5C5 \uB2EB\uAE30",
-			"pt-BR": "Fecha o pop-up se voc\u00EA reduzir o zoom al\u00E9m do m\u00EDnimo",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E, \u0435\u0441\u043B\u0438 \u0432\u044B \u0443\u043C\u0435\u043D\u044C\u0448\u0430\u0435\u0442\u0435 \u043C\u0430\u0441\u0448\u0442\u0430\u0431, \u043F\u0440\u0435\u0432\u044B\u0448\u0430\u044E\u0449\u0438\u0439 \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439.",
 			"zh-CN": "\u7F29\u5C0F\u8D85\u8FC7\u6700\u5C0F\u7EA7\u522B\u65F6\u5173\u95ED\u5F39\u7A97"
 		},
@@ -8720,7 +8306,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Rolar al\u00E9m do final da galeria para fechar",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u043F\u0440\u0438 \u043F\u0440\u043E\u043A\u0440\u0443\u0447\u0438\u0432\u0430\u043D\u0438\u0438 \u0434\u043E \u043A\u043E\u043D\u0446\u0430 \u0433\u0430\u043B\u0435\u0440\u0435\u0438",
 			"zh-CN": "\u6EDA\u52A8\u5230\u56FE\u5E93\u672B\u5C3E\u65F6\u5173\u95ED"
 		},
@@ -8733,7 +8318,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fecha o pop-up se voc\u00EA rolar al\u00E9m do final da galeria",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E, \u0435\u0441\u043B\u0438 \u0432\u044B \u043F\u0440\u043E\u043A\u0440\u0443\u0447\u0438\u0432\u0430\u0435\u0442\u0435 \u0435\u0433\u043E \u0434\u043E \u043A\u043E\u043D\u0446\u0430 \u0433\u0430\u043B\u0435\u0440\u0435\u0438.",
 			"zh-CN": "\u6EDA\u52A8\u5230\u56FE\u5E93\u7684\u7ED3\u5C3E\u65F6\u5173\u95ED\u5F39\u7A97"
 		},
@@ -8747,7 +8331,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5 \uC704\uCE58",
-			"pt-BR": "Posi\u00E7\u00E3o do pop-up",
 			"ru": "\u041F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u51FA\u4F4D\u7F6E"
 		},
@@ -8761,7 +8344,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC774 \uD45C\uC2DC\uB418\uB294 \uC704\uCE58",
-			"pt-BR": "Onde o pop-up aparecer\u00E1",
 			"ru": "\u0413\u0434\u0435 \u043F\u043E\u044F\u0432\u0438\u0442\u0441\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E.",
 			"zh-CN": "\u5F39\u7A97\u51FA\u73B0\u5728\u54EA\u91CC"
 		},
@@ -8775,7 +8357,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCEE4\uC11C \uC911\uAC04",
-			"pt-BR": "Meio do cursor",
 			"ru": "\u0421\u0435\u0440\u0435\u0434\u0438\u043D\u0430 \u043A\u0443\u0440\u0441\u043E\u0440\u0430",
 			"zh-CN": "\u9F20\u6807\u6307\u9488\u4E3A\u4E2D\u5FC3"
 		},
@@ -8789,7 +8370,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB9C8\uC6B0\uC2A4 \uCEE4\uC11C \uC544\uB798",
-			"pt-BR": "Abaixo do cursor do mouse",
 			"ru": "\u041F\u043E\u0434 \u043A\u0443\u0440\u0441\u043E\u0440\u043E\u043C",
 			"zh-CN": "\u9F20\u6807\u6307\u9488\u4E0B\u65B9"
 		},
@@ -8803,7 +8383,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uCEE4\uC11C \uC606",
-			"pt-BR": "Ao lado do cursor",
 			"ru": "\u0420\u044F\u0434\u043E\u043C \u0441 \u043A\u0443\u0440\u0441\u043E\u0440\u043E\u043C",
 			"zh-CN": "\u9F20\u6807\u6307\u9488\u65C1"
 		},
@@ -8817,7 +8396,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD398\uC774\uC9C0 \uC911\uAC04",
-			"pt-BR": "Meio da p\u00E1gina",
 			"ru": "\u0421\u0435\u0440\u0435\u0434\u0438\u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B",
 			"zh-CN": "\u9875\u9762\u4E2D\u95F4"
 		},
@@ -8830,7 +8408,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Evitar sobreposi\u00E7\u00E3o do cursor",
 			"ru": "\u041F\u0440\u0435\u0434\u043E\u0442\u0432\u0440\u0430\u0442\u0438\u0442\u044C \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u0438\u0435 \u043A\u0443\u0440\u0441\u043E\u0440\u0430",
 			"zh-CN": "\u907F\u514D\u6307\u9488\u91CD\u53E0"
 		},
@@ -8843,7 +8420,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Impede que a imagem se sobreponha ao cursor",
 			"ru": "\u041F\u0440\u0435\u0434\u043E\u0442\u0432\u0440\u0430\u0449\u0430\u0435\u0442 \u043F\u0435\u0440\u0435\u043A\u0440\u044B\u0442\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0441 \u043A\u0443\u0440\u0441\u043E\u0440\u043E\u043C.",
 			"zh-CN": "\u907F\u514D\u56FE\u50CF\u4E0E\u9F20\u6807\u6307\u9488\u91CD\u53E0"
 		},
@@ -8856,7 +8432,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Centralizar pop-up em caso de transbordamento",
 			"ru": "\u0426\u0435\u043D\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u043F\u0435\u0440\u0435\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0438",
 			"zh-CN": "\u6EA2\u51FA\u65F6\u5C06\u5F39\u7A97\u7F6E\u4E8E\u4E2D\u5FC3"
 		},
@@ -8869,7 +8444,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Centraliza o pop-up se seu tamanho inicial transbordar",
 			"ru": "\u0426\u0435\u043D\u0442\u0440\u0438\u0440\u0443\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E, \u0435\u0441\u043B\u0438 \u0435\u0433\u043E \u043D\u0430\u0447\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 \u043F\u0435\u0440\u0435\u043F\u043E\u043B\u043D\u044F\u0435\u0442\u0441\u044F",
 			"zh-CN": "\u5982\u679C\u521D\u59CB\u5927\u5C0F\u6EA2\u51FA\uFF0C\u5C06\u5F39\u7A97\u7F6E\u4E8E\u4E2D\u5FC3\u4F4D\u7F6E"
 		},
@@ -8882,7 +8456,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Origem do transbordamento",
 			"ru": "\u041D\u0430\u0447\u0430\u043B\u043E \u043F\u0435\u0440\u0435\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u6EA2\u51FA\u539F\u70B9"
 		},
@@ -8895,7 +8468,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Onde o pop-up aparecer\u00E1 na p\u00E1gina se seu tamanho inicial transbordar",
 			"ru": "\u0413\u0434\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u043E\u044F\u0432\u0438\u0442\u0441\u044F \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435, \u0435\u0441\u043B\u0438 \u0435\u0433\u043E \u043D\u0430\u0447\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 \u043F\u0435\u0440\u0435\u043F\u043E\u043B\u043D\u044F\u0435\u0442\u0441\u044F",
 			"zh-CN": "\u5982\u679C\u521D\u59CB\u5927\u5C0F\u6EA2\u51FA\uFF0C\u5F39\u7A97\u5C06\u51FA\u73B0\u5728\u9875\u9762\u7684\u54EA\u4E2A\u4F4D\u7F6E"
 		},
@@ -8908,7 +8480,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ocultar cursor sobre o pop-up",
 			"ru": "\u0421\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u043A\u0443\u0440\u0441\u043E\u0440 \u043D\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435",
 			"zh-CN": "\u5F39\u7A97\u4E0A\u9690\u85CF\u9F20\u6807\u6307\u9488"
 		},
@@ -8921,7 +8492,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Oculta o cursor quando o mouse est\u00E1 sobre o pop-up",
 			"ru": "\u0421\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u043A\u0443\u0440\u0441\u043E\u0440, \u043A\u043E\u0433\u0434\u0430 \u043C\u044B\u0448\u044C \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u043D\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435.",
 			"zh-CN": "\u9F20\u6807\u5728\u5F39\u7A97\u4E0A\u60AC\u505C\u65F6\u9690\u85CF\u6307\u9488"
 		},
@@ -8934,7 +8504,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ocultar cursor ap\u00F3s",
 			"ru": "\u0421\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u043A\u0443\u0440\u0441\u043E\u0440 \u043F\u043E\u0441\u043B\u0435",
 			"zh-CN": "\u9690\u85CF\u6307\u9488\u5EF6\u8FDF"
 		},
@@ -8947,7 +8516,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Oculta o cursor sobre o pop-up ap\u00F3s um per\u00EDodo de tempo especificado (em milissegundos), 0 sempre oculta o cursor",
 			"ru": "\u0421\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u043A\u0443\u0440\u0441\u043E\u0440 \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435 \u043F\u043E\u0441\u043B\u0435 \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u043E\u0433\u043E \u043F\u0435\u0440\u0438\u043E\u0434\u0430 \u0432\u0440\u0435\u043C\u0435\u043D\u0438 (\u0432 \u043C\u0438\u043B\u043B\u0438\u0441\u0435\u043A\u0443\u043D\u0434\u0430\u0445). `0` - \u0432\u0441\u0435\u0433\u0434\u0430 \u0441\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u043A\u0443\u0440\u0441\u043E\u0440.",
 			"zh-CN": "\u9F20\u6807\u5728\u5F39\u7A97\u4E0A\u505C\u7559\u6307\u5B9A\u65F6\u95F4\uFF08\u6BEB\u79D2\uFF09\u540E\u9690\u85CF\u6307\u9488\uFF0C0 \u4E3A\u7ACB\u5373\u9690\u85CF"
 		},
@@ -8960,7 +8528,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Limiar de oscila\u00E7\u00E3o do mouse",
 			"ru": "\u041F\u043E\u0440\u043E\u0433 \u0434\u0440\u043E\u0436\u0430\u043D\u0438\u044F \u043C\u044B\u0448\u0438",
 			"zh-CN": "\u9F20\u6807\u6296\u52A8\u9608\u503C"
 		},
@@ -8973,7 +8540,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Limiar para movimento do mouse antes que o cursor seja mostrado novamente, 0 sempre mostra o cursor ap\u00F3s qualquer movimento",
 			"ru": "\u041F\u043E\u0440\u043E\u0433 \u0434\u043B\u044F \u043F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u044F \u043C\u044B\u0448\u0438 \u0434\u043E \u0442\u043E\u0433\u043E, \u043A\u0430\u043A \u043A\u0443\u0440\u0441\u043E\u0440 \u043C\u044B\u0448\u0438 \u0431\u0443\u0434\u0435\u0442 \u043F\u043E\u043A\u0430\u0437\u0430\u043D \u0441\u043D\u043E\u0432\u0430. `0` - \u0432\u0441\u0435\u0433\u0434\u0430 \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C \u043A\u0443\u0440\u0441\u043E\u0440 \u043F\u043E\u0441\u043B\u0435 \u043B\u044E\u0431\u043E\u0433\u043E \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u9F20\u6807\u6307\u9488\u518D\u6B21\u663E\u793A\u524D\u7684\u79FB\u52A8\u9608\u503C\uFF0C0 \u4E3A\u59CB\u7EC8\u663E\u793A\u79FB\u52A8\u540E\u7684\u6307\u9488"
 		},
@@ -8986,7 +8552,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Desabilitar eventos do ponteiro",
 			"ru": "\u041E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0441\u043E\u0431\u044B\u0442\u0438\u044F \u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044F",
 			"zh-CN": "\u7981\u7528\u6307\u9488\u4E8B\u4EF6"
 		},
@@ -8999,7 +8564,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar esta op\u00E7\u00E3o permitir\u00E1 que voc\u00EA clique em links sob o pop-up",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u044D\u0442\u043E\u0433\u043E \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0430\u043C \u043D\u0430\u0436\u0438\u043C\u0430\u0442\u044C \u043D\u0430 \u0441\u0441\u044B\u043B\u043A\u0438 \u043F\u043E\u0434 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u043C \u043E\u043A\u043D\u043E\u043C.",
 			"zh-CN": "\u542F\u7528\u6B64\u9009\u9879\u5C06\u5141\u8BB8\u60A8\u5355\u51FB\u5F39\u7A97\u4E0B\u65B9\u7684\u94FE\u63A5"
 		},
@@ -9012,7 +8576,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ignorar cliques fora do pop-up",
 			"ru": "\u0418\u0433\u043D\u043E\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043A\u043B\u0438\u043A\u0438 \u0432\u043D\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5FFD\u7565\u5F39\u7A97\u5916\u7684\u70B9\u51FB"
 		},
@@ -9025,7 +8588,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Qualquer evento de mouse fora do pop-up ser\u00E1 descartado com esta op\u00E7\u00E3o",
 			"ru": "\u041B\u044E\u0431\u043E\u0435 \u0441\u043E\u0431\u044B\u0442\u0438\u0435 \u043C\u044B\u0448\u0438 \u0432\u043D\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 \u0431\u0443\u0434\u0435\u0442 \u043E\u0442\u043C\u0435\u043D\u0435\u043D\u043E \u044D\u0442\u0438\u043C \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u043C.",
 			"zh-CN": "\u542F\u7528\u6B64\u9009\u9879\u540E\uFF0C\u4EFB\u4F55\u5F39\u7A97\u5916\u7684\u9F20\u6807\u4E8B\u4EF6\u90FD\u5C06\u4E22\u5F03"
 		},
@@ -9038,7 +8600,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar download de transmiss\u00F5es HLS/DASH",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0435 \u043F\u043E\u0442\u043E\u043A\u043E\u0432 HLS/DASH",
 			"zh-CN": "\u542F\u7528 HLS/DASH \u6D41\u5A92\u4F53\u7684\u4E0B\u8F7D"
 		},
@@ -9061,7 +8622,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Preferir MP4 em vez de MKV",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C MP4, \u0430 \u043D\u0435 MKV",
 			"zh-CN": "\u504F\u597D MP4 \u4EE3\u66FF MKV"
 		},
@@ -9074,7 +8634,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tenta multiplexar o v\u00EDdeo em mp4 em vez de mkv quando necess\u00E1rio. Isso pode diminuir um pouco a multiplexa\u00E7\u00E3o, pois atualmente precisa tentar multiplexar ambos.",
 			"ru": "\u041F\u044B\u0442\u0430\u0435\u0442\u0441\u044F \u043C\u0443\u043B\u044C\u0442\u0438\u043F\u043B\u0435\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0432\u0438\u0434\u0435\u043E \u0432 mp4 \u0432\u043C\u0435\u0441\u0442\u043E mkv, \u043A\u043E\u0433\u0434\u0430 \u044D\u0442\u043E \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F. \u042D\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u0441\u043B\u0435\u0433\u043A\u0430 \u0437\u0430\u043C\u0435\u0434\u043B\u0438\u0442\u044C \u043F\u0440\u043E\u0446\u0435\u0441\u0441 \u043C\u0443\u043B\u044C\u0442\u0438\u043F\u043B\u0435\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F, \u0442\u0430\u043A \u043A\u0430\u043A \u0432 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u043F\u043E\u043F\u0440\u043E\u0431\u043E\u0432\u0430\u0442\u044C \u043C\u0443\u043B\u044C\u0442\u0438\u043F\u043B\u0435\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0438 \u0442\u043E, \u0438 \u0434\u0440\u0443\u0433\u043E\u0435.",
 			"zh-CN": "\u8BF7\u6C42\u65F6\u5C1D\u8BD5\u7528 mp4 \u4EE3\u66FF mkv\u3002\u8FD9\u53EF\u80FD\u7A0D\u5FAE\u964D\u4F4E\u7EC4\u5408\u5185\u5BB9\u7684\u901F\u5EA6\uFF0C\u56E0\u4E3A\u76EE\u524D\u9700\u8981\u5C1D\u8BD5\u4E24\u7EC4\u64CD\u4F5C\u3002"
 		},
@@ -9087,7 +8646,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Vincular imagem",
 			"ru": "\u0421\u0441\u044B\u043B\u043A\u0430 \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u94FE\u63A5\u56FE\u50CF"
 		},
@@ -9100,7 +8658,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Adiciona um link para a imagem no pop-up",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u0441\u044B\u043B\u043A\u0443 \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435.",
 			"zh-CN": "\u5728\u5F39\u7A97\u7684\u56FE\u50CF\u4E2D\u6DFB\u52A0\u94FE\u63A5"
 		},
@@ -9113,7 +8670,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Vincular v\u00EDdeo",
 			"ru": "\u0421\u0441\u044B\u043B\u043A\u0430 \u043D\u0430 \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u94FE\u63A5\u89C6\u9891"
 		},
@@ -9126,7 +8682,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Adiciona um link para o v\u00EDdeo no pop-up",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u0441\u044B\u043B\u043A\u0443 \u043D\u0430 \u0432\u0438\u0434\u0435\u043E \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435.",
 			"zh-CN": "\u5728\u5F39\u7A97\u7684\u89C6\u9891\u4E2D\u6DFB\u52A0\u94FE\u63A5"
 		},
@@ -9139,7 +8694,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fecha a imagem ao clicar",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043F\u043E \u043D\u0430\u0436\u0430\u0442\u0438\u044E \u043D\u0430 \u043D\u0435\u0433\u043E",
 			"zh-CN": "\u70B9\u51FB\u56FE\u7247\u5173\u95ED"
 		},
@@ -9152,7 +8706,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fecha o pop-up ao clicar na imagem",
 			"ru": "\u041D\u0430\u0436\u0430\u0442\u0438\u0435 \u043D\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0437\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E.",
 			"zh-CN": "\u5355\u51FB\u5F39\u51FA\u56FE\u50CF\u5C06\u5173\u95ED\u5F39\u7A97"
 		},
@@ -9165,7 +8718,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fecha o v\u00EDdeo ao clicar",
 			"ru": "\u0417\u0430\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0432\u0438\u0434\u0435\u043E \u043F\u043E \u043D\u0430\u0436\u0430\u0442\u0438\u044E \u043D\u0430 \u043D\u0435\u0433\u043E",
 			"zh-CN": "\u70B9\u51FB\u89C6\u9891\u5173\u95ED"
 		},
@@ -9178,7 +8730,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fecha o pop-up ao clicar no v\u00EDdeo",
 			"ru": "\u041D\u0430\u0436\u0430\u0442\u0438\u0435 \u043D\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u0432\u0438\u0434\u0435\u043E \u0437\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E.",
 			"zh-CN": "\u70B9\u51FB\u5F39\u51FA\u7684\u89C6\u9891\u65F6\u5173\u95ED\u5F39\u7A97"
 		},
@@ -9191,7 +8742,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Clicar no link faz o download",
 			"ru": "\u041D\u0430\u0436\u0430\u0442\u0438\u0435 \u043D\u0430 \u0441\u0441\u044B\u043B\u043A\u0443 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u70B9\u51FB\u94FE\u63A5\u4E0B\u8F7D"
 		},
@@ -9204,7 +8754,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Em vez de abrir o link em uma nova guia, ele far\u00E1 o download da imagem/v\u00EDdeo",
 			"ru": "\u0412\u043C\u0435\u0441\u0442\u043E \u0442\u043E\u0433\u043E \u0447\u0442\u043E\u0431\u044B \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0443 \u0432 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435, \u043E\u043D\u0430 \u0431\u0443\u0434\u0435\u0442 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435/\u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u4E0B\u8F7D\u56FE\u50CF/\u89C6\u9891\uFF0C\u4EE3\u66FF\u5728\u65B0\u6807\u7B7E\u9875\u4E2D\u6253\u5F00\u94FE\u63A5"
 		},
@@ -9217,7 +8766,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para fechar",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0437\u0430\u043A\u0440\u044B\u0442\u0438\u044F",
 			"zh-CN": "\u5173\u95ED\u952E"
 		},
@@ -9230,7 +8778,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fecha o pop-up quando esta tecla \u00E9 pressionada. Atualmente, ESC tamb\u00E9m fecha o pop-up independentemente do valor desta configura\u00E7\u00E3o.",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u0437\u0430\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E. \u0412 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F ESC \u0442\u0430\u043A\u0436\u0435 \u0437\u0430\u043A\u0440\u043E\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u043E\u0442 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u044F \u044D\u0442\u0438\u0445 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043A.",
 			"zh-CN": "\u6309\u4E0B\u6B64\u952E\u65F6\u5173\u95ED\u5F39\u7A97\u3002\u76EE\u524D\uFF0CESC \u4E5F\u5C06\u5173\u95ED\u5F39\u7A97\uFF0C\u5E76\u4E14\u65E0\u89C6\u6B64\u8BBE\u7F6E\u3002"
 		},
@@ -9243,7 +8790,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para download",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u4E0B\u8F7D\u952E"
 		},
@@ -9256,7 +8802,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Baixa a imagem no pop-up quando esta tecla \u00E9 pressionada",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043D\u0430\u0447\u043D\u0451\u0442 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435.",
 			"zh-CN": "\u6309\u4E0B\u6B64\u952E\u65F6\u4E0B\u8F7D\u5F39\u7A97\u4E2D\u7684\u56FE\u50CF"
 		},
@@ -9269,7 +8814,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para abrir em uma nova guia",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F \u0432 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435",
 			"zh-CN": "\u5728\u65B0\u5EFA\u6807\u7B7E\u9875\u4E2D\u6253\u5F00\u7684\u6309\u952E"
 		},
@@ -9282,7 +8826,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Abre a imagem no pop-up em uma nova guia quando esta tecla \u00E9 pressionada",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435 \u043D\u0430 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435.",
 			"zh-CN": "\u6309\u4E0B\u6B64\u952E\u65F6\u5728\u65B0\u5EFA\u7684\u6807\u7B7E\u9875\u4E2D\u5F39\u7A97\u4E2D\u7684\u56FE\u50CF"
 		},
@@ -9295,7 +8838,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para abrir em segundo plano",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F \u0432 \u0444\u043E\u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435",
 			"zh-CN": "\u5728\u540E\u53F0\u6807\u7B7E\u9875\u6253\u5F00\u7684\u6309\u952E"
 		},
@@ -9308,7 +8850,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Abre a imagem no pop-up em uma nova guia sem alternar para ela quando esta tecla \u00E9 pressionada",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435 \u043D\u0430 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435, \u043D\u0435 \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u044F \u043D\u0430 \u043D\u0435\u0451.",
 			"zh-CN": "\u6309\u4E0B\u6B64\u952E\u65F6\u5728\u65B0\u5EFA\u7684\u540E\u53F0\u6807\u7B7E\u9875\u4E2D\u5F39\u7A97\u4E2D\u7684\u56FE\u50CF"
 		},
@@ -9321,7 +8862,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para copiar link",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u0441\u0441\u044B\u043B\u043A\u0438",
 			"zh-CN": "\u590D\u5236\u94FE\u63A5\u952E"
 		},
@@ -9334,7 +8874,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Copia o link da m\u00EDdia para a \u00E1rea de transfer\u00EAncia quando esta tecla \u00E9 pressionada",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043A\u043E\u043F\u0438\u0440\u0443\u0435\u0442 \u0441\u0441\u044B\u043B\u043A\u0443 \u043C\u0435\u0434\u0438\u0430 \u0432 \u0431\u0443\u0444\u0435\u0440 \u043E\u0431\u043C\u0435\u043D\u0430.",
 			"zh-CN": "\u6309\u4E0B\u6B64\u952E\u65F6\uFF0C\u5C06\u5A92\u4F53\u94FE\u63A5\u590D\u5236\u5230\u526A\u8D34\u677F"
 		},
@@ -9347,7 +8886,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para abrir as op\u00E7\u00F5es",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432",
 			"zh-CN": "\u6253\u5F00\u9009\u9879\u952E"
 		},
@@ -9360,7 +8898,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Abre esta p\u00E1gina em uma nova guia quando esta tecla \u00E9 pressionada",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043E\u0442\u043A\u0440\u043E\u0435\u0442 \u044D\u0442\u0443 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443 \u0432 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435.",
 			"zh-CN": "\u6309\u4E0B\u6B64\u952E\u65F6\u5728\u6807\u7B7E\u9875\u4E2D\u6253\u5F00\u6B64\u9875\u9762"
 		},
@@ -9373,7 +8910,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para abrir a p\u00E1gina original",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u0430",
 			"zh-CN": "\u6253\u5F00\u539F\u59CB\u9875\u9762\u952E"
 		},
@@ -9386,7 +8922,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Abre a p\u00E1gina original (se dispon\u00EDvel) quando esta tecla \u00E9 pressionada",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u0430 (\u0435\u0441\u043B\u0438 \u043E\u043D\u0430 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0430).",
 			"zh-CN": "\u6309\u4E0B\u6B64\u952E\u65F6\u6253\u5F00\u539F\u59CB\u9875\u9762\uFF08\u5982\u679C\u53EF\u7528\uFF09"
 		},
@@ -9399,7 +8934,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para girar para a esquerda",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u0430 \u0432\u043B\u0435\u0432\u043E",
 			"zh-CN": "\u5411\u5DE6\u65CB\u8F6C\u952E"
 		},
@@ -9412,7 +8946,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Gira o pop-up 90 graus para a esquerda",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043F\u043E\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0430 90 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432 \u0432\u043B\u0435\u0432\u043E.",
 			"zh-CN": "\u5C06\u5F39\u7A97\u5411\u5DE6\u65CB\u8F6C90\u5EA6"
 		},
@@ -9425,7 +8958,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para girar para a direita",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u0430 \u0432\u043F\u0440\u0430\u0432\u043E",
 			"zh-CN": "\u5411\u53F3\u65CB\u8F6C\u952E"
 		},
@@ -9438,7 +8970,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Gira o pop-up 90 graus para a direita",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043F\u043E\u0432\u043E\u0440\u0430\u0447\u0438\u0432\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043D\u0430 90 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432 \u0432\u043F\u0440\u0430\u0432\u043E.",
 			"zh-CN": "\u5C06\u5F39\u7A97\u5411\u53F3\u65CB\u8F6C90\u5EA6"
 		},
@@ -9451,7 +8982,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para inverter horizontalmente",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0434\u043B\u044F \u043E\u0442\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043F\u043E \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u0438",
 			"zh-CN": "\u6C34\u5E73\u7FFB\u8F6C\u952E"
 		},
@@ -9464,7 +8994,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Inverte a imagem horizontalmente",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u0437\u0435\u0440\u043A\u0430\u043B\u044C\u043D\u043E \u043E\u0442\u0440\u0430\u0436\u0430\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043F\u043E \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u0438.",
 			"zh-CN": "\u6C34\u5E73\u7FFB\u8F6C\u56FE\u50CF"
 		},
@@ -9477,7 +9006,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para inverter verticalmente",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0434\u043B\u044F \u043E\u0442\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043F\u043E \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u0438",
 			"zh-CN": "\u5782\u76F4\u7FFB\u8F6C\u952E"
 		},
@@ -9490,7 +9018,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Inverte a imagem verticalmente",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u0437\u0435\u0440\u043A\u0430\u043B\u044C\u043D\u043E \u043E\u0442\u0440\u0430\u0436\u0430\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043F\u043E \u0432\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u0438.",
 			"zh-CN": "\u5782\u76F4\u7FFB\u8F6C\u56FE\u50CF"
 		},
@@ -9503,7 +9030,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para ampliar",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u044F \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0430",
 			"zh-CN": "\u653E\u5927\u952E"
 		},
@@ -9516,7 +9042,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Amplia a imagem incrementalmente",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u0435\u0442 \u043C\u0430\u0441\u0448\u0442\u0430\u0431 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u9010\u6B65\u653E\u5927\u56FE\u50CF"
 		},
@@ -9529,7 +9054,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para reduzir",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0443\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u044F \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0430",
 			"zh-CN": "\u7F29\u5C0F\u952E"
 		},
@@ -9542,7 +9066,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Reduz a imagem incrementalmente",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u0443\u043C\u0435\u043D\u044C\u0448\u0430\u0435\u0442 \u043C\u0430\u0441\u0448\u0442\u0430\u0431 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u9010\u6B65\u7F29\u5C0F\u56FE\u50CF"
 		},
@@ -9555,7 +9078,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para zoom total",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043F\u043E\u043B\u043D\u043E\u0433\u043E \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u5168\u5C3A\u5BF8\u7F29\u653E\u952E"
 		},
@@ -9568,7 +9090,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Define a imagem para ter um zoom de 100%, mesmo que transborde a tela",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u0443\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442 100%-\u043D\u043E\u0435 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u0434\u0430\u0436\u0435 \u0435\u0441\u043B\u0438 \u043E\u043D\u043E \u043F\u0435\u0440\u0435\u043F\u043E\u043B\u043D\u044F\u0435\u0442 \u044D\u043A\u0440\u0430\u043D.",
 			"zh-CN": "\u5C06\u56FE\u50CF\u8BBE\u7F6E\u4E3A 100% \u7F29\u653E\uFF0C\u5373\u4F7F\u5C06\u6EA2\u51FA\u5C4F\u5E55"
 		},
@@ -9581,7 +9102,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para ajustar \u00E0 tela",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043F\u043E\u0434\u0433\u043E\u043D\u043A\u0438 \u043F\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0443 \u044D\u043A\u0440\u0430\u043D\u0430",
 			"zh-CN": "\u9002\u5408\u5C4F\u5E55\u952E"
 		},
@@ -9594,7 +9114,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Define a imagem para ter um zoom de 100% ou para caber na tela, o que for menor",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u0443\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043B\u0438\u0431\u043E \u0441\u043E 100%-\u043D\u044B\u043C \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u043E\u043C, \u043B\u0438\u0431\u043E \u0432 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0438 \u0441 \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u043C \u044D\u043A\u0440\u0430\u043D\u0430, \u0432 \u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E\u0441\u0442\u0438 \u043E\u0442 \u0442\u043E\u0433\u043E, \u0447\u0442\u043E \u043C\u0435\u043D\u044C\u0448\u0435.",
 			"zh-CN": "\u5C06\u56FE\u50CF\u8BBE\u7F6E\u4E3A 100% \u7F29\u653E\u6216\u9002\u5408\u5C4F\u5E55\uFF0C\u4EE5\u8F83\u5C0F\u8005\u4E3A\u51C6"
 		},
@@ -9607,7 +9126,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para alternar tela cheia",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u043D\u0430 \u0432\u0435\u0441\u044C \u044D\u043A\u0440\u0430\u043D",
 			"zh-CN": "\u5207\u6362\u5168\u5C4F\u952E"
 		},
@@ -9620,7 +9138,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Alterna o modo de tela cheia para a imagem/v\u00EDdeo no popup",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u044D\u0442\u043E\u0439 \u043A\u043B\u0430\u0432\u0438\u0448\u0438, \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u043E\u043B\u043D\u043E\u044D\u043A\u0440\u0430\u043D\u043D\u044B\u0439 \u0440\u0435\u0436\u0438\u043C \u0434\u043B\u044F \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0432\u0438\u0434\u0435\u043E \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435.",
 			"zh-CN": "\u5207\u6362\u5F39\u7A97\u4E2D\u7684\u56FE\u50CF/\u89C6\u9891\u7684\u5168\u5C4F\u6A21\u5F0F"
 		},
@@ -9634,7 +9151,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC77C\uBC18\uC801\uC778 \uB9C1\uD06C\uC5D0\uB3C4 \uD31D\uC5C5",
-			"pt-BR": "Popup para hyperlinks simples",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F \u043F\u0440\u043E\u0441\u0442\u044B\u0445 \u0433\u0438\u043F\u0435\u0440\u0441\u0441\u044B\u043B\u043E\u043A",
 			"zh-CN": "\u4E3A\u7EAF\u8D85\u94FE\u63A5\u5F39\u7A97"
 		},
@@ -9648,7 +9164,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC77C\uBC18 \uD558\uC774\uD37C\uB9C1\uD06C\uC758 \uD31D\uC5C5 \uC5F4\uAE30 \uC5EC\uBD80",
-			"pt-BR": "Se o popup tamb\u00E9m deve abrir para hyperlinks simples",
 			"ru": "\u0414\u043E\u043B\u0436\u043D\u043E \u043B\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0442\u0430\u043A\u0436\u0435 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C\u0441\u044F \u0434\u043B\u044F \u043F\u0440\u043E\u0441\u0442\u044B\u0445 \u0433\u0438\u043F\u0435\u0440\u0441\u0441\u044B\u043B\u043E\u043A.",
 			"zh-CN": "\u662F\u5426\u4E3A\u7EAF\u7CB9\u7684\u8D85\u94FE\u63A5\u663E\u793A\u5F39\u7A97"
 		},
@@ -9662,7 +9177,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC720\uD6A8\uD574 \uBCF4\uC774\uB294 \uB9C1\uD06C\uC5D0\uB9CC \uD574\uB2F9",
-			"pt-BR": "Somente para links que parecem v\u00E1lidos",
 			"ru": "\u0422\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F \u0441\u0441\u044B\u043B\u043E\u043A, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u044B\u0433\u043B\u044F\u0434\u044F\u0442 \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u043E",
 			"zh-CN": "\u53EA\u9488\u5BF9\u770B\u8D77\u6765\u6709\u6548\u7684\u94FE\u63A5"
 		},
@@ -9676,7 +9190,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC774 \uC635\uC158\uC744 \uD65C\uC131\uD654\uD558\uBA74 \uB9C1\uD06C\uAC00 \uC720\uD6A8\uD55C \uAC83\uC73C\uB85C \uBCF4\uC774\uB294 \uACBD\uC6B0\uC5D0\uB9CC(\uC608: \uC54C\uB824\uC9C4 \uC774\uBBF8\uC9C0/\uBE44\uB514\uC624 \uD655\uC7A5\uBA85\uC774 \uC788\uAC70\uB098 \uBA85\uC2DC\uC801\uC73C\uB85C \uC9C0\uC6D0\uB418\uB294 \uACBD\uC6B0) \uB9C1\uD06C\uAC00 \uD31D\uC5C5\uB420 \uC218 \uC788\uC74C",
-			"pt-BR": "Ativar esta op\u00E7\u00E3o permitir\u00E1 que os links sejam exibidos em popup apenas se parecerem v\u00E1lidos (como se tiverem uma extens\u00E3o de imagem/v\u00EDdeo conhecida ou forem explicitamente suportados)",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u044D\u0442\u043E\u0433\u043E \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0430\u043C \u0442\u043E\u043B\u044C\u043A\u043E \u0432 \u0442\u043E\u043C \u0441\u043B\u0443\u0447\u0430\u0435, \u0435\u0441\u043B\u0438 \u043E\u043D\u0438 \u0432\u044B\u0433\u043B\u044F\u0434\u044F\u0442 \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u044B\u043C\u0438 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0435\u0441\u043B\u0438 \u043E\u043D\u0438 \u0438\u043C\u0435\u044E\u0442 \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E\u0435 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F/\u0432\u0438\u0434\u0435\u043E, \u0438\u043B\u0438 \u0435\u0441\u043B\u0438 \u043E\u043D\u0438 \u044F\u0432\u043D\u043E \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F).",
 			"zh-CN": "\u542F\u7528\u6B64\u9009\u9879\u540E\uFF0C\u5C06\u53EA\u4E3A\u770B\u8D77\u6765\u6709\u6548\u7684\u94FE\u63A5\u663E\u793A\u5F39\u7A97\uFF08\u4F8B\u5982\u6709\u5DF2\u77E5\u7684\u56FE\u50CF/\u89C6\u9891\u6269\u5C55\u540D\uFF0C\u6216\u8005\u660E\u663E\u53D7\u652F\u6301\uFF09"
 		},
@@ -9689,7 +9202,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "URL da p\u00E1gina do popup",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F URL \u0441\u0442\u0440\u0430\u043D\u0438\u0446",
 			"zh-CN": "\u4E3A\u9875\u9762\u7F51\u5740\u5F39\u7A97"
 		},
@@ -9702,7 +9214,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se nenhum elemento for encontrado, tente a URL da p\u00E1gina. Relevante apenas para regras de pagelink, como sites de hospedagem de imagem e v\u00EDdeo",
 			"ru": "\u0415\u0441\u043B\u0438 \u043D\u0438 \u043E\u0434\u0438\u043D \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u043D\u0435 \u043D\u0430\u0439\u0434\u0435\u043D, \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C URL-\u0430\u0434\u0440\u0435\u0441 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B. F\u043A\u0442\u0443\u0430\u043B\u044C\u043D\u043E n\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F \u043F\u0440\u0430\u0432\u0438\u043B \u0441\u0441\u044B\u043B\u043A\u0438 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B, \u0442\u0430\u043A\u0438\u0445 \u043A\u0430\u043A \u0441\u0430\u0439\u0442\u044B \u0445\u043E\u0441\u0442\u0438\u043D\u0433\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u0438 \u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u5982\u679C\u627E\u4E0D\u5230\u5143\u7D20\uFF0C\u5C1D\u8BD5\u9875\u9762\u7F51\u5740\u3002\u53EA\u4E0E pagelink \u89C4\u5219\u76F8\u5173\uFF0C\u5982\u56FE\u50CF\u6216\u89C6\u9891\u6258\u7BA1\u7F51\u7AD9"
 		},
@@ -9716,7 +9227,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "<iframe>\uC5D0 \uB300\uD55C \uD31D\uC5C5",
-			"pt-BR": "Popup para `<iframe>`",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F `<iframe>`",
 			"zh-CN": "\u4E3A <iframe> \u5F39\u7A97"
 		},
@@ -9730,7 +9240,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "<iframe>\uC758 \uC694\uC18C\uB4E4\uB3C4 \uD31D\uC5C5\uC774 \uC791\uB3D9\uD558\uB3C4\uB85D \uD5C8\uC6A9. \uC774\uB7F0 \uC2DD\uC73C\uB85C \uC774\uBBF8\uC9C0/\uBE44\uB514\uC624\uB97C \uC800\uC7A5\uD558\uB294 \uAC83\uC740 \uB2E4\uC18C \uB4DC\uBB38 \uC77C\uC774\uC9C0\uB9CC, embeds\uB97C \uC9C0\uC6D0\uD560 \uC218 \uC788\uC74C",
-			"pt-BR": "Permite que elementos `<iframe>` tamb\u00E9m sejam abertos em popup. Armazenar imagens/v\u00EDdeos desta forma \u00E9 incomum, mas pode permitir suporte a embeds",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u0442\u044C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430\u043C `<iframe>`. \u0425\u0440\u0430\u043D\u0435\u043D\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439/\u0432\u0438\u0434\u0435\u043E \u0442\u0430\u043A\u0438\u043C \u043E\u0431\u0440\u0430\u0437\u043E\u043C \u0434\u043E\u0432\u043E\u043B\u044C\u043D\u043E \u0440\u0435\u0434\u043A\u043E\u0435 \u044F\u0432\u043B\u0435\u043D\u0438\u0435, \u043D\u043E \u043E\u043D\u043E \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u0437\u0432\u043E\u043B\u0438\u0442\u044C \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0442\u044C \u0432\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0435\u043C\u044B\u0435 \u0444\u0430\u0439\u043B\u044B.",
 			"zh-CN": "\u5141\u8BB8\u4E3A `<iframe>` \u5143\u7D20\u663E\u793A\u5F39\u7A97\u3002\u4EE5\u8FD9\u79CD\u65B9\u5F0F\u5B58\u50A8\u56FE\u50CF/\u89C6\u9891\u76F8\u5F53\u7F55\u89C1\uFF0C\u4F46\u603B\u4E4B\u53EF\u4EE5\u652F\u6301"
 		},
@@ -9744,7 +9253,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "<canvas>\uC5D0 \uB300\uD55C \uD31D\uC5C5",
-			"pt-BR": "Popup para `<canvas>`",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F `<canvas>`",
 			"zh-CN": "\u4E3A <canvas> \u5F39\u7A97"
 		},
@@ -9758,7 +9266,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "<canvas>\uC758 \uC694\uC18C\uB4E4\uB3C4 \uD31D\uC5C5\uC774 \uC791\uB3D9\uD558\uB3C4\uB85D \uD5C8\uC6A9. \uC774\uAC83\uC740 \uC5B4\uB5A4 \uC885\uB958\uC758 \uC6F9 \uAE30\uBC18 \uAC8C\uC784\uC774\uB77C\uB3C4 \uD31D\uC5C5\uC744 \uC720\uBC1C\uD560 \uAC00\uB2A5\uC131\uC774 \uB192\uC73C\uBBC0\uB85C, \uC774 \uAE30\uB2A5\uC744 \uC0AC\uC6A9\uD558\uC9C0 \uC54A\uB3C4\uB85D \uC720\uC9C0\uD558\uB294 \uAC83\uC774 \uC88B\uC74C",
-			"pt-BR": "Permite que elementos `<canvas>` tamb\u00E9m sejam abertos em popup. Isso provavelmente causar\u00E1 popups com qualquer tipo de jogo baseado na web, portanto, \u00E9 recomend\u00E1vel manter esta op\u00E7\u00E3o desativada",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u0442\u044C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430\u043C `<canvas>`. \u042D\u0442\u043E, \u0441\u043A\u043E\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043E, \u0431\u0443\u0434\u0435\u0442 \u0432\u044B\u0437\u044B\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u0435 \u043E\u043A\u043D\u0430 \u0441 \u043B\u044E\u0431\u044B\u043C\u0438 \u0432\u0435\u0431-\u0438\u0433\u0440\u0430\u043C\u0438, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u0435\u0442\u0441\u044F \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u044D\u0442\u0443 \u0444\u0443\u043D\u043A\u0446\u0438\u044E.",
 			"zh-CN": "\u5141\u8BB8\u4E3A `<canvas>` \u5143\u7D20\u663E\u793A\u5F39\u7A97\u3002\u8FD9\u53EF\u80FD\u5BFC\u81F4\u5728\u7F51\u9875\u6E38\u620F\u4E0A\u89E6\u53D1\u5F39\u7A97\uFF0C\u6240\u4EE5\u5EFA\u8BAE\u6B64\u9879\u4FDD\u6301\u7981\u7528"
 		},
@@ -9772,7 +9279,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "<svg>\uC5D0 \uB300\uD55C \uD31D\uC5C5",
-			"pt-BR": "Popup para `<svg>`",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F `<svg>`",
 			"zh-CN": "\u4E3A <svg> \u5F39\u7A97"
 		},
@@ -9786,7 +9292,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "<canvas>\uC758 \uC694\uC18C\uB4E4\uB3C4 \uD31D\uC5C5\uC774 \uC791\uB3D9\uD558\uB3C4\uB85D \uD5C8\uC6A9. \uC774\uAC83\uC740 \uBCF4\uD1B5 \uC544\uC774\uCF58\uC5D0 \uC0AC\uC6A9\uB418\uBA70, \uB54C\uB54C\uB85C \uC774\uBBF8\uC9C0 \uC704\uC5D0 \uC544\uC774\uCF58\uC744 \uC624\uBC84\uB808\uC774\uD558\uB294 \uC6F9 \uC0AC\uC774\uD2B8\uC5D0 \uBB38\uC81C\uB97C \uC77C\uC73C\uD0AC \uC218 \uC788\uC74C",
-			"pt-BR": "Permite que elementos `<svg>` tamb\u00E9m sejam abertos em popup. Geralmente s\u00E3o usados para \u00EDcones e ocasionalmente podem causar problemas para sites que sobrep\u00F5em \u00EDcones em cima de imagens",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u0442\u044C \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430\u043C `<svg>`. \u041E\u0431\u044B\u0447\u043D\u043E \u043E\u043D\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u0434\u043B\u044F \u0438\u043A\u043E\u043D\u043E\u043A \u0438 \u0438\u043D\u043E\u0433\u0434\u0430 \u043C\u043E\u0433\u0443\u0442 \u0432\u044B\u0437\u044B\u0432\u0430\u0442\u044C \u043F\u0440\u043E\u0431\u043B\u0435\u043C\u044B \u0434\u043B\u044F \u0432\u0435\u0431-\u0441\u0430\u0439\u0442\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043D\u0430\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u044E\u0442 \u0438\u043A\u043E\u043D\u043A\u0438 \u043F\u043E\u0432\u0435\u0440\u0445 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439.",
 			"zh-CN": "\u5141\u8BB8\u4E3A `<svg>` \u5143\u7D20\u663E\u793A\u5F39\u7A97\u3002\u8FD9\u901A\u5E38\u7528\u4E8E\u56FE\u6807\uFF0C\u5E76\u4E14\u5076\u5C14\u4F1A\u5728\u7F51\u7AD9\u4E8E\u56FE\u50CF\u4E0A\u53E0\u52A0\u56FE\u6807\u65F6\u51FA\u73B0\u95EE\u9898"
 		},
@@ -9799,7 +9304,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ativar galeria",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0433\u0430\u043B\u0435\u0440\u0435\u044E",
 			"zh-CN": "\u542F\u7528\u56FE\u5E93"
 		},
@@ -9812,7 +9316,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Alterna se o suporte \u00E0 detec\u00E7\u00E3o de galeria deve ser ativado",
 			"ru": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0435\u0442, \u0434\u043E\u043B\u0436\u043D\u0430 \u043B\u0438 \u0431\u044B\u0442\u044C \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u0430 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0430 \u043E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D\u0438\u044F \u0433\u0430\u043B\u0435\u0440\u0435\u0438.",
 			"zh-CN": "\u5207\u6362\u662F\u5426\u542F\u7528\u56FE\u5E93\u68C0\u6D4B\u652F\u6301"
 		},
@@ -9825,7 +9328,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ciclo da galeria",
 			"ru": "\u0417\u0430\u0446\u0438\u043A\u043B\u0438\u0442\u044C \u0433\u0430\u043B\u0435\u0440\u0435\u044E",
 			"zh-CN": "\u56FE\u5E93\u5FAA\u73AF"
 		},
@@ -9838,7 +9340,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ir para a imagem anterior na primeira imagem levar\u00E1 para a \u00FAltima imagem e vice-versa",
 			"ru": "\u041F\u0435\u0440\u0435\u0445\u043E\u0434 \u043A \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u043C\u0443 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044E \u0441 \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043F\u0440\u0438\u0432\u0435\u0434\u0435\u0442 \u043A \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u043C\u0443 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044E \u0438 \u043D\u0430\u043E\u0431\u043E\u0440\u043E\u0442.",
 			"zh-CN": "\u7B2C\u4E00\u4E2A\u56FE\u50CF\u518D\u5411\u4E0A\u62B5\u8FBE\u6700\u540E\u4E00\u4E2A\u56FE\u50CF\uFF0C\u6700\u540E\u4E00\u4E2A\u56FE\u50CF\u5411\u4E0B\u62B5\u8FBE\u7B2C\u4E00\u4E2A\u56FE\u50CF"
 		},
@@ -9851,7 +9352,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Item anterior da galeria",
 			"ru": "\u041F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0438\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u0433\u0430\u043B\u0435\u0440\u0435\u0438",
 			"zh-CN": "\u524D\u4E00\u4E2A\u56FE\u5E93\u9879"
 		},
@@ -9864,7 +9364,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para acionar o item anterior da galeria",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0434\u043B\u044F \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430 \u0433\u0430\u043B\u0435\u0440\u0435\u0438.",
 			"zh-CN": "\u89E6\u53D1\u4E0A\u4E00\u4E2A\u56FE\u5E93\u9879\u7684\u6309\u952E"
 		},
@@ -9877,7 +9376,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Pr\u00F3ximo item da galeria",
 			"ru": "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u0433\u0430\u043B\u0435\u0440\u0435\u0438",
 			"zh-CN": "\u4E0B\u4E00\u4E2A\u56FE\u5E93\u9879"
 		},
@@ -9890,7 +9388,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para acionar o pr\u00F3ximo item da galeria",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0434\u043B\u044F \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430 \u0433\u0430\u043B\u0435\u0440\u0435\u0438.",
 			"zh-CN": "\u89E6\u53D1\u4E0B\u4E00\u4E2A\u56FE\u5E93\u9879\u7684\u6309\u952E"
 		},
@@ -9903,7 +9400,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para baixar a galeria",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F \u0433\u0430\u043B\u0435\u0440\u0435\u0438",
 			"zh-CN": "\u56FE\u5E93\u4E0B\u8F7D\u952E"
 		},
@@ -9916,7 +9412,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla para baixar a galeria atual",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0434\u043B\u044F \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F \u0442\u0435\u043A\u0443\u0449\u0435\u0439 \u0433\u0430\u043B\u0435\u0440\u0435\u0438.",
 			"zh-CN": "\u4E0B\u8F7D\u5F53\u524D\u56FE\u5E93\u7684\u6309\u952E"
 		},
@@ -9929,7 +9424,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "M\u00E9todo de download",
 			"ru": "\u0421\u043F\u043E\u0441\u043E\u0431 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u4E0B\u8F7D\u65B9\u6CD5"
 		},
@@ -9942,7 +9436,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como a galeria deve ser baixada",
 			"ru": "\u041A\u0430\u043A \u043D\u0443\u0436\u043D\u043E \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u0442\u044C \u0433\u0430\u043B\u0435\u0440\u0435\u044E",
 			"zh-CN": "\u5E94\u5982\u4F55\u4E0B\u8F7D\u56FE\u5E93"
 		},
@@ -9955,7 +9448,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Arquivo Zip",
 			"ru": "\u0410\u0440\u0445\u0438\u0432",
 			"zh-CN": "Zip \u6587\u4EF6"
 		},
@@ -9968,7 +9460,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "JDownloader",
 			"ru": "JDownloader",
 			"zh-CN": "JDownloader"
 		},
@@ -9981,7 +9472,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Baixar m\u00EDdia inalterada",
 			"ru": "\u0421\u043A\u0430\u0447\u0438\u0432\u0430\u0442\u044C \u043C\u0435\u0434\u0438\u0430 \u0431\u0435\u0437 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0439",
 			"zh-CN": "\u4E0B\u8F7D\u672A\u66F4\u6539\u7684\u5A92\u4F53"
 		},
@@ -9994,7 +9484,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Inclui itens da galeria que n\u00E3o foram alterados. \u00DAtil para evitar o download de miniaturas",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0432 \u0441\u0435\u0431\u044F \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0433\u0430\u043B\u0435\u0440\u0435\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043D\u0435 \u0431\u044B\u043B\u0438 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u044B. \u041F\u043E\u043B\u0435\u0437\u043D\u043E, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0442\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u043E \u0438\u0437\u0431\u0435\u0436\u0430\u0442\u044C \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440.",
 			"zh-CN": "\u5305\u542B\u672A\u66F4\u6539\u7684\u56FE\u5E93\u9879\u76EE\u3002\u6709\u52A9\u4E8E\u6F5C\u5728\u907F\u514D\u4E0B\u8F7D\u7F29\u7565\u56FE"
 		},
@@ -10007,7 +9496,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Formato do nome do diret\u00F3rio/arquivo zip",
 			"ru": "\u0424\u043E\u0440\u043C\u0430\u0442 \u0438\u043C\u0435\u043D\u0438 \u0444\u0430\u0439\u043B\u0430 \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0430/\u0430\u0440\u0445\u0438\u0432\u0430",
 			"zh-CN": "\u76EE\u5F55/zip \u6587\u4EF6\u540D\u683C\u5F0F"
 		},
@@ -10020,7 +9508,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Cadeia(s) de formato para o diret\u00F3rio (nome do pacote para JDownloader) e nome do arquivo zip (se aplic\u00E1vel).\nConsulte \"Formato do nome do arquivo\" na se\u00E7\u00E3o Regras para obter documenta\u00E7\u00E3o. As vari\u00E1veis s\u00E3o definidas a partir da primeira m\u00EDdia carregada.\nUma vari\u00E1vel de formato adicional items_amt \u00E9 suportada, que cont\u00E9m o n\u00FAmero de itens.\n.zip ser\u00E1 automaticamente adicionado como sufixo para nomes de arquivos zip.",
 			"ru": "\u0424\u043E\u0440\u043C\u0430\u0442 \u0441\u0442\u0440\u043E\u043A \u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0430 (\u0438\u043C\u044F \u043F\u0430\u043A\u0435\u0442\u0430 \u0434\u043B\u044F JDownloader) \u0438 \u0438\u043C\u044F zip-\u0444\u0430\u0439\u043B\u0430 (\u0435\u0441\u043B\u0438 \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u043C\u043E).\n\u0418\u0437\u0443\u0447\u0438\u0442\u0435 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u044E \"\u0424\u043E\u0440\u043C\u0430\u0442 \u0438\u043C\u0435\u043D\u0438 \u0444\u0430\u0439\u043B\u0430\" \u0432 \u0440\u0430\u0437\u0434\u0435\u043B\u0435 \"\u041F\u0440\u0430\u0432\u0438\u043B\u0430\". \u041F\u0435\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0435 \u0443\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u0441 \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u043E\u0433\u043E \u043C\u0435\u0434\u0438\u0430.\n\u041F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u0430\u044F \u043F\u0435\u0440\u0435\u043C\u0435\u043D\u043D\u0430\u044F \u0444\u043E\u0440\u043C\u0430\u0442\u0430 `items_amt`, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u0441\u043E\u0434\u0435\u0440\u0436\u0438\u0442 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432.\n\u0421\u0443\u0444\u0444\u0438\u043A\u0441 `.zip` \u0431\u0443\u0434\u0435\u0442 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u0442\u044C\u0441\u044F \u043A \u0438\u043C\u0435\u043D\u0430\u043C zip-\u0444\u0430\u0439\u043B\u043E\u0432.",
 			"zh-CN": "\u76EE\u5F55\uFF08JDownloader \u7684\u5305\u540D\uFF09\u548C zip \u6587\u4EF6\u540D\uFF08\u5982\u679C\u9002\u7528\uFF09\u7684\u683C\u5F0F\u5316\u5B57\u7B26\u4E32\u3002\n\u6587\u6863\u53C2\u89C1\u201C\u89C4\u5219\u201D\u90E8\u5206\u4E2D\u7684\u201C\u6587\u4EF6\u540D\u683C\u5F0F\u201D\u3002\u8FD9\u4E9B\u53D8\u91CF\u6765\u81EA\u9996\u4E2A\u5DF2\u52A0\u8F7D\u7684\u5A92\u4F53\u3002\n\u652F\u6301\u4E00\u4E2A\u989D\u5916\u7684 `items_amt` \u683C\u5F0F\u53D8\u91CF\uFF0C\u5176\u4E2D\u5305\u542B\u9879\u76EE\u6570\u91CF\u3002\nzip \u7684\u6587\u4EF6\u540D\u81EA\u52A8\u8FFD\u52A0 `.zip` \u540E\u7F00\u3002"
 		},
@@ -10033,7 +9520,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Zip: Armazenar em subdiret\u00F3rio",
 			"ru": "Zip: \u0425\u0440\u0430\u043D\u0438\u0442\u044C \u0432 \u043F\u043E\u0434\u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0435",
 			"zh-CN": "Zip: \u5B58\u50A8\u5728\u5B50\u76EE\u5F55\u4E2D"
 		},
@@ -10046,7 +9532,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Armazena os arquivos em um subdiret\u00F3rio com o mesmo nome do arquivo .zip (sem a extens\u00E3o .zip)",
 			"ru": "\u0425\u0440\u0430\u043D\u0438\u0442 \u0444\u0430\u0439\u043B\u044B \u0432 \u043F\u043E\u0434\u043A\u0430\u0442\u0430\u043B\u043E\u0433\u0435 \u0441 \u0442\u0435\u043C \u0436\u0435 \u0438\u043C\u0435\u043D\u0435\u043C, \u0447\u0442\u043E \u0438 zip-\u0444\u0430\u0439\u043B (\u0431\u0435\u0437 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F .zip).",
 			"zh-CN": "\u5C06\u6587\u4EF6\u5B58\u50A8\u5728\u4E0E .zip \u6587\u4EF6\u540C\u540D\u7684\u5B50\u76EE\u5F55\u4E2D\uFF08\u76EE\u5F55\u4E0D\u5E26 .zip\uFF09"
 		},
@@ -10059,7 +9544,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "JD: Iniciar automaticamente",
 			"ru": "JD: \u0410\u0432\u0442\u043E\u0437\u0430\u043F\u0443\u0441\u043A",
 			"zh-CN": "JD: \u81EA\u52A8\u542F\u52A8"
 		},
@@ -10072,7 +9556,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Inicia o download automaticamente quando adicionado ao JDownloader",
 			"ru": "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0435\u0442 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0435 \u043F\u0440\u0438 \u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u0438 \u0432 JDownloader",
 			"zh-CN": "\u6DFB\u52A0\u5230 JDownloader \u65F6\u81EA\u52A8\u5F00\u59CB\u4E0B\u8F7D"
 		},
@@ -10085,7 +9568,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "JD: Pol\u00EDtica de Refer\u00EAncia",
 			"ru": "JD: \u0420\u0435\u0444\u0435\u0440\u0430\u043B\u044C\u043D\u0430\u044F \u043F\u043E\u043B\u0438\u0442\u0438\u043A\u0430",
 			"zh-CN": "JD: Referer \u7B56\u7565"
 		},
@@ -10098,7 +9580,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Devido a uma limita\u00E7\u00E3o atual na API do JDownloader, o cabe\u00E7alho `Referer` (sic) s\u00F3 pode ser definido por pacote. Esta op\u00E7\u00E3o permite contornar isso enviando v\u00E1rios pacotes com o mesmo nome usando diferentes cabe\u00E7alhos Referer. Isso pode resultar em spam de notifica\u00E7\u00F5es do JD devido ao n\u00FAmero de pacotes criados.",
 			"ru": "\u0418\u0437-\u0437\u0430 \u0442\u0435\u043A\u0443\u0449\u0435\u0433\u043E \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F \u0432 API JDownloader, \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A `Referer` (sic) \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u043F\u0430\u043A\u0435\u0442\u0430. \u042D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043E\u0431\u043E\u0439\u0442\u0438 \u044D\u0442\u043E, \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0432 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u043A\u0435\u0442\u043E\u0432 \u0441 \u043E\u0434\u0438\u043D\u0430\u043A\u043E\u0432\u044B\u043C \u0438\u043C\u0435\u043D\u0435\u043C, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044F \u0440\u0430\u0437\u043D\u044B\u0435 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0438 Referer. \u042D\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u043F\u0440\u0438\u0432\u0435\u0441\u0442\u0438 \u043A \u0441\u043F\u0430\u043C-\u0443\u0432\u0435\u0434\u043E\u043C\u043B\u0435\u043D\u0438\u044F\u043C JD \u0438\u0437-\u0437\u0430 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0430 \u0441\u043E\u0437\u0434\u0430\u043D\u043D\u044B\u0445 \u043F\u0430\u043A\u0435\u0442\u043E\u0432.",
 			"zh-CN": "\u7531\u4E8E\u76EE\u524D JDownloader API \u7684\u9650\u5236\uFF0C`Referer` (sic) \u5934\u53EA\u80FD\u5728\u6BCF\u4E2A\u5305\u7684\u57FA\u7840\u4E0A\u8BBE\u7F6E\u3002\u6B64\u9009\u9879\u901A\u8FC7\u63D0\u4EA4\u540C\u540D\u4F46\u4E0D\u540C Referer \u5934\u7684\u591A\u4E2A\u5305\u6765\u89C4\u907F\u8BE5\u95EE\u9898\u3002\u8FD9\u53EF\u80FD\u5BFC\u81F4 JD \u7531\u4E8E\u521B\u5EFA\u7684\u5305\u6570\u91CF\u8F83\u591A\u800C\u7ED9\u51FA\u5783\u573E\u6D88\u606F\u901A\u77E5\u3002"
 		},
@@ -10111,7 +9592,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Por dom\u00EDnio",
 			"ru": "\u0414\u043B\u044F \u043A\u0430\u0436\u0434\u043E\u0433\u043E \u0434\u043E\u043C\u0435\u043D\u0430",
 			"zh-CN": "\u6309\u57DF\u540D"
 		},
@@ -10124,7 +9604,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Zip: Armazenar arquivo de informa\u00E7\u00F5es",
 			"ru": "Zip: \u0425\u0440\u0430\u043D\u0438\u0442\u044C \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u0444\u0430\u0439\u043B\u0430",
 			"zh-CN": "Zip: \u5B58\u50A8\u4FE1\u606F\u6587\u4EF6"
 		},
@@ -10137,7 +9616,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Armazena um arquivo `info.txt` no .zip contendo informa\u00E7\u00F5es sobre os arquivos baixados e a p\u00E1gina de origem.",
 			"ru": "\u0425\u0440\u0430\u043D\u0438\u0442 \u0444\u0430\u0439\u043B `info.txt` \u0432 .zip, \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u0449\u0443\u044E \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u043E \u0441\u043A\u0430\u0447\u0430\u043D\u044B\u0445 \u0444\u0430\u0439\u043B\u0430\u0445 \u0438 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435 \u0445\u043E\u0441\u0442\u0430.",
 			"zh-CN": "\u5728 .zip \u4E2D\u5B58\u50A8\u4E00\u4E2A\u5305\u542B\u4E0B\u8F7D\u7684\u6587\u4EF6\u548C\u7F51\u9875\u4FE1\u606F\u7684\u201Cinfo.txt\u201D\u6587\u4EF6\u3002"
 		},
@@ -10150,7 +9628,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Mover para o pr\u00F3ximo quando o v\u00EDdeo terminar",
 			"ru": "\u041F\u043E\u0441\u043B\u0435 \u0437\u0430\u043A\u0430\u043D\u0447\u0438\u0432\u0430\u043D\u0438\u044F \u0432\u0438\u0434\u0435\u043E, \u043F\u0435\u0440\u0435\u0445\u043E\u0434\u0438\u0442\u044C \u043A \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u043C\u0443",
 			"zh-CN": "\u89C6\u9891\u7ED3\u675F\u65F6\u8F6C\u5230\u4E0B\u4E00\u4E2A"
 		},
@@ -10163,7 +9640,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Move para o pr\u00F3ximo item da galeria quando um v\u00EDdeo terminar de reproduzir",
 			"ru": "\u041F\u0435\u0440\u0435\u0445\u043E\u0434 \u043A \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u043C\u0443 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0443 \u0433\u0430\u043B\u0435\u0440\u0435\u0438 \u043F\u043E\u0441\u043B\u0435 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043D\u0438\u044F \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u89C6\u9891\u64AD\u653E\u7ED3\u675F\u65F6\u79FB\u52A8\u5230\u4E0B\u4E00\u4E2A\u56FE\u5E93\u9879\u76EE"
 		},
@@ -10177,7 +9653,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5 CSS",
-			"pt-BR": "Estilo CSS do popup",
 			"ru": "\u0421\u0442\u0438\u043B\u044C CSS \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97 CSS \u6837\u5F0F"
 		},
@@ -10190,7 +9665,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Estilos CSS personalizados para o popup",
 			"ru": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0435 \u0441\u0442\u0438\u043B\u0438 CSS \u0434\u043B\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u81EA\u5B9A\u4E49\u5F39\u7A97\u7684 CSS \u6837\u5F0F"
 		},
@@ -10203,7 +9677,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A maior parte do CSS v\u00E1lido \u00E9 suportada, com as seguintes diferen\u00E7as:\n<ul><li>Coment\u00E1rios multilinha (<code>/ ... */</code>) n\u00E3o s\u00E3o suportados no momento</li>\n<li>Coment\u00E1rios de linha \u00FAnica (<code>// ...</code>) s\u00E3o suportados, mas apenas no in\u00EDcio de uma linha</li>\n<li><code>%thumburl%</code> \u00E9 a URL da imagem em miniatura. Por exemplo, voc\u00EA pode us\u00E1-la assim: <code>background-image: url(%thumburl%)</code><br />\nA URL \u00E9 codificada corretamente, ent\u00E3o aspas n\u00E3o s\u00E3o necess\u00E1rias (mas tamb\u00E9m n\u00E3o s\u00E3o prejudiciais)</li>\n<li><code>%fullurl%</code> \u00E9 a URL da imagem completa. Se o IMU n\u00E3o conseguir encontrar uma imagem maior, ela ser\u00E1 a mesma que <code>%thumburl%</code></li>\n<li>Os estilos s\u00E3o <code>!important</code> por padr\u00E3o</li></ul>\n<p>Para o estilo CSS dos bot\u00F5es, voc\u00EA tamb\u00E9m pode personalizar o CSS para bot\u00F5es individuais atrav\u00E9s de seus IDs. Por exemplo:</p>\n<pre>\n#closebtn {\n  background-color: red;\n  // -imu-text permite definir o texto dentro do bot\u00E3o\n  -imu-text: \"Fechar\";\n  // -imu-title permite definir a dica de ferramenta ao passar o mouse\n  -imu-title: \"Fechar popup\";\n}\n#galleryprevbtn, #gallerynextbtn {\n  border-radius: 100px;\n}\n</pre>",
 			"ru": "\u041F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044F \u0431\u043E\u043B\u044C\u0448\u0438\u043D\u0441\u0442\u0432\u043E \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u043E\u0433\u043E CSS, \u0441 \u044D\u0442\u0438\u043C\u0438 \u043E\u0442\u043B\u0438\u0447\u0438\u044F\u043C\u0438:\n<ul><li>\u041C\u043D\u043E\u0433\u043E\u0441\u0442\u0440\u043E\u0447\u043D\u044B\u0435 \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0438 (<code>/* ... */</code>) \u0432 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F</li>\n<li>\u041E\u0434\u0438\u043D\u043E\u0447\u043D\u044B\u0435 \u043A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0438 (<code>// ...</code>) \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F, \u043D\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u0432 \u043D\u0430\u0447\u0430\u043B\u0435 \u0441\u0442\u0440\u043E\u043A\u0438</li>\n<li><code>%thumburl%</code> - \u044D\u0442\u043E URL-\u0430\u0434\u0440\u0435\u0441 \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440\u044B \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F. \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0435\u0433\u043E \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u043C \u043E\u0431\u0440\u0430\u0437\u043E\u043C: <code>background-image: url(%thumburl%)</code><br />\nURL \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u0437\u0430\u043A\u043E\u0434\u0438\u0440\u043E\u0432\u0430\u043D, \u043F\u043E\u044D\u0442\u043E\u043C\u0443 \u043A\u0430\u0432\u044B\u0447\u043A\u0438 \u043D\u0435 \u043D\u0443\u0436\u043D\u044B (\u043D\u043E \u0438 \u043D\u0435 \u043D\u0430\u0432\u0440\u0435\u0434\u044F\u0442)</li>\n<li><code>%fullurl%</code> - \u044D\u0442\u043E URL-\u0430\u0434\u0440\u0435\u0441 \u043F\u043E\u043B\u043D\u043E\u0433\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F. \u0415\u0441\u043B\u0438 IMU \u043D\u0435 \u043C\u043E\u0436\u0435\u0442 \u043D\u0430\u0439\u0442\u0438 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u043E\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435, \u043E\u043D\u043E \u0431\u0443\u0434\u0435\u0442 \u0442\u0430\u043A\u0438\u043C \u0436\u0435, \u043A\u0430\u043A <code>%thumburl%</code></li>\n<li>\u0421\u0442\u0438\u043B\u0438 \u043F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E \u043A\u0430\u043A <code>!important</code></li></ul>\n<p>\u0414\u043B\u044F \u0441\u0442\u0438\u043B\u044F CSS \u043A\u043D\u043E\u043F\u043E\u043A, \u0432\u044B \u0442\u0430\u043A\u0436\u0435 \u043C\u043E\u0436\u0435\u0442\u0435 \u043D\u0430\u0441\u0442\u0440\u043E\u0438\u0442\u044C CSS \u0434\u043B\u044F \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0445 \u043A\u043D\u043E\u043F\u043E\u043A \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0438\u0445 \u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u043E\u0432. \u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440:</p>\n<pre>\n#closebtn {\n  background-color: red;\n  // -imu-text \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0442\u0435\u043A\u0441\u0442 \u0432\u043D\u0443\u0442\u0440\u0438 \u043A\u043D\u043E\u043F\u043A\u0438\n  -imu-text: \"\u0417\u0430\u043A\u0440\u044B\u0442\u044C\";\n  // -imu-title \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0443\u044E \u043F\u043E\u0434\u0441\u043A\u0430\u0437\u043A\u0443 \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043A\u0443\u0440\u0441\u043E\u0440\u0430\n  -imu-title: \"\u0417\u0430\u043A\u0440\u044B\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E\";\n}\n#galleryprevbtn, #gallerynextbtn {\n  border-radius: 100px;\n}\n</pre>",
 			"zh-CN": "\u652F\u6301\u5927\u591A\u6570\u6709\u6548\u7684 CSS\uFF0C\u4F46\u6709\u4E0B\u5217\u5DEE\u5F02\uFF1A\n<ul><li>\u76EE\u524D\u4E0D\u652F\u6301\u591A\u884C\u6CE8\u91CA\uFF08<code>/* ... */</code>\uFF09</li>\n<li>\u652F\u6301\u5355\u884C\u6CE8\u91CA\uFF08<code>// ...</code>\uFF09\uFF0C\u4F46\u53EA\u80FD\u5728\u884C\u5F00\u5934</li>\n<li><code>%thumburl%</code> \u662F\u7F29\u7565\u56FE\u7684 URL\uFF0C\u4F8B\u5982\u53EF\u4EE5\u8FD9\u6837\u4F7F\u7528\u5B83\uFF1Abackground-image: url(%thumburl%)</code><br />\nURL \u88AB\u6B63\u786E\u7F16\u7801\uFF0C\u6240\u4EE5\u6CA1\u6709\u5FC5\u8981\u4F7F\u7528\u5F15\u53F7\uFF08\u4F46\u4F7F\u7528\u4E5F\u65E0\u5BB3\uFF09</li>\n<li><code>%fullurl%</code> \u662F\u5B8C\u6574\u56FE\u50CF\u7684 URL\u3002\u5982\u679C Image Max URL \u4E0D\u80FD\u627E\u5230\u4E00\u4E2A\u66F4\u5927\u7684\u56FE\u50CF\uFF0C\u5C06\u4E0E <code>%thumburl%</code> \u76F8\u540C</li>\n<li>\u6837\u5F0F\u9ED8\u8BA4 <code>!important</code></li></ul>\n<p>\u5BF9\u4E8E\u6309\u94AE CSS \u6837\u5F0F\uFF0C\u60A8\u4E5F\u53EF\u4EE5\u901A\u8FC7 id \u4E3A\u5355\u4E2A\u6309\u94AE\u5B9A\u5236 CSS\u3002\u4F8B\u5982\uFF1A</p>\n<pre>\n#closebtn {\n  background-color: red;\n  // -imu-text \u5141\u8BB8\u60A8\u8BBE\u7F6E\u6309\u94AE\u5185\u7684\u6587\u672C\n  -imu-text: \"Close\";\n  // -imu-title \u5141\u8BB8\u60A8\u8BBE\u7F6E\u60AC\u505C\u65F6\u7684\u5DE5\u5177\u63D0\u793A\n  -imu-title: \"Close the popup\";\n}\n#galleryprevbtn, #gallerynextbtn {\n  border-radius: 100px;\n}\n</pre>"
 		},
@@ -10216,7 +9689,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar efeito de fade no popup",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u044D\u0444\u0444\u0435\u043A\u0442 \u0437\u0430\u0442\u0443\u0445\u0430\u043D\u0438\u044F \u0434\u043B\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u542F\u7528\u5F39\u7A97\u8FC7\u6E21\u52A8\u753B"
 		},
@@ -10229,7 +9701,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita um efeito de fade in/out quando o popup \u00E9 aberto/fechado",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u044D\u0444\u0444\u0435\u043A\u0442 \u0437\u0430\u0442\u0443\u0445\u0430\u043D\u0438\u044F/\u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u043F\u0440\u0438 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0438/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u542F\u7528\u5F39\u7A97\u6253\u5F00/\u5173\u95ED\u65F6\u7684\u6DE1\u5165/\u6DE1\u51FA\u6548\u679C"
 		},
@@ -10242,7 +9713,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar efeito de zoom",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u044D\u0444\u0444\u0435\u043A\u0442 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "\u542F\u7528\u7F29\u653E\u6548\u679C"
 		},
@@ -10255,7 +9725,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Alterna se o popup deve aplicar 'zoom' ao abrir/fechar",
 			"ru": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0435\u0442, \u0434\u043E\u043B\u0436\u043D\u043E \u043B\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E '\u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F' \u043F\u0440\u0438 \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0438/\u0437\u0430\u043A\u0440\u044B\u0442\u0438\u0438.",
 			"zh-CN": "\u5207\u6362\u6253\u5F00/\u5173\u95ED\u5F39\u7A97\u65F6\u662F\u5426\u6709\u7F29\u653E\u6548\u679C"
 		},
@@ -10268,7 +9737,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Mover da miniatura ao aplicar zoom",
 			"ru": "\u041F\u0435\u0440\u0435\u043C\u0435\u0449\u0435\u043D\u0438\u0435 \u043E\u0442 \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440\u044B \u043F\u0440\u0438 \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0438",
 			"zh-CN": "\u4ECE\u7F29\u7565\u56FE\u4E2D\u8DC3\u51FA\u7684\u7F29\u653E\u6548\u679C"
 		},
@@ -10281,7 +9749,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Move o popup da miniatura para o local final enquanto aplica o zoom. A anima\u00E7\u00E3o pode ser um pouco brusca",
 			"ru": "\u041F\u0435\u0440\u0435\u043C\u0435\u0449\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043E\u0442 \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440 \u0434\u043E \u043E\u043A\u043E\u043D\u0447\u0430\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u043C\u0435\u0441\u0442\u043E\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u044F \u0432\u043E \u0432\u0440\u0435\u043C\u044F \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F. \u0410\u043D\u0438\u043C\u0430\u0446\u0438\u044F \u043C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0433\u0440\u0443\u0431\u043E\u0439.",
 			"zh-CN": "\u4ECE\u7F29\u7565\u56FE\u53D8\u4E3A\u5F39\u7A97\u65F6\u7684\u7F29\u653E\u52A8\u753B\u6548\u679C\u3002\u52A8\u753B\u53EF\u80FD\u6709\u70B9\u7C97\u7CD9"
 		},
@@ -10294,7 +9761,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tempo de anima\u00E7\u00E3o do popup",
 			"ru": "\u0412\u0440\u0435\u043C\u044F \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430",
 			"zh-CN": "\u5F39\u7A97\u52A8\u753B\u65F6\u957F"
 		},
@@ -10307,7 +9773,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Dura\u00E7\u00E3o da anima\u00E7\u00E3o de fade/zoom (em milissegundos) para o popup",
 			"ru": "\u0423\u043C\u0435\u043D\u044C\u0448\u0435\u043D\u0438\u0435/\u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u0438\u0435 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438 \u0430\u043D\u0438\u043C\u0430\u0446\u0438\u0438 (\u0432 \u043C\u0438\u043B\u043B\u0438\u0441\u0435\u043A\u0443\u043D\u0434\u0430\u0445) \u0434\u043B\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u5F39\u7A97\u7684\u6DE1\u51FA/\u7F29\u653E\u52A8\u753B\u6301\u7EED\u65F6\u95F4\uFF08\u6BEB\u79D2\uFF09"
 		},
@@ -10320,7 +9785,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar CSS de fundo",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0444\u043E\u043D CSS",
 			"zh-CN": "\u542F\u7528\u80CC\u666F CSS"
 		},
@@ -10333,7 +9797,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Alterna se os estilos CSS para o fundo quando o popup est\u00E1 ativo est\u00E3o habilitados",
 			"ru": "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0435\u0442, \u0432\u043A\u043B\u044E\u0447\u0435\u043D\u044B \u043B\u0438 \u0441\u0442\u0438\u043B\u0438 CSS \u0434\u043B\u044F \u0444\u043E\u043D\u0430, \u043A\u043E\u0433\u0434\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0430\u043A\u0442\u0438\u0432\u043D\u043E.",
 			"zh-CN": "\u5207\u6362\u5F53\u5F39\u51FA\u7A97\u53E3\u5904\u4E8E\u6D3B\u52A8\u72B6\u6001\u65F6\u662F\u5426\u542F\u7528\u80CC\u666F\u7684 CSS \u6837\u5F0F"
 		},
@@ -10346,7 +9809,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Em espera",
 			"ru": "\u041F\u0440\u0438 \u0443\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043D\u0438\u0438",
 			"zh-CN": "\u4FDD\u6301\u73B0\u72B6"
 		},
@@ -10359,7 +9821,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "N\u00E3o",
 			"ru": "\u041D\u0435\u0442",
 			"zh-CN": "\u4E0D\u542F\u7528"
 		},
@@ -10372,7 +9833,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Estilo CSS do fundo",
 			"ru": "\u0421\u0442\u0438\u043B\u044C CSS \u0434\u043B\u044F \u0444\u043E\u043D\u0430",
 			"zh-CN": "\u80CC\u666F CSS \u6837\u5F0F"
 		},
@@ -10385,7 +9845,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Estilo CSS para o fundo quando o popup est\u00E1 ativo. Consulte a documenta\u00E7\u00E3o do Estilo CSS do Popup para mais informa\u00E7\u00F5es (as vari\u00E1veis thumb/full URL n\u00E3o s\u00E3o suportadas aqui)",
 			"ru": "\u0421\u0442\u0438\u043B\u044C CSS \u0434\u043B\u044F \u0444\u043E\u043D\u0430, \u043A\u043E\u0433\u0434\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0430\u043A\u0442\u0438\u0432\u043D\u043E. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u0432 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u0438 '\u0421\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F CSS \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430' (\u0437\u0434\u0435\u0441\u044C \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u043F\u0435\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0435 URL thumb/full).",
 			"zh-CN": "\u5F39\u7A97\u5F00\u542F\u65F6\u7528\u4E8E\u80CC\u666F\u7684 CSS \u6837\u5F0F\u3002\u66F4\u591A\u4FE1\u606F\u8BE6\u89C1\u201C\u5F39\u7A97 CSS \u6837\u5F0F\u201D\u6587\u6863\uFF08\u6B64\u5904\u4E0D\u652F\u6301 thumb/full URL \u53D8\u91CF\uFF09"
 		},
@@ -10398,7 +9857,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Fade (esmaecimento) do fundo",
 			"ru": "\u0417\u0430\u0442\u0443\u0445\u0430\u043D\u0438\u0435 \u0444\u043E\u043D\u0430",
 			"zh-CN": "\u80CC\u666F\u6DE1\u5165/\u6DE1\u51FA"
 		},
@@ -10411,7 +9869,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tempo de fade in/out (em milissegundos) para o fundo da p\u00E1gina, defina como 0 para desativar",
 			"ru": "\u0412\u0440\u0435\u043C\u044F \u0437\u0430\u0442\u0443\u0445\u0430\u043D\u0438\u044F/\u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F (\u0432 \u043C\u0438\u043B\u043B\u0438\u0441\u0435\u043A\u0443\u043D\u0434\u0430\u0445) \u0434\u043B\u044F \u0444\u043E\u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B. 0 - \u043E\u0442\u043A\u043B\u044E\u0447\u0438\u0442\u044C",
 			"zh-CN": "\u9875\u9762\u80CC\u666F\u7684\u6DE1\u5165/\u6DE1\u51FA\u65F6\u95F4\uFF08\u6BEB\u79D2\uFF09 \uFF0C\u8BBE\u4E3A 0 \u5219\u7981\u7528"
 		},
@@ -10424,7 +9881,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Estilo CSS dos bot\u00F5es",
 			"ru": "\u0421\u0442\u0438\u043B\u044C CSS \u0434\u043B\u044F \u043A\u043D\u043E\u043F\u043E\u043A",
 			"zh-CN": "\u6309\u94AE CSS \u6837\u5F0F"
 		},
@@ -10437,7 +9893,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Estilos CSS personalizados para os bot\u00F5es da interface do popup. Consulte a documenta\u00E7\u00E3o do Estilo CSS do Popup para obter mais informa\u00E7\u00F5es (as vari\u00E1veis thumb/full URL n\u00E3o s\u00E3o suportadas aqui)",
 			"ru": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0435 \u0441\u0442\u0438\u043B\u0438 CSS \u0434\u043B\u044F \u043A\u043D\u043E\u043F\u043E\u043A \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0438\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u0432 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u0438 '\u0421\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F CSS \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430' (\u0437\u0434\u0435\u0441\u044C \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u043F\u0435\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0435 URL thumb/full).",
 			"zh-CN": "\u4E3A\u5F39\u7A97\u4E2D\u754C\u9762\u7684\u6309\u94AE\u81EA\u5B9A\u4E49 CSS \u6837\u5F0F\u3002\u66F4\u591A\u4FE1\u606F\u8BE6\u89C1\u201C\u5F39\u7A97 CSS \u6837\u5F0F\u201D\u6587\u6863\uFF08\u6B64\u5904\u4E0D\u652F\u6301 thumb/full URL \u53D8\u91CF\uFF09"
 		},
@@ -10450,7 +9905,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "N\u00E3o exibir URLs na lista negra em popup",
 			"ru": "\u041D\u0435 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0447\u0451\u0440\u043D\u044B\u0435 \u0441\u043F\u0438\u0441\u043A\u0438 URL-\u0430\u0434\u0440\u0435\u0441\u043E\u0432 \u0432\u043E \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C \u043E\u043A\u043D\u0435",
 			"zh-CN": "\u5DF2\u5217\u5165\u9ED1\u540D\u5355\u7684\u7F51\u5740\u4E0D\u8981\u5F39\u7A97"
 		},
@@ -10463,7 +9917,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Essa op\u00E7\u00E3o impede a exibi\u00E7\u00E3o em popup de m\u00EDdia de origem com URLs na lista negra. Se desativada, o popup abrir\u00E1 se a URL final n\u00E3o estiver na lista negra, independentemente da origem estar ou n\u00E3o.",
 			"ru": "\u042D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u0435\u0442 \u0434\u043B\u044F \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u043C\u0435\u0434\u0438\u0430 \u0441 URL-\u0430\u0434\u0440\u0435\u0441\u0430\u043C\u0438 \u0432 \u0447\u0451\u0440\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A. \u0415\u0441\u043B\u0438 \u044D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u043E\u0442\u043A\u043B\u044E\u0447\u0435\u043D, \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043E\u0442\u043A\u0440\u043E\u0435\u0442\u0441\u044F, \u0435\u0441\u043B\u0438 \u043A\u043E\u043D\u0435\u0447\u043D\u044B\u0439 URL-\u0430\u0434\u0440\u0435\u0441 \u043D\u0435 \u0432\u043D\u0435\u0441\u0451\u043D \u0432 \u0447\u0451\u0440\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A, \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u043E\u0442 \u0442\u043E\u0433\u043E, \u0432\u043D\u0435\u0441\u0435\u043D \u043B\u0438 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A \u0432 \u0447\u0451\u0440\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A.",
 			"zh-CN": "\u5982\u679C\u7981\u7528\u6B64\u9009\u9879\uFF0C\u5373\u4FBF\u6E90\u5730\u5740\u88AB\u5217\u5165\u9ED1\u540D\u5355\uFF0C\u53EA\u8981\u672B\u7AEF\u7F51\u5740\u6CA1\u6709\u5217\u5165\u9ED1\u540D\u5355\uFF0C\u5C31\u6253\u5F00\u5F39\u7A97\u3002"
 		},
@@ -10475,8 +9928,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Usar lista negra de m\u00EDdia para sites de hospedagem"
+			}
 		},
 		"Overrides the host blacklist to use the media blacklist (specified under Rules)": {
 			"_info": {
@@ -10486,8 +9938,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Substitui a lista negra de hosts para usar a lista negra de m\u00EDdia (especificada em Regras)"
+			}
 		},
 		"Don't popup different media type": {
 			"_info": {
@@ -10498,7 +9949,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "N\u00E3o exibir tipo de m\u00EDdia diferente em popup",
 			"ru": "\u041D\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u0445 \u043E\u043A\u043E\u043D \u0434\u043B\u044F \u0434\u0440\u0443\u0433\u0438\u0445 \u0442\u0438\u043F\u043E\u0432 \u043C\u0435\u0434\u0438\u0430",
 			"zh-CN": "\u4E0D\u8981\u5F39\u51FA\u4E0D\u540C\u7684\u5A92\u4F53\u7C7B\u578B"
 		},
@@ -10511,7 +9961,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Esta op\u00E7\u00E3o impede que o popup carregue um v\u00EDdeo quando a fonte for uma imagem ou vice-versa",
 			"ru": "\u042D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0437\u0430\u043F\u0440\u0435\u0449\u0430\u0435\u0442 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C\u0443 \u043E\u043A\u043D\u0443 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0442\u044C \u0432\u0438\u0434\u0435\u043E, \u0435\u0441\u043B\u0438 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u043E\u043C \u0431\u044B\u043B\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435, \u0438\u043B\u0438 \u043D\u0430\u043E\u0431\u043E\u0440\u043E\u0442.",
 			"zh-CN": "\u6B64\u9009\u9879\u53EF\u907F\u514D\u6E90\u662F\u56FE\u50CF\u65F6\u5F39\u7A97\u52A0\u8F7D\u89C6\u9891\uFF0C\u53CD\u4E4B\u4EA6\u7136"
 		},
@@ -10524,7 +9973,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permitir popup em tela cheia",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0438\u0435 \u043E\u043A\u043D\u0430 \u0432 \u043F\u043E\u043B\u043D\u043E\u044D\u043A\u0440\u0430\u043D\u043D\u043E\u043C \u0440\u0435\u0436\u0438\u043C\u0435",
 			"zh-CN": "\u5141\u8BB8\u5168\u5C4F\u65F6\u5F39\u7A97"
 		},
@@ -10537,7 +9985,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite que o popup seja aberto se um elemento (como um player de v\u00EDdeo) estiver em tela cheia.",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E, \u0435\u0441\u043B\u0438 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0432\u0438\u0434\u0435\u043E\u043F\u043B\u0435\u0435\u0440) \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0432 \u043F\u043E\u043B\u043D\u043E\u044D\u043A\u0440\u0430\u043D\u043D\u043E\u043C \u0440\u0435\u0436\u0438\u043C\u0435.",
 			"zh-CN": "\u5141\u8BB8\u5B58\u5728\u5168\u5C4F\u5143\u7D20\uFF08\u5982\u89C6\u9891\u64AD\u653E\u5668\uFF09\u65F6\u6253\u5F00\u5F39\u7A97\u3002"
 		},
@@ -10550,7 +9997,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Modo de localiza\u00E7\u00E3o de elemento",
 			"ru": "\u0420\u0435\u0436\u0438\u043C \u043F\u043E\u0438\u0441\u043A\u0430 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432",
 			"zh-CN": "\u5143\u7D20\u67E5\u627E\u6A21\u5F0F"
 		},
@@ -10563,7 +10009,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como o maxurl deve encontrar o elemento de m\u00EDdia na p\u00E1gina.",
 			"ru": "\u041A\u0430\u043A IMU \u0431\u0443\u0434\u0435\u0442 \u0438\u0441\u043A\u0430\u0442\u044C \u043C\u0435\u0434\u0438\u0430-\u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435.",
 			"zh-CN": "Image Max URL \u5E94\u5982\u4F55\u67E5\u627E\u9875\u9762\u4E0A\u7684\u5A92\u4F53\u5143\u7D20\u3002"
 		},
@@ -10576,7 +10021,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Isso resultar\u00E1 em uma carga de CPU muito maior para sites como o Facebook e ocasionalmente retornar\u00E1 o elemento errado.\nUse esta op\u00E7\u00E3o com cautela.",
 			"ru": "\u042D\u0442\u043E \u043F\u0440\u0438\u0432\u0435\u0434\u0435\u0442 \u043A \u0433\u043E\u0440\u0430\u0437\u0434\u043E \u0431\u043E\u043B\u0435\u0435 \u0432\u044B\u0441\u043E\u043A\u043E\u0439 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440\u0430 \u0434\u043B\u044F \u0442\u0430\u043A\u0438\u0445 \u0441\u0430\u0439\u0442\u043E\u0432, \u043A\u0430\u043A Facebook, \u0438 \u0438\u043D\u043E\u0433\u0434\u0430 \u0431\u0443\u0434\u0435\u0442 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C \u043D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442.\n\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u044D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0441 \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u043D\u043E\u0441\u0442\u044C\u044E.",
 			"zh-CN": "\u5BF9\u8BF8\u5982 Facebook \u7B49\u7F51\u7AD9\uFF0C\u8FD9\u5C06\u5BFC\u81F4\u5F88\u9AD8\u7684 CPU \u8D1F\u8F7D\uFF0C\u4E14\u5076\u5C14\u4F1A\u8FD4\u56DE\u9519\u8BEF\u7684\u5143\u7D20\u3002\n\u8C28\u614E\u4F7F\u7528\u6B64\u9009\u9879\u3002"
 		},
@@ -10589,7 +10033,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Completo",
 			"ru": "\u041F\u043E\u043B\u043D\u044B\u0439",
 			"zh-CN": "\u5168\u9762"
 		},
@@ -10602,7 +10045,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Procura manualmente por cada elemento na p\u00E1gina para ver se o cursor est\u00E1 sobre eles. Isso resultar\u00E1 em uma maior carga de CPU para sites como o Facebook e pode retornar o elemento errado",
 			"ru": "\u0412\u0440\u0443\u0447\u043D\u0443\u044E \u043F\u0440\u043E\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0435\u0442 \u043A\u0430\u0436\u0434\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435, \u0447\u0442\u043E\u0431\u044B \u0443\u0432\u0438\u0434\u0435\u0442\u044C, \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u043B\u0438 \u043A\u0443\u0440\u0441\u043E\u0440 \u043D\u0430\u0434 \u043D\u0438\u043C\u0438. \u042D\u0442\u043E \u043F\u0440\u0438\u0432\u0435\u0434\u0435\u0442 \u043A \u0431\u043E\u043B\u0435\u0435 \u0432\u044B\u0441\u043E\u043A\u043E\u0439 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u043F\u0440\u043E\u0446\u0435\u0441\u0441\u043E\u0440\u0430 \u0434\u043B\u044F \u0442\u0430\u043A\u0438\u0445 \u0441\u0430\u0439\u0442\u043E\u0432, \u043A\u0430\u043A Facebook, \u0438 \u043C\u043E\u0436\u0435\u0442 \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u043D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442.",
 			"zh-CN": "\u9010\u4E00\u68C0\u67E5\u9875\u9762\u4E0A\u7684\u6BCF\u4E2A\u5143\u7D20\uFF0C\u770B\u9F20\u6807\u6307\u9488\u662F\u5426\u5728\u4E0A\u9762\u3002\u8FD9\u5C06\u5BFC\u81F4\u5F88\u9AD8\u7684 CPU \u8D1F\u8F7D\uFF0C\u4E14\u5076\u5C14\u4F1A\u8FD4\u56DE\u9519\u8BEF\u7684\u5143\u7D20"
 		},
@@ -10615,7 +10057,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "H\u00EDbrido",
 			"ru": "\u0413\u0438\u0431\u0440\u0438\u0434\u043D\u044B\u0439",
 			"zh-CN": "\u6DF7\u5408"
 		},
@@ -10628,7 +10069,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Procura manualmente em cada elemento filho do \u00FAltimo elemento encontrado por `getElementsAtPoint`. Use esta op\u00E7\u00E3o em caso de d\u00FAvida, funcionar\u00E1 na maioria dos sites",
 			"ru": "\u041F\u0440\u043E\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0435\u0442 \u0432\u0440\u0443\u0447\u043D\u0443\u044E \u043A\u0430\u0436\u0434\u044B\u0439 \u0434\u043E\u0447\u0435\u0440\u043D\u0438\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0433\u043E \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0430, \u043D\u0430\u0439\u0434\u0435\u043D\u043D\u043E\u0433\u043E \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E `getElementsAtPoint`. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u044D\u0442\u043E\u0442 \u0432\u0430\u0440\u0438\u0430\u043D\u0442, \u0435\u0441\u043B\u0438 \u0443 \u0432\u0430\u0441 \u0435\u0441\u0442\u044C \u0441\u043E\u043C\u043D\u0435\u043D\u0438\u044F. \u041E\u043D \u0431\u0443\u0434\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043D\u0430 \u0431\u043E\u043B\u044C\u0448\u0438\u043D\u0441\u0442\u0432\u0435 \u0441\u0430\u0439\u0442\u043E\u0432.",
 			"zh-CN": "\u9010\u4E00\u68C0\u67E5\u7528 `getElementsAtPoint` \u627E\u5230\u7684\u6700\u540E\u4E00\u4E2A\u5143\u7D20\u7684\u6BCF\u4E2A\u5B50\u5143\u7D20\u3002\u5982\u679C\u4E0D\u4E86\u89E3\uFF0C\u4F7F\u7528\u6B64\u9009\u9879\uFF0C\u5B83\u9002\u7528\u4E8E\u7EDD\u5927\u591A\u6570\u7F51\u7AD9"
 		},
@@ -10641,7 +10081,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Simples",
 			"ru": "\u041F\u0440\u043E\u0441\u0442\u043E\u0439",
 			"zh-CN": "\u7B80\u6613"
 		},
@@ -10654,7 +10093,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Esta \u00E9 a op\u00E7\u00E3o mais r\u00E1pida, que usa o valor de `getElementsAtPoint` sem modifica\u00E7\u00E3o. Funciona para sites que n\u00E3o usam pointer-events: none e shadow DOM",
 			"ru": "\u042D\u0442\u043E \u0441\u0430\u043C\u044B\u0439 \u0431\u044B\u0441\u0442\u0440\u044B\u0439 \u0432\u0430\u0440\u0438\u0430\u043D\u0442, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435 `getElementsAtPoint` \u0431\u0435\u0437 \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u0439. \u0420\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0434\u043B\u044F \u0441\u0430\u0439\u0442\u043E\u0432, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043D\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442 pointer-events:none \u0438 shadow DOM.",
 			"zh-CN": "\u8FD9\u662F\u6700\u5FEB\u7684\u9009\u9879\uFF0C\u5B83\u4F7F\u7528 `getElementsAtPoint` \u7684\u503C\u800C\u4E0D\u505A\u4FEE\u6539\u3002\u9002\u7528\u4E8E\u4E0D\u4F7F\u7528 pointer-events:none \u548C shadow DOM \u7684\u7F51\u7AD9"
 		},
@@ -10667,7 +10105,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar cache",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043A\u044D\u0448",
 			"zh-CN": "\u4F7F\u7528\u7F13\u5B58"
 		},
@@ -10680,7 +10117,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite o uso de um cache de m\u00EDdia para o popup. O cache \u00E9 armazenado por p\u00E1gina e n\u00E3o \u00E9 persistente entre recarregamentos de p\u00E1gina.",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043C\u0435\u0434\u0438\u0430-\u043A\u0435\u0448 \u0434\u043B\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430. \u041A\u044D\u0448 \u0432 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u0445\u0440\u0430\u043D\u0438\u0442\u0441\u044F \u0434\u043B\u044F \u043A\u0430\u0436\u0434\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u0438 \u043D\u0435 \u0441\u043E\u0445\u0440\u0430\u043D\u044F\u0435\u0442\u0441\u044F \u043F\u0440\u0438 \u043F\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B.",
 			"zh-CN": "\u5141\u8BB8\u5F39\u7A97\u7F13\u5B58\u5A92\u4F53\u3002\u7F13\u5B58\u76EE\u524D\u4E0D\u8DE8\u9875\u5171\u4EAB\uFF0C\u5E76\u4E14\u4E0D\u4F1A\u6301\u4E45\u5316\uFF08\u91CD\u65B0\u52A0\u8F7D\u5373\u5931\u6548\uFF09\u3002"
 		},
@@ -10693,7 +10129,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Dura\u00E7\u00E3o do cache",
 			"ru": "\u0414\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043A\u044D\u0448\u0430",
 			"zh-CN": "\u7F13\u5B58\u6301\u7EED\u65F6\u95F4"
 		},
@@ -10706,7 +10141,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Por quanto tempo a m\u00EDdia permanecer\u00E1 em cache. Defina como `0` para ilimitado.",
 			"ru": "\u041A\u0430\u043A \u0434\u043E\u043B\u0433\u043E \u043C\u0435\u0434\u0438\u0430 \u0431\u0443\u0434\u0443\u0442 \u043E\u0441\u0442\u0430\u0432\u0430\u0442\u044C\u0441\u044F \u0432 \u043A\u044D\u0448\u0435. `0` - \u0432\u0441\u0435\u0433\u0434\u0430.",
 			"zh-CN": "\u5A92\u4F53\u88AB\u7F13\u5B58\u591A\u4E45\u3002\u8BBE\u4E3A 0 \u5219\u65E0\u9650\u5236\u3002"
 		},
@@ -10719,7 +10153,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "minutos",
 			"ru": "\u043C\u0438\u043D.",
 			"zh-CN": "\u5206\u949F"
 		},
@@ -10732,7 +10165,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Limite de itens no cache",
 			"ru": "\u041E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u0435 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432 \u043A\u044D\u0448\u0430",
 			"zh-CN": "\u7F13\u5B58\u6570\u91CF\u9650\u5236"
 		},
@@ -10745,7 +10177,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "N\u00FAmero m\u00E1ximo de m\u00EDdias individuais para permanecerem em cache. Defina como `0` para ilimitado.",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0445 \u043C\u0435\u0434\u0438\u0430 \u0434\u043B\u044F \u0441\u043E\u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F \u0432 \u043A\u044D\u0448\u0435. `0` - \u0431\u0435\u0437 \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u6700\u591A\u7F13\u5B58\u591A\u5C11\u4E2A\u5A92\u4F53\u3002\u8BBE\u4E3A 0 \u5219\u65E0\u9650\u5236\u3002"
 		},
@@ -10758,7 +10189,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "itens",
 			"ru": "\u044D\u043B.",
 			"zh-CN": "\u9879"
 		},
@@ -10771,7 +10201,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Retomar v\u00EDdeos",
 			"ru": "\u0412\u043E\u0437\u043E\u0431\u043D\u043E\u0432\u043B\u044F\u0442\u044C \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u7EE7\u7EED\u89C6\u9891"
 		},
@@ -10784,7 +10213,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se um popup de v\u00EDdeo foi fechado e reaberto, o v\u00EDdeo ser\u00E1 retomado de onde parou",
 			"ru": "\u0415\u0441\u043B\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0432\u0438\u0434\u0435\u043E \u0431\u044B\u043B\u043E \u0437\u0430\u043A\u0440\u044B\u0442\u043E, \u0430 \u0437\u0430\u0442\u0435\u043C \u0441\u043D\u043E\u0432\u0430 \u043E\u0442\u043A\u0440\u044B\u0442\u043E, \u0432\u0438\u0434\u0435\u043E \u0432\u043E\u0437\u043E\u0431\u043D\u043E\u0432\u0438\u0442\u0441\u044F \u0441 \u0442\u043E\u0433\u043E \u043C\u0435\u0441\u0442\u0430, \u0433\u0434\u0435 \u043E\u043D\u043E \u0431\u044B\u043B\u043E \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u043E.",
 			"zh-CN": "\u5982\u679C\u4E00\u4E2A\u89C6\u9891\u5F39\u7A97\u88AB\u5173\u95ED\u7136\u540E\u518D\u6B21\u6253\u5F00\uFF0C\u8BE5\u89C6\u9891\u5C06\u4ECE\u4E0A\u6B21\u79BB\u5F00\u7684\u8FDB\u5EA6\u7EE7\u7EED\u64AD\u653E"
 		},
@@ -10799,7 +10227,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"fr": "Utiliser ce userscript",
 			"ko": "\uC720\uC800\uC2A4\uD06C\uB9BD\uD2B8 \uC0AC\uC6A9\uD558\uAE30",
-			"pt-BR": "Usar script do usu\u00E1rio",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u0441\u043A\u0440\u0438\u043F\u0442",
 			"zh-CN": "\u4F7F\u7528\u7528\u6237\u811A\u672C"
 		},
@@ -10812,7 +10239,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substitui a inst\u00E2ncia do maxurl do site pelo script do usu\u00E1rio",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u044F\u0435\u0442 \u0441\u0430\u0439\u0442 \u044D\u043A\u0437\u0435\u043C\u043F\u043B\u044F\u0440\u0430 IMU \u043D\u0430 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u0441\u043A\u0440\u0438\u043F\u0442.",
 			"zh-CN": "\u4F7F\u7528\u7528\u6237\u811A\u672C\u66FF\u6362\u8BE5\u7F51\u7AD9\u7684 Image Max URL \u5B9E\u4F8B"
 		},
@@ -10826,7 +10252,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB9C1\uD06C \uBD99\uC778 \uD6C4 \uC774\uBBF8\uC9C0 \uBBF8\uB9AC\uBCF4\uAE30",
-			"pt-BR": "Pr\u00E9via da imagem no site",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0441\u0430\u0439\u0442\u0430",
 			"zh-CN": "\u7F51\u7AD9\u56FE\u7247\u9884\u89C8"
 		},
@@ -10839,7 +10264,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita a pr\u00E9via da imagem no site Image Max URL",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0435\u0434\u0432\u0430\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 Image Max URL",
 			"zh-CN": "\u5141\u8BB8\u5728 Image Max URL \u7F51\u7AD9\u4E0A\u9884\u89C8\u56FE\u7247"
 		},
@@ -10852,7 +10276,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Entrada do maxurl no menu de contexto",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C IMU \u0432 \u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442\u043D\u043E\u0435 \u043C\u0435\u043D\u044E",
 			"zh-CN": "\u53F3\u952E\u83DC\u5355\u4E2D\u7684 Image Max URL \u9879"
 		},
@@ -10865,7 +10288,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita uma entrada personalizada para esta extens\u00E3o no menu de contexto/clique com o bot\u00E3o direito",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0443\u044E \u0437\u0430\u043F\u0438\u0441\u044C \u0434\u043B\u044F \u044D\u0442\u043E\u0433\u043E \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F \u0432 \u043A\u043E\u043D\u0442\u0435\u043A\u0441\u0442\u043D\u043E\u043C \u043C\u0435\u043D\u044E (\u043D\u0430\u0436\u0430\u0442\u0438\u0435 \u043F\u0440\u0430\u0432\u043E\u0439 \u043A\u043D\u043E\u043F\u043A\u043E\u0439 \u043C\u044B\u0448\u0438).",
 			"zh-CN": "\u53F3\u952E\u83DC\u5355/\u4E0A\u4E0B\u6587\u83DC\u5355\u4E2D\u542F\u7528\u672C\u6269\u5C55\u5B9A\u4E49\u7684\u83DC\u5355"
 		},
@@ -10878,7 +10300,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "(Re)carregamento din\u00E2mico",
 			"ru": "\u0413\u043E\u0440\u044F\u0447\u0430\u044F (\u043F\u0435\u0440\u0435)\u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0430",
 			"zh-CN": "\u70ED\u91CD\u8F7D"
 		},
@@ -10891,7 +10312,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "(Re)carrega a extens\u00E3o em todas as p\u00E1ginas existentes ao instalar ou atualizar",
 			"ru": "(\u041F\u0435\u0440\u0435)\u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435 \u043D\u0430 \u0432\u0441\u0435\u0445 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0449\u0438\u0445 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430\u0445 \u043F\u0440\u0438 \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0435 \u0438\u043B\u0438 \u043E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0438.",
 			"zh-CN": "\u5B89\u88C5\u6216\u66F4\u65B0\u540E\uFF0C\u70ED\u91CD\u8F7D\u73B0\u6709\u7684\u5168\u90E8\u9875\u9762\u4E0A\u7684\u672C\u6269\u5C55"
 		},
@@ -10904,7 +10324,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "XHR personalizado para bibliotecas",
 			"ru": "\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 XHR \u0434\u043B\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A",
 			"zh-CN": "\u81EA\u5B9A\u4E49\u7A0B\u5E8F\u5E93\u7684 XHR"
 		},
@@ -10917,7 +10336,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite o uso de XHR (solicita\u00E7\u00F5es de rede) mais poderosos para bibliotecas de terceiros. Isso permite que certos fluxos DASH funcionem.",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0431\u043E\u043B\u0435\u0435 \u043C\u043E\u0449\u043D\u044B\u0435 XHR (\u0441\u0435\u0442\u0435\u0432\u044B\u0435 \u0437\u0430\u043F\u0440\u043E\u0441\u044B) \u0434\u043B\u044F \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0445 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A. \u042D\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u043C \u043F\u043E\u0442\u043E\u043A\u0430\u043C DASH.",
 			"zh-CN": "\u5141\u8BB8\u7B2C\u4E09\u65B9\u5E93\u4F7F\u7528\u66F4\u5F3A\u5927\u7684 XHR\uFF08\u7F51\u7EDC\u8BF7\u6C42\uFF09\u3002\u67D0\u4E9B DASH \u6D41\u5A92\u4F53\u9700\u8981\u8FD9\u4E2A\u3002"
 		},
@@ -10930,7 +10348,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite o uso de XHR (solicita\u00E7\u00F5es de rede) mais poderosos para bibliotecas de terceiros. Isso permite que certos fluxos DASH funcionem. Usar isso com a vers\u00E3o do script do usu\u00E1rio atualmente representa um risco potencial \u00E0 seguran\u00E7a.",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0431\u043E\u043B\u0435\u0435 \u043C\u043E\u0449\u043D\u044B\u0435 XHR (\u0441\u0435\u0442\u0435\u0432\u044B\u0435 \u0437\u0430\u043F\u0440\u043E\u0441\u044B) \u0434\u043B\u044F \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0445 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A. \u042D\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u043C \u043F\u043E\u0442\u043E\u043A\u0430\u043C DASH. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435 \u0435\u0433\u043E \u0432 \u0432\u0435\u0440\u0441\u0438\u0438 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0441\u043A\u0440\u0438\u043F\u0442\u0430 \u0432 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043E\u0431\u043E\u0439 \u043F\u043E\u0442\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0438\u0441\u043A \u0434\u043B\u044F \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u0438.",
 			"zh-CN": "\u5141\u8BB8\u7B2C\u4E09\u65B9\u5E93\u4F7F\u7528\u66F4\u5F3A\u5927\u7684 XHR\uFF08\u7F51\u7EDC\u8BF7\u6C42\uFF09\u3002\u67D0\u4E9B DASH \u6D41\u5A92\u4F53\u9700\u8981\u8FD9\u4E2A\u3002\u5728\u76EE\u524D\u7684\u7528\u6237\u811A\u672C\u7248\u672C\u4E2D\u4F7F\u7528\u8FD9\u79CD\u65B9\u6CD5\u6784\u6210\u6F5C\u5728\u7684\u5B89\u5168\u98CE\u9669\u3002"
 		},
@@ -10943,7 +10360,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Kakao",
 			"ru": "Kakao",
 			"zh-CN": "Kakao"
 		},
@@ -10956,7 +10372,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "YouTube",
 			"ru": "YouTube",
 			"zh-CN": "YouTube"
 		},
@@ -10969,7 +10384,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Instagram (download)",
 			"ru": "Instagram (\u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0435)",
 			"zh-CN": "Instagram (\u4E0B\u8F7D)"
 		},
@@ -10981,8 +10395,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Ignorar CSP para bibliotecas"
+			}
 		},
 		"Tries loading the 3rd-party libraries using a `<script>` tag if a page's CSP prevents it from being loaded normally.\nThis option currently carries an increased security risk when combined with \"Custom XHR for libraries\", and should only be enabled if absolutely necessary.": {
 			"_info": {
@@ -10992,8 +10405,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Tenta carregar as bibliotecas de terceiros usando uma tag <script> se o CSP de uma p\u00E1gina impedir que seja carregada normalmente.\nAtualmente, esta op\u00E7\u00E3o acarreta um risco de seguran\u00E7a aumentado quando combinada com \"XHR Personalizado para bibliotecas\" e s\u00F3 deve ser ativada se absolutamente necess\u00E1rio."
+			}
 		},
 		"This can potentially be extremely insecure if \"Custom XHR for libraries\" is also enabled.\nA malicious website could gain extension-level permissions and perform arbitrary requests (your online accounts could get hacked).\nIf you need to use this option, please disable it as soon as possible.": {
 			"_info": {
@@ -11003,8 +10415,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "warning.true"
 					}
 				]
-			},
-			"pt-BR": "Isso pode ser extremamente inseguro se \"XHR Personalizado para bibliotecas\" tamb\u00E9m estiver ativado.\nUm website malicioso pode obter permiss\u00F5es de n\u00EDvel de extens\u00E3o e realizar solicita\u00E7\u00F5es arbitr\u00E1rias (suas contas online podem ser invadidas).\nSe precisar usar esta op\u00E7\u00E3o, desative-a assim que poss\u00EDvel."
+			}
 		},
 		"Snapchat": {
 			"_info": {
@@ -11014,8 +10425,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "example_websites[0]"
 					}
 				]
-			},
-			"pt-BR": "Snapchat"
+			}
 		},
 		"Use Web Archive for libraries": {
 			"_info": {
@@ -11026,7 +10436,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar Web Archive para bibliotecas",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0432\u0435\u0431-\u0430\u0440\u0445\u0438\u0432 \u0434\u043B\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A",
 			"zh-CN": "\u4E3A\u7A0B\u5E8F\u5E93\u4F7F\u7528 Web Archive \u7248\u672C"
 		},
@@ -11039,7 +10448,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usa o arquivo web do archive.org em vez do github para bibliotecas e outros componentes internos do script (como a p\u00E1gina de op\u00E7\u00F5es).\nN\u00E3o ative isso a menos que seja necess\u00E1rio.",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0432\u0435\u0431-\u0430\u0440\u0445\u0438\u0432 archive.org \u0432\u043C\u0435\u0441\u0442\u043E github \u0434\u043B\u044F \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A \u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u0432\u043D\u0443\u0442\u0440\u0435\u043D\u043D\u0438\u0445 \u043A\u043E\u043C\u043F\u043E\u043D\u0435\u043D\u0442\u043E\u0432 \u0441\u043A\u0440\u0438\u043F\u0442\u0430 (\u043D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u043E\u0432).\n\u041D\u0435 \u0432\u043A\u043B\u044E\u0447\u0430\u0439\u0442\u0435 \u044D\u0442\u0443 \u0444\u0443\u043D\u043A\u0446\u0438\u044E, \u0435\u0441\u043B\u0438 \u0432 \u044D\u0442\u043E\u043C \u043D\u0435\u0442 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0441\u0442\u0438.",
 			"zh-CN": "\u4E3A\u7A0B\u5E8F\u5E93\u548C\u811A\u672C\u5185\u7F6E\u7684\u5176\u4ED6\u6587\u4EF6\uFF08\u5982\u8FD9\u4E2A\u9009\u9879\u9875\u9762\uFF09\u4F7F\u7528 archive.org \u7684\u5B58\u6863\u7248\u672C\u800C\u975E github \u7248\u672C\u3002\n\u9664\u975E\u786E\u5B9E\u9700\u8981\uFF0C\u5426\u5219\u65E0\u9700\u542F\u7528\u3002"
 		},
@@ -11052,7 +10460,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar verifica\u00E7\u00F5es de integridade",
 			"ru": "\u041F\u0440\u043E\u0432\u0435\u0440\u043A\u0430 \u0446\u0435\u043B\u043E\u0441\u0442\u043D\u043E\u0441\u0442\u0438",
 			"zh-CN": "\u542F\u7528\u5B8C\u6574\u6027\u68C0\u67E5"
 		},
@@ -11065,7 +10472,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Executa verifica\u00E7\u00F5es de integridade antes de carregar bibliotecas de terceiros",
 			"ru": "\u0417\u0430\u043F\u0443\u0441\u043A\u0430\u0435\u0442 \u043F\u0440\u043E\u0432\u0435\u0440\u043A\u0443 \u0446\u0435\u043B\u043E\u0441\u0442\u043D\u043E\u0441\u0442\u0438 \u043F\u0435\u0440\u0435\u0434 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u043E\u0439 \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0445 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A.",
 			"zh-CN": "\u52A0\u8F7D\u7B2C\u4E09\u65B9\u5E93\u4E4B\u524D\u8FD0\u884C\u5B8C\u6574\u6027\u68C0\u67E5"
 		},
@@ -11078,7 +10484,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Qualidade m\u00E1xima HLS/DASH",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E HLS/DASH",
 			"zh-CN": "HLS/DASH \u6700\u9AD8\u8D28\u91CF"
 		},
@@ -11091,7 +10496,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usa a qualidade m\u00E1xima para fluxos HLS/DASH",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0434\u043B\u044F \u043F\u043E\u0442\u043E\u043A\u043E\u0432 HLS/DASH.",
 			"zh-CN": "\u5BF9 HLS/DASH \u6D41\u5A92\u4F53\u4F7F\u7528\u6700\u9AD8\u8D28\u91CF"
 		},
@@ -11104,7 +10508,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Qualidade m\u00E1xima do v\u00EDdeo",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u6700\u9AD8\u89C6\u9891\u8D28\u91CF"
 		},
@@ -11117,7 +10520,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Qualidade m\u00E1xima para v\u00EDdeos",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0434\u043B\u044F \u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u89C6\u9891\u7684\u6700\u9AD8\u8D28\u91CF"
 		},
@@ -11130,7 +10532,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "(ilimitado)",
 			"ru": "(\u043D\u0435\u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u043D\u043E\u0435)",
 			"zh-CN": "\uFF08\u65E0\u9650\u5236\uFF09"
 		},
@@ -11143,7 +10544,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "4K",
 			"ru": "4K",
 			"zh-CN": "4K"
 		},
@@ -11156,7 +10556,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "1440p",
 			"ru": "1440p",
 			"zh-CN": "1440p"
 		},
@@ -11169,7 +10568,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "1080p",
 			"ru": "1080p",
 			"zh-CN": "1080p"
 		},
@@ -11182,7 +10580,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "720p",
 			"ru": "720p",
 			"zh-CN": "720p"
 		},
@@ -11195,7 +10592,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "480p",
 			"ru": "480p",
 			"zh-CN": "480p"
 		},
@@ -11229,7 +10625,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB354 \uD06C\uC9C0\uB9CC \uC6CC\uD130\uB9C8\uD06C \uC788\uB294 \uC774\uBBF8\uC9C0",
-			"pt-BR": "Imagens maiores com marca d'\u00E1gua",
 			"ru": "\u0411\u043E\u043B\u044C\u0448\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0441 \u0432\u043E\u0434\u044F\u043D\u044B\u043C\u0438 \u0437\u043D\u0430\u043A\u0430\u043C\u0438",
 			"zh-CN": "\u8F83\u5927\u7684\u5E26\u6C34\u5370\u56FE\u50CF"
 		},
@@ -11242,7 +10637,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que retornam imagens maiores que incluem marcas d'\u00E1gua",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u044E\u0449\u0438\u0435 \u0431\u043E\u043B\u0435\u0435 \u043A\u0440\u0443\u043F\u043D\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0441 \u0432\u043E\u0434\u044F\u043D\u044B\u043C\u0438 \u0437\u043D\u0430\u043A\u0430\u043C\u0438.",
 			"zh-CN": "\u542F\u7528\u89C4\u5219\uFF1A\u8FD4\u56DE\u5305\u542B\u6C34\u5370\u7684\u8F83\u5927\u56FE\u50CF"
 		},
@@ -11255,7 +10649,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Sites de fotos de banco de imagens",
 			"ru": "\u0421\u0430\u0439\u0442\u044B \u0441\u043E \u0441\u0442\u043E\u043A\u043E\u0432\u044B\u043C\u0438 \u0444\u043E\u0442\u043E",
 			"zh-CN": "\u201C\u56FE\u5E93\u7167\u7247\u201D\u7F51\u7AD9"
 		},
@@ -11269,7 +10662,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB354 \uC791\uC9C0\uB9CC \uC6CC\uD130\uB9C8\uD06C \uC5C6\uB294 \uC774\uBBF8\uC9C0",
-			"pt-BR": "Imagens menores sem marca d'\u00E1gua",
 			"ru": "\u041D\u0435\u0431\u043E\u043B\u044C\u0448\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0431\u0435\u0437 \u0432\u043E\u0434\u044F\u043D\u044B\u0445 \u0437\u043D\u0430\u043A\u043E\u0432",
 			"zh-CN": "\u8F83\u5C0F\u7684\u65E0\u6C34\u5370\u56FE\u50CF"
 		},
@@ -11282,7 +10674,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que retornam imagens menores sem marcas d'\u00E1gua",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u044E\u0449\u0438\u0435 \u043C\u0435\u043D\u044C\u0448\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0431\u0435\u0437 \u0432\u043E\u0434\u044F\u043D\u044B\u0445 \u0437\u043D\u0430\u043A\u043E\u0432.",
 			"zh-CN": "\u542F\u7528\u89C4\u5219\uFF1A\u8FD4\u56DE\u65E0\u6C34\u5370\u7684\u8F83\u5C0F\u56FE\u50CF"
 		},
@@ -11297,7 +10688,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"fr": "Images possiblement diff\u00E9rentes",
 			"ko": "\uB2E4\uB97C \uC218 \uC788\uB294 \uC774\uBBF8\uC9C0",
-			"pt-BR": "Imagens possivelmente diferentes",
 			"ru": "\u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0440\u0430\u0437\u043D\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u53EF\u80FD\u4E0D\u540C\u7684\u56FE\u50CF"
 		},
@@ -11310,7 +10700,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que retornam imagens que podem ser diferentes, geralmente devido ao cache do lado do servidor",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u044E\u0449\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0433\u0443\u0442 \u043E\u0442\u043B\u0438\u0447\u0430\u0442\u044C\u0441\u044F, \u043A\u0430\u043A \u043F\u0440\u0430\u0432\u0438\u043B\u043E, \u0438\u0437-\u0437\u0430 \u043A\u044D\u0448\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u044F \u043D\u0430 \u0441\u0442\u043E\u0440\u043E\u043D\u0435 \u0441\u0435\u0440\u0432\u0435\u0440\u0430.",
 			"zh-CN": "\u542F\u7528\u89C4\u5219\uFF1A\u8FD4\u56DE\u53EF\u80FD\u6709\u6240\u4E0D\u540C\u7684\u56FE\u50CF\uFF0C\u4E0D\u540C\u901A\u5E38\u7531\u4E8E\u670D\u52A1\u5668\u4FA7\u7F13\u5B58"
 		},
@@ -11325,7 +10714,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"fr": "Images possiblement bris\u00E9e",
 			"ko": "\uC190\uC0C1\uB420 \uC218 \uC788\uB294 \uC774\uBBF8\uC9C0",
-			"pt-BR": "Imagens possivelmente quebradas",
 			"ru": "\u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0441\u043B\u043E\u043C\u0430\u043D\u043D\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u53EF\u80FD\u7834\u635F\u7684\u56FE\u50CF"
 		},
@@ -11338,7 +10726,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que retornam imagens que podem estar quebradas",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u044E\u0449\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u043F\u043E\u043B\u043E\u043C\u0430\u043D\u044B.",
 			"zh-CN": "\u542F\u7528\u89C4\u5219\uFF1A\u8FD4\u56DE\u53EF\u80FD\u5DF2\u635F\u574F\u7684\u56FE\u50CF"
 		},
@@ -11351,7 +10738,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Imagens possivelmente ampliadas",
 			"ru": "\u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u53EF\u80FD\u6269\u589E\u5C3A\u5BF8\u7684\u56FE\u50CF"
 		},
@@ -11364,7 +10750,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que retornam imagens que podem ter sido ampliadas",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u044E\u0449\u0438\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u044B.",
 			"zh-CN": "\u542F\u7528\u89C4\u5219\uFF1A\u8FD4\u56DE\u53EF\u80FD\u5DF2\u6269\u589E\u5C3A\u5BF8\u7684\u56FE\u50CF"
 		},
@@ -11376,8 +10761,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Imagens n\u00E3o cortadas"
+			}
 		},
 		"Enables rules that return possibly undesirable uncropped images": {
 			"_info": {
@@ -11387,8 +10771,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Habilita regras que retornam imagens n\u00E3o cortadas possivelmente indesej\u00E1veis"
+			}
 		},
 		"Mobile wallpaper websites (returns the full version of the wallpaper image)": {
 			"_info": {
@@ -11398,8 +10781,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "example_websites[0]"
 					}
 				]
-			},
-			"pt-BR": "Sites de pap\u00E9is de parede para celular (retorna a vers\u00E3o completa da imagem do papel de parede)"
+			}
 		},
 		"Rules using 3rd-party websites": {
 			"_info": {
@@ -11412,7 +10794,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"fr": "R\u00E8gles utilisant des sites 3rd-party",
 			"ko": "\uC11C\uB4DC\uD30C\uD2F0 \uC0AC\uC774\uD2B8\uB97C \uC0AC\uC6A9\uD558\uB294 \uADDC\uCE59",
-			"pt-BR": "Regras que utilizam sites de terceiros",
 			"ru": "\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0445 \u0441\u0430\u0439\u0442\u043E\u0432",
 			"zh-CN": "\u4F7F\u7528\u7B2C\u4E09\u65B9\u7F51\u7AD9\u7684\u89C4\u5219"
 		},
@@ -11425,7 +10806,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que utilizam sites de terceiros",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442 \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0435 \u0441\u0430\u0439\u0442\u044B.",
 			"zh-CN": "\u542F\u7528\u57FA\u4E8E\u7B2C\u4E09\u65B9\u7F51\u7AD9\u7684\u89C4\u5219"
 		},
@@ -11439,7 +10819,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB274\uC2A4\uC5D4",
-			"pt-BR": "Newsen",
 			"ru": "Newsen",
 			"zh-CN": "Newsen"
 		},
@@ -11452,7 +10831,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Regras que utilizam chamadas de API",
 			"ru": "\u041F\u0440\u0430\u0432\u0438\u043B\u0430, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0449\u0438\u0435 \u0432\u044B\u0437\u043E\u0432\u044B API",
 			"zh-CN": "\u57FA\u4E8E API \u8C03\u7528\u7684\u89C4\u5219"
 		},
@@ -11465,7 +10843,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que utilizam chamadas de API. \u00C9 altamente recomend\u00E1vel manter esta op\u00E7\u00E3o ativada",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0449\u0438\u0435 \u0432\u044B\u0437\u043E\u0432\u044B API. \u041D\u0430\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u043D\u043E \u0440\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u0435\u0442\u0441\u044F \u043E\u0441\u0442\u0430\u0432\u043B\u044F\u0442\u044C \u044D\u0442\u0443 \u0444\u0443\u043D\u043A\u0446\u0438\u044E \u0432\u043A\u043B\u044E\u0447\u0451\u043D\u043D\u043E\u0439.",
 			"zh-CN": "\u542F\u7528\u57FA\u4E8E API \u8C03\u7528\u7684\u89C4\u5219\u3002\u5F3A\u70C8\u5EFA\u8BAE\u4FDD\u6301\u6B64\u9879\u542F\u7528"
 		},
@@ -11478,7 +10855,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Instagram",
 			"ru": "Instagram",
 			"zh-CN": "Instagram"
 		},
@@ -11495,7 +10871,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Flickr",
 			"ru": "Flickr",
 			"zh-CN": "Flickr"
 		},
@@ -11512,7 +10887,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "...",
 			"ru": "...",
 			"zh-CN": "..."
 		},
@@ -11525,7 +10899,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permitir bibliotecas de terceiros",
 			"ru": "\u0421\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0435 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438",
 			"zh-CN": "\u5141\u8BB8\u7B2C\u4E09\u65B9\u5E93"
 		},
@@ -11538,7 +10911,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita o uso de bibliotecas de terceiros. Isso \u00E9 usado tanto em regras quanto como um pr\u00E9-requisito para certas funcionalidades.",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0435 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438. \u042D\u0442\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043A\u0430\u043A \u0432 \u043F\u0440\u0430\u0432\u0438\u043B\u0430\u0445, \u0442\u0430\u043A \u0438 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043F\u0440\u0435\u0434\u0432\u0430\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u0443\u0441\u043B\u043E\u0432\u0438\u044F \u0434\u043B\u044F \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0451\u043D\u043D\u043E\u0439 \u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438.",
 			"zh-CN": "\u542F\u7528\u7B2C\u4E09\u65B9\u5E93\u7684\u8C03\u7528\u3002\u8FD9\u53EF\u80FD\u7528\u4E8E\u89C4\u5219\u548C\u67D0\u4E9B\u529F\u80FD\u7684\u5148\u51B3\u6761\u4EF6\u3002"
 		},
@@ -11551,7 +10923,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita o uso de bibliotecas de terceiros. Isso \u00E9 usado tanto em regras quanto como pr\u00E9-requisito para certas funcionalidades.\nH\u00E1 um risco de seguran\u00E7a poss\u00EDvel (mas improv\u00E1vel) para a vers\u00E3o userscript.",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0435 \u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438. \u042D\u0442\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u043A\u0430\u043A \u0432 \u043F\u0440\u0430\u0432\u0438\u043B\u0430\u0445, \u0442\u0430\u043A \u0438 \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u043F\u0440\u0435\u0434\u0432\u0430\u0440\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0433\u043E \u0443\u0441\u043B\u043E\u0432\u0438\u044F \u0434\u043B\u044F \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0451\u043D\u043D\u043E\u0439 \u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0438.\n\u0421\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u044B\u0439 (\u043D\u043E \u043C\u0430\u043B\u043E\u0432\u0435\u0440\u043E\u044F\u0442\u043D\u044B\u0439) \u0440\u0438\u0441\u043A \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u0438 \u0434\u043B\u044F \u0432\u0435\u0440\u0441\u0438\u0438 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0433\u043E \u0441\u043A\u0440\u0438\u043F\u0442\u0430.",
 			"zh-CN": "\u542F\u7528\u7B2C\u4E09\u65B9\u5E93\u7684\u8C03\u7528\u3002\u8FD9\u53EF\u80FD\u7528\u4E8E\u89C4\u5219\u548C\u67D0\u4E9B\u529F\u80FD\u7684\u5148\u51B3\u6761\u4EF6\u3002\n\u8FD9\u5BF9\u4E8E\u7528\u6237\u811A\u672C\u7248\u6765\u8BF4\uFF0C\u6709\u8F83\u4F4E\u7684\u6F5C\u5728\u7684\u5B89\u5168\u98CE\u9669\u3002"
 		},
@@ -11564,7 +10935,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Sites que usam testcookie (slowAES)",
 			"ru": "\u0421\u0430\u0439\u0442\u044B, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0449\u0438\u0435 testcookie (slowAES)",
 			"zh-CN": "\u4F7F\u7528 testcokie \u7684\u7F51\u7AD9\uFF08\u6162AES\uFF09"
 		},
@@ -11577,7 +10947,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Regras que executam c\u00F3digo de terceiros",
 			"ru": "\u041F\u0440\u0430\u0432\u0438\u043B\u0430 \u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0435\u0433\u043E \u043A\u043E\u0434\u0430",
 			"zh-CN": "\u6267\u884C\u7B2C\u4E09\u65B9\u4EE3\u7801\u7684\u89C4\u5219"
 		},
@@ -11590,7 +10959,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que executam c\u00F3digo arbitr\u00E1rio de terceiros armazenado em sites.",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u044B\u043F\u043E\u043B\u043D\u044F\u044E\u0442 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u043B\u044C\u043D\u044B\u0439 \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0439 \u043A\u043E\u0434, \u0445\u0440\u0430\u043D\u044F\u0449\u0438\u0439\u0441\u044F \u043D\u0430 \u0441\u0430\u0439\u0442\u0430\u0445.",
 			"zh-CN": "\u542F\u7528\u5C06\u6267\u884C\u5B58\u50A8\u5728\u7F51\u7AD9\u4E0A\u7684\u4EFB\u610F\u7B2C\u4E09\u65B9\u4EE3\u7801\u7684\u89C4\u5219\u3002"
 		},
@@ -11603,7 +10971,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Isso pode levar a riscos de seguran\u00E7a, por favor, tenha cuidado ao usar esta op\u00E7\u00E3o!",
 			"ru": "\u042D\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u043F\u0440\u0438\u0432\u0435\u0441\u0442\u0438 \u043A \u0443\u0433\u0440\u043E\u0437\u0430\u043C \u0431\u0435\u0437\u043E\u043F\u0430\u0441\u043D\u043E\u0441\u0442\u0438, \u0431\u0443\u0434\u044C\u0442\u0435 \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u043D\u044B \u043F\u0440\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0438 \u044D\u0442\u043E\u0433\u043E \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430!",
 			"zh-CN": "\u8FD9\u53EF\u80FD\u5BFC\u81F4\u5B89\u5168\u98CE\u9669\uFF0C\u614E\u91CD\u4F7F\u7528\u6B64\u9009\u9879\uFF01"
 		},
@@ -11616,7 +10983,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Regras que usam for\u00E7a bruta",
 			"ru": "\u041F\u0440\u0430\u0432\u0438\u043B\u0430, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0449\u0438\u0435 \u0433\u0440\u0443\u0431\u0443\u044E \u0441\u0438\u043B\u0443",
 			"zh-CN": "\u4F7F\u7528\u66B4\u529B\u7834\u89E3\u7684\u89C4\u5219"
 		},
@@ -11629,7 +10995,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita regras que exigem o uso de for\u00E7a bruta (atrav\u00E9s de busca bin\u00E1ria) para encontrar a imagem original",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043F\u0440\u0430\u0432\u0438\u043B\u0430, \u0442\u0440\u0435\u0431\u0443\u044E\u0449\u0438\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u0433\u0440\u0443\u0431\u043E\u0439 \u0441\u0438\u043B\u044B (\u0447\u0435\u0440\u0435\u0437 \u0431\u0438\u043D\u0430\u0440\u043D\u044B\u0439 \u043F\u043E\u0438\u0441\u043A) \u0434\u043B\u044F \u043F\u043E\u0438\u0441\u043A\u0430 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u542F\u7528\u9700\u8981\u51ED\u501F\u86EE\u529B\uFF08\u4E8C\u8FDB\u5236\u641C\u7D22\uFF09\u627E\u5230\u539F\u59CB\u56FE\u50CF\u7684\u89C4\u5219"
 		},
@@ -11642,7 +11007,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Deezer",
 			"ru": "Deezer",
 			"zh-CN": "Deezer"
 		},
@@ -11714,8 +11078,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Suporte ao Web Archive"
+			}
 		},
 		"Allows rules to be run under archive.org's Wayback Machine.": {
 			"_info": {
@@ -11725,8 +11088,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Permite que as regras sejam executadas na Wayback Machine do archive.org."
+			}
 		},
 		"Use browser cookies": {
 			"_info": {
@@ -11737,7 +11099,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar cookies do navegador",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043A\u0443\u043A\u0438 \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430",
 			"zh-CN": "\u4F7F\u7528\u6D4F\u89C8\u5668 Cookie"
 		},
@@ -11750,7 +11111,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Utiliza os cookies do navegador para chamadas de API a fim de acessar dados que, de outra forma, seriam privados",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0444\u0430\u0439\u043B\u044B cookie \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0430 \u0434\u043B\u044F \u0432\u044B\u0437\u043E\u0432\u043E\u0432 API, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u0434\u043E\u0441\u0442\u0443\u043F \u043A \u043A\u043E\u043D\u0444\u0438\u0434\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u043C \u0434\u0430\u043D\u043D\u044B\u043C.",
 			"zh-CN": "\u5141\u8BB8 API \u8C03\u7528\u4F7F\u7528\u6D4F\u89C8\u5668\u7684 Cookie \u6765\u8BBF\u95EE\u975E\u516C\u5F00\u6570\u636E"
 		},
@@ -11763,7 +11123,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Imagens privadas do Flickr",
 			"ru": "\u041F\u0440\u0438\u0432\u0430\u0442\u043D\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F Flickr",
 			"zh-CN": "\u79C1\u4EBA Flickr \u56FE\u50CF"
 		},
@@ -11776,7 +11135,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "DeviantART: Preferir tamanho em vez de original",
 			"ru": "DeviantART: \u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C \u0440\u0430\u0437\u043C\u0435\u0440 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u0443",
 			"zh-CN": "DeviantART: \u5C3A\u5BF8\u6BD4\u539F\u7248\u66F4\u91CD\u8981"
 		},
@@ -11789,7 +11147,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Prefere uma imagem em miniatura maior (mas n\u00E3o ampliada) em vez de uma imagem animada original menor",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0435\u0442 \u0431\u043E\u043B\u044C\u0448\u0435 (\u043D\u043E \u043D\u0435 \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u043E\u0435) \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440\u043D\u043E\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043C\u0435\u043D\u044C\u0448\u0435\u043C\u0443 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u043E\u043C\u0443 \u0430\u043D\u0438\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u043C\u0443 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044E.",
 			"zh-CN": "\u504F\u597D\u5C3A\u5BF8\u8F83\u5927\uFF08\u4F46\u975E\u6269\u589E\uFF09\u4F46\u975E\u539F\u59CB\u5C3A\u5BF8\u7684\u7F29\u7565\u56FE\u56FE\u50CF\uFF0C\u800C\u4E0D\u662F\u539F\u59CB\u5C3A\u5BF8\u4F46\u5C3A\u5BF8\u8F83\u5C0F\u7684\u52A8\u753B\u56FE\u50CF"
 		},
@@ -11802,7 +11159,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "DeviantART: Usar links de download",
 			"ru": "DeviantART: \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0438 \u0434\u043B\u044F \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F",
 			"zh-CN": "DeviantART: \u4F7F\u7528\u4E0B\u8F7D\u94FE\u63A5"
 		},
@@ -11815,7 +11171,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Prefere usar o link de download (se dispon\u00EDvel) por padr\u00E3o. Observe que isso s\u00F3 funciona se voc\u00EA estiver conectado ao DeviantART",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0443 \u0434\u043B\u044F \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F (\u0435\u0441\u043B\u0438 \u043E\u043D\u0430 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u0430) \u043F\u043E \u0443\u043C\u043E\u043B\u0447\u0430\u043D\u0438\u044E. \u041E\u0431\u0440\u0430\u0442\u0438\u0442\u0435 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435, \u0447\u0442\u043E \u044D\u0442\u043E \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442, \u0442\u043E\u043B\u044C\u043A\u043E \u0435\u0441\u043B\u0438 \u0432\u044B \u0432\u043E\u0448\u043B\u0438 \u0432 \u0441\u0432\u043E\u044E \u0443\u0447\u0451\u0442\u043D\u0443\u044E \u0437\u0430\u043F\u0438\u0441\u044C DeviantART.",
 			"zh-CN": "\u504F\u597D\u9ED8\u8BA4\u4F7F\u7528\u4E0B\u8F7D\u94FE\u63A5\uFF08\u5982\u679C\u53EF\u7528\uFF09\u3002\u6CE8\u610F\uFF0C\u4EC5\u5728\u767B\u5F55 DeviantART \u540E\u6709\u6548"
 		},
@@ -11838,7 +11193,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "E-Hentai: Usar imagem completa",
 			"ru": "E-Hentai: \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u043B\u043D\u043E\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435",
 			"zh-CN": "E-Hentai: \u4F7F\u7528\u5B8C\u6574\u56FE\u50CF"
 		},
@@ -11851,7 +11205,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Prefere usar imagens completas/originais, se dispon\u00EDveis (conectado). Isso tem mais chances de te deixar com limite de taxa",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u043B\u043D\u044B\u0435/\u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u0435\u0441\u043B\u0438 \u0442\u0430\u043A\u043E\u0432\u044B\u0435 \u0438\u043C\u0435\u044E\u0442\u0441\u044F. (\u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044F \u0432\u0445\u043E\u0434). \u0421\u043A\u043E\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043E, \u044D\u0442\u043E \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0438\u0442 \u0432\u0430\u0448\u0443 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u044C.",
 			"zh-CN": "\u504F\u597D\u4F7F\u7528\u5168\u5C3A\u5BF8\u539F\u7248\u56FE\u50CF\u3002\u9700\u8981\u5DF2\u767B\u5F55\u3002\u4F7F\u7528\u5B83\u5C06\u66F4\u5BB9\u6613\u906D\u9047\u901F\u7387\u9650\u5236"
 		},
@@ -11864,7 +11217,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Imgur: Usar nome de arquivo original",
 			"ru": "Imgur: \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u043E\u0435 \u0438\u043C\u044F \u0444\u0430\u0439\u043B\u0430",
 			"zh-CN": "Imgur: \u4F7F\u7528\u539F\u59CB\u6587\u4EF6\u540D"
 		},
@@ -11877,7 +11229,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se o nome de arquivo original (aquele usado para enviar a imagem) for encontrado, use-o em vez do ID da imagem",
 			"ru": "\u0415\u0441\u043B\u0438 \u043D\u0430\u0439\u0434\u0435\u043D\u043E \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u043E\u0435 \u0438\u043C\u044F \u0444\u0430\u0439\u043B\u0430 (\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u043E\u0435 \u0434\u043B\u044F \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F), \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u0435\u0433\u043E \u0432\u043C\u0435\u0441\u0442\u043E \u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u5982\u679C\u627E\u5230\u539F\u59CB\u6587\u4EF6\u540D\uFF08\u4E0A\u4F20\u56FE\u50CF\u65F6\u7684\u6587\u4EF6\u540D\uFF09\uFF0C\u4F7F\u7528\u5B83\u4EE3\u66FF\u56FE\u50CF ID"
 		},
@@ -11890,7 +11241,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Imgur: Usar imagem de origem",
 			"ru": "Imgur: \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0430",
 			"zh-CN": "Imgur: \u4F7F\u7528\u6E90\u56FE\u50CF"
 		},
@@ -11903,7 +11253,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Se uma imagem de origem for encontrada para o Imgur, tente us\u00E1-la. Funciona apenas para p\u00E1ginas antigas do Imgur (defina `postpagebeta=0; postpagebetalogged=0` como cookies)",
 			"ru": "\u0415\u0441\u043B\u0438 \u0434\u043B\u044F Imgur \u043D\u0430\u0439\u0434\u0435\u043D\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0430, \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0435\u0433\u043E \u0432\u043C\u0435\u0441\u0442\u043E \u044D\u0442\u043E\u0433\u043E. \u0420\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0442\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u044F \u0432\u0435\u0431-\u0441\u0442\u0440\u0430\u043D\u0438\u0446 Imgur \u0441\u0442\u0430\u0440\u043E\u0433\u043E \u0441\u0442\u0438\u043B\u044F (\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u0435 `postpagebeta=0; postpagebetalogged=0` \u043A\u0430\u043A cookie).",
 			"zh-CN": "\u5982\u679C\u627E\u5230 Imgur \u7684\u6E90\u56FE\u50CF\uFF0C\u5C1D\u8BD5\u4F7F\u7528\u5B83\u3002\u4EC5\u9002\u7528\u4E8E\u65E7\u7248 Imgur \u7F51\u9875\uFF08\u8BBE\u7F6E Cookie `postpagebeta=0; postpagebetalogged=0`\uFF09"
 		},
@@ -11916,7 +11265,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Instagram: Usar API nativa",
 			"ru": "Instagram: \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0440\u043E\u0434\u043D\u043E\u0439 API",
 			"zh-CN": "Instagram: \u4F7F\u7528\u539F\u751F API"
 		},
@@ -11929,7 +11277,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usa a API nativa do Instagram se poss\u00EDvel, requer que voc\u00EA esteja logado no Instagram. Geralmente permite que imagens de resolu\u00E7\u00E3o mais alta (1440x*) sejam retornadas.",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0440\u043E\u0434\u043D\u043E\u0439 API Instagram, \u0435\u0441\u043B\u0438 \u044D\u0442\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0442\u0440\u0435\u0431\u0443\u0435\u0442, \u0447\u0442\u043E\u0431\u044B \u0432\u044B \u0432\u043E\u0448\u043B\u0438 \u0432 Instagram. \u041E\u0431\u044B\u0447\u043D\u043E \u044D\u0442\u043E \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0441 \u0431\u043E\u043B\u0435\u0435 \u0432\u044B\u0441\u043E\u043A\u0438\u043C \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435\u043C (1440x*).",
 			"zh-CN": "\u5C3D\u53EF\u80FD\u4F7F\u7528 Instagram \u7684\u539F\u751F API\uFF0C\u8FD9\u9700\u8981\u60A8\u5DF2\u767B\u5F55 Instagram\u3002\u901A\u5E38\u80FD\u8FD4\u56DE\u66F4\u9AD8\u5206\u8FA8\u7387\u7684\u56FE\u50CF\uFF081440x*\uFF09\u3002"
 		},
@@ -11942,7 +11289,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Instagram: N\u00E3o usar API web",
 			"ru": "Instagram: \u0411\u0435\u0437 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u0435\u0431-API",
 			"zh-CN": "Instagram: \u4E0D\u4F7F\u7528 Web API"
 		},
@@ -11955,7 +11301,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Evita usar a API web do Instagram, se poss\u00EDvel, o que aumenta o desempenho, mas ocasionalmente sacrifica a qualidade dos v\u00EDdeos",
 			"ru": "\u0418\u0437\u0431\u0435\u0433\u0430\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u0432\u0435\u0431-API Instagram, \u0435\u0441\u043B\u0438 \u044D\u0442\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0447\u0442\u043E \u043F\u043E\u0432\u044B\u0448\u0430\u0435\u0442 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C, \u043D\u043E \u0438\u043D\u043E\u0433\u0434\u0430 \u0436\u0435\u0440\u0442\u0432\u0443\u0435\u0442 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E\u043C \u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u5C3D\u53EF\u80FD\u4E0D\u4F7F\u7528 Instagram \u7684 Web API\uFF0C\u8FD9\u53EF\u4EE5\u63D0\u5347\u6027\u80FD\uFF0C\u4F46\u5076\u5C14\u4F1A\u727A\u7272\u89C6\u9891\u54C1\u8D28"
 		},
@@ -11968,7 +11313,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Instagram: Preferir qualidade \u00E0 resolu\u00E7\u00E3o",
 			"ru": "Instagram: \u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044E",
 			"zh-CN": "Instagram: \u504F\u597D\u9AD8\u8D28\u91CF\u800C\u4E0D\u662F\u5206\u8FA8\u7387"
 		},
@@ -11981,7 +11325,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Prefere v\u00EDdeos de resolu\u00E7\u00E3o mais baixa que usam uma taxa de bits mais alta em vez de imagens de resolu\u00E7\u00E3o mais alta. Isso adiciona um pequeno custo de desempenho, pois precisa buscar cabe\u00E7alhos para v\u00E1rios v\u00EDdeos",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0435\u0442 \u0432\u0438\u0434\u0435\u043E \u0441 \u0431\u043E\u043B\u0435\u0435 \u043D\u0438\u0437\u043A\u0438\u043C \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435\u043C, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442 \u0431\u043E\u043B\u0435\u0435 \u0432\u044B\u0441\u043E\u043A\u0438\u0439 \u0431\u0438\u0442\u0440\u0435\u0439\u0442 \u043F\u043E \u0441\u0440\u0430\u0432\u043D\u0435\u043D\u0438\u044E \u0441 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\u043C\u0438 \u0441 \u0431\u043E\u043B\u0435\u0435 \u0432\u044B\u0441\u043E\u043A\u0438\u043C \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435\u043C. \u042D\u0442\u043E \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u043D\u0435\u0431\u043E\u043B\u044C\u0448\u0438\u0435 \u0437\u0430\u0442\u0440\u0430\u0442\u044B \u043D\u0430 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C, \u0442\u0430\u043A \u043A\u0430\u043A \u044D\u0442\u043E \u043D\u0443\u0436\u0434\u0430\u0435\u0442\u0441\u044F \u0432 \u043F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0438 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u043E\u0432 \u0434\u043B\u044F \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u0438\u0445 \u0432\u0438\u0434\u0435\u043E.",
 			"zh-CN": "\u504F\u597D\u9AD8\u6BD4\u7279\u7387\u7684\u4F4E\u5206\u8FA8\u7387\u89C6\u9891\uFF0C\u800C\u4E0D\u662F\u9AD8\u5206\u8FA8\u7387\u56FE\u50CF\u3002\u8FD9\u8F7B\u5FAE\u8D44\u6E90\u6D88\u8017\uFF0C\u56E0\u4E3A\u9700\u8981\u83B7\u53D6\u591A\u4E2A\u89C6\u9891\u7684\u5934\u90E8"
 		},
@@ -11994,7 +11337,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Instagram: Usar \u00E1lbuns para miniaturas de posts",
 			"ru": "Instagram: \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0430\u043B\u044C\u0431\u043E\u043C\u044B \u0434\u043B\u044F \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440 \u043F\u043E\u0441\u0442\u043E\u0432",
 			"zh-CN": "Instagram: \u4E3A\u5E16\u5B50\u7F29\u7565\u56FE\u4F7F\u7528\u76F8\u518C"
 		},
@@ -12007,7 +11349,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Consulta o Instagram por \u00E1lbuns ao usar o popup em uma miniatura de post",
 			"ru": "\u0417\u0430\u043F\u0440\u043E\u0441\u044B \u043A Instagram \u0434\u043B\u044F \u0430\u043B\u044C\u0431\u043E\u043C\u043E\u0432 \u043F\u0440\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0438 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 \u043D\u0430 \u043C\u0438\u043D\u0438\u0430\u0442\u044E\u0440\u0435 \u043F\u043E\u0441\u0442\u0430.",
 			"zh-CN": "\u4E3A\u5E16\u5B50\u7F29\u7565\u56FE\u4F7F\u7528\u5F39\u7A97\u65F6\u67E5\u8BE2 Instagram \u76F8\u518C"
 		},
@@ -12040,7 +11381,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Snapchat: Usar m\u00EDdia original sem legendas",
 			"ru": "Snapchat: \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u043C\u0435\u0434\u0438\u0430 \u0431\u0435\u0437 \u043F\u043E\u0434\u043F\u0438\u0441\u0435\u0439",
 			"zh-CN": "Snapchat: \u4F7F\u7528\u6CA1\u6709\u6807\u9898\u7684\u539F\u59CB\u5A92\u4F53"
 		},
@@ -12053,7 +11393,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Prefere usar a m\u00EDdia original em vez de m\u00EDdia com legendas e tags sobrepostas",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u044B\u0435 \u043C\u0435\u0434\u0438\u0430 \u0432\u043C\u0435\u0441\u0442\u043E \u043C\u0435\u0434\u0438\u0430 \u0441 \u043D\u0430\u043B\u043E\u0436\u0435\u043D\u043D\u044B\u043C\u0438 \u043F\u043E\u0434\u043F\u0438\u0441\u044F\u043C\u0438 \u0438 \u0442\u0435\u0433\u0430\u043C\u0438.",
 			"zh-CN": "\u503E\u5411\u4E8E\u4F7F\u7528\u539F\u59CB\u5A92\u4F53\uFF0C\u800C\u4E0D\u662F\u6709\u6807\u9898\u548C\u6807\u7B7E\u8986\u76D6\u7684\u5A92\u4F53"
 		},
@@ -12065,8 +11404,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Teddit: Usar Reddit para m\u00EDdia"
+			}
 		},
 		"Redirects media stored on Teddit to Reddit's servers. Disabling this may prevent finding original images because Teddit's image servers will only cache images fetched from posts, which are deleted after a few minutes.": {
 			"_info": {
@@ -12076,8 +11414,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Redireciona m\u00EDdias armazenadas no Teddit para os servidores do Reddit. Desativar isso pode impedir a localiza\u00E7\u00E3o de imagens originais porque os servidores de imagem do Teddit armazenar\u00E3o em cache apenas imagens obtidas de posts, que s\u00E3o exclu\u00EDdas ap\u00F3s alguns minutos."
+			}
 		},
 		"TikTok: Use app API": {
 			"_info": {
@@ -12087,8 +11424,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "TikTok: Usar API do aplicativo"
+			}
 		},
 		"Uses TikTok's app API to find video information.": {
 			"_info": {
@@ -12098,8 +11434,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Usa a API do aplicativo TikTok para encontrar informa\u00E7\u00F5es de v\u00EDdeo."
+			}
 		},
 		"TikTok: Don't use watermarked videos": {
 			"_info": {
@@ -12110,7 +11445,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "TikTok: N\u00E3o usar v\u00EDdeos com marca d'\u00E1gua",
 			"ru": "TikTok: \u041D\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0432\u0438\u0434\u0435\u043E \u0441 \u0432\u043E\u0434\u044F\u043D\u044B\u043C\u0438 \u0437\u043D\u0430\u043A\u0430\u043C\u0438",
 			"zh-CN": "TikTok: \u4E0D\u4F7F\u7528\u5E26\u6C34\u5370\u7684\u89C6\u9891"
 		},
@@ -12123,7 +11457,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usa v\u00EDdeos sem marca d'\u00E1gua para o TikTok, se poss\u00EDvel. Isso introduzir\u00E1 um atraso extra ao carregar o v\u00EDdeo, pois duas solicita\u00E7\u00F5es extras precisam ser realizadas. Tamb\u00E9m falhar\u00E1 para qualquer v\u00EDdeo enviado ap\u00F3s o final de julho de 2020",
 			"ru": "\u041F\u043E \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0432\u0438\u0434\u0435\u043E \u0431\u0435\u0437 \u0432\u043E\u0434\u044F\u043D\u044B\u0445 \u0437\u043D\u0430\u043A\u043E\u0432 \u0434\u043B\u044F TikTok. \u042D\u0442\u043E \u043F\u0440\u0438\u0432\u0435\u0434\u0451\u0442 \u043A \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0439 \u0437\u0430\u0434\u0435\u0440\u0436\u043A\u0435 \u043F\u0440\u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0435 \u0432\u0438\u0434\u0435\u043E, \u0442\u0430\u043A \u043A\u0430\u043A \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C \u0434\u0432\u0430 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0437\u0430\u043F\u0440\u043E\u0441\u0430. \u042D\u0442\u043E \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u0434\u043B\u044F \u043B\u044E\u0431\u044B\u0445 \u0432\u0438\u0434\u0435\u043E, \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u0445 \u043F\u043E\u0441\u043B\u0435 ~\u043A\u043E\u043D\u0446\u0430 \u0438\u044E\u043B\u044F 2020 \u0433\u043E\u0434\u0430.",
 			"zh-CN": "\u5982\u679C\u53EF\u80FD\uFF0C\u4E3A TikTok \u4F7F\u7528\u65E0\u6C34\u5370\u89C6\u9891\u3002\u52A0\u8F7D\u89C6\u9891\u65F6\u9700\u6267\u884C\u4E24\u4E2A\u989D\u5916\u7684\u8BF7\u6C42\uFF0C\u8FD9\u5C06\u589E\u52A0\u5EF6\u8FDF\u3002\u5BF92020\u5E747\u6708\u5DE6\u53F3\u4E4B\u540E\u4E0A\u4F20\u7684\u4EFB\u4F55\u89C6\u9891\u4E0D\u8D77\u4F5C\u7528"
 		},
@@ -12136,7 +11469,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "TikTok: Remo\u00E7\u00E3o de marca d'\u00E1gua por terceiros",
 			"ru": "TikTok: \u0423\u0434\u0430\u043B\u0435\u043D\u0438\u0435 \u0432\u043E\u0434\u044F\u043D\u044B\u0445 \u0437\u043D\u0430\u043A\u043E\u0432 \u0442\u0440\u0435\u0442\u044C\u0435\u0439 \u0441\u0442\u043E\u0440\u043E\u043D\u043E\u0439",
 			"zh-CN": "TikTok: \u7B2C\u4E09\u65B9\u6C34\u5370\u53BB\u9664"
 		},
@@ -12149,7 +11481,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usa um site de terceiros para remo\u00E7\u00E3o de marca d'\u00E1gua do TikTok.\nN\u00E3o endosso nenhum dos sites suportados. Eles podem registrar seu endere\u00E7o IP e os v\u00EDdeos que voc\u00EA enviar. Use esta op\u00E7\u00E3o com cautela.\n`LQ` = Baixa qualidade, `PL` = Registro p\u00FAblico",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0439 \u0441\u0430\u0439\u0442 \u0443\u0434\u0430\u043B\u0435\u043D\u0438\u044F \u0432\u043E\u0434\u044F\u043D\u044B\u0445 \u0437\u043D\u0430\u043A\u043E\u0432 \u0434\u043B\u044F TikTok.\n\u042F \u043D\u0435 \u043E\u0434\u043E\u0431\u0440\u044F\u044E \u043D\u0438 \u043E\u0434\u0438\u043D \u0438\u0437 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u043C\u044B\u0445 \u0441\u0430\u0439\u0442\u043E\u0432. \u041E\u043D\u0438 \u043C\u043E\u0433\u0443\u0442 \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0432\u0430\u0448 IP-\u0430\u0434\u0440\u0435\u0441 \u0438 \u0432\u0438\u0434\u0435\u043E, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0432\u044B \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0435\u0442\u0435. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0439\u0442\u0435 \u044D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0441 \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u043D\u043E\u0441\u0442\u044C\u044E.\n`\u041D\u041A` = \u041D\u0438\u0437\u043A\u043E\u0435 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E, `\u041F\u041B` = \u041F\u0443\u0431\u043B\u0438\u0447\u043D\u044B\u0439 \u043B\u043E\u0433",
 			"zh-CN": "\u4F7F\u7528\u4E00\u4E2A\u9002\u7528\u4E8E TikTok \u7684\u7B2C\u4E09\u65B9\u6C34\u5370\u53BB\u9664\u7F51\u7AD9\u3002\n\u8FD9\u4E0D\u4EE3\u8868\u5BF9\u8BE5\u7F51\u7AD9\u7684\u8BA4\u53EF\u3002\u8BE5\u7F51\u7AD9\u53EF\u80FD\u8BB0\u5F55\u60A8\u7684 IP \u5730\u5740\u548C\u63D0\u4EA4\u7684\u89C6\u9891\u3002\u8C28\u614E\u4F7F\u7528\u3002\n`LQ` = \u4F4E\u54C1\u8D28\uFF0C`PL` = \u516C\u4F17\u65E5\u5FD7"
 		},
@@ -12162,7 +11493,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "(nenhum)",
 			"ru": "(\u043D\u0438\u0447\u0435\u0433\u043E)",
 			"zh-CN": "(\u65E0)"
 		},
@@ -12175,7 +11505,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "ttloader.com",
 			"ru": "ttloader.com",
 			"zh-CN": "ttloader.com"
 		},
@@ -12188,7 +11517,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "onlinetik.com",
 			"ru": "onlinetik.com",
 			"zh-CN": "onlinetik.com"
 		},
@@ -12201,7 +11529,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "tikdowns.com",
 			"ru": "tikdowns.com",
 			"zh-CN": "tikdowns.com"
 		},
@@ -12214,7 +11541,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "ssstiktok.net",
 			"ru": "ssstiktok.net",
 			"zh-CN": "ssstiktok.net"
 		},
@@ -12227,7 +11553,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "keeptiktok.com (BQ)",
 			"ru": "keeptiktok.com (\u041D\u041A)",
 			"zh-CN": "keeptiktok.com (LQ)"
 		},
@@ -12240,7 +11565,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "ssstiktok.io (BQ)",
 			"ru": "ssstiktok.io (\u041D\u041A)",
 			"zh-CN": "ssstiktok.io (LQ)"
 		},
@@ -12253,7 +11577,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "musicallydown.com (BQ/PL)",
 			"ru": "musicallydown.com (\u041D\u041A/\u041F\u0416)",
 			"zh-CN": "musicallydown.com (LQ/PL)"
 		},
@@ -12266,7 +11589,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "snaptik.app (BQ)",
 			"ru": "snaptik.app (\u041D\u041A)",
 			"zh-CN": "snaptik.app (LQ)"
 		},
@@ -12279,7 +11601,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "tikmate.online (BQ)",
 			"ru": "tikmate.online (\u041D\u041A)",
 			"zh-CN": "tikmate.online (LQ)"
 		},
@@ -12292,7 +11613,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tumblr: Chave da API",
 			"ru": "Tumblr: \u043A\u043B\u044E\u0447 API",
 			"zh-CN": "Tumblr: API \u5BC6\u94A5"
 		},
@@ -12305,7 +11625,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Chave da API para encontrar imagens maiores no Tumblr",
 			"ru": "\u041A\u043B\u044E\u0447 API \u0434\u043B\u044F \u043F\u043E\u0438\u0441\u043A\u0430 \u0431\u043E\u043B\u044C\u0448\u0438\u0445 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u043D\u0430 Tumblr",
 			"zh-CN": "\u7528\u4E8E\u5728 Tumblr \u4E0A\u67E5\u627E\u66F4\u5927\u56FE\u7247\u7684 API \u5BC6\u94A5"
 		},
@@ -12318,7 +11637,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Twitter: Usar extens\u00E3o",
 			"ru": "Twitter: \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u0435",
 			"zh-CN": "Twitter: \u4F7F\u7528\u6269\u5C55\u540D"
 		},
@@ -12331,7 +11649,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Prefere `.jpg?name=orig` em vez de `?format=jpg&name=orig`. Isso possivelmente incorrer\u00E1 em requisi\u00E7\u00F5es extras antes de obter sucesso. Note que n\u00E3o h\u00E1 diferen\u00E7a na qualidade da imagem.",
 			"ru": "\u041F\u0440\u0435\u0434\u043F\u043E\u0447\u0438\u0442\u0430\u0442\u044C `.jpg?name=orig` \u043F\u043E\u0432\u0435\u0440\u0445 `?format=jpg&name=orig`. \u042D\u0442\u043E, \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u043F\u043E\u0432\u043B\u0435\u0447\u0435\u0442 \u0437\u0430 \u0441\u043E\u0431\u043E\u0439 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0437\u0430\u043F\u0440\u043E\u0441\u044B, \u043F\u0440\u0435\u0436\u0434\u0435 \u0447\u0435\u043C \u0434\u043E\u0431\u0438\u0442\u044C\u0441\u044F \u0443\u0441\u043F\u0435\u0445\u0430. \u041E\u0431\u0440\u0430\u0442\u0438\u0442\u0435 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435, \u0447\u0442\u043E \u043D\u0435\u0442 \u043D\u0438\u043A\u0430\u043A\u043E\u0439 \u0440\u0430\u0437\u043D\u0438\u0446\u044B \u0432 \u043A\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u9996\u9009 `.jpg?name=orig` \u800C\u4E0D\u662F `?format=jpg&name=orig`\u3002\u8FD9\u53EF\u80FD\u5728\u6210\u529F\u524D\u4EA7\u751F\u989D\u5916\u7684\u8BF7\u6C42\u3002\u6CE8\u610F\uFF0C\u56FE\u50CF\u8D28\u91CF\u4E0A\u6CA1\u6709\u5DEE\u5F02\u3002"
 		},
@@ -12343,8 +11660,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "YouTube: Habilitar velocidades mais r\u00E1pidas"
+			}
 		},
 		"Increases the download bandwidth for YouTube videos by replacing the `n` parameter. Note that this may execute untrusted Javascript.": {
 			"_info": {
@@ -12354,8 +11670,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Aumenta a largura de banda de download para v\u00EDdeos do YouTube, substituindo o par\u00E2metro `n`. Observe que isso pode executar Javascript n\u00E3o confi\u00E1vel."
+			}
 		},
 		"Media blacklist": {
 			"_info": {
@@ -12365,8 +11680,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Lista negra de m\u00EDdia"
+			}
 		},
 		"A list of URLs (one per line) that are blacklisted from being processed": {
 			"_info": {
@@ -12377,7 +11691,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Uma lista de URLs (uma por linha) que est\u00E3o na lista negra e n\u00E3o ser\u00E3o processadas",
 			"ru": "\u0421\u043F\u0438\u0441\u043E\u043A URL-\u0430\u0434\u0440\u0435\u0441\u043E\u0432 (\u043F\u043E \u043E\u0434\u043D\u043E\u043C\u0443 \u043D\u0430 \u0441\u0442\u0440\u043E\u043A\u0443), \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0437\u0430\u043D\u0435\u0441\u0435\u043D\u044B \u0432 \u0447\u0451\u0440\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A \u0434\u043B\u044F \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438.",
 			"zh-CN": "\u5904\u7406\u8FC7\u7A0B\u7684\u9ED1\u540D\u5355\u7F51\u5740\u5217\u8868\uFF08\u6BCF\u884C\u4E00\u6761\uFF09"
 		},
@@ -12389,8 +11702,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Modo de lista negra de m\u00EDdia"
+			}
 		},
 		"Whether the media blacklist should act as a blacklist or a whitelist": {
 			"_info": {
@@ -12400,8 +11712,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Se a lista negra de m\u00EDdia deve funcionar como uma lista negra ou uma lista branca"
+			}
 		},
 		"Blacklist engine": {
 			"_info": {
@@ -12413,7 +11724,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBE14\uB799\uB9AC\uC2A4\uD2B8 \uC5D4\uC9C4",
-			"pt-BR": "Mecanismo de lista negra",
 			"ru": "\u0414\u0432\u0438\u0436\u043E\u043A \u0447\u0451\u0440\u043D\u043E\u0433\u043E \u0441\u043F\u0438\u0441\u043A\u0430",
 			"zh-CN": "\u9ED1\u540D\u5355\u5F15\u64CE"
 		},
@@ -12425,8 +11735,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Como as listas negras devem ser processadas"
+			}
 		},
 		"Simple (glob)": {
 			"_info": {
@@ -12438,7 +11747,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB2E8\uC21C (glob)",
-			"pt-BR": "Simples (glob)",
 			"ru": "\u041F\u0440\u043E\u0441\u0442\u043E\u0439 (glob)",
 			"zh-CN": "\u7B80\u6613 (glob)"
 		},
@@ -12452,7 +11760,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uC815\uADDC\uC2DD",
-			"pt-BR": "Regex",
 			"ru": "\u0420\u0435\u0433\u0443\u043B\u044F\u0440\u043D\u043E\u0435 \u0432\u044B\u0440\u0430\u0436\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u6B63\u5219\u8868\u8FBE\u5F0F"
 		},
@@ -12464,8 +11771,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Lista negra de hosts"
+			}
 		},
 		"A list of host URLs (one per line) that the popup is blacklisted from. For example, adding `twitter.com` to this blacklist would prevent any popup from opening on twitter.com.": {
 			"_info": {
@@ -12475,8 +11781,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Uma lista de URLs de hosts (uma por linha) para as quais o popup est\u00E1 na lista negra. Por exemplo, adicionar `twitter.com` a esta lista negra impediria que qualquer popup fosse aberto em twitter.com."
+			}
 		},
 		"Host blacklist mode": {
 			"_info": {
@@ -12486,8 +11791,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Modo de lista negra de hosts"
+			}
 		},
 		"Whether the host blacklist should act as a blacklist or a whitelist": {
 			"_info": {
@@ -12497,8 +11801,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Se a lista negra de hosts deve funcionar como uma lista negra ou uma lista branca"
+			}
 		},
 		"HTML page blacklist": {
 			"_info": {
@@ -12508,8 +11811,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Lista negra de p\u00E1ginas HTML"
+			}
 		},
 		"A list of URLs (one per line) that are blacklisted from being redirected.": {
 			"_info": {
@@ -12519,8 +11821,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Uma lista de URLs (uma por linha) que est\u00E3o na lista negra e n\u00E3o ser\u00E3o redirecionadas."
+			}
 		},
 		"The examples below are written for the simple (glob) engine, not the regex engine. The glob engine is generally based on the UNIX glob syntax.<br />\n<ul><br />\n<li><code>google.com</code> will block https://google.com/, https://www.google.com/, https://abcdef.google.com/, https://def.abc.google.com/, etc.</li>\n<li><code>abc.google.com</code> will block https://abc.google.com/, https://def.abc.google.com/, etc.</li>\n<li><code>*.google.com</code> will block https://www.google.com/, https://def.abc.google.com/, etc. but not https://google.com/</li>\n<li><code>google.*/</code> will block https://google.com/, https://www.google.co.uk, etc.</li>\n<li><code>http://google.com</code> will block http://google.com/, but not https://google.com/, http://www.google.com/, etc.</li>\n<li><code>google.com/test</code> will block https://google.com/test, https://www.google.com/test/abcdef, but not https://google.com/, etc.</li>\n<li><code>google.com/*/test</code> will block https://google.com/abc/test, but not https://google.com/test or https://google.com/abc/def/test</li>\n<li><code>google.com/**/test</code> will block https://google.com/abc/test, https://google.com/abc/def/test, https://google.com/abc/def/ghi/test, etc. but not https://google.com/test</li>\n<li><code>g??gle.com</code> will block https://google.com/, https://gaagle.com/, https://goagle.com/, etc.</li>\n<li><code>google.{com,co.uk}</code> will block https://google.com/ and https://google.co.uk/</li>\n<li><code>g[oau]ogle.com</code> will block https://google.com/, https://gaogle.com/, and http://www.guogle.com/</li>\n<li><code>g[0-9]ogle.com</code> will block https://g0ogle.com/, https://g1ogle.com/, etc. (up to https://g9ogle.com/)</li>\n</ul>": {
 			"_info": {
@@ -12539,7 +11840,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Os exemplos abaixo foram escritos para o mecanismo simples (glob), n\u00E3o o mecanismo regex. O mecanismo glob \u00E9 geralmente baseado na sintaxe glob do UNIX.<br />\n<ul><br />\n<li><code>google.com</code> bloquear\u00E1 https://google.com/, https://www.google.com/, https://abcdef.google.com/, https://def.abc.google.com/, etc.</li>\n<li><code>abc.google.com</code> bloquear\u00E1 https://abc.google.com/, https://def.abc.google.com/, etc.</li>\n<li><code>*.google.com</code> bloquear\u00E1 https://www.google.com/, https://def.abc.google.com/, etc. mas n\u00E3o https://google.com/</li>\n<li><code>google.*/</code> bloquear\u00E1 https://google.com/, https://www.google.co.uk, etc.</li>\n<li><code>http://google.com</code> bloquear\u00E1 http://google.com/, mas n\u00E3o https://google.com/, http://www.google.com/, etc.</li>\n<li><code>google.com/test</code> bloquear\u00E1 https://google.com/test, https://www.google.com/test/abcdef, mas n\u00E3o https://google.com/, etc.</li>\n<li><code>google.com/*/test</code> bloquear\u00E1 https://google.com/abc/test, mas n\u00E3o https://google.com/test ou https://google.com/abc/def/test</li>\n<li><code>google.com/**/test</code> bloquear\u00E1 https://google.com/abc/test, https://google.com/abc/def/test, https://google.com/abc/def/ghi/test, etc. mas n\u00E3o https://google.com/test</li>\n<li><code>g??gle.com</code> bloquear\u00E1 https://google.com/, https://gaagle.com/, https://goagle.com/, etc.</li>\n<li><code>google.{com,co.uk}</code> bloquear\u00E1 https://google.com/ e https://google.co.uk/</li>\n<li><code>g[oau]ogle.com</code> bloquear\u00E1 https://google.com/, https://gaogle.com/, e http://www.guogle.com/</li>\n<li><code>g[0-9]ogle.com</code> bloquear\u00E1 https://g0ogle.com/, https://g1ogle.com/, etc. (at\u00E9 https://g9ogle.com/)</li>\n</ul>",
 			"ru": "\u041F\u0440\u0438\u0432\u0435\u0434\u0435\u043D\u043D\u044B\u0435 \u043D\u0438\u0436\u0435 \u043F\u0440\u0438\u043C\u0435\u0440\u044B \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u044B \u0434\u043B\u044F \u043F\u0440\u043E\u0441\u0442\u043E\u0433\u043E (glob) \u0434\u0432\u0438\u0436\u043A\u0430, \u0430 \u043D\u0435 \u0434\u043B\u044F \u0434\u0432\u0438\u0436\u043A\u0430 \u0440\u0435\u0433\u0443\u043B\u044F\u0440\u043D\u044B\u0445 \u0432\u044B\u0440\u0430\u0436\u0435\u043D\u0438\u0439. \u041C\u0435\u0445\u0430\u043D\u0438\u0437\u043C glob \u043E\u0431\u044B\u0447\u043D\u043E \u043E\u0441\u043D\u043E\u0432\u0430\u043D \u043D\u0430 \u0441\u0438\u043D\u0442\u0430\u043A\u0441\u0438\u0441\u0435 UNIX glob.<br />\n<ul><br />\n<li><code>google.com</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://google.com/, https://www.google.com/, https://abcdef.google.com/, https://def.abc.google.com/, \u0438 \u0442.\u0434.</li>\n<li><code>abc.google.com</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://abc.google.com/, https://def.abc.google.com/, \u0438 \u0442.\u0434.</li>\n<li><code>*.google.com</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://www.google.com/, https://def.abc.google.com/, \u0438 \u0442.\u0434., \u043D\u043E \u043D\u0435 https://google.com/</li>\n<li><code>google.*/</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://google.com/, https://www.google.co.uk, \u0438 \u0442.\u0434.</li>\n<li><code>http://google.com</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C http://google.com/, \u043D\u043E \u043D\u0435 https://google.com/, http://www.google.com/, \u0438 \u0442.\u0434.</li>\n<li><code>google.com/test</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://google.com/test, https://www.google.com/test/abcdef, \u043D\u043E \u043D\u0435 https://google.com/, \u0438 \u0442.\u0434.</li>\n<li><code>google.com/*/test</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://google.com/abc/test, \u043D\u043E \u043D\u0435 https://google.com/test \u0438\u043B\u0438 https://google.com/abc/def/test</li>\n<li><code>google.com/**/test</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://google.com/abc/test, https://google.com/abc/def/test, https://google.com/abc/def/ghi/test, \u0438 \u0442.\u0434., \u043D\u043E \u043D\u0435 https://google.com/test</li>\n<li><code>g??gle.com</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://google.com/, https://gaagle.com/, https://goagle.com/, \u0438 \u0442.\u0434.</li>\n<li><code>google.{com,co.uk}</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://google.com/ \u0438 https://google.co.uk/</li>\n<li><code>g[oau]ogle.com</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://google.com/, https://gaogle.com/, \u0438 http://www.guogle.com/</li>\n<li><code>g[0-9]ogle.com</code> \u0431\u0443\u0434\u0435\u0442 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u0442\u044C https://g0ogle.com/, https://g1ogle.com/, \u0438 \u0442.\u0434. (\u0432\u043F\u043B\u043E\u0442\u044C \u0434\u043E https://g9ogle.com/)</li>\n</ul>",
 			"zh-CN": "\u4E0B\u9762\u7684\u793A\u4F8B\u662F\u4E3A\u5EFA\u8BAE\uFF08glob\uFF09\u5F15\u64CE\u7F16\u5199\uFF0C\u800C\u975E\u6B63\u5219\u8868\u8FBE\u5F0F\u5F15\u64CE\u3002Glob \u5F15\u64CE\u901A\u5E38\u57FA\u4E8E UNIX glob \u8BED\u6CD5\u3002<br />\n<ul><br />\n<li><code>google.com</code> \u5C06\u5C4F\u853D https://google.com/, https://www.google.com/, https://abcdef.google.com/, https://def.abc.google.com/ \u7B49\u3002</li>\n<li><code>abc.google.com</code> \u5C06\u5C4F\u853D https://abc.google.com/, https://def.abc.google.com/ \u7B49\u3002</li>\n<li><code>*.google.com</code> \u5C06\u5C4F\u853D https://www.google.com/, https://def.abc.google.com/ \u7B49\u3002\u4F46\u4E0D\u542B https://google.com/</li>\n<li><code>google.*/</code> \u5C06\u5C4F\u853D https://google.com/, https://www.google.co.uk \u7B49\u3002</li>\n<li><code>http://google.com</code> \u5C06\u5C4F\u853D http://google.com/, but not https://google.com/, http://www.google.com/ \u7B49\u3002</li>\n<li><code>google.com/test</code> \u5C06\u5C4F\u853D https://google.com/test, https://www.google.com/test/abcdef, but not https://google.com/ \u7B49\u3002</li>\n<li><code>google.com/*/test</code> \u5C06\u5C4F\u853D https://google.com/abc/test\uFF0C\u4F46\u4E0D\u542B https://google.com/test \u6216 https://google.com/abc/def/test</li>\n<li><code>google.com/**/test</code> \u5C06\u5C4F\u853D https://google.com/abc/test, https://google.com/abc/def/test, https://google.com/abc/def/ghi/test \u7B49\u3002 but not https://google.com/test</li>\n<li><code>g??gle.com</code> \u5C06\u5C4F\u853D https://google.com/, https://gaagle.com/, https://goagle.com/ \u7B49\u3002</li>\n<li><code>google.{com,co.uk}</code> \u5C06\u5C4F\u853D https://google.com/ \u548Chttps://google.co.uk/</li>\n<li><code>g[oau]ogle.com</code> \u5C06\u5C4F\u853D https://google.com/, https://gaogle.com/, \u548Chttp://www.guogle.com/</li>\n<li><code>g[0-9]ogle.com</code> \u5C06\u5C4F\u853D https://g0ogle.com/, https://g1ogle.com/ \u7B49\u3002 (up to https://g9ogle.com/)</li>\n</ul>"
 		},
@@ -12551,8 +11851,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Modo de lista negra de p\u00E1ginas HTML"
+			}
 		},
 		"Whether the HTML page blacklist should act as a blacklist or a whitelist": {
 			"_info": {
@@ -12562,8 +11861,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Se a lista negra de p\u00E1ginas HTML deve funcionar como uma lista negra ou uma lista branca"
+			}
 		},
 		"Whitelist": {
 			"_info": {
@@ -12581,8 +11879,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "options.whitelist.name"
 					}
 				]
-			},
-			"pt-BR": "Lista branca"
+			}
 		},
 		"Blacklist": {
 			"_info": {
@@ -12602,7 +11899,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBE14\uB799\uB9AC\uC2A4\uD2B8",
-			"pt-BR": "Lista negra",
 			"ru": "\u0427\u0451\u0440\u043D\u044B\u0439 \u0441\u043F\u0438\u0441\u043E\u043A",
 			"zh-CN": "\u9ED1\u540D\u5355"
 		},
@@ -12615,7 +11911,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Formato do nome do arquivo",
 			"ru": "\u0424\u043E\u0440\u043C\u0430\u0442 \u0438\u043C\u0435\u043D\u0438 \u0444\u0430\u0439\u043B\u0430",
 			"zh-CN": "\u6587\u4EF6\u540D\u683C\u5F0F"
 		},
@@ -12628,7 +11923,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "String(s) de formata\u00E7\u00E3o para o nome do arquivo",
 			"ru": "\u0424\u043E\u0440\u043C\u0430\u0442 \u0441\u0442\u0440\u043E\u043A(\u0438) \u0434\u043B\u044F \u0438\u043C\u0435\u043D\u0438 \u0444\u0430\u0439\u043B\u0430.",
 			"zh-CN": "\u6587\u4EF6\u540D\u683C\u5F0F\u5316\u8981\u7528\u5230\u7684\u5B57\u7B26\u4E32"
 		},
@@ -12657,7 +11951,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Documenta\u00E7\u00E3o",
 			"ru": "\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u044F",
 			"zh-CN": "\u6587\u6863"
 		},
@@ -12680,7 +11973,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir caracteres especiais por underlines",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u0430 \u0441\u043F\u0435\u0446\u0441\u0438\u043C\u0432\u043E\u043B\u043E\u0432 \u043F\u043E\u0434\u0447\u0451\u0440\u043A\u0438\u0432\u0430\u043D\u0438\u0435\u043C",
 			"zh-CN": "\u7528\u4E0B\u5212\u7EBF\u66FF\u6362\u7279\u6B8A\u5B57\u7B26"
 		},
@@ -12693,7 +11985,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substitui caracteres como `/` ou `\"` por `_` ao baixar. Observe que os navegadores geralmente fazem isso automaticamente, isso \u00E9 apenas para garantir um comportamento consistente.",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u044F\u0435\u0442 \u0442\u0430\u043A\u0438\u0435 \u0441\u0438\u043C\u0432\u043E\u043B\u044B, \u043A\u0430\u043A `/` \u0438\u043B\u0438 `\"` \u043D\u0430 `_` \u043F\u0440\u0438 \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u0438. \u041E\u0431\u0440\u0430\u0442\u0438\u0442\u0435 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435, \u0447\u0442\u043E \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u044B \u043E\u0431\u044B\u0447\u043D\u043E \u0434\u0435\u043B\u0430\u044E\u0442 \u044D\u0442\u043E \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438, \u044D\u0442\u043E \u043F\u0440\u043E\u0441\u0442\u043E \u0434\u043B\u044F \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0435\u043D\u0438\u044F \u0441\u043E\u0433\u043B\u0430\u0441\u043E\u0432\u0430\u043D\u043D\u043E\u0433\u043E \u043F\u043E\u0432\u0435\u0434\u0435\u043D\u0438\u044F.",
 			"zh-CN": "\u4E0B\u8F7D\u65F6\u5C06\u8BF8\u5982 `/`\u3001`\"` \u7B49\u5B57\u7B26\u66FF\u6362\u4E3A `_` \u3002\u6D4F\u89C8\u5668\u901A\u5E38\u4F1A\u81EA\u52A8\u8FD9\u6837\u505A\uFF0C\u8FD9\u53EA\u662F\u4E3A\u4E86\u786E\u4FDD\u4E00\u81F4\u7684\u884C\u4E3A\u3002"
 		},
@@ -12726,7 +12017,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Atalho de teclado que executar\u00E1 a fun\u00E7\u00E3o Substituir Imagens",
 			"ru": "\u0412\u044B\u0437\u044B\u0432\u0430\u0435\u0442 \u043F\u0440\u0438\u0432\u044F\u0437\u043A\u0443 \u043A\u043B\u0430\u0432\u0438\u0448, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442 \u0444\u0443\u043D\u043A\u0446\u0438\u044E \u0437\u0430\u043C\u0435\u043D\u044B \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439.",
 			"zh-CN": "\u8FD0\u884C\u201C\u66FF\u6362\u56FE\u50CF\u201D\u529F\u80FD\u7684\u89E6\u53D1\u952E"
 		},
@@ -12739,7 +12029,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir imagens automaticamente",
 			"ru": "\u0410\u0432\u0442\u043E\u0437\u0430\u043C\u0435\u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439",
 			"zh-CN": "\u81EA\u52A8\u66FF\u6362\u56FE\u50CF"
 		},
@@ -12752,7 +12041,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir automaticamente imagens por vers\u00F5es maiores nas p\u00E1ginas que voc\u00EA visualiza",
 			"ru": "\u0410\u0432\u0442\u043E\u0437\u0430\u043C\u0435\u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u043D\u0430 \u0431\u043E\u043B\u0435\u0435 \u043A\u0440\u0443\u043F\u043D\u044B\u0435 \u0432\u0435\u0440\u0441\u0438\u0438 \u043D\u0430 \u043F\u0440\u043E\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0435\u043C\u044B\u0445 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430\u0445.",
 			"zh-CN": "\u5728\u60A8\u67E5\u770B\u7684\u9875\u9762\u4E0A\u81EA\u52A8\u5C06\u56FE\u50CF\u66FF\u6362\u4E3A\u8F83\u5927\u7248\u672C"
 		},
@@ -12769,7 +12057,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Isso pode levar a limita\u00E7\u00E3o de taxa ou banimento de IP",
 			"ru": "\u042D\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u043F\u0440\u0438\u0432\u0435\u0441\u0442\u0438 \u043A \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044E \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438 \u0438\u043B\u0438 \u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u043A\u0435 IP-\u0430\u0434\u0440\u0435\u0441\u0430.",
 			"zh-CN": "\u8FD9\u53EF\u80FD\u5BFC\u81F4\u901F\u7387\u9650\u5236\u548C\u5C01\u7981 IP"
 		},
@@ -12782,7 +12069,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Usar URLs de dados",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C data URL",
 			"zh-CN": "\u4F7F\u7528 data URL"
 		},
@@ -12795,7 +12081,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Utiliza URLs data:// em vez de links de imagem. Desabilitar isso pode melhorar a compatibilidade com algumas extens\u00F5es de download de imagens em massa",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 data:// URL \u0432\u043C\u0435\u0441\u0442\u043E \u0441\u0441\u044B\u043B\u043E\u043A \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F. \u041E\u0442\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435 \u044D\u0442\u043E\u0433\u043E \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430 \u043C\u043E\u0436\u0435\u0442 \u0443\u043B\u0443\u0447\u0448\u0438\u0442\u044C \u0441\u043E\u0432\u043C\u0435\u0441\u0442\u0438\u043C\u043E\u0441\u0442\u044C \u0441 \u043D\u0435\u043A\u043E\u0442\u043E\u0440\u044B\u043C\u0438 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F\u043C\u0438 \u043C\u0430\u0441\u0441\u043E\u0432\u043E\u0433\u043E \u0441\u043A\u0430\u0447\u0438\u0432\u0430\u043D\u0438\u044F \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439.",
 			"zh-CN": "\u4F7F\u7528 data:// URL \u4EE3\u66FF\u56FE\u50CF\u94FE\u63A5\u3002\u7981\u7528\u6B64\u529F\u80FD\u53EF\u80FD\u6539\u5584\u4E0E\u6279\u91CF\u4E0B\u8F7D\u56FE\u7247\u7684\u6269\u5C55\u7684\u517C\u5BB9\u6027"
 		},
@@ -12808,7 +12093,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Esperar at\u00E9 que a imagem seja totalmente carregada",
 			"ru": "\u0416\u0434\u0430\u0442\u044C \u043F\u043E\u043B\u043D\u0443\u044E \u0437\u0430\u0433\u0440\u0443\u0437\u043A\u0443 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u7B49\u5F85\u81F3\u56FE\u50CF\u5B8C\u5168\u52A0\u8F7D"
 		},
@@ -12821,7 +12105,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Aguarda at\u00E9 que a imagem sendo substitu\u00EDda seja totalmente carregada antes de passar para a pr\u00F3xima imagem",
 			"ru": "\u0416\u0434\u0451\u0442 \u043F\u043E\u043A\u0430 \u0437\u0430\u043C\u0435\u043D\u044F\u0435\u043C\u043E\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043D\u043E \u043F\u0440\u0435\u0436\u0434\u0435 \u0447\u0435\u043C \u043F\u0435\u0440\u0435\u0439\u0442\u0438 \u043A \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u043C\u0443 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044E.",
 			"zh-CN": "\u79FB\u52A8\u5230\u4E0B\u4E00\u4E2A\u56FE\u50CF\u4E4B\u524D\uFF0C\u7B49\u5F85\u88AB\u66FF\u6362\u7684\u56FE\u50CF\u5B8C\u5168\u52A0\u8F7D"
 		},
@@ -12834,7 +12117,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "M\u00E1ximo de imagens para processar de uma vez",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u0434\u043B\u044F \u043E\u0434\u043D\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0439 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438",
 			"zh-CN": "\u4E00\u6B21\u6700\u591A\u5904\u7406\u56FE\u50CF"
 		},
@@ -12847,7 +12129,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A quantidade m\u00E1xima de imagens para processar de uma vez",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u0434\u043B\u044F \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043E\u0434\u043D\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E.",
 			"zh-CN": "\u4E00\u6B21\u6700\u591A\u5904\u7406\u591A\u5C11\u4E2A\u56FE\u50CF"
 		},
@@ -12860,7 +12141,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "M\u00E1ximo de imagens por dom\u00EDnio de uma vez",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u043D\u0430 \u0434\u043E\u043C\u0435\u043D \u043E\u0434\u043D\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E",
 			"zh-CN": "\u6BCF\u4E2A\u57DF\u4E00\u6B21\u6700\u591A\u56FE\u50CF"
 		},
@@ -12873,7 +12153,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "A quantidade m\u00E1xima de imagens por dom\u00EDnio para processar de uma vez",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u043D\u0430 \u0434\u043E\u043C\u0435\u043D \u0434\u043B\u044F \u043E\u0434\u043D\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0439 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438.",
 			"zh-CN": "\u6BCF\u4E2A\u57DF\uFF08\u540D\uFF09\u4E00\u6B21\u6700\u591A\u5904\u7406\u591A\u5C11\u4E2A\u56FE\u50CF"
 		},
@@ -12896,7 +12175,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "im\u00E1genes",
 			"ko": "\uC774\uBBF8\uC9C0",
-			"pt-BR": "imagens",
 			"ru": "\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u4E2A\u56FE\u50CF"
 		},
@@ -12909,7 +12187,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Atraso entre imagens do mesmo dom\u00EDnio",
 			"ru": "\u0417\u0430\u0434\u0435\u0440\u0436\u043A\u0430 \u043C\u0435\u0436\u0434\u0443 \u043E\u0434\u043D\u043E\u0434\u043E\u043C\u0435\u043D\u043D\u044B\u043C\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\u043C\u0438.",
 			"zh-CN": "\u540C\u57DF\u56FE\u50CF\u4E4B\u95F4\u5EF6\u8FDF"
 		},
@@ -12922,7 +12199,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Novas requisi\u00E7\u00F5es para imagens no mesmo dom\u00EDnio ser\u00E3o atrasadas por esta quantidade de segundos. \u00DAtil para evitar limites de taxa.",
 			"ru": "\u041D\u043E\u0432\u044B\u0435 \u0437\u0430\u043F\u0440\u043E\u0441\u044B \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u0432 \u0442\u043E\u043C \u0436\u0435 \u0434\u043E\u043C\u0435\u043D\u0435 \u0431\u0443\u0434\u0443\u0442 \u0437\u0430\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0442\u044C\u0441\u044F \u043D\u0430 \u044D\u0442\u043E \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0441\u0435\u043A\u0443\u043D\u0434. \u041F\u043E\u043B\u0435\u0437\u043D\u043E \u0434\u043B\u044F \u0438\u0437\u0431\u0435\u0436\u0430\u043D\u0438\u044F \u043E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u0439 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438.",
 			"zh-CN": "\u5BF9\u540C\u57DF\u56FE\u50CF\u7684\u65B0\u8BF7\u6C42\u5C06\u5EF6\u8FDF\u6B64\u79D2\u6570\u3002\u6709\u52A9\u907F\u514D\u89E6\u53D1\u9891\u7387\u9650\u5236\u3002"
 		},
@@ -12957,7 +12233,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			},
 			"es": "segundos",
 			"ko": "\uCD08",
-			"pt-BR": "segundos",
 			"ru": "\u0441\u0435\u043A.",
 			"zh-CN": "\u79D2"
 		},
@@ -12970,7 +12245,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir imagens",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u044F\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u66FF\u6362\u56FE\u7247"
 		},
@@ -12983,7 +12257,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substitui as imagens por suas vers\u00F5es maiores quando o bot\u00E3o \u00E9 pressionado",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u044F\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043D\u0430 \u0438\u0445 \u0431\u043E\u043B\u0435\u0435 \u043A\u0440\u0443\u043F\u043D\u044B\u0435 \u0432\u0435\u0440\u0441\u0438\u0438 \u043F\u0440\u0438 \u043D\u0430\u0436\u0430\u0442\u0438\u0438 \u043A\u043D\u043E\u043F\u043A\u0438.",
 			"zh-CN": "\u6309\u4E0B\u6309\u94AE\u65F6\uFF0C\u5C06\u56FE\u50CF\u66FF\u6362\u4E3A\u8F83\u5927\u7684\u7248\u672C"
 		},
@@ -12996,7 +12269,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Adicionar links",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0438",
 			"zh-CN": "\u6DFB\u52A0\u94FE\u63A5"
 		},
@@ -13009,7 +12281,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Adiciona links ao redor da m\u00EDdia substitu\u00EDda se um link ainda n\u00E3o existir",
 			"ru": "\u0414\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u0441\u044B\u043B\u043A\u0438 \u0432\u043E\u043A\u0440\u0443\u0433 \u0437\u0430\u043C\u0435\u043D\u0451\u043D\u043D\u044B\u0445 \u043C\u0435\u0434\u0438\u0430, \u0435\u0441\u043B\u0438 \u0441\u0441\u044B\u043B\u043A\u0438 \u0435\u0449\u0451 \u043D\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442.",
 			"zh-CN": "\u5728\u5DF2\u66FF\u6362\u5A92\u4F53\u65C1\u6DFB\u52A0\u94FE\u63A5\uFF08\u5982\u679C\u5C1A\u65E0\uFF09"
 		},
@@ -13022,7 +12293,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir links",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u044F\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0438",
 			"zh-CN": "\u66FF\u6362\u94FE\u63A5"
 		},
@@ -13035,7 +12305,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substitui links se eles j\u00E1 existirem",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u044F\u0435\u0442 \u0441\u0441\u044B\u043B\u043A\u0438, \u0435\u0441\u043B\u0438 \u043E\u043D\u0438 \u0443\u0436\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044E\u0442.",
 			"zh-CN": "\u66FF\u6362\u5DF2\u7ECF\u5B58\u5728\u7684\u94FE\u63A5"
 		},
@@ -13048,7 +12317,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Hiperlinks simples",
 			"ru": "\u041F\u0440\u043E\u0441\u0442\u044B\u0435 \u0433\u0438\u043F\u0435\u0440\u0441\u0441\u044B\u043B\u043A\u0438",
 			"zh-CN": "\u7EAF\u7CB9\u8D85\u94FE\u63A5"
 		},
@@ -13061,7 +12329,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Como tratar hiperlinks simples (n\u00E3o m\u00EDdia) que ligam para m\u00EDdias em potencial",
 			"ru": "\u041A\u0430\u043A \u043E\u0431\u0440\u0430\u0449\u0430\u0442\u044C\u0441\u044F \u0441 \u043F\u0440\u043E\u0441\u0442\u044B\u043C\u0438 (\u043D\u0435\u043C\u0435\u0434\u0438\u0439\u043D\u044B\u043C\u0438) \u0433\u0438\u043F\u0435\u0440\u0441\u0441\u044B\u043B\u043A\u0430\u043C\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0441\u0441\u044B\u043B\u0430\u044E\u0442\u0441\u044F \u043D\u0430 \u043F\u043E\u0442\u0435\u043D\u0446\u0438\u0430\u043B\u044C\u043D\u044B\u0435 \u043C\u0435\u0434\u0438\u0430.",
 			"zh-CN": "\u5982\u4F55\u5904\u7406\u94FE\u63A5\u5230\u6F5C\u5728\u5A92\u4F53\u7684\u7EAF\u7CB9\u8D85\u94FE\u63A5"
 		},
@@ -13074,7 +12341,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir link+texto",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u044F\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0443+\u0442\u0435\u043A\u0441\u0442",
 			"zh-CN": "\u66FF\u6362\u94FE\u63A5\u548C\u6587\u672C"
 		},
@@ -13087,7 +12353,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir m\u00EDdia",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u044F\u0442\u044C \u043C\u0435\u0434\u0438\u0430",
 			"zh-CN": "\u66FF\u6362\u5A92\u4F53"
 		},
@@ -13100,7 +12365,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Links abrem em nova aba",
 			"ru": "\u041E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0438 \u0432 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435",
 			"zh-CN": "\u5728\u65B0\u6807\u7B7E\u9875\u4E2D\u6253\u5F00\u94FE\u63A5"
 		},
@@ -13113,7 +12377,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Clicar em um link substitu\u00EDdo abrir\u00E1 a m\u00EDdia em uma nova aba",
 			"ru": "\u041D\u0430\u0436\u0430\u0442\u0438\u0435 \u043D\u0430 \u0437\u0430\u043C\u0435\u043D\u0451\u043D\u043D\u0443\u044E \u0441\u0441\u044B\u043B\u043A\u0443 \u043E\u0442\u043A\u0440\u043E\u0435\u0442 \u043C\u0435\u0434\u0438\u0430 \u0432 \u043D\u043E\u0432\u043E\u0439 \u0432\u043A\u043B\u0430\u0434\u043A\u0435.",
 			"zh-CN": "\u5355\u51FB\u5DF2\u66FF\u6362\u7684\u94FE\u63A5\u5C06\u5728\u65B0\u6807\u7B7E\u9875\u4E2D\u6253\u5F00\u5A92\u4F53"
 		},
@@ -13126,7 +12389,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Restri\u00E7\u00F5es de tamanho",
 			"ru": "\u041E\u0433\u0440\u0430\u043D\u0438\u0447\u0435\u043D\u0438\u044F \u043F\u043E \u0440\u0430\u0437\u043C\u0435\u0440\u0443",
 			"zh-CN": "\u5927\u5C0F\u9650\u5236"
 		},
@@ -13139,7 +12401,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Remove ou aplica especificadores de altura/largura para m\u00EDdia substitu\u00EDda",
 			"ru": "\u0423\u0434\u0430\u043B\u044F\u0435\u0442 \u0438\u043B\u0438 \u043F\u0440\u0438\u043C\u0435\u043D\u044F\u0435\u0442 \u0441\u043F\u0435\u0446\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u044B \u0432\u044B\u0441\u043E\u0442\u044B/\u0448\u0438\u0440\u0438\u043D\u044B \u0434\u043B\u044F \u0437\u0430\u043C\u0435\u043D\u0435\u043D\u043D\u044B\u0445 \u043C\u0435\u0434\u0438\u0430",
 			"zh-CN": "\u79FB\u9664\u6216\u5F3A\u5236\u5E94\u7528\u88AB\u66FF\u6362\u5A92\u4F53\u7684\u9AD8\u5EA6/\u5BBD\u5EA6\u8BF4\u660E\u7B26"
 		},
@@ -13156,7 +12417,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ignorar",
 			"ru": "\u0418\u0433\u043D\u043E\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C",
 			"zh-CN": "\u5FFD\u7565"
 		},
@@ -13169,7 +12429,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Remover",
 			"ru": "\u0423\u0434\u0430\u043B\u0438\u0442\u044C",
 			"zh-CN": "\u79FB\u9664"
 		},
@@ -13182,7 +12441,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "For\u00E7ar",
 			"ru": "\u041F\u0440\u0438\u043D\u0443\u0434\u0438\u0442\u0435\u043B\u044C\u043D\u043E",
 			"zh-CN": "\u5F3A\u5236"
 		},
@@ -13195,7 +12453,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "CSS de Substitui\u00E7\u00E3o",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u0430 CSS",
 			"zh-CN": "\u66FF\u6362 CSS"
 		},
@@ -13208,7 +12465,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Estilos CSS para aplicar \u00E0 m\u00EDdia substitu\u00EDda. Consulte a documenta\u00E7\u00E3o para o estilo CSS de Popup para mais informa\u00E7\u00F5es (as vari\u00E1veis thumb/full URL ainda n\u00E3o s\u00E3o suportadas aqui)",
 			"ru": "\u0421\u0442\u0438\u043B\u0438 CSS \u0434\u043B\u044F \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u043A \u0437\u0430\u043C\u0435\u043D\u044F\u0435\u043C\u044B\u043C \u043C\u0435\u0434\u0438\u0430. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u0432 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u0438 '\u0421\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F CSS \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430' (\u0437\u0434\u0435\u0441\u044C \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u043F\u0435\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0435 URL thumb/full).",
 			"zh-CN": "\u5E94\u7528\u5230\u5DF2\u66FF\u6362\u5A92\u4F53\u7684 CSS \u6837\u5F0F\u3002\u66F4\u591A\u4FE1\u606F\u8BE6\u89C1\u201C\u5F39\u7A97 CSS \u6837\u5F0F\u201D\u6587\u6863\uFF08\u6B64\u5904\u4E0D\u652F\u6301 thumb/full URL \u53D8\u91CF\uFF09"
 		},
@@ -13221,7 +12477,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Progresso simples",
 			"ru": "\u041F\u0440\u043E\u0441\u0442\u043E\u0439 \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441",
 			"zh-CN": "\u7B80\u5355\u8FDB\u5EA6\u6761"
 		},
@@ -13234,7 +12489,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Utiliza uma barra de progresso mais simples com tamanho fixo para todas as m\u00EDdias. Isso \u00E9 \u00FAtil para ver quantas imagens s\u00E3o substitu\u00EDdas, em vez do tempo estimado de conclus\u00E3o",
 			"ru": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442 \u0431\u043E\u043B\u0435\u0435 \u043F\u0440\u043E\u0441\u0442\u0443\u044E \u0448\u043A\u0430\u043B\u0443 \u043F\u0440\u043E\u0433\u0440\u0435\u0441\u0441\u0430, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u0438\u043C\u0435\u0435\u0442 \u0444\u0438\u043A\u0441\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 \u0434\u043B\u044F \u0432\u0441\u0435\u0445 \u043C\u0435\u0434\u0438\u0430. \u042D\u0442\u043E \u043F\u043E\u043B\u0435\u0437\u043D\u043E \u0434\u043B\u044F \u0442\u043E\u0433\u043E, \u0447\u0442\u043E\u0431\u044B \u0443\u0432\u0438\u0434\u0435\u0442\u044C, \u0441\u043A\u043E\u043B\u044C\u043A\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439 \u0437\u0430\u043C\u0435\u043D\u0435\u043D\u043E, \u0430 \u043D\u0435 \u0436\u0434\u0430\u0442\u044C.",
 			"zh-CN": "\u5BF9\u6240\u6709\u5A92\u4F53\u4F7F\u7528\u56FA\u5B9A\u5927\u5C0F\u7684\u7B80\u5355\u8FDB\u5EA6\u6761\u3002\u8FD9\u80FD\u770B\u5230\u6709\u591A\u5C11\u56FE\u50CF\u5DF2\u66FF\u6362\uFF0C\u800C\u4E0D\u662F\u53EA\u6709\u5269\u4F59\u65F6\u95F4"
 		},
@@ -13247,7 +12501,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Atalho de teclado que executar\u00E1 a fun\u00E7\u00E3o 'Destacar Imagens'",
 			"ru": "\u041F\u0440\u0438\u0432\u044F\u0437\u043A\u0430 \u043A\u043B\u0430\u0432\u0438\u0448\u0438 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F, \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u0431\u0443\u0434\u0435\u0442 \u0437\u0430\u043F\u0443\u0441\u043A\u0430\u0442\u044C \u0444\u0443\u043D\u043A\u0446\u0438\u044E \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u043A\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439.",
 			"zh-CN": "\u7528\u6765\u8FD0\u884C\u201C\u9AD8\u4EAE\u56FE\u50CF\u201D\u529F\u80FD\u7684\u89E6\u53D1\u952E"
 		},
@@ -13260,7 +12513,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita o bot\u00E3o 'Destacar Imagens'",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u043A\u043D\u043E\u043F\u043A\u0443 '\u041F\u043E\u0434\u0441\u0432\u0435\u0442\u0438\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F'.",
 			"zh-CN": "\u542F\u7528\u201C\u9AD8\u4EAE\u56FE\u50CF\u201D\u6309\u94AE"
 		},
@@ -13273,7 +12525,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Destacar imagens automaticamente",
 			"ru": "\u0410\u0432\u0442\u043E\u043F\u043E\u0434\u0441\u0432\u0435\u0447\u0438\u0432\u0430\u0442\u044C \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u81EA\u52A8\u9AD8\u4EAE\u56FE\u7247"
 		},
@@ -13286,7 +12537,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Destaca automaticamente as imagens enquanto voc\u00EA visualiza as p\u00E1ginas",
 			"ru": "\u0410\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u043F\u043E\u0434\u0441\u0432\u0435\u0447\u0438\u0432\u0430\u0435\u0442 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F \u043F\u0440\u0438 \u043F\u0440\u043E\u0441\u043C\u043E\u0442\u0440\u0435 \u0441\u0442\u0440\u0430\u043D\u0438\u0446.",
 			"zh-CN": "\u67E5\u770B\u9875\u9762\u65F6\u81EA\u52A8\u7A81\u51FA\u56FE\u50CF"
 		},
@@ -13319,7 +12569,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Sempre",
 			"ru": "\u041F\u043E\u0441\u0442\u043E\u044F\u043D\u043D\u043E",
 			"zh-CN": "\u603B\u662F"
 		},
@@ -13332,7 +12581,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ao passar o mouse",
 			"ru": "\u041D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0435",
 			"zh-CN": "\u60AC\u505C"
 		},
@@ -13345,7 +12593,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Ao passar o mouse sobre uma imagem",
 			"ru": "\u041F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043D\u0430 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435.",
 			"zh-CN": "\u9F20\u6807\u5728\u56FE\u7247\u4E0A\u60AC\u505C\u65F6"
 		},
@@ -13370,7 +12617,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Nunca",
 			"ru": "\u041D\u0438\u043A\u043E\u0433\u0434\u0430",
 			"zh-CN": "\u4ECE\u4E0D"
 		},
@@ -13383,7 +12629,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Apenas imagens explicitamente suportadas",
 			"ru": "\u0422\u043E\u043B\u044C\u043A\u043E \u044F\u0432\u043D\u043E \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u043C\u044B\u0435 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F",
 			"zh-CN": "\u4EC5\u9650\u660E\u786E\u652F\u6301\u7684\u56FE\u50CF"
 		},
@@ -13396,7 +12641,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Destaca apenas imagens que podem ser ampliadas ou cuja vers\u00E3o original pode ser encontrada",
 			"ru": "\u041F\u043E\u0434\u0441\u0432\u0435\u0447\u0438\u0432\u0430\u0435\u0442 \u0442\u043E\u043B\u044C\u043A\u043E \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0433\u0443\u0442 \u0431\u044B\u0442\u044C \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u044B \u0438\u043B\u0438 \u043C\u043E\u0436\u043D\u043E \u043D\u0430\u0439\u0442\u0438 \u0438\u0445 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u044C\u043D\u0443\u044E \u0432\u0435\u0440\u0441\u0438\u044E.",
 			"zh-CN": "\u4EC5\u7A81\u51FA\u53EF\u4EE5\u6362\u6210\u66F4\u5927\u5C3A\u5BF8\u7684\u56FE\u50CF"
 		},
@@ -13409,7 +12653,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "CSS de Destaque",
 			"ru": "CSS \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u043A\u0430",
 			"zh-CN": "\u9AD8\u4EAE CSS"
 		},
@@ -13422,7 +12665,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Estilo CSS para aplicar ao destaque. Consulte a documenta\u00E7\u00E3o para o estilo CSS de Popup para mais informa\u00E7\u00F5es (as vari\u00E1veis thumb/full URL n\u00E3o s\u00E3o suportadas aqui)",
 			"ru": "\u0421\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F CSS, \u0434\u043B\u044F \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F \u043A \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u043A\u0435. \u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0432\u0435\u0434\u0435\u043D\u0438\u044F \u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435 \u0432 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u0446\u0438\u0438 '\u0421\u0442\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F CSS \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430' (\u0437\u0434\u0435\u0441\u044C \u043D\u0435 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u043F\u0435\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0435 URL thumb/full).",
 			"zh-CN": "\u9AD8\u4EAE\u65F6\u4F7F\u7528\u7684 CSS \u6837\u5F0F\u3002\u66F4\u591A\u4FE1\u606F\u8BE6\u89C1\u201C\u5F39\u7A97 CSS \u6837\u5F0F\u201D\u6587\u6863\uFF08\u6B64\u5904\u4E0D\u652F\u6301 thumb/full URL \u53D8\u91CF\uFF09"
 		},
@@ -13559,7 +12801,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "ms",
 			"ru": "\u043C\u0441",
 			"zh-CN": "\u6BEB\u79D2"
 		},
@@ -13688,7 +12929,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "px",
 			"ru": "\u043F\u0438\u043A\u0441.",
 			"zh-CN": "\u50CF\u7D20"
 		},
@@ -13823,7 +13063,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar tecla de disparo",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u043A\u043B\u0430\u0432\u0438\u0448\u0443 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F",
 			"zh-CN": "\u542F\u7528\u89E6\u53D1\u952E"
 		},
@@ -13844,7 +13083,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilita o uso da tecla de disparo para executar a fun\u00E7\u00E3o sem precisar usar o menu",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u043A\u043B\u0430\u0432\u0438\u0448\u0443 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u0434\u043B\u044F \u0437\u0430\u043F\u0443\u0441\u043A\u0430 \u0431\u0435\u0437 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0441\u0442\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F \u043C\u0435\u043D\u044E.",
 			"zh-CN": "\u5141\u8BB8\u4F7F\u7528\u89E6\u53D1\u952E\u6765\u8FD0\u884C\uFF0C\u65E0\u9700\u4F7F\u7528\u83DC\u5355"
 		},
@@ -13865,7 +13103,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tecla de disparo",
 			"ru": "\u041A\u043B\u0430\u0432\u0438\u0448\u0430 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F",
 			"zh-CN": "\u89E6\u53D1\u952E"
 		},
@@ -13877,8 +13114,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Atalho de teclado que executar\u00E1 a fun\u00E7\u00E3o 'Galeria Personalizada'"
+			}
 		},
 		"Enables the 'Custom Gallery' button": {
 			"_info": {
@@ -13888,8 +13124,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Habilita o bot\u00E3o 'Galeria Personalizada'"
+			}
 		},
 		"Apply key": {
 			"_info": {
@@ -13899,8 +13134,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "Tecla de aplica\u00E7\u00E3o"
+			}
 		},
 		"Triggers the gallery when pressed": {
 			"_info": {
@@ -13910,8 +13144,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Aciona a galeria quando pressionada"
+			}
 		},
 		"Background CSS": {
 			"_info": {
@@ -13921,8 +13154,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "CSS de Fundo"
+			}
 		},
 		"CSS style to apply for the background": {
 			"_info": {
@@ -13932,8 +13164,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Estilo CSS para aplicar ao fundo"
+			}
 		},
 		"Outline CSS": {
 			"_info": {
@@ -13943,8 +13174,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "name"
 					}
 				]
-			},
-			"pt-BR": "CSS de Contorno"
+			}
 		},
 		"CSS style to apply for element outlines": {
 			"_info": {
@@ -13954,8 +13184,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"field": "description"
 					}
 				]
-			},
-			"pt-BR": "Estilo CSS para aplicar aos contornos dos elementos"
+			}
 		},
 		"Enable button": {
 			"_info": {
@@ -13974,7 +13203,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar bot\u00E3o",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u043A\u043D\u043E\u043F\u043A\u0443",
 			"zh-CN": "\u542F\u7528\u6309\u94AE"
 		},
@@ -14008,7 +13236,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"en": "Popup action",
 			"es": "Acci\u00F3n del popup",
 			"ko": "\uC774\uBBF8\uC9C0 \uD31D\uC5C5 \uC791\uC5C5",
-			"pt-BR": "A\u00E7\u00E3o do popup ao passar o mouse",
 			"ru": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0435 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0435 \u043A\u0443\u0440\u0441\u043E\u0440\u0430",
 			"zh-CN": "\u79FB\u52A8\u65F6\u5F39\u7A97\u7684\u52A8\u4F5C"
 		},
@@ -14030,7 +13257,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uB9C8\uC6B0\uC2A4\uC624\uBC84 \uD31D\uC5C5\uC774 \uC5F4\uB9AC\uB294 \uBC29\uC2DD",
-			"pt-BR": "Determina como o popup ao passar o mouse ser\u00E1 aberto",
 			"ru": "\u041E\u043F\u0440\u0435\u0434\u0435\u043B\u044F\u0435\u0442, \u043A\u0430\u043A \u043E\u0442\u043A\u0440\u043E\u0451\u0442\u0441\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u043F\u0440\u0438 \u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438 \u043A\u0443\u0440\u0441\u043E\u0440\u0430 \u043C\u044B\u0448\u0438.",
 			"zh-CN": "\u51B3\u5B9A\u9F20\u6807\u60AC\u505C\u5F39\u7A97\u5C06\u6253\u5F00"
 		},
@@ -14068,7 +13294,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5",
-			"pt-BR": "Popup",
 			"ru": "\u0412\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E",
 			"zh-CN": "\u5F39\u7A97"
 		},
@@ -14104,7 +13329,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			"es": "Nueva pesta\u00F1a",
 			"fr": "Nouvel onglet",
 			"ko": "\uC0C8 \uD0ED",
-			"pt-BR": "Nova aba",
 			"ru": "\u041D\u043E\u0432\u0430\u044F \u0432\u043A\u043B\u0430\u0434\u043A\u0430",
 			"zh-CN": "\u65B0\u6807\u7B7E\u9875"
 		},
@@ -14137,7 +13361,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Nova aba em segundo plano",
 			"ru": "\u041D\u043E\u0432\u0430\u044F \u0444\u043E\u043D\u043E\u0432\u0430\u044F \u0432\u043A\u043B\u0430\u0434\u043A\u0430",
 			"zh-CN": "\u65B0\u540E\u53F0\u6807\u7B7E\u9875"
 		},
@@ -14170,7 +13393,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Baixar",
 			"ru": "\u0421\u043A\u0430\u0447\u0430\u0442\u044C",
 			"zh-CN": "\u4E0B\u8F7D"
 		},
@@ -14233,7 +13455,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Copiar link",
 			"ru": "\u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u0441\u0441\u044B\u043B\u043A\u0443",
 			"zh-CN": "\u590D\u5236\u94FE\u63A5"
 		},
@@ -14266,7 +13487,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Substituir",
 			"ru": "\u0417\u0430\u043C\u0435\u043D\u0438\u0442\u044C",
 			"zh-CN": "\u66FF\u6362"
 		},
@@ -14288,7 +13508,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD398\uC774\uC9C0 \uBC30\uACBD \uC81C\uC678",
-			"pt-BR": "Excluir plano de fundo da p\u00E1gina",
 			"ru": "\u0418\u0441\u043A\u043B\u044E\u0447\u0430\u0442\u044C \u0444\u043E\u043D \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B",
 			"zh-CN": "\u6392\u9664\u9875\u9762\u80CC\u666F"
 		},
@@ -14310,7 +13529,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC5D0 \uB300\uD55C \uD398\uC774\uC9C0 \uBC30\uACBD \uC81C\uC678",
-			"pt-BR": "Exclui o plano de fundo da p\u00E1gina para o popup",
 			"ru": "\u0418\u0441\u043A\u043B\u044E\u0447\u0430\u0435\u0442 \u0444\u043E\u043D \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B \u0434\u043B\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430.",
 			"zh-CN": "\u907F\u514D\u4E3A\u9875\u9762\u80CC\u666F\u663E\u793A\u5F39\u7A97"
 		},
@@ -14331,7 +13549,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tamanho m\u00EDnimo",
 			"ru": "\u041C\u0438\u043D\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440",
 			"zh-CN": "\u6700\u5C0F\u5C3A\u5BF8"
 		},
@@ -14352,7 +13569,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Menor tamanho aceit\u00E1vel para o popup abrir (esta op\u00E7\u00E3o \u00E9 ignorada para imagens de fundo). Refere-se ao tamanho da m\u00EDdia a ser exibida no popup, que pode ser diferente da m\u00EDdia de origem.",
 			"ru": "\u041D\u0430\u0438\u043C\u0435\u043D\u044C\u0448\u0438\u0439 \u0440\u0430\u0437\u043C\u0435\u0440, \u0434\u043E\u043F\u0443\u0441\u0442\u0438\u043C\u044B\u0439 \u0434\u043B\u044F \u043E\u0442\u043A\u0440\u044B\u0442\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430 (\u044D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0438\u0433\u043D\u043E\u0440\u0438\u0440\u0443\u0435\u0442\u0441\u044F \u0434\u043B\u044F \u0444\u043E\u043D\u043E\u0432\u044B\u0445 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439). \u042D\u0442\u043E \u043E\u0442\u043D\u043E\u0441\u0438\u0442\u0441\u044F \u043A \u0440\u0430\u0437\u043C\u0435\u0440\u0443 \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043C\u0435\u0434\u0438\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043C\u043E\u0436\u0435\u0442 \u043E\u0442\u043B\u0438\u0447\u0430\u0442\u044C\u0441\u044F \u043E\u0442 \u043E\u0440\u0438\u0433\u0438\u043D\u0430\u043B\u0430.",
 			"zh-CN": "\u5141\u8BB8\u591A\u5C0F\u7684\u56FE\u50CF\u663E\u793A\u5F39\u7A97\u3002\u80CC\u666F\u56FE\u50CF\u4E0D\u88AB\u6B64\u9009\u9879\u6DB5\u76D6\u3002\u8FD9\u6307\u5C06\u8981\u5F39\u7A97\u663E\u793A\u7684\u5A92\u4F53\u5927\u5C0F\uFF0C\u8FD9\u53EF\u80FD\u4E0E\u6E90\u5A92\u4F53\u4E0D\u540C\u3002"
 		},
@@ -14373,7 +13589,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tamanho m\u00E1ximo da origem",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0430",
 			"zh-CN": "\u6700\u5927\u6E90\u5C3A\u5BF8"
 		},
@@ -14394,7 +13609,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Tamanho m\u00E1ximo (largura/altura) para a m\u00EDdia de origem permitir a exibi\u00E7\u00E3o em popup (esta op\u00E7\u00E3o \u00E9 ignorada para imagens de fundo). Defina como `0` para qualquer tamanho.",
 			"ru": "\u041C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u044B\u0439 \u0440\u0430\u0437\u043C\u0435\u0440 (\u0448\u0438\u0440\u0438\u043D\u0430/\u0432\u044B\u0441\u043E\u0442\u0430) \u0438\u0441\u0445\u043E\u0434\u043D\u043E\u0433\u043E \u043C\u0435\u0434\u0438\u0430\u0444\u0430\u0439\u043B\u0430 \u0434\u043B\u044F \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F \u0432\u0441\u043F\u043B\u044B\u0442\u0438\u044F (\u044D\u0442\u043E\u0442 \u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440 \u0438\u0433\u043D\u043E\u0440\u0438\u0440\u0443\u0435\u0442\u0441\u044F \u0434\u043B\u044F \u0444\u043E\u043D\u043E\u0432\u044B\u0445 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0439). `0` - \u043B\u044E\u0431\u043E\u0439 \u0440\u0430\u0437\u043C\u0435\u0440.",
 			"zh-CN": "\u4EE5\u6E90\u5A92\u4F53\u663E\u793A\u5F39\u7A97\u7684\u6700\u5927\u5C3A\u5BF8\uFF08\u5BBD\u5EA6/\u9AD8\u5EA6\uFF09\uFF08\u5BF9\u80CC\u666F\u56FE\u50CF\u6765\u8BF4\u6B64\u9009\u9879\u65E0\u6548)\u3002\u8BBE\u4E3A 0 \u8868\u793A\u4EFB\u610F\u5927\u5C0F\u3002"
 		},
@@ -14435,7 +13649,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "pixels",
 			"ru": "\u043F\u0438\u043A\u0441.",
 			"zh-CN": "\u50CF\u7D20"
 		},
@@ -14457,7 +13670,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uBC30\uACBD \uC774\uBBF8\uC9C0 \uC81C\uC678",
-			"pt-BR": "Excluir imagens de fundo",
 			"ru": "\u0418\u0441\u043A\u043B\u044E\u0447\u0430\u0442\u044C `background-image`",
 			"zh-CN": "\u6392\u9664\u80CC\u666F\u56FE\u50CF"
 		},
@@ -14479,7 +13691,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				]
 			},
 			"ko": "\uD31D\uC5C5\uC758 \uBC30\uACBD \uC774\uBBF8\uC9C0 \uC81C\uC678. \uD31D\uC5C5\uC774 \uB9CE\uC740 \uC774\uBBF8\uC9C0\uC5D0\uC11C \uC791\uB3D9\uD558\uC9C0 \uC54A\uC744 \uC218 \uC788\uC74C",
-			"pt-BR": "Exclui imagens de fundo (`background-image`) do popup. Pode impedir que o popup funcione em muitas imagens",
 			"ru": "\u0418\u0441\u043A\u043B\u044E\u0447\u0430\u0435\u0442 `background-image` \u0434\u043B\u044F \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0433\u043E \u043E\u043A\u043D\u0430. \u042D\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u043F\u043E\u043C\u0435\u0448\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u043C\u0443 \u043E\u043A\u043D\u0443 \u0440\u0430\u0431\u043E\u0442\u0430\u0442\u044C \u0441\u043E \u043C\u043D\u043E\u0433\u0438\u043C\u0438 \u0438\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u044F\u043C\u0438.",
 			"zh-CN": "\u4E0D\u4E3A\u80CC\u666F\u56FE\u50CF\u663E\u793A\u5F39\u7A97\u3002\u53EF\u80FD\u4F7F\u5F88\u591A\u56FE\u50CF\u4E0A\u4E0D\u663E\u793A\u5F39\u7A97"
 		},
@@ -14500,7 +13711,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar v\u00EDdeos",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u652F\u6301\u89C6\u9891"
 		},
@@ -14521,7 +13731,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite que v\u00EDdeos sejam exibidos em popup",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F \u0432\u0438\u0434\u0435\u043E",
 			"zh-CN": "\u5141\u8BB8\u89C6\u9891\u5F39\u7A97"
 		},
@@ -14542,7 +13751,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Habilitar \u00E1udio",
 			"ru": "\u0412\u043A\u043B\u044E\u0447\u0438\u0442\u044C \u0430\u0443\u0434\u0438\u043E",
 			"zh-CN": "\u542F\u7528\u97F3\u9891"
 		},
@@ -14563,7 +13771,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite que \u00E1udio seja exibido em popup. Atualmente experimental.\nIsso se aplica apenas a arquivos de \u00E1udio. V\u00EDdeos que cont\u00EAm \u00E1udio s\u00E3o suportados independentemente desta configura\u00E7\u00E3o.",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0442\u044C \u0432\u0441\u043F\u043B\u044B\u0432\u0430\u044E\u0449\u0435\u0435 \u043E\u043A\u043D\u043E \u0434\u043B\u044F \u0430\u0443\u0434\u0438\u043E. \u0412 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u044D\u043A\u0441\u043F\u0435\u0440\u0438\u043C\u0435\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0439.\n\u042D\u0442\u043E \u043E\u0442\u043D\u043E\u0441\u0438\u0442\u0441\u044F \u0442\u043E\u043B\u044C\u043A\u043E \u043A \u0430\u0443\u0434\u0438\u043E\u0444\u0430\u0439\u043B\u0430\u043C. \u0412\u0438\u0434\u0435\u043E, \u0441\u043E\u0434\u0435\u0440\u0436\u0430\u0449\u0438\u0435 \u0430\u0443\u0434\u0438\u043E, \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u043E\u0442 \u044D\u0442\u043E\u0439 \u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438.",
 			"zh-CN": "\u5141\u8BB8\u97F3\u9891\u5F39\u7A97\u3002\u76EE\u524D\u5904\u4E8E\u5B9E\u9A8C\u9636\u6BB5\u3002\n\u8FD9\u4EC5\u9002\u7528\u4E8E\u97F3\u9891\u6587\u4EF6\u3002\u5305\u542B\u97F3\u9891\u7684\u89C6\u9891\u65E0\u5173\u6B64\u8BBE\u7F6E\u3002"
 		},
@@ -14584,7 +13791,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permitir streams HLS/DASH",
 			"ru": "\u0420\u0430\u0437\u0440\u0435\u0448\u0438\u0442\u044C \u043F\u043E\u0442\u043E\u043A\u0438 HLS/DASH",
 			"zh-CN": "\u5141\u8BB8 HLS/DASH \u6D41"
 		},
@@ -14605,7 +13811,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Permite a reprodu\u00E7\u00E3o de streams HLS/DASH",
 			"ru": "\u041F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u0432\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0438\u0442\u044C \u043F\u043E\u0442\u043E\u043A\u0438 HLS/DASH.",
 			"zh-CN": "\u5141\u8BB8\u64AD\u653E HLS/DASH \u6D41"
 		},
@@ -14626,7 +13831,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Dailymotion",
 			"ru": "\u0415\u0436\u0435\u0434\u043D\u0435\u0432\u043D\u043E\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0435",
 			"zh-CN": "Dailymotion"
 		},
@@ -14647,7 +13851,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Instagram (maior qualidade)",
 			"ru": "Instagram (\u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u044B\u0448\u0435)",
 			"zh-CN": "Instagram\uFF08\u66F4\u9AD8\u8D28\u91CF\uFF09"
 		},
@@ -14668,7 +13871,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "Reddit",
 			"ru": "Reddit",
 			"zh-CN": "Reddit"
 		},
@@ -14689,7 +13891,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					}
 				]
 			},
-			"pt-BR": "YouTube (maior qualidade)",
 			"ru": "YouTube (\u043A\u0430\u0447\u0435\u0441\u0442\u0432\u043E \u0432\u044B\u0448\u0435)",
 			"zh-CN": "YouTube\uFF08\u66F4\u9AD8\u8D28\u91CF\uFF09"
 		}
@@ -15236,10 +14437,6 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					name: "\uD55C\uAD6D\uC5B4",
 					name_gettext: false
 				},
-				"pt-BR": {
-					name: "Portugu\u00EAs (Brasil)",
-					name_gettext: false
-				},
 				ru: {
 					name: "\u0420\u0443\u0441\u0441\u043A\u0438\u0439",
 					name_gettext: false
@@ -15612,7 +14809,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				},
 				// thanks to Hlsgs on github for the idea: https://github.com/qsniyg/maxurl/issues/556
 				newtab_bg: {
-					name: "New background tab",
+					name: "New background tab"
 				},
 				download: {
 					name: "Download"
@@ -15676,13 +14873,13 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					mouse: {
 						name: "Mouseover",
 						description: "Triggers when your mouse is over the image"
-					},
+					}
 				},
 				_group2: {
 					keyboard: {
 						name: "Key trigger",
 						description: "Triggers when you press a key sequence when your mouse is over an image"
-					},
+					}
 				},
 				_group3: {
 					none: {
@@ -16643,7 +15840,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				{
 					_condition: "action:popup",
 					mouseover_close_need_mouseout: true
-				},
+				}
 			],
 			category: "popup",
 			subcategory: "close_behavior"
@@ -17269,7 +16466,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					"a02": { name: "" },
 					"a12": { name: "" },
 					"a22": { name: "" }
-				},
+				}
 			},
 			category: "popup",
 			subcategory: "open_behavior"
@@ -17392,7 +16589,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				{
 					_condition: "action:popup",
 					mouseover_add_video_link: true
-				},
+				}
 			],
 			category: "popup",
 			subcategory: "behavior"
@@ -18654,7 +17851,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			name: "Enable trigger key",
 			description: "Enables the use of the trigger key to run it without needing to use the menu",
 			category: "extra",
-			subcategory: "replaceimages",
+			subcategory: "replaceimages"
 		},
 		replaceimgs_keybinding: {
 			name: "Trigger key",
@@ -18839,7 +18036,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			name: "Enable trigger key",
 			description: "Enables the use of the trigger key to run it without needing to use the menu",
 			category: "extra",
-			subcategory: "highlightimages",
+			subcategory: "highlightimages"
 		},
 		highlightimgs_keybinding: {
 			name: "Trigger key",
@@ -18968,7 +18165,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			options: {
 				_type: "combo",
 				topleft: {
-					name: "Top left",
+					name: "Top left"
 				},
 				topright: {
 					name: "Top right"
@@ -19070,7 +18267,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			name: "Enable trigger key",
 			description: "Enables the use of the trigger key to run it without needing to use the menu",
 			category: "extra",
-			subcategory: "customgallery",
+			subcategory: "customgallery"
 		},
 		customgallery_keybinding: {
 			name: "Trigger key",
@@ -24816,7 +24013,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 										url: url
 									},
 									headers: {
-										Referer: "https://snaptik.app/", //pre_download.php?aweme_id=" + urlparts.web_vid,
+										Referer: "https://snaptik.app/", //pre_download.php?aweme_id=" + urlparts.web_vid
 									},
 									onload: function(resp) {
 										if (resp.status !== 200) {
@@ -24924,7 +24121,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				headers: {
 					"Content-Type": "application/x-www-form-urlencoded",
 					"Origin": "https://musicallydown.com",
-					"Referer": "https://musicallydown.com/",
+					"Referer": "https://musicallydown.com/"
 				},
 				data: token.link_name + "=" + encodeURIComponent(url) + "&" + token.token_name + "=" + token.token_value + "&verify=1"
 			}, cb, function(done, resp, cache_key) {
@@ -47719,7 +46916,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			var query_redtube = function(id, cb) {
 				var cache_key = "redtube:" + id;
 				api_query(cache_key, {
-					url: "https://www.redtube.com/" + id,
+					url: "https://www.redtube.com/" + id
 				}, cb, function(done, resp, cache_key) {
 					var match = resp.responseText.match(/page_params\.video_player_setup[\s\S]+playervars:\s*({.*}),/);
 					if (!match) {
@@ -52049,7 +51246,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					var obj = {
 						url: image,
 						extra: {
-							page: resp.finalUrl,
+							page: resp.finalUrl
 						}
 					};
 					var wallpaper_name = resp.responseText.match(/<h1 class="[^"]+wallpaper-name">([^<]+)<\/h1>/);
@@ -54168,7 +53365,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			return {
 				url: src.replace(/:\/\/[^/]*\/img\/([^/]*)\/([0-9]+)[a-z]\/([^-/]+-[0-9]+)-[0-9](\.[^/.]*)/, "://img01.gahag.net/$1/$2o/$3$4"),
 				headers: {
-					Referer: "http://gahag.net/",
+					Referer: "http://gahag.net/"
 				}
 			};
 		}
@@ -61223,7 +60420,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 								if (match) {
 									cb(fillobj_urls([{
 											url: urljoin(resp.finalUrl, match[1], true),
-											is_original: true,
+											is_original: true
 										}, src], baseobj));
 								} else {
 									console_error("Unable to find match", resp);
@@ -70131,7 +69328,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					};
 					if (options.do_request && options.cb) {
 						api_query("123rf:" + id, {
-							url: "https://www.123rf.com/photo_" + id + ".html",
+							url: "https://www.123rf.com/photo_" + id + ".html"
 						}, function(data) {
 							if (data) {
 								baseobj_11 = data;
@@ -72398,7 +71595,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			newsrc = website_query({
 				website_regex: [
 					/^[a-z]+:\/\/[^/]+\/+img-([0-9a-f]{5,})\.html(?:[?#].*)?$/,
-					/^[a-z]+:\/\/[^/]+\/+i\/+([0-9a-z]{5,})(?:[?#].*)?$/,
+					/^[a-z]+:\/\/[^/]+\/+i\/+([0-9a-z]{5,})(?:[?#].*)?$/
 				],
 				query_for_id: function(id, match) {
 					var url = "https://imx.to/img-" + id + ".html";
@@ -72708,7 +71905,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			if (src.match(regex)) {
 				return [
 					src.replace(regex, "://aa.hitomi.la/galleries/$1"),
-					src.replace(regex, "://ba.hitomi.la/galleries/$1"),
+					src.replace(regex, "://ba.hitomi.la/galleries/$1")
 				];
 			} else {
 				var pageid = src.replace(/^[a-z]+:\/\/[^/]*\/+[a-z]+\/+([0-9]+)\/+.*/, "$1");
@@ -82828,7 +82025,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			//   http://tgp.inthecrack.com/assets/images/hosted/galleries/full/be39c045-168a-47aa-bb85-41f609a4a7e2/1080_005.jpg
 			// cloudflare protection, prevents it from working without the cookie
 			return {
-				url: src.replace(/\/assets\/+images\/+hosted\/+galleries\/+([-0-9a-f]{20,})/, "/assets/images/hosted/galleries/full/$1"),
+				url: src.replace(/\/assets\/+images\/+hosted\/+galleries\/+([-0-9a-f]{20,})/, "/assets/images/hosted/galleries/full/$1")
 			};
 		}
 		if (domain === "content.pornstarplatinum.com") {
@@ -82972,7 +82169,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			if (src.match(/\/attachment\/+[^/.]*\.[a-z]+/)) {
 				return [
 					src.replace(/(\/attachment\/+[^/.]*)\.[a-z]+/, "$1"),
-					src.replace(/(\/attachment\/+[^/.]*)\.[a-z]+/, "$1.large"),
+					src.replace(/(\/attachment\/+[^/.]*)\.[a-z]+/, "$1.large")
 				];
 			}
 		}
@@ -87566,7 +86763,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			if (match) {
 				obj = {
 					extra: {
-						page: keep_queries(src, ["twg_album", "twg_show"]).replace(/\/image\.php\?/, "/index.php?"),
+						page: keep_queries(src, ["twg_album", "twg_show"]).replace(/\/image\.php\?/, "/index.php?")
 					}
 				};
 				newsrc = keep_queries(src, ["twg_album", "twg_show"], { required: true });
@@ -90793,7 +89990,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 				id = match[1];
 				obj = {
 					url: src,
-					extra: { page: get_twitpic_page_from_id(id) },
+					extra: { page: get_twitpic_page_from_id(id) }
 				};
 				return [{
 						url: obj.extra.page,
@@ -95583,7 +94780,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			newsrc = website_query({
 				website_regex: [
 					/^[a-z]+:\/\/[^/]+\/+embed-([a-z0-9]{12})(?:-[0-9]+x[0-9]+)?\.html(?:[?#].*)?$/,
-					/^[a-z]+:\/\/[^/]+\/+([a-z0-9]{12})(?:[?#].*)?$/,
+					/^[a-z]+:\/\/[^/]+\/+([a-z0-9]{12})(?:[?#].*)?$/
 				],
 				query_for_id: "https://" + domain + "/embed-${id}.html",
 				process: function(done, resp, cache_key) {
@@ -100883,7 +100080,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						"client-id": base64_decode("IGtpbW5lNzhreDNuY3g2YnJnbzRtdjZ3a2k1aDFrbw==").substr(1),
 						"content-type": "text/plain;charset=UTF-8",
 						origin: "https://www.twitch.tv",
-						referer: "https://www.twitch.tv/",
+						referer: "https://www.twitch.tv/"
 					},
 					imu_mode: "xhr",
 					json: true
@@ -103482,7 +102679,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						url: "https://tv.gab.com/media/" + id + "?viewKey=" + viewkey,
 						imu_mode: "video",
 						headers: {
-							Referer: extra.page,
+							Referer: extra.page
 						},
 						cookie_url: "https://tv.gab.com/", // hack, it requires cookies. browser refuses to load cookies for that site if embedded
 						video: true
@@ -110106,7 +109303,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					headers: {
 						Accept: "*/*",
 						Origin: "https://" + domain,
-						Referer: finalurl || ("https://" + domain + "/"),
+						Referer: finalurl || ("https://" + domain + "/")
 					},
 					imu_mode: "xhr",
 					json: true
@@ -111385,7 +110582,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 					url: "https://api.arte.tv/api/player/v2/config/en/" + vidid,
 					imu_mode: "xhr",
 					headers: {
-						Accept: "application/json",
+						Accept: "application/json"
 					},
 					json: true
 				}, cb, function(done, resp, cache_key) {
@@ -120746,7 +119943,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 			newsrc = website_query({
 				website_regex: [
 					/^[a-z]+:\/\/[^/]+\/+embed-video\/+([0-9a-zA-Z]+)(?:[?#].*)?$/,
-					/^[a-z]+:\/\/[^/]+\/+view\/+([0-9a-zA-Z]+)\/+file\.html(?:[?#].*)?$/,
+					/^[a-z]+:\/\/[^/]+\/+view\/+([0-9a-zA-Z]+)\/+file\.html(?:[?#].*)?$/
 				],
 				query_for_id: function(id) {
 					return {
@@ -121904,7 +121101,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						url: sourceurl,
 						headers: {
 							Referer: resp.finalUrl
-						},
+						}
 					};
 					if (!/\.m3u8/.test(sourceurl))
 						sourceobj.video = true;
@@ -125947,7 +125144,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 							{ tagName: "P", classList: ["p.title"] },
 							{ tagName: "DIV", classList: ["top-matter"] },
 							{ tagName: "DIV", classList: ["entry"] },
-							{ tagName: "DIV", classList: ["thing"] },
+							{ tagName: "DIV", classList: ["thing"] }
 						], ".thing > .entry > .top-matter > p.title > a");
 					}
 				}
@@ -134239,7 +133436,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 								var formatorder = [
 									{
 										value: img_naturalWidth + "x" + img_naturalHeight,
-										valid: settings.mouseover_ui_imagesize,
+										valid: settings.mouseover_ui_imagesize
 									},
 									{
 										value: currentzoom + "%",
@@ -136383,7 +135580,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 						count: 0,
 						src: src,
 						el: el,
-						id: id++,
+						id: id++
 					};
 				}
 				// blank images
@@ -142118,7 +141315,7 @@ var __generator = (this && this.__generator) || function(thisArg, body) {
 								return [4 /*yield*/, do_node_dl({
 										method: parsedinfo.method,
 										url: parsedinfo.url,
-										headers: parsedinfo.headers,
+										headers: parsedinfo.headers
 									}, outpath + "/" + parsedinfo.filename)];
 							case 1:
 								_a.sent();

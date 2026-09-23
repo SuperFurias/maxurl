@@ -10793,7 +10793,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage	var query_redtube = function(id, cb) {
 			// imu:bigimage		var cache_key = "redtube:" + id;
 			// imu:bigimage		api_query(cache_key, {
-			// imu:bigimage			url: "https://www.redtube.com/" + id,
+			// imu:bigimage			url: "https://www.redtube.com/" + id
 			// imu:bigimage		}, cb, function(done, resp, cache_key) {
 			// imu:bigimage			var match = resp.responseText.match(/page_params\.video_player_setup[\s\S]+playervars:\s*({.*}),/);
 			// imu:bigimage			if (!match) {
@@ -12961,7 +12961,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage			var obj = {
 			// imu:bigimage				url: image,
 			// imu:bigimage				extra: {
-			// imu:bigimage					page: resp.finalUrl,
+			// imu:bigimage					page: resp.finalUrl
 			// imu:bigimage				}
 			// imu:bigimage			};
 			// imu:bigimage			var wallpaper_name = resp.responseText.match(/<h1 class="[^"]+wallpaper-name">([^<]+)<\/h1>/);
@@ -14060,7 +14060,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage	return {
 			// imu:bigimage		url: src.replace(/:\/\/[^/]*\/img\/([^/]*)\/([0-9]+)[a-z]\/([^-/]+-[0-9]+)-[0-9](\.[^/.]*)/, "://img01.gahag.net/$1/$2o/$3$4"),
 			// imu:bigimage		headers: {
-			// imu:bigimage			Referer: "http://gahag.net/",
+			// imu:bigimage			Referer: "http://gahag.net/"
 			// imu:bigimage		}
 			// imu:bigimage	};
 			// imu:bigimage}
@@ -17916,7 +17916,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage						if (match) {
 			// imu:bigimage							cb(fillobj_urls([{
 			// imu:bigimage									url: urljoin(resp.finalUrl, match[1], true),
-			// imu:bigimage									is_original: true,
+			// imu:bigimage									is_original: true
 			// imu:bigimage								}, src], baseobj));
 			// imu:bigimage						} else {
 			// imu:bigimage							console_error("Unable to find match", resp);
@@ -22558,7 +22558,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage			};
 			// imu:bigimage			if (options.do_request && options.cb) {
 			// imu:bigimage				api_query("123rf:" + id, {
-			// imu:bigimage					url: "https://www.123rf.com/photo_" + id + ".html",
+			// imu:bigimage					url: "https://www.123rf.com/photo_" + id + ".html"
 			// imu:bigimage				}, function(data) {
 			// imu:bigimage					if (data) {
 			// imu:bigimage						baseobj_11 = data;
@@ -23630,7 +23630,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage	newsrc = website_query({
 			// imu:bigimage		website_regex: [
 			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+img-([0-9a-f]{5,})\.html(?:[?#].*)?$/,
-			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+i\/+([0-9a-z]{5,})(?:[?#].*)?$/,
+			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+i\/+([0-9a-z]{5,})(?:[?#].*)?$/
 			// imu:bigimage		],
 			// imu:bigimage		query_for_id: function(id, match) {
 			// imu:bigimage			var url = "https://imx.to/img-" + id + ".html";
@@ -23775,7 +23775,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage	if (src.match(regex)) {
 			// imu:bigimage		return [
 			// imu:bigimage			src.replace(regex, "://aa.hitomi.la/galleries/$1"),
-			// imu:bigimage			src.replace(regex, "://ba.hitomi.la/galleries/$1"),
+			// imu:bigimage			src.replace(regex, "://ba.hitomi.la/galleries/$1")
 			// imu:bigimage		];
 			// imu:bigimage	} else {
 			// imu:bigimage		var pageid = src.replace(/^[a-z]+:\/\/[^/]*\/+[a-z]+\/+([0-9]+)\/+.*/, "$1");
@@ -28587,7 +28587,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimageif (domain === "tgp.inthecrack.com" ||
 			// imu:bigimage	domain_nowww === "crack-assets.com") {
 			// imu:bigimage	return {
-			// imu:bigimage		url: src.replace(/\/assets\/+images\/+hosted\/+galleries\/+([-0-9a-f]{20,})/, "/assets/images/hosted/galleries/full/$1"),
+			// imu:bigimage		url: src.replace(/\/assets\/+images\/+hosted\/+galleries\/+([-0-9a-f]{20,})/, "/assets/images/hosted/galleries/full/$1")
 			// imu:bigimage	};
 			// imu:bigimage}
 			// imu:bigimageif (domain === "content.pornstarplatinum.com") return src.replace(/\/images\/+thumb([0-9]+\.[^/.]*)(?:[?#].*)?$/, "/images/pic$1");
@@ -28657,7 +28657,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage	if (src.match(/\/attachment\/+[^/.]*\.[a-z]+/)) {
 			// imu:bigimage		return [
 			// imu:bigimage			src.replace(/(\/attachment\/+[^/.]*)\.[a-z]+/, "$1"),
-			// imu:bigimage			src.replace(/(\/attachment\/+[^/.]*)\.[a-z]+/, "$1.large"),
+			// imu:bigimage			src.replace(/(\/attachment\/+[^/.]*)\.[a-z]+/, "$1.large")
 			// imu:bigimage		];
 			// imu:bigimage	}
 			// imu:bigimage}
@@ -31028,7 +31028,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage	if (match) {
 			// imu:bigimage		obj = {
 			// imu:bigimage			extra: {
-			// imu:bigimage				page: keep_queries(src, ["twg_album", "twg_show"]).replace(/\/image\.php\?/, "/index.php?"),
+			// imu:bigimage				page: keep_queries(src, ["twg_album", "twg_show"]).replace(/\/image\.php\?/, "/index.php?")
 			// imu:bigimage			}
 			// imu:bigimage		};
 			// imu:bigimage		newsrc = keep_queries(src, ["twg_album", "twg_show"], { required: true });
@@ -32998,7 +32998,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage		id = match[1];
 			// imu:bigimage		obj = {
 			// imu:bigimage			url: src,
-			// imu:bigimage			extra: { page: get_twitpic_page_from_id(id) },
+			// imu:bigimage			extra: { page: get_twitpic_page_from_id(id) }
 			// imu:bigimage		};
 			// imu:bigimage		return [{
 			// imu:bigimage				url: obj.extra.page,
@@ -36023,7 +36023,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage	newsrc = website_query({
 			// imu:bigimage		website_regex: [
 			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+embed-([a-z0-9]{12})(?:-[0-9]+x[0-9]+)?\.html(?:[?#].*)?$/,
-			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+([a-z0-9]{12})(?:[?#].*)?$/,
+			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+([a-z0-9]{12})(?:[?#].*)?$/
 			// imu:bigimage		],
 			// imu:bigimage		query_for_id: "https://" + domain + "/embed-${id}.html",
 			// imu:bigimage		process: function(done, resp, cache_key) {
@@ -40349,7 +40349,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage				"client-id": base64_decode("IGtpbW5lNzhreDNuY3g2YnJnbzRtdjZ3a2k1aDFrbw==").substr(1),
 			// imu:bigimage				"content-type": "text/plain;charset=UTF-8",
 			// imu:bigimage				origin: "https://www.twitch.tv",
-			// imu:bigimage				referer: "https://www.twitch.tv/",
+			// imu:bigimage				referer: "https://www.twitch.tv/"
 			// imu:bigimage			},
 			// imu:bigimage			imu_mode: "xhr",
 			// imu:bigimage			json: true
@@ -42337,7 +42337,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage				url: "https://tv.gab.com/media/" + id + "?viewKey=" + viewkey,
 			// imu:bigimage				imu_mode: "video",
 			// imu:bigimage				headers: {
-			// imu:bigimage					Referer: extra.page,
+			// imu:bigimage					Referer: extra.page
 			// imu:bigimage				},
 			// imu:bigimage				cookie_url: "https://tv.gab.com/", // hack, it requires cookies. browser refuses to load cookies for that site if embedded
 			// imu:bigimage				video: true
@@ -45970,7 +45970,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage			headers: {
 			// imu:bigimage				Accept: "*/*",
 			// imu:bigimage				Origin: "https://" + domain,
-			// imu:bigimage				Referer: finalurl || ("https://" + domain + "/"),
+			// imu:bigimage				Referer: finalurl || ("https://" + domain + "/")
 			// imu:bigimage			},
 			// imu:bigimage			imu_mode: "xhr",
 			// imu:bigimage			json: true
@@ -46883,7 +46883,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage			url: "https://api.arte.tv/api/player/v2/config/en/" + vidid,
 			// imu:bigimage			imu_mode: "xhr",
 			// imu:bigimage			headers: {
-			// imu:bigimage				Accept: "application/json",
+			// imu:bigimage				Accept: "application/json"
 			// imu:bigimage			},
 			// imu:bigimage			json: true
 			// imu:bigimage		}, cb, function(done, resp, cache_key) {
@@ -52835,7 +52835,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage	newsrc = website_query({
 			// imu:bigimage		website_regex: [
 			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+embed-video\/+([0-9a-zA-Z]+)(?:[?#].*)?$/,
-			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+view\/+([0-9a-zA-Z]+)\/+file\.html(?:[?#].*)?$/,
+			// imu:bigimage			/^[a-z]+:\/\/[^/]+\/+view\/+([0-9a-zA-Z]+)\/+file\.html(?:[?#].*)?$/
 			// imu:bigimage		],
 			// imu:bigimage		query_for_id: function(id) {
 			// imu:bigimage			return {
@@ -53680,7 +53680,7 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage				url: sourceurl,
 			// imu:bigimage				headers: {
 			// imu:bigimage					Referer: resp.finalUrl
-			// imu:bigimage				},
+			// imu:bigimage				}
 			// imu:bigimage			};
 			// imu:bigimage			if (!/\.m3u8/.test(sourceurl))
 			// imu:bigimage				sourceobj.video = true;
@@ -55341,6 +55341,6 @@ var $__imu_get_bigimage = function(shared_variables) {
 			// imu:bigimage}
 			// imu:bigimagereturn src;
 		},
-		nonce: "120ihha1hpiogfna" // imu:nonce = "120ihha1hpiogfna"
+		nonce: "296349f11ebf2gl3" // imu:nonce = "296349f11ebf2gl3"
 	};
 };
