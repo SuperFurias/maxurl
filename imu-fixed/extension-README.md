@@ -1,6 +1,6 @@
 # IMU Fixed Extension — unpacked build (no Shorts slowdown)
 
-Built at the fork root (manifest 2026.6.0 → **2026.6.6**). Load `imu-fixed-extension/` unpacked; the root checkout stays pristine apart from the committed patches.
+Built at the fork root (manifest 2026.6.0 → **2026.6.7**). Load `imu-fixed-extension/` unpacked; the root checkout stays pristine apart from the committed patches.
 
 ## What changed and why
 
@@ -48,7 +48,7 @@ Built at the fork root (manifest 2026.6.0 → **2026.6.6**). Load `imu-fixed-ext
 
 ## Your pasted errors, one by one
 
-| Error | Verdict | Status in 2026.6.6 |
+| Error | Verdict | Status in 2026.6.7 |
 |---|---|---|
 | `Manifest version 2 is deprecated…` | Warning, not error. Upstream is MV2; Chromium sideload still installs the MV2 CRX (store distribution is gone). A real MV3 migration (`webRequestBlocking` → `declarativeNetRequest`, persistent background → service worker) is a separate project — the header-rewriting core can't be ported 1:1. | Documented, not patchable here |
 | `Invalid background script mime type for 'background.scripts[1]'` | **Fatal, fixed.** Chrome won't load `.user.js` as a background script. | Fixed: `userscript-bg.js` / `userscript-content.js` |
